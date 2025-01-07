@@ -11,8 +11,8 @@ gulp.task('copyFiles', function (done) {
 });
 
 function copyFiles() {
-    const sourceDir = path.join(__dirname, 'ui-blocks', 'src', 'app', 'blocks-section');
-    const destinationDir = path.join(__dirname, 'ui-blocks', 'public', 'assets', 'code-snippet');
+    const sourceDir = path.join(__dirname, 'src', 'app', 'blocks-section');
+    const destinationDir = path.join(__dirname, 'public', 'assets', 'code-snippet');
     if (!fsExtra.existsSync(sourceDir)) {
         console.error(`Error: Source directory does not exist: ${sourceDir}`);
         return;
