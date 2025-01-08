@@ -84,14 +84,14 @@ export default function List6() {
                     <section className="bg-white dark:bg-gray-900">
                         <div id={styles["custom-field-list"]} className="lg:max-w-md w-full mx-auto px-4 pt-8 pb-4 min-h-screen">
                             <p className="text-sm text-gray-700 dark:text-gray-200 mb-4">Increase the amount of data that you collect re-order the fields.</p>
-                            <ListBoxComponent key={'custom-field-list1'} className="e-bigger" dataSource={data} allowDragAndDrop={true} fields={{ text: 'field', iconCss: 'fontIcon' }} aria-label="list of fields" role="list" itemTemplate={(data: any) => (
+                            <ListBoxComponent key={'custom-field-list1'} className="e-bigger" dataSource={data} allowDragAndDrop={true} fields={{ text: 'field', iconCss: 'fontIcon' }} itemTemplate={(data: any) => (
                                 <div className="list-wrapper flex items-center space-x-3 p-2">
                                     <span className="sf-icon-drag-dot-vertical text-base text-gray-500 dark:text-gray-300"></span>
                                     <span className={`text-base text-gray-500 dark:text-gray-300 ${data.fontIcon}`}></span>
                                     <span className="e-list-item-header text-sm font-medium text-gray-900 dark:text-white">{data.field}</span>
                                 </div>)}
                             ></ListBoxComponent>
-                            <ButtonComponent iconCss="e-icons e-plus" cssClass="e-flat e-primary mt-2" type="button" content="Add a field" aria-label="add new custom field" role="button"></ButtonComponent>
+                            <ButtonComponent iconCss="e-icons e-plus" cssClass="e-flat e-primary mt-2" type="button" content="Add a field"></ButtonComponent>
                         </div>
                     </section>
                 );           
@@ -100,14 +100,14 @@ export default function List6() {
                     <section className="bg-body">
                         <div id={styles["custom-field-list"]} className="container-lg w-100 mx-auto px-3 py-5 min-vh-100" style={width}>
                             <p className="small">Increase the amount of data that you collect re-order the fields.</p>
-                            <ListBoxComponent key={'custom-field-list2'} className="e-bigger" dataSource={data} allowDragAndDrop={true} fields={{ text: 'field', iconCss: 'fontIcon' }} aria-label="list of fields" role="list" itemTemplate={(data: any) => (
+                            <ListBoxComponent key={'custom-field-list2'} className="e-bigger" dataSource={data} allowDragAndDrop={true} fields={{ text: 'field', iconCss: 'fontIcon' }} itemTemplate={(data: any) => (
                                 <div className="list-wrapper d-flex align-items-center gap-2 p-2">
                                     <span className="e-icons sf-icon-drag-dot-vertical fs-6 pe-1"></span>
                                     <span className={`pe-1 fs-6 ${data.fontIcon}`}></span>
                                     <span className="e-list-item-header fw-medium">{data.field}</span>
                                 </div>)}
                             ></ListBoxComponent>
-                            <ButtonComponent iconCss="e-icons e-plus" cssClass="e-flat e-primary mt-2" type="button" content="Add a field" aria-label="add new custom field" role="button"></ButtonComponent>
+                            <ButtonComponent iconCss="e-icons e-plus" cssClass="e-flat e-primary mt-2" type="button" content="Add a field"></ButtonComponent>
                         </div>
                     </section>
                 );

@@ -50,7 +50,7 @@ export default function Card3() {
                                         <p className="text-base dark:text-gray-200">Explore scenic trails and hidden paths perfect for nature enthusiasts. Enjoy breathtaking views, fresh air, and the thrill of discovery along every step of the way.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent className="e-block" iconCss="e-icons e-chevron-right" iconPosition="Right" content="Get Started" type="button" aria-label="get started" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-block" iconCss="e-icons e-chevron-right" iconPosition="Right" content="Get Started" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="e-card gap-2 rounded-lg e-bigger">
@@ -64,7 +64,7 @@ export default function Card3() {
                                         <p className="text-base dark:text-gray-200">Visit iconic landmarks that tell the tales of past eras. These structures offer a glimpse into history, showcasing architectural beauty and timeless stories.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent className="e-block" iconCss="e-icons e-chevron-right" iconPosition="Right" content="Get Started" type="button" aria-label="get started" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-block" iconCss="e-icons e-chevron-right" iconPosition="Right" content="Get Started" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="e-card gap-2 rounded-lg e-bigger">
@@ -78,7 +78,7 @@ export default function Card3() {
                                         <p className="text-base dark:text-gray-200">Stroll through lively markets filled with unique finds, delicious treats, and local crafts. Experience the vibrant atmosphere and immerse yourself in the local culture.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent className="e-block" iconCss="e-icons e-chevron-right" iconPosition="Right" content="Get Started" type="button" aria-label="get started" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-block" iconCss="e-icons e-chevron-right" iconPosition="Right" content="Get Started" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ export default function Card3() {
                                                 <p className="fs-6 mb-2">Explore scenic trails and hidden paths perfect for nature enthusiasts. Enjoy breathtaking views, fresh air, and the thrill of discovery along every step of the way.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger w-100 lh-lg">
-                                                <ButtonComponent className="e-block e-outline" iconCss="e-icons e-chevron-right-small" iconPosition="Right" content="Get Started" type="button" aria-label="get started" role="button"></ButtonComponent>
+                                                <ButtonComponent className="e-block e-outline" iconCss="e-icons e-chevron-right-small" iconPosition="Right" content="Get Started" type="button"></ButtonComponent>
                                             </div>
                                         </div>
                                     </div>
@@ -121,7 +121,7 @@ export default function Card3() {
                                                 <p className="fs-6 mb-2">Visit iconic landmarks that tell the tales of past eras. These structures offer a glimpse into history, showcasing architectural beauty and timeless stories.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger w-100 lh-lg">
-                                                <ButtonComponent className="e-block e-outline" iconCss="e-icons e-chevron-right-small" iconPosition="Right" content="Get Started" type="button" aria-label="get started" role="button"></ButtonComponent>
+                                                <ButtonComponent className="e-block e-outline" iconCss="e-icons e-chevron-right-small" iconPosition="Right" content="Get Started" type="button"></ButtonComponent>
                                             </div>
                                         </div>
                                     </div>
@@ -139,7 +139,7 @@ export default function Card3() {
                                                 <p className="fs-6 mb-2">Stroll through lively markets filled with unique finds, delicious treats, and local crafts. Experience the vibrant atmosphere and immerse yourself in the local culture.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger w-100 lh-lg">
-                                                <ButtonComponent className="e-block e-outline" iconCss="e-icons e-chevron-right-small" iconPosition="Right" content="Get Started" type="button" aria-label="get started" role="button"></ButtonComponent>
+                                                <ButtonComponent className="e-block e-outline" iconCss="e-icons e-chevron-right-small" iconPosition="Right" content="Get Started" type="button"></ButtonComponent>
                                             </div>
                                         </div>
                                     </div>

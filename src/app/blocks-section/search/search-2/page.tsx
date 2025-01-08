@@ -105,7 +105,7 @@ export default function Search2() {
                                     popupHeight="530px"
                                     focus={() => search.current?.showPopup()}
                                     created={openPopup}
-                                    role="combobox"
+                                   
                                     itemTemplate={(data: any) => (
                                         <div slot="itemTemplate" className="text-sm font-medium text-wrap flex justify-between">
                                             <div className="text-gray-900 dark:text-white indent-0 px-4 py-2">{data.text}</div>
@@ -123,7 +123,7 @@ export default function Search2() {
                                                     <div className="text-sm text-gray-600 font-medium dark:text-gray-300">"Webflow" did not match any projects or commands. Please try again.</div>
                                                 </div>
                                                 <div>
-                                                    <ButtonComponent cssClass="e-btn e-outline px-4 text-gray-700 !text-base !dark:text-white" content="Clear Search" type="button" aria-label="clear search" role="button"></ButtonComponent>
+                                                    <ButtonComponent cssClass="e-btn e-outline px-4 text-gray-700 !text-base !dark:text-white" content="Clear Search" type="button"></ButtonComponent>
                                                 </div>
                                             </div>
                                         </div>
@@ -147,7 +147,7 @@ export default function Search2() {
                                         placeholder="Search"
                                         focus={() => search.current?.showPopup()}
                                         created={openPopup}
-                                        role="combobox"
+                                       
                                         itemTemplate={(data: any) => (
                                             <div className="d-flex justify-content-between text-wrap fs-6 lh-base fw-medium px-3 pt-2 pb-2" style={{ textIndent: 0 }}>
                                                 <div className="text-body lh-base">{data.text}</div>
@@ -165,7 +165,7 @@ export default function Search2() {
                                                         <div className="fw-medium text-body-tertiary">"Webflow" did not match any projects or commands. Please try again.</div>
                                                     </div>
                                                     <div>
-                                                        <ButtonComponent cssClass="e-outline px-4 fw-medium" content="Clear Search" aria-label="clear search" role="button"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-outline px-4 fw-medium" content="Clear Search"></ButtonComponent>
                                                     </div>
                                                 </div>
                                             </div>

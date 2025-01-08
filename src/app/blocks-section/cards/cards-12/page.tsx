@@ -53,7 +53,7 @@ export default function Card12() {
                                                 <span className="e-avatar e-avatar-circle absolute left-7" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-13.jpg)" }}></span>
                                                 <span className="e-avatar e-avatar-circle bg-indigo-600 text-white absolute left-14">2+</span>
                                             </div>
-                                            <RatingComponent cssClass="e-small" precision="Exact" value={3.5} aria-label="rating" role="slider"></RatingComponent>
+                                            <RatingComponent cssClass="e-small" precision="Exact" value={3.5}></RatingComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@ export default function Card12() {
                                                 <span className="e-avatar e-avatar-circle absolute left-7" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-13.jpg)" }}></span>
                                                 <span className="e-avatar e-avatar-circle bg-indigo-600 text-white absolute left-14">2+</span>
                                             </div>
-                                            <RatingComponent cssClass="e-small" precision="Exact" value={3.5} aria-label="rating" role="slider"></RatingComponent>
+                                            <RatingComponent cssClass="e-small" precision="Exact" value={3.5}></RatingComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +91,7 @@ export default function Card12() {
                                                 <span className="e-avatar e-avatar-circle absolute left-7" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-13.jpg)" }}></span>
                                                 <span className="e-avatar e-avatar-circle bg-indigo-600 text-white absolute left-14">2+</span>
                                             </div>
-                                            <RatingComponent cssClass="e-small" precision="Exact" value={3.5} aria-label="rating" role="slider"></RatingComponent>
+                                            <RatingComponent cssClass="e-small" precision="Exact" value={3.5}></RatingComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +120,7 @@ export default function Card12() {
                                                     <span className="e-avatar e-avatar-circle e-avatar-large position-absolute ms-4 start-0 top-0" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-13.jpg)" }}></span>
                                                     <span className="e-avatar e-avatar-circle e-avatar-large position-absolute ms-5 start-0 top-0 bg-primary text-white">2+</span>
                                                 </div>
-                                                <RatingComponent cssClass="e-small align-self-start" precision="Exact" value={3.5} aria-label="rating" role="slider"></RatingComponent>
+                                                <RatingComponent cssClass="e-small align-self-start" precision="Exact" value={3.5}></RatingComponent>
                                             </div>
                                         </div>
                                     </div>
@@ -141,7 +141,7 @@ export default function Card12() {
                                                     <span className="e-avatar e-avatar-circle e-avatar-large position-absolute ms-4 start-0 top-0" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-13.jpg)" }}></span>
                                                     <span className="e-avatar e-avatar-circle e-avatar-large position-absolute ms-5 start-0 top-0 bg-primary text-white">2+</span>
                                                 </div>
-                                                <RatingComponent cssClass="e-small align-self-start" precision="Exact" value={3.5} aria-label="rating" role="slider"></RatingComponent>
+                                                <RatingComponent cssClass="e-small align-self-start" precision="Exact" value={3.5}></RatingComponent>
                                             </div>
                                         </div>
                                     </div>
@@ -162,7 +162,7 @@ export default function Card12() {
                                                     <span className="e-avatar e-avatar-circle e-avatar-large position-absolute ms-4 start-0 top-0" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-13.jpg)" }}></span>
                                                     <span className="e-avatar e-avatar-circle e-avatar-large position-absolute ms-5 start-0 top-0 bg-primary text-white">2+</span>
                                                 </div>
-                                                <RatingComponent cssClass="e-small align-self-start" precision="Exact" value={3.5} aria-label="rating" role="slider"></RatingComponent>
+                                                <RatingComponent cssClass="e-small align-self-start" precision="Exact" value={3.5}></RatingComponent>
                                             </div>
                                         </div>
                                     </div>

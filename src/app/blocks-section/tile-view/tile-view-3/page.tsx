@@ -91,10 +91,10 @@ export default function TileView3() {
                                 <div className="px-4 sm:px-6 xl:px-10">
                                     <div className="e-input-group w-full sm:max-w-lg">
                                         <span className="e-input-group-icon e-icons e-search"></span>
-                                        <input className="e-input !pl-0" type="text" placeholder="Search" aria-label="search transactions" role="textbox" />
+                                        <input className="e-input !pl-0" type="text" placeholder="Search" />
                                     </div>
                                     <div className="e-appbar-spacer"></div>
-                                    <ButtonComponent cssClass="e-flat sf-icon-notification-bell-01 text-base ml-2" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                    <ButtonComponent cssClass="e-flat sf-icon-notification-bell-01 text-base ml-2" type="button"></ButtonComponent>
                                     <span className="e-avatar e-avatar-circle e-avatar-small shrink-0 ml-3">
                                         <Image src="/assets/images/common/avatar/avatar-1.jpg" width={32} height={32} alt="profile picture" />
                                     </span>
@@ -111,18 +111,18 @@ export default function TileView3() {
                                     <div className="flex flex-col justify-between gap-4 mb-3 text-gray-900 dark:text-gray-50 md:flex-row">
                                         <div className="flex justify-between">
                                             <p className="text-xl font-medium">Transactions</p>
-                                            <ButtonComponent cssClass="e-primary sm:hidden e-icons e-plus" type="button" aria-label="add new transaction" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary sm:hidden e-icons e-plus" type="button"></ButtonComponent>
                                         </div>
                                         <div className="flex flex-col gap-4 sm:flex-row">
                                             <div className="flex items-center gap-2 text-sm">
-                                                <SwitchComponent cssClass="w-9" aria-label="show pending only" role="switch"></SwitchComponent>
+                                                <SwitchComponent cssClass="w-9"></SwitchComponent>
                                                 <span>Show pending only</span>
                                             </div>
-                                            <DropDownButtonComponent cssClass="w-fit" content="This week" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose the week" role="button"></DropDownButtonComponent>
-                                            <ButtonComponent cssClass="e-primary hidden sm:inline-block" type="button" aria-label="add new transaction" role="button">Add New Transaction</ButtonComponent>
+                                            <DropDownButtonComponent cssClass="w-fit" content="This week" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                            <ButtonComponent cssClass="e-primary hidden sm:inline-block" type="button">Add New Transaction</ButtonComponent>
                                         </div>
                                     </div>
-                                    <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={transactionDetails} aria-label="list of transaction with details" role="list" template={(data: any) => (
+                                    <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={transactionDetails} template={(data: any) => (
                                         <div className="e-card flex-row gap-3 rounded-lg sm:gap-0 p-4">
                                             <span className={`e-avatar e-avatar-large e-avatar-circle shrink-0 sm:mr-4 ${data.paymentType === "Credit Card" ? "bg-green-100 text-green-700 dark:text-green-500" : data.paymentType === "Wire Transfer" ? "bg-indigo-100 dark:bg-cyan-800 text-indigo-600 dark:text-cyan-400" : data.paymentType === "Deposit" ? "bg-orange-100 text-orange-500 dark:text-orange-700" : "bg-cyan-100 dark:bg-sky-100 text-cyan-700 dark:text-cyan-600"}`}>
                                                 <i className="sf-icon-dollar text-2xl"></i>
@@ -141,7 +141,7 @@ export default function TileView3() {
                                                 <div className="e-card-content !p-0 text-gray-700 dark:text-gray-200">
                                                     <div className="hidden items-center gap-x-6 gap-y-2 text-sm text-gray-500 dark:text-gray-400 sm:flex flex-wrap">
                                                         <p className="flex items-center gap-2">
-                                                            Transaction ID:<a className="font-medium text-primary-600 hover:underline dark:text-primary-400" href="javascript:void(0);" aria-label="transaction ID">{data.transactionId}</a>
+                                                            Transaction ID:<a className="font-medium text-primary-600 hover:underline dark:text-primary-400" href="javascript:void(0);">{data.transactionId}</a>
                                                         </p>
                                                         <p className="flex gap-2">Payment Type:<span className="text-gray-700 dark:text-gray-200">{data.paymentType}</span></p>
                                                         <p className="flex gap-2">Category:<span className="text-gray-700 dark:text-gray-200">{data.category}</span></p>
@@ -149,7 +149,7 @@ export default function TileView3() {
                                                 </div>
                                             </div>
                                             <div className="e-card-actions self-start !p-0 leading-none">
-                                                <ButtonComponent className="e-round e-flat" iconCss="e-icons e-more-vertical-1" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                                <ButtonComponent className="e-round e-flat" iconCss="e-icons e-more-vertical-1" type="button"></ButtonComponent>
                                             </div>
                                         </div>)}
                                     ></ListViewComponent>
@@ -166,10 +166,10 @@ export default function TileView3() {
                                 <div className="justify-content-between gap-4 px-3 px-sm-4 px-xl-5">
                                     <div className="e-input-group" style={{ maxWidth: "514px" }}>
                                         <span className="e-input-group-icon e-icons e-search border-0"></span>
-                                        <input className="e-input ps-0" type="text" placeholder="Search" aria-label="search transactions" role="textbox" />
+                                        <input className="e-input ps-0" type="text" placeholder="Search" />
                                     </div>
                                     <div className="d-flex gap-2">
-                                        <ButtonComponent cssClass="e-flat sf-icon-notification-bell-01 fs-6" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat sf-icon-notification-bell-01 fs-6" type="button"></ButtonComponent>
                                         <span className="e-avatar e-avatar-circle e-avatar-small flex-shrink-0 ms-1">
                                             <Image src="/assets/images/common/avatar/avatar-1.jpg" width={32} height={32} alt="profile picture" />
                                         </span>
@@ -187,18 +187,18 @@ export default function TileView3() {
                                     <div className="d-flex flex-column justify-content-between gap-4 mt-2 pt-1 flex-md-row">
                                         <div className="d-flex justify-content-between">
                                             <h5 className="mb-0 fw-medium lh-base text-body">Transactions</h5>
-                                            <ButtonComponent cssClass="e-primary d-sm-none e-icons e-plus" type="button" aria-label="add new transaction" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary d-sm-none e-icons e-plus" type="button"></ButtonComponent>
                                         </div>
                                         <div className="d-flex flex-column align-items-start align-items-sm-center gap-3 flex-sm-row">
                                             <div className="d-flex align-items-center gap-2 fs-6 text-body">
-                                                <SwitchComponent cssClass="me-1" aria-label="show pending only" role="switch" style={{ width: "36px" }}></SwitchComponent>
+                                                <SwitchComponent cssClass="me-1" style={{ width: "36px" }}></SwitchComponent>
                                                 <span>Show pending only</span>
                                             </div>
-                                            <DropDownButtonComponent cssClass="e-outline" content="This week" type="button" beforeOpen={(e) => (e.cancel = true)} aria-label="choose the week" role="button"></DropDownButtonComponent>
-                                            <ButtonComponent cssClass="e-primary d-none d-sm-inline-block" type="button" aria-label="add new transaction" role="button">Add New Transaction</ButtonComponent>
+                                            <DropDownButtonComponent cssClass="e-outline" content="This week" type="button" beforeOpen={(e) => (e.cancel = true)}></DropDownButtonComponent>
+                                            <ButtonComponent cssClass="e-primary d-none d-sm-inline-block" type="button">Add New Transaction</ButtonComponent>
                                         </div>
                                     </div>
-                                    <ListViewComponent className="border-0 mt-4" cssClass="e-list-template" dataSource={transactionDetails} aria-label="list of transaction with details" role="list" template={(data: any) => (
+                                    <ListViewComponent className="border-0 mt-4" cssClass="e-list-template" dataSource={transactionDetails} template={(data: any) => (
                                         <div className="e-card d-flex flex-row gap-3 gap-sm-0 lh-base px-2 py-3 rounded-3 px-sm-3">
                                             <span className={`e-avatar e-avatar-large e-avatar-circle flex-shrink-0 me-sm-3 ${data.paymentType === "Deposit" ? "bg-warning-subtle text-warning-emphasis" : data.paymentType === "Wire Transfer" ? "bg-success-subtle text-success-emphasis" : data.paymentType === "Credit Card" ? "bg-info-subtle text-info-emphasis" : "bg-primary-subtle text-primary"}`}>
                                                 <i className="sf-icon-dollar fs-3"></i>
@@ -217,7 +217,7 @@ export default function TileView3() {
                                                 <div className="e-card-content p-0">
                                                     <div className="d-none d-sm-flex align-items-center gap-4 fs-6 text-body-secondary flex-wrap row-gap-2">
                                                         <p className="d-flex align-items-center gap-2 mb-0">
-                                                            Transaction ID:<a className="link-underline link-underline-opacity-0 link-underline-opacity-100-hover fw-medium" href="javascript:void(0);" aria-label="transaction ID">{data.transactionId}</a>
+                                                            Transaction ID:<a className="link-underline link-underline-opacity-0 link-underline-opacity-100-hover fw-medium" href="javascript:void(0);">{data.transactionId}</a>
                                                         </p>
                                                         <p className="d-flex gap-2 mb-0">Payment Type:<span className="fw-medium">{data.paymentType}</span></p>
                                                         <p className="d-flex gap-2 mb-0">Category:<span className="fw-medium">{data.category}</span></p>
@@ -225,7 +225,7 @@ export default function TileView3() {
                                                 </div>
                                             </div>
                                             <div className="e-card-actions align-self-start p-0">
-                                                <ButtonComponent className="e-round e-flat" iconCss="e-icons e-more-vertical-1" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                                <ButtonComponent className="e-round e-flat" iconCss="e-icons e-more-vertical-1" type="button"></ButtonComponent>
                                             </div>
                                         </div>)}
                                     ></ListViewComponent>

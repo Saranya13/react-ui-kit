@@ -42,7 +42,7 @@ export default function PricingCard1() {
                                 <p className="mt-4 px-4 text-lg font-normal mb-8 sm:max-w-xl lg:max-w-full w-full mx-auto text-center text-gray-700 dark:text-gray-200">Get started in complete confidence. Our 30-day money-back guarantee means it’s risk-free.</p>
                                 <div className="flex items-center justify-center gap-3 mb-12 text-base font-medium text-gray-700 dark:text-gray-200">
                                     <p>Monthly</p>
-                                    <SwitchComponent cssClass="e-bigger" checked={true} aria-label="switch between monthly and yearly pricing plans" role="switch" style={{ width: "44px !important" }}></SwitchComponent>
+                                    <SwitchComponent cssClass="e-bigger" checked={true} style={{ width: "44px !important" }}></SwitchComponent>
                                     <p>Yearly</p>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ export default function PricingCard1() {
                                                 <div className="text-base mt-2">
                                                     <p className="mb-6 text-base font-normal text-gray-700 dark:text-gray-200">per month $1,788 billed yearly</p>
                                                     <p className="mb-8 max-w-48 mx-auto text-base font-normal text-gray-700 dark:text-gray-200">No monthly subscription, you only pay once.</p>
-                                                    <ButtonComponent className="e-primary w-full text-lg" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-primary w-full text-lg" content="Choose a plan" type="button"></ButtonComponent>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,7 +82,7 @@ export default function PricingCard1() {
                                 <p className="mb-4 mx-3 px-1 px-md-5 px-lg-0 text-light-emphasis">Get started in complete confidence. Our 30-day money-back guarantee means it’s risk-free.</p>
                                 <div className="d-flex justify-content-center align-items-center gap-2 mb-5 pt-2">
                                     <p className="m-0 small text-light-emphasis">Monthly</p>
-                                    <SwitchComponent cssClass="e-bigger" checked={true} aria-label="switch between monthly and yearly pricing plans" role="switch" style={{ width: "37px" }}></SwitchComponent>
+                                    <SwitchComponent cssClass="e-bigger" checked={true} style={{ width: "37px" }}></SwitchComponent>
                                     <p className="m-0 small text-light-emphasis">Yearly</p>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ export default function PricingCard1() {
                                                 <p className="mb-0 px-5 px-md-4 px-lg-5 text-light-emphasis">No monthly subscription, you only pay once.</p>
                                             </span>
                                             <div className="e-bigger">
-                                                <ButtonComponent className="e-primary e-block" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                                <ButtonComponent className="e-primary e-block" content="Choose a plan" type="button"></ButtonComponent>
                                             </div>
                                         </div>
                                     </div>

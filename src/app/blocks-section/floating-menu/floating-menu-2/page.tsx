@@ -103,7 +103,7 @@ export default function FloatingMenu2() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div id="target" className="w-full" style={{ height: isMobileView ? "580px" : "720px" }}>
-                            <DialogComponent id={styles["floating-chat"]} className="sm:!rounded-t !rounded-none overflow-hidden !border-0" width="400px" minHeight="580px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()} aria-label="chatbot" role="dialog"
+                            <DialogComponent id={styles["floating-chat"]} className="sm:!rounded-t !rounded-none overflow-hidden !border-0" width="400px" minHeight="580px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => {
                                     return (
                                         <div className="flex justify-between items-center bg-indigo-600 dark:bg-cyan-400 py-4 px-4 sm:px-6">
@@ -123,17 +123,17 @@ export default function FloatingMenu2() {
                                             <div className="e-card bg-gray-50 dark:bg-gray-800 dark:border-gray-600">
                                                 <div className="e-card-content text-center">
                                                     <p className="pt-4 pb-2.5">How would you rate our support?</p>
-                                                    <RatingComponent value={0.5} precision="Exact" aria-label="rate our support" role="slider"></RatingComponent>
+                                                    <RatingComponent value={0.5} precision="Exact"></RatingComponent>
                                                 </div>
                                             </div>
                                             <div className="e-bigger mt-3">
-                                                <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={addTextBoxIcon} aria-label="enter a message" role="textbox"></TextBoxComponent>
+                                                <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={addTextBoxIcon}></TextBoxComponent>
                                             </div>
                                         </div>
                                     );
                                 }}
                             >
-                                <ListViewComponent className="border-0 px-1 sm:px-3 py-4" dataSource={data} width="100%" height="100%" aria-label="chat conversations" role="list"
+                                <ListViewComponent className="border-0 px-1 sm:px-3 py-4" dataSource={data} width="100%" height="100%"
                                     template={(data: any) => {
                                         const senderTemplate = (
                                             <div className="flex justify-end items-end flex-col">
@@ -162,7 +162,7 @@ export default function FloatingMenu2() {
                                     }}
                                 ></ListViewComponent>
                             </DialogComponent>
-                            <FabComponent cssClass="e-primary e-round e-bigger !hidden sm:!block" iconCss={!toggleState ? "sf-icon-message-chat-circle !text-2xl" : "e-icons e-close !text-2xl"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog} aria-label="show/hide chatbot" role="button"></FabComponent>
+                            <FabComponent cssClass="e-primary e-round e-bigger !hidden sm:!block" iconCss={!toggleState ? "sf-icon-message-chat-circle !text-2xl" : "e-icons e-close !text-2xl"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog}></FabComponent>
                         </div>
                     </section>
                 );
@@ -170,7 +170,7 @@ export default function FloatingMenu2() {
                 return (
                     <section className="bg-body">
                         <div id="target" className="w-100" style={{ height: isMobileView ? "580px" : "720px" }}>
-                            <DialogComponent id={styles["floating-chat"]} className="rounded-1 overflow-hidden border-0" width="400px" minHeight="580px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()} aria-label="chatbot" role="dialog"
+                            <DialogComponent id={styles["floating-chat"]} className="rounded-1 overflow-hidden border-0" width="400px" minHeight="580px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => {
                                     return (
                                         <div className="d-flex justify-content-between align-items-center bg-primary py-3 px-4">
@@ -190,17 +190,17 @@ export default function FloatingMenu2() {
                                             <div className="e-card bg-body-tertiary">
                                                 <div className="e-card-content p-3 text-center">
                                                     <p className="mb-1 fs-6 opacity-75">How would you rate our support?</p>
-                                                    <RatingComponent value={0.5} precision="Exact" aria-label="rate our support" role="slider"></RatingComponent>
+                                                    <RatingComponent value={0.5} precision="Exact"></RatingComponent>
                                                 </div>
                                             </div>
                                             <div className="e-bigger mt-3">
-                                                <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={addTextBoxIcon} aria-label="enter a message" role="textbox"></TextBoxComponent>
+                                                <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={addTextBoxIcon}></TextBoxComponent>
                                             </div>
                                         </div>
                                     );
                                 }}
                             >
-                                <ListViewComponent className="border-0 px-2 px-sm-3 py-4" dataSource={data} width="100%" height="100%" aria-label="chat conversations" role="list"
+                                <ListViewComponent className="border-0 px-2 px-sm-3 py-4" dataSource={data} width="100%" height="100%"
                                     template={(data: any) => {
                                         const senderTemplate = (
                                             <div className="d-flex justify-content-end flex-column align-items-end ps-5">
@@ -226,7 +226,7 @@ export default function FloatingMenu2() {
                                     }}
                                 ></ListViewComponent>
                             </DialogComponent>
-                            <FabComponent cssClass="e-primary e-bigger e-round d-none d-sm-block" iconCss={!toggleState ? "sf-icon-message-chat-circle fs-4" : "e-icons e-close fs-5"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog} aria-label="show/hide chatbot" role="button"></FabComponent>
+                            <FabComponent cssClass="e-primary e-bigger e-round d-none d-sm-block" iconCss={!toggleState ? "sf-icon-message-chat-circle fs-4" : "e-icons e-close fs-5"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog}></FabComponent>
                         </div>
                     </section>
                 );

@@ -72,7 +72,7 @@ export default function FloatingMenu3() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div id="target" className="w-full" style={{ height: isMobileView ? "625px" : "740px" }}>
-                            <DialogComponent id={styles["floating-contact"]} className="sm:!rounded-t !rounded-none overflow-hidden !border-0" width="400px" minHeight="625px" height="625px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()} aria-label="contact form for assistance" role="dialog"
+                            <DialogComponent id={styles["floating-contact"]} className="sm:!rounded-t !rounded-none overflow-hidden !border-0" width="400px" minHeight="625px" height="625px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => (
                                     <div className="flex flex-col justify-between items-center bg-indigo-100 dark:bg-cyan-800 py-12 px-6">
                                         <span className="sf-icon-message-chat-circle text-3xl text-gray-500 dark:text-white"></span>
@@ -84,21 +84,21 @@ export default function FloatingMenu3() {
                                 )}
                                 footerTemplate={() => (
                                     <div className="e-bigger sm:px-6 px-4 py-6">
-                                        <ButtonComponent cssClass="e-primary w-full !ml-0" type="submit" content="Send" aria-label="send the message" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary w-full !ml-0" type="submit" content="Send"></ButtonComponent>
                                     </div>
                                 )}
                             >
                                 <div className="sm:px-6 px-4 pt-6 flex flex-col gap-4">
-                                    <TextBoxComponent cssClass="e-bigger w-full" type="text" placeholder="Name" floatLabelType="Never" aria-label="enter the name" role="textbox"></TextBoxComponent>
-                                    <TextBoxComponent cssClass="e-bigger w-full" type="text" placeholder="Email" floatLabelType="Never" aria-label="enter the email address" role="textbox"></TextBoxComponent>
-                                    <TextAreaComponent cssClass="e-bigger" placeholder="Your message" rows={5} cols={100} resizeMode="None" aria-label="enter the message" role="textbox"></TextAreaComponent>
+                                    <TextBoxComponent cssClass="e-bigger w-full" type="text" placeholder="Name" floatLabelType="Never"></TextBoxComponent>
+                                    <TextBoxComponent cssClass="e-bigger w-full" type="text" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
+                                    <TextAreaComponent cssClass="e-bigger" placeholder="Your message" rows={5} cols={100} resizeMode="None"></TextAreaComponent>
                                     <div className="w-full flex flex-col gap-1.5">
                                         <UploaderComponent key={"uploader-1"}></UploaderComponent>
                                         <p className="text-xs text-gray-900 dark:text-gray-50">Supported formats: Docs / PDF</p>
                                     </div>
                                 </div>
                             </DialogComponent>
-                            <FabComponent cssClass="e-primary e-round e-bigger !hidden sm:!block" iconCss={!toggleState ? "sf-icon-message-chat-circle !text-2xl" : "e-icons e-close !text-2xl"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog} aria-label="show/hide form" role="button"></FabComponent>
+                            <FabComponent cssClass="e-primary e-round e-bigger !hidden sm:!block" iconCss={!toggleState ? "sf-icon-message-chat-circle !text-2xl" : "e-icons e-close !text-2xl"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog}></FabComponent>
                         </div>
                     </section>
                 );
@@ -106,7 +106,7 @@ export default function FloatingMenu3() {
                 return (
                     <section className="bg-body">
                         <div id="target" className="w-100" style={{ height: isMobileView ? "625px" : "740px" }}>
-                            <DialogComponent id={styles["floating-contact"]} className="rounded-1 border-0 overflow-hidden" width="400px" minHeight="625px" height="625px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()} aria-label="contact form for assistance" role="dialog"
+                            <DialogComponent id={styles["floating-contact"]} className="rounded-1 border-0 overflow-hidden" width="400px" minHeight="625px" height="625px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => (
                                     <div className="d-flex flex-column justify-content-between align-items-center bg-primary-subtle py-5 px-4">
                                         <span className="sf-icon-message-chat-circle fs-4 text-secondary"></span>
@@ -118,21 +118,21 @@ export default function FloatingMenu3() {
                                 )}
                                 footerTemplate={() => (
                                     <div className="e-bigger py-4 px-3 px-sm-4">
-                                        <ButtonComponent cssClass="e-primary w-100 m-0" type="submit" content="Send" aria-label="send the message" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary w-100 m-0" type="submit" content="Send"></ButtonComponent>
                                     </div>
                                 )}
                             >
                                 <div className="py-4 px-3 px-sm-4 pb-0 d-flex flex-column gap-3">
-                                    <TextBoxComponent cssClass="e-bigger w-100" type="text" placeholder="Name" floatLabelType="Never" aria-label="enter the name" role="textbox"></TextBoxComponent>
-                                    <TextBoxComponent cssClass="e-bigger w-100" type="text" placeholder="Email" floatLabelType="Never" aria-label="enter the email address" role="textbox"></TextBoxComponent>
-                                    <TextAreaComponent cssClass="e-bigger w-100" placeholder="Your message" rows={5} cols={100} resizeMode="None" aria-label="enter the message" role="textbox"></TextAreaComponent>
+                                    <TextBoxComponent cssClass="e-bigger w-100" type="text" placeholder="Name" floatLabelType="Never"></TextBoxComponent>
+                                    <TextBoxComponent cssClass="e-bigger w-100" type="text" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
+                                    <TextAreaComponent cssClass="e-bigger w-100" placeholder="Your message" rows={5} cols={100} resizeMode="None"></TextAreaComponent>
                                     <div>
                                         <UploaderComponent key={"uploader-2"}></UploaderComponent>
                                         <p className="small m-0 mt-1 text-body-secondary">Supported formats: Docs / PDF</p>
                                     </div>
                                 </div>
                             </DialogComponent>
-                            <FabComponent cssClass="e-primary e-bigger e-round d-none d-sm-block" iconCss={!toggleState ? "sf-icon-message-chat-circle fs-4" : "e-icons e-close fs-5"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog} aria-label="show/hide form" role="button"></FabComponent>
+                            <FabComponent cssClass="e-primary e-bigger e-round d-none d-sm-block" iconCss={!toggleState ? "sf-icon-message-chat-circle fs-4" : "e-icons e-close fs-5"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog}></FabComponent>
                         </div>
                     </section>
                 );

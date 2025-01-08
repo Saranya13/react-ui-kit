@@ -51,20 +51,20 @@ export default function Calendar3() {
                 return (
                     <section className="bg-white dark:bg-gray-900" key={"agenda"}>
                         <div style={{ height: "752px", width: width, float: "right" }}>
-                            <SidebarComponent className="w-full h-full flex flex-col bg-white dark:bg-gray-900" position="Right" type="Push" width={width} ref={sidebar} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} role="complementary" style={{ display: "block" }}>
+                            <SidebarComponent className="w-full h-full flex flex-col bg-white dark:bg-gray-900" position="Right" type="Push" width={width} ref={sidebar} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} style={{ display: "block" }}>
                                 <div className="flex-none bg-white dark:bg-gray-900">
                                     <div className="flex justify-between items-center px-4 border-gray-200 dark:border-gray-600">
                                         <div className="py-3 pe-10">
                                             <h2 className="text-xs mb-1 text-gray-700 dark:text-gray-300">CALENDAR</h2>
-                                            <DatePickerComponent cssClass="shadow-none border-none" placeholder="Enter date" aria-label="enter a date here" role="combobox"></DatePickerComponent>
+                                            <DatePickerComponent cssClass="shadow-none border-none" placeholder="Enter date"></DatePickerComponent>
                                         </div>
-                                        <ButtonComponent className="e-flat text-base" iconCss="e-icons e-close" onClick={() => sidebar.current?.hide()} content=" " type="button" aria-label="close sidebar" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat text-base" iconCss="e-icons e-close" onClick={() => sidebar.current?.hide()} content=" " type="button"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="flex-grow overflow-y-auto bg-white dark:bg-gray-900">
                                     <div className="flex justify-between border-b border-t border-gray-200 dark:border-gray-600 p-4 py-3">
-                                        <ButtonComponent className="e-outline w-16 text-xs py-1 px-3" type="button" aria-label="today" role="button">Today</ButtonComponent>
-                                        <ButtonComponent className="e-flat e-icons e-more-vertical-1" type="button" aria-label="more actions" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-outline w-16 text-xs py-1 px-3" type="button">Today</ButtonComponent>
+                                        <ButtonComponent className="e-flat e-icons e-more-vertical-1" type="button"></ButtonComponent>
                                     </div>
                                     <div className="space-y-3 p-4">
                                         <h6 className="text-xs text-gray-500">SEPTEMBER</h6>
@@ -104,13 +104,13 @@ export default function Calendar3() {
                                     </div>
                                 </div>
                                 <div className="flex-none py-2 px-4 w-full border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800">
-                                    <ButtonComponent className="e-flat e-primary" type="button" content="Create an event" iconCss="e-icons e-plus" aria-label="create an event" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-flat e-primary" type="button" content="Create an event" iconCss="e-icons e-plus"></ButtonComponent>
                                 </div>
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 right-0">
-                            <ButtonComponent className="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button" aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent className="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button"></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -119,21 +119,21 @@ export default function Calendar3() {
                 return (
                     <section className="bg-body" key={"view"}>
                         <div style={{ height: "798px", width: width, float: 'right' }}>
-                            <SidebarComponent className="h-100 d-flex flex-column bg-body sidebar-1" position="Right" type="Push" width={width} ref={sidebar} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent className="h-100 d-flex flex-column bg-body sidebar-1" position="Right" type="Push" width={width} ref={sidebar} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} style={{ display: 'block' }}>
                                 <div className="bg-body">
                                     <div className="flex-shrink-0">
                                         <div className="d-flex justify-content-between align-items-center px-3 border-bottom border-light-subtle">
                                             <div className="py-2 pe-5 pt-2">
                                                 <h2 className="small text-muted mb-1">CALENDAR</h2>
-                                                <DatePickerComponent className="shadow-none border-0" placeholder="Enter date" aria-label="enter a date here" role="combobox"></DatePickerComponent>
+                                                <DatePickerComponent className="shadow-none border-0" placeholder="Enter date"></DatePickerComponent>
                                             </div>
-                                            <ButtonComponent className="e-flat fs-6" iconCss="e-icons e-close" onClick={() => sidebar.current?.hide()} content=" " type="button" aria-label="close sidebar" role="button"></ButtonComponent>
+                                            <ButtonComponent className="e-flat fs-6" iconCss="e-icons e-close" onClick={() => sidebar.current?.hide()} content=" " type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                     <div className="flex-grow-1 overflow-auto bg-body">
                                         <div className="d-flex justify-content-between border-bottom border-light-subtle p-3">
-                                            <ButtonComponent cssClass="e-outline px-2 p-1" type="button" aria-label="today" role="button">Today</ButtonComponent>
-                                            <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button" aria-label="more actions" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-outline px-2 p-1" type="button">Today</ButtonComponent>
+                                            <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button"></ButtonComponent>
                                         </div>
                                         <div className="px-3 py-3">
                                             <h6 className="small text-muted">SEPTEMBER</h6>
@@ -173,14 +173,14 @@ export default function Calendar3() {
                                         </div>
                                     </div>
                                     <div className="flex-shrink-0 py-2 px-4 w-100 border-top border-light-subtle bg-body-tertiary">
-                                        <ButtonComponent cssClass="e-flat e-primary" content="Create an event" iconCss="e-icons e-plus" type="button" aria-label="create an event" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-primary" content="Create an event" iconCss="e-icons e-plus" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 position-absolute top-0 end-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button" aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button"></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

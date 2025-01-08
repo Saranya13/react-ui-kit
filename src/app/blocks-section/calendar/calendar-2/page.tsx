@@ -53,19 +53,19 @@ export default function Calendar2() {
                 return (
                     <section className="bg-white dark:bg-gray-900">
                         <div style={{ height: '900px', width: width, float: 'right' }}>
-                            <SidebarComponent className="w-full bg-white dark:bg-gray-900" ref={sidebar} position="Right" type="Push" width={width} isOpen={true} showBackdrop={true} role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent className="w-full bg-white dark:bg-gray-900" ref={sidebar} position="Right" type="Push" width={width} isOpen={true} showBackdrop={true} style={{ display: 'block' }}>
                                 <div className="bg-white dark:bg-gray-900">
                                     <div className="border-b border-gray-200 dark:border-gray-600">
                                         <div className="flex justify-between items-center px-4 py-3 border-b border-gray-200 dark:border-gray-600">
                                             <h2 className="text-base font-semibold text-gray-900 dark:text-white">Room Filters</h2>
-                                            <ButtonComponent className="e-flat text-base" iconCss="e-icons e-close" onClick={() => sidebar.current?.toggle()} content=" " type="button" aria-label="close sidebar" role="button"></ButtonComponent>
+                                            <ButtonComponent className="e-flat text-base" iconCss="e-icons e-close" onClick={() => sidebar.current?.toggle()} content=" " type="button"></ButtonComponent>
                                         </div>
                                         <div className="p-4 flex justify-center">
                                             <CalendarComponent className="e-bigger shadow-none border-none"></CalendarComponent>
                                         </div>
                                     </div>
                                     <div className="pt-4 px-1">
-                                        <AccordionComponent className="border-0 bg-transparent" expandMode="Multiple" role="accordion">
+                                        <AccordionComponent className="border-0 bg-transparent" expandMode="Multiple">
                                             <AccordionItemsDirective>
                                                 <AccordionItemDirective expanded={true}
                                                     header={() => <div className="font-normal text-gray-500 dark:text-gray-400">Floors</div>}
@@ -73,15 +73,15 @@ export default function Calendar2() {
                                                         <div>
                                                             <div className="grid gap-3 p-1">
                                                                 <div className="flex justify-between">
-                                                                    <CheckBoxComponent label="Ground Floor" aria-label="ground floor" role="checkbox"></CheckBoxComponent>
+                                                                    <CheckBoxComponent label="Ground Floor"></CheckBoxComponent>
                                                                     <span className="e-badge e-badge-pill e-badge-success e-bigger">12 Rooms</span>
                                                                 </div>
                                                                 <div className="flex justify-between">
-                                                                    <CheckBoxComponent label="First Floor" aria-label="first floor" role="checkbox"></CheckBoxComponent>
+                                                                    <CheckBoxComponent label="First Floor"></CheckBoxComponent>
                                                                     <span className="e-badge e-badge-pill e-badge-danger e-bigger">Full</span>
                                                                 </div>
                                                                 <div className="flex justify-between">
-                                                                    <CheckBoxComponent label="Second Floor" aria-label="second floor" role="checkbox"></CheckBoxComponent>
+                                                                    <CheckBoxComponent label="Second Floor"></CheckBoxComponent>
                                                                     <span className="e-badge e-badge-pill e-badge-warning e-bigger">2 Rooms</span>
                                                                 </div>
                                                             </div>
@@ -96,26 +96,26 @@ export default function Calendar2() {
                                                 <span className="e-icons e-circle-info ml-2"></span>
                                             </label>
                                             <div className="px-2">
-                                                <SliderComponent type="Range" value={[2500, 4000]} tooltip={tooltipInfo} min={1000} max={5000} step={1} ticks={{ placement: 'After', largeStep: 4000, showLargeTicks: true, format: 'c0' }} style={{ width: '225px', left: '15px' }}></SliderComponent>
+                                                <SliderComponent type="Range" value={[2500, 4000]} tooltip={tooltipInfo} min={1000} max={5000} step={1} ticks={{ placement: 'After', largeStep: 4000, format: 'c0' }} style={{ width: '225px', left: '15px' }}></SliderComponent>
                                             </div>
                                         </div>
-                                        <AccordionComponent expandMode="Multiple" className="border-0 bg-transparent" role="accordion">
+                                        <AccordionComponent expandMode="Multiple" className="border-0 bg-transparent">
                                             <AccordionItemsDirective>
                                                 <AccordionItemDirective expanded={true}
                                                     header={() => <div className="font-normal text-gray-500 dark:text-gray-400">Facility</div>}
                                                     content={() =>
                                                         <div className="grid gap-3 text-gray-500 p-1">
                                                             <div className="flex justify-between">
-                                                                <CheckBoxComponent label="Air Conditioner" aria-label="air conditioner" role="checkbox"></CheckBoxComponent>
+                                                                <CheckBoxComponent label="Air Conditioner"></CheckBoxComponent>
                                                             </div>
                                                             <div className="flex justify-between">
-                                                                <CheckBoxComponent label="Swimming Pool" aria-label="swimming pool" role="checkbox"></CheckBoxComponent>
+                                                                <CheckBoxComponent label="Swimming Pool"></CheckBoxComponent>
                                                             </div>
                                                             <div className="flex justify-between">
-                                                                <CheckBoxComponent label="Television" aria-label="television" role="checkbox"></CheckBoxComponent>
+                                                                <CheckBoxComponent label="Television"></CheckBoxComponent>
                                                             </div>
                                                             <div>
-                                                                <ButtonComponent cssClass="e-primary e-flat" content="Show more" iconCss="e-icons e-plus" type="button" aria-label="show more" role="button"></ButtonComponent>
+                                                                <ButtonComponent cssClass="e-primary e-flat" content="Show more" iconCss="e-icons e-plus" type="button"></ButtonComponent>
                                                             </div>
                                                         </div>
                                                     }
@@ -128,7 +128,7 @@ export default function Calendar2() {
                         </div>
                         {/* SB Code - Start */}                                
                         <div className="p-3 absolute top-0 right-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button" aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button"></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -137,34 +137,34 @@ export default function Calendar2() {
                 return (
                     <section className="bg-body">
                         <div style={{ height: "955px", width: width, float: "right" }}>
-                            <SidebarComponent className="bg-body" ref={sidebar} position="Right" type="Push" width={width} isOpen={true} showBackdrop={true} role="complementary" style={{ display: "block" }}>
+                            <SidebarComponent className="bg-body" ref={sidebar} position="Right" type="Push" width={width} isOpen={true} showBackdrop={true} style={{ display: "block" }}>
                                 <div className="bg-body">
                                     <div className="border-bottom border-light-subtle">
                                         <div className="d-flex justify-content-between align-items-center px-4 py-3 border-bottom border-light-subtle">
                                             <h2 className="h6 fw-semibold text-body mb-0">Room Filters</h2>
-                                            <ButtonComponent className="e-flat fs-6" iconCss="e-icons e-close" onClick={() => sidebar.current?.toggle()} content=" " type="button" aria-label="close sidebar" role="button"></ButtonComponent>
+                                            <ButtonComponent className="e-flat fs-6" iconCss="e-icons e-close" onClick={() => sidebar.current?.toggle()} content=" " type="button"></ButtonComponent>
                                         </div>
                                         <div className="p-4 pb-0 d-flex justify-content-center align-items-center">
                                             <CalendarComponent className="e-bigger shadow-none border-0"></CalendarComponent>
                                         </div>
                                     </div>
                                     <div className="pt-2 px-1">
-                                        <AccordionComponent className="border-0 bg-transparent" expandMode="Multiple" role="accordion">
+                                        <AccordionComponent className="border-0 bg-transparent" expandMode="Multiple">
                                             <AccordionItemsDirective>
                                                 <AccordionItemDirective expanded={true}
                                                     header={() => <div className="fw-medium text-body-secondary">Floors</div>}
                                                     content={() =>
                                                         <div className="row gap-3">
                                                             <div className="d-flex justify-content-between pt-1">
-                                                                <CheckBoxComponent label="Ground Floor" aria-label="ground floor" role="checkbox"></CheckBoxComponent>
+                                                                <CheckBoxComponent label="Ground Floor"></CheckBoxComponent>
                                                                 <span className="e-badge e-badge-pill e-badge-success e-bigger">12 Rooms</span>
                                                             </div>
                                                             <div className="d-flex justify-content-between">
-                                                                <CheckBoxComponent label="First Floor" aria-label="first floor" role="checkbox"></CheckBoxComponent>
+                                                                <CheckBoxComponent label="First Floor"></CheckBoxComponent>
                                                                 <span className="e-badge e-badge-pill e-badge-danger e-bigger">Full</span>
                                                             </div>
                                                             <div className="d-flex justify-content-between">
-                                                                <CheckBoxComponent label="Second Floor" aria-label="second floor" role="checkbox"></CheckBoxComponent>
+                                                                <CheckBoxComponent label="Second Floor"></CheckBoxComponent>
                                                                 <span className="e-badge e-badge-pill e-badge-warning e-bigger">2 Rooms</span>
                                                             </div>
                                                         </div>
@@ -178,26 +178,26 @@ export default function Calendar2() {
                                                 <span className="e-icons e-circle-info ms-2"></span>
                                             </label>
                                             <div className="px-2 w-4/5">
-                                                <SliderComponent type="Range" value={[2500, 4000]} tooltip={tooltipInfo} min={1000} max={5000} step={1} ticks={{ placement: "After", largeStep: 4000, showLargeTicks: true, format: "C0" }}></SliderComponent>
+                                                <SliderComponent type="Range" value={[2500, 4000]} tooltip={tooltipInfo} min={1000} max={5000} step={1} ticks={{ placement: "After", largeStep: 4000, format: "C0" }}></SliderComponent>
                                             </div>
                                         </div>
-                                        <AccordionComponent className="border-0 bg-transparent" expandMode="Multiple" role="accordion">
+                                        <AccordionComponent className="border-0 bg-transparent" expandMode="Multiple">
                                             <AccordionItemsDirective>
                                                 <AccordionItemDirective expanded={true}
                                                     header={() => <div className="fw-medium text-body-secondary">Facility</div>}
                                                     content={() =>
                                                         <div className="row gap-3">
                                                             <div className="d-flex justify-content-between pt-1">
-                                                                <CheckBoxComponent label="Air Conditioner" aria-label="air conditioner" role="checkbox"></CheckBoxComponent>
+                                                                <CheckBoxComponent label="Air Conditioner"></CheckBoxComponent>
                                                             </div>
                                                             <div className="d-flex justify-content-between">
-                                                                <CheckBoxComponent label="Swimming Pool" aria-label="swimming pool" role="checkbox"></CheckBoxComponent>
+                                                                <CheckBoxComponent label="Swimming Pool"></CheckBoxComponent>
                                                             </div>
                                                             <div className="d-flex justify-content-between">
-                                                                <CheckBoxComponent label="Television" aria-label="television" role="checkbox"></CheckBoxComponent>
+                                                                <CheckBoxComponent label="Television"></CheckBoxComponent>
                                                             </div>
                                                             <div>
-                                                                <ButtonComponent className="e-primary e-flat" iconCss="e-icons e-plus" content="Show more" type="button" aria-label="show more" role="button"></ButtonComponent>
+                                                                <ButtonComponent className="e-primary e-flat" iconCss="e-icons e-plus" content="Show more" type="button"></ButtonComponent>
                                                             </div>
                                                         </div>
                                                     }
@@ -210,7 +210,7 @@ export default function Calendar2() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 position-absolute top-0 end-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button" aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button"></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

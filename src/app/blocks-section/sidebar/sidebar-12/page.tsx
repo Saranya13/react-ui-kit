@@ -89,13 +89,13 @@ export default function Sidebar12() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["tracker-sidebar"]} className="float-right" style={{ height: '600px' }}>
-                            <SidebarComponent key={'tracker-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-l !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} position="Right" showBackdrop={true} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'tracker-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-l !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} position="Right" showBackdrop={true} style={{ display: 'block' }}>
                                 <div className="py-6 h-screen">
                                     <div className="flex justify-between items-center px-3 mb-2">
                                         <span className="text-base text-gray-600 dark:text-gray-400">Market Cap</span>
-                                        <ButtonComponent className="e-medium e-icons e-more-horizontal-1 e-flat" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-medium e-icons e-more-horizontal-1 e-flat" type="button"></ButtonComponent>
                                     </div>
-                                    <ListViewComponent className="border-0" dataSource={data} aria-label="bitcoin trading listings" role="list" template={(data: any) => (
+                                    <ListViewComponent className="border-0" dataSource={data} template={(data: any) => (
                                         <div className="e-list-wrapper flex items-center justify-between">
                                             <div className="flex items-center">
                                                 <span className="e-avatar e-avatar-xsmall e-avatar-circle">
@@ -111,14 +111,14 @@ export default function Sidebar12() {
                                         </div>)}
                                     ></ListViewComponent>
                                     <div className="py-4 px-3">
-                                        <ButtonComponent className="e-outline" content="View More" type="button" aria-label="view more" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-outline" content="View More" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 right-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -127,13 +127,13 @@ export default function Sidebar12() {
                 return (
                     <section className="bg-body">
                         <div id={styles["tracker-sidebar"]} className="float-right" style={{ height: '600px' }}>
-                            <SidebarComponent key={'tracker-sidebar2'} width="256px" ref={sidebar} position="Right" showBackdrop={true} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'tracker-sidebar2'} width="256px" ref={sidebar} position="Right" showBackdrop={true} style={{ display: 'block' }}>
                                 <div className="py-4 vh-100">
                                     <div className="d-flex justify-content-between align-items-center mb-2 px-2 ms-1">
                                         <span className="fs-6 text-body-secondary">Market Cap</span>
-                                        <ButtonComponent className="e-medium e-icons e-more-horizontal-1 e-flat" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-medium e-icons e-more-horizontal-1 e-flat" type="button"></ButtonComponent>
                                     </div>
-                                    <ListViewComponent className="border-0 e-bigger" dataSource={data} aria-label="bitcoin trading listings" role="list" template={(data: any) => (
+                                    <ListViewComponent className="border-0 e-bigger" dataSource={data} template={(data: any) => (
                                         <div className="e-list-wrapper d-flex justify-content-between align-items-center">
                                             <div className="d-flex align-items-center">
                                                 <span className="e-avatar e-avatar-xsmall e-avatar-circle">
@@ -149,14 +149,14 @@ export default function Sidebar12() {
                                         </div>)}
                                     ></ListViewComponent>
                                     <div className="mt-3 ms-2 ps-1">
-                                        <ButtonComponent className="e-outline" content="View More" type="button" aria-label="view more" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-outline" content="View More" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 end-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

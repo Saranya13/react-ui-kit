@@ -128,7 +128,7 @@ export default function Search1() {
                                     placeholder="Search"
                                     focus={() => search.current?.showPopup()}
                                     created={openPopup}
-                                    role="combobox"
+                                   
                                     itemTemplate={(data: any) => (
                                         <div className="flex justify-between pl-6 pr-2 py-3">
                                             <div className="flex items-center">
@@ -179,7 +179,7 @@ export default function Search1() {
                                     placeholder="Search"
                                     focus={() => search.current?.showPopup()}
                                     created={openPopup}
-                                    role="combobox"
+                                   
                                     itemTemplate={(data: any) => (
                                         <div className="d-flex justify-content-between ps-4 py-2 pe-2" style={{ textIndent: 0 }}>
                                             <div className="d-flex align-items-center">

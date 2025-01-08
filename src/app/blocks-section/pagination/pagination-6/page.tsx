@@ -41,13 +41,13 @@ export default function Pagination6() {
                         <div className="px-6">
                             <PagerComponent key={"top-level-pagination1"} className="border-t-0 border-x-0 px-0 py-2 bg-transparent" template={() => (
                                 <div className="!flex justify-end gap-3 sm:gap-4">
-                                    <ButtonComponent className="e-flat rounded-none" iconCss="e-icons e-chevron-left" type="button" aria-label="go to previous page" role="button"></ButtonComponent>
-                                    <DropDownButtonComponent className="e-outline" content="20" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose the page number" role="dropdown button"></DropDownButtonComponent>
-                                    <ButtonComponent className="e-flat rounded-none" iconCss="e-icons e-chevron-right" type="button" aria-label="go to next page" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-flat rounded-none" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
+                                    <DropDownButtonComponent className="e-outline" content="20" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <ButtonComponent className="e-flat rounded-none" iconCss="e-icons e-chevron-right" type="button"></ButtonComponent>
                                     <div className="border-s border-gray-200 dark:border-gray-600 leading-6"></div>
                                     <div>
-                                        <DropDownButtonComponent className="e-outline" iconCss="e-icons e-properties-2" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose more options" role="dropdown button"></DropDownButtonComponent>
-                                        <ButtonComponent className="e-outline ml-2" iconCss="e-icons e-filter" type="button" aria-label="filter options" role="button"></ButtonComponent>
+                                        <DropDownButtonComponent className="e-outline" iconCss="e-icons e-properties-2" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                        <ButtonComponent className="e-outline ml-2" iconCss="e-icons e-filter" type="button"></ButtonComponent>
                                     </div>
                                 </div>)}
                             ></PagerComponent>
@@ -60,12 +60,12 @@ export default function Pagination6() {
                         <div className="px-4">
                             <PagerComponent key={"top-level-pagination2"} className="border-top-0 border-start-0 border-end-0 py-2 px-0" template={() => (
                                 <div className="d-flex justify-content-end gap-2">
-                                    <ButtonComponent className="e-flat rounded-0" iconCss="e-icons e-chevron-left" type="button" aria-label="go to previous page" role="button"></ButtonComponent>
-                                    <DropDownButtonComponent className="e-outline mx-1" content="20" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose the page number" role="dropdown button"></DropDownButtonComponent>
-                                    <ButtonComponent className="e-flat rounded-0" iconCss="e-icons e-chevron-right" type="button" aria-label="go to next page" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-flat rounded-0" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
+                                    <DropDownButtonComponent className="e-outline mx-1" content="20" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <ButtonComponent className="e-flat rounded-0" iconCss="e-icons e-chevron-right" type="button"></ButtonComponent>
                                     <div className="border-start border-secondary lh-lg mx-1 mx-sm-2"></div>
-                                    <DropDownButtonComponent className="e-outline" iconCss="e-icons e-properties-2" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose more options" role="dropdown button"></DropDownButtonComponent>
-                                    <ButtonComponent className="e-outline ms-1 ms-sm-2" iconCss="e-icons e-filter" type="button" aria-label="filter options" role="button"></ButtonComponent>
+                                    <DropDownButtonComponent className="e-outline" iconCss="e-icons e-properties-2" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <ButtonComponent className="e-outline ms-1 ms-sm-2" iconCss="e-icons e-filter" type="button"></ButtonComponent>
                                 </div>)}
                             ></PagerComponent>
                         </div>

@@ -92,7 +92,7 @@ export default function Sidebar3() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["notification-sidebar"]} style={{ height: '700px' }}>
-                            <SidebarComponent key={'notification-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'notification-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="flex flex-col justify-between h-screen">
                                     <div>
                                         <div className="flex flex-col justify-center items-center pt-6">
@@ -104,7 +104,7 @@ export default function Sidebar3() {
                                         </div>
                                         <hr className="m-4 border-gray-200 dark:border-gray-700" />
                                         <div>
-                                            <ListViewComponent className="border-0" dataSource={data} aria-label="main navigation links" role="list" template={(data: any) => (
+                                            <ListViewComponent className="border-0" dataSource={data} template={(data: any) => (
                                                 <div className="e-list-wrapper flex items-center px-2">
                                                     <span className={`e-icons ${data.fontIcon} text-base`}></span>
                                                     <span className="text-base font-normal pl-4">{data.field}</span>
@@ -113,14 +113,14 @@ export default function Sidebar3() {
                                         </div>
                                     </div>
                                     <div className="p-4">
-                                        <ButtonComponent iconCss="e-icons sf-icon-logout-07 text-base" cssClass="e-outline w-full" type="button" content="Logout" aria-label="logout" role="button"></ButtonComponent>
+                                        <ButtonComponent iconCss="e-icons sf-icon-logout-07 text-base" cssClass="e-outline w-full" type="button" content="Logout"></ButtonComponent>
                                     </div>
                                 </div>
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 left-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -129,7 +129,7 @@ export default function Sidebar3() {
                 return (
                     <section className="bg-body">
                         <div id={styles["notification-sidebar"]} style={{ height: '700px' }}>
-                            <SidebarComponent key={'notification-sidebar2'} width="256px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'notification-sidebar2'} width="256px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="d-flex flex-column justify-content-between vh-100">
                                     <div>
                                         <div className="d-flex flex-column justify-content-center align-items-center pt-4 mb-3">
@@ -140,7 +140,7 @@ export default function Sidebar3() {
                                             <p className="mb-0 fs-6 text-body-secondary mt-2">johnwick&#64;123.com</p>
                                         </div>
                                         <div>
-                                            <ListViewComponent cssClass="border-0 e-bigger" dataSource={data} aria-label="main navigation links" role="list" template={(data: any) => (
+                                            <ListViewComponent cssClass="border-0 e-bigger" dataSource={data} template={(data: any) => (
                                                 <div className="e-list-wrapper d-flex align-items-center px-2">
                                                     <span className={`e-icons ${data.fontIcon} fs-6`}></span>
                                                     <span className="fs-6 fw-normal ps-2 ms-1">{data.field}</span>
@@ -149,14 +149,14 @@ export default function Sidebar3() {
                                         </div>
                                     </div>
                                     <div className="p-3">
-                                        <ButtonComponent iconCss="e-icons sf-icon-logout-07 fs-6" cssClass="e-outline w-100" type="button" content="Logout" aria-label="logout" role="button"></ButtonComponent>
+                                        <ButtonComponent iconCss="e-icons sf-icon-logout-07 fs-6" cssClass="e-outline w-100" type="button" content="Logout"></ButtonComponent>
                                     </div>
                                 </div>
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 start-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

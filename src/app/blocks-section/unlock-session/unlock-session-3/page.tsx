@@ -50,19 +50,19 @@ export default function Unlocksession3() {
                                         </p>
                                         <ul className="list-none md:text-lg text-base">
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>70+ components</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>Light and dark themes supported</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>100% automatic layouts</span>
                                             </li>
                                             <li className="flex lg:items-start gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>200+ reusable blocks to build templates easily</span>
                                             </li>
                                         </ul>
@@ -85,15 +85,15 @@ export default function Unlocksession3() {
                                             <form action="#" className="mt-6 mb-6" onSubmit={(event) => event.preventDefault()}>
                                                 <div className="mb-4">
                                                     <label className="block text-sm mb-1 font-medium text-gray-700 dark:text-gray-300">Email</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="email" placeholder="Email" floatLabelType="Never" aria-label="enter your email address" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="email" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                             </form>
                                             <div className="e-bigger">
-                                                <ButtonComponent cssClass="e-primary w-full text-lg" type="submit" aria-label="click to unlock your session" role="button">Unlock your session</ButtonComponent>
+                                                <ButtonComponent cssClass="e-primary w-full text-lg" type="submit">Unlock your session</ButtonComponent>
                                             </div>
                                             <span className="flex items-center justify-center gap-2 mt-7">
                                                 <p className="text-center text-gray-900 dark:text-white">Return to</p>
-                                                <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0" aria-label="sign in" role="link">Sign in</a>
+                                                <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0">Sign in</a>
                                             </span>
                                         </div>
                                     </div>
@@ -150,15 +150,15 @@ export default function Unlocksession3() {
                                     <form action="#" className="mt-4 mb-4" onSubmit={(event) => event.preventDefault()}>
                                         <div className="mb-3">
                                             <label className="form-label mb-1 fw-medium text-dark-emphasis small">Email</label>
-                                            <TextBoxComponent cssClass="e-bigger" className="py-2" type="email" placeholder="Email" floatLabelType="Never" aria-label="enter your email address" role="textbox"></TextBoxComponent>
+                                            <TextBoxComponent cssClass="e-bigger" className="py-2" type="email" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                         </div>
                                     </form>
                                     <div className="e-bigger">
-                                        <ButtonComponent ejs-button className="e-block e-primary" type="submit" aria-label="click to unlock your session" role="button">Unlock your session</ButtonComponent>
+                                        <ButtonComponent ejs-button className="e-block e-primary" type="submit">Unlock your session</ButtonComponent>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-center gap-1 mt-4">
                                         <p className="text-center mb-0 text-body">Return to</p>
-                                        <a href="javascript:void(0);" className="text-primary p-0 text-decoration-none fs-6 fw-medium" aria-label="sign in" role="link">Sign in</a>
+                                        <a href="javascript:void(0);" className="text-primary p-0 text-decoration-none fs-6 fw-medium">Sign in</a>
                                     </div>
                                 </div>
                             </div>

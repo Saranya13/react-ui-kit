@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "copy": "gulp copyFiles"
+    "lint": "next lint"
   },
   "dependencies": {
     "@syncfusion/ej2-react-buttons": "^27.2.4",

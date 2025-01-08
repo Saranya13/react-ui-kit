@@ -69,28 +69,28 @@ export default function Navbar3() {
                                         <span className="text-lg font-semibold text-gray-900 dark:text-white">Company Name</span>
                                     </div>
                                     <div className="flex items-center">
-                                        <ButtonComponent className="sf-icon-notification-bell-02 leading-3 text-base mr-1 sm:mr-2" cssClass="e-flat" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                        <ButtonComponent className="sf-icon-notification-bell-02 leading-3 text-base mr-1 sm:mr-2" cssClass="e-flat" type="button"></ButtonComponent>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 h-7 hidden sm:block mr-2"></div>
-                                        <ButtonComponent className="e-icons e-grid-view hidden sm:block" cssClass="e-flat" type="button" aria-label="grid view" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-icons e-grid-view hidden sm:block" cssClass="e-flat" type="button"></ButtonComponent>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 h-7 hidden sm:block mx-2"></div>
-                                        <ButtonComponent className="e-icons e-people hidden sm:block" cssClass="e-flat" type="button" aria-label="group" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-icons e-people hidden sm:block" cssClass="e-flat" type="button"></ButtonComponent>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 h-7 hidden lg:block mx-2"></div>
                                         <span className="hidden lg:block py-2">
-                                            <DropDownButtonComponent ref={stateDropdown} cssClass="e-flat" items={[{ text: 'New York', iconCss: 'e-icons e-folder' }, { text: 'N. Virginia', iconCss: 'e-icons e-folder' }, { text: 'Washington DC', iconCss: 'e-icons e-folder' }]} type="button" aria-label="choose a state" role="button">N.Virginia</DropDownButtonComponent>
+                                            <DropDownButtonComponent ref={stateDropdown} cssClass="e-flat" items={[{ text: 'New York', iconCss: 'e-icons e-folder' }, { text: 'N. Virginia', iconCss: 'e-icons e-folder' }, { text: 'Washington DC', iconCss: 'e-icons e-folder' }]} type="button">N.Virginia</DropDownButtonComponent>
                                         </span>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 h-7 mx-2 hidden lg:block"></div>
                                         <span className="hidden lg:block py-2">
-                                            <DropDownButtonComponent ref={addressDropdown} cssClass="e-flat" items={[{ text: 'Michael Gough @ 1234-567-935' }, { text: 'Roberta Cases @ 1234-567-292' }]} type="button" aria-label="choose a address" role="button">Bonnie Green @ 1234-567-890</DropDownButtonComponent>
+                                            <DropDownButtonComponent ref={addressDropdown} cssClass="e-flat" items={[{ text: 'Michael Gough @ 1234-567-935' }, { text: 'Roberta Cases @ 1234-567-292' }]} type="button">Bonnie Green @ 1234-567-890</DropDownButtonComponent>
                                         </span>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 h-7 block lg:hidden ms-1 sm:ms-2"></div>
                                         <span id={styles.menu} className="block lg:hidden">
-                                            <MenuComponent hamburgerMode={true} title="" items={[{ text: 'Home' }, { text: 'Demo' }, { text: 'Features' }, { text: 'Shop' }, { text: 'Pages' }, { text: 'Blogs' }]} aria-label="menu items" role="menu"></MenuComponent>
+                                            <MenuComponent hamburgerMode={true} title="" items={[{ text: 'Home' }, { text: 'Demo' }, { text: 'Features' }, { text: 'Shop' }, { text: 'Pages' }, { text: 'Blogs' }]}></MenuComponent>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div className="hidden lg:flex px-4 py-1 bg-gray-100 dark:bg-gray-700 border border-t-0 border-r-0 border-l-0 border-gray-200 dark:border-gray-600">
-                                <MenuComponent items={[{ text: 'Home' }, { text: 'Demo' }, { text: 'Features' }, { text: 'Shop' }, { text: 'Pages' }, { text: 'Blogs' }]} aria-label="menu items" role="menu"></MenuComponent>
+                                <MenuComponent items={[{ text: 'Home' }, { text: 'Demo' }, { text: 'Features' }, { text: 'Shop' }, { text: 'Pages' }, { text: 'Blogs' }]}></MenuComponent>
                             </div>
                         </div>
                     </section>
@@ -105,27 +105,27 @@ export default function Navbar3() {
                                     <h5 className="fw-bold text-body fs-5 mb-0">Company Name</h5>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <ButtonComponent className="sf-icon-notification-bell-01 fs-6 me-0 me-sm-3" cssClass="e-flat" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                    <ButtonComponent className="sf-icon-notification-bell-01 fs-6 me-0 me-sm-3" cssClass="e-flat" type="button"></ButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-sm-block me-3" style={{ height: "24px" }}></div>
-                                    <ButtonComponent className="e-icons e-grid-view d-none d-sm-block e-medium" cssClass="e-flat" type="button" aria-label="grid view" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-icons e-grid-view d-none d-sm-block e-medium" cssClass="e-flat" type="button"></ButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-md-block mx-3" style={{ height: "24px" }}></div>
-                                    <ButtonComponent className="e-icons e-people d-none d-md-block e-medium" cssClass="e-flat" type="button" aria-label="group" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-icons e-people d-none d-md-block e-medium" cssClass="e-flat" type="button"></ButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-lg-block mx-3" style={{ height: "24px" }}></div>
                                     <span className="d-none d-lg-block py-2">
-                                        <DropDownButtonComponent ref={stateDropdown} cssClass="e-flat" items={[{ text: "New York", iconCss: "e-icons e-folder" }, { text: "N. Virginia", iconCss: "e-icons e-folder" }, { text: "Washington DC", iconCss: "e-icons e-folder" }]} type="button" aria-label="choose a state" role="button">N.Virginia</DropDownButtonComponent>
+                                        <DropDownButtonComponent ref={stateDropdown} cssClass="e-flat" items={[{ text: "New York", iconCss: "e-icons e-folder" }, { text: "N. Virginia", iconCss: "e-icons e-folder" }, { text: "Washington DC", iconCss: "e-icons e-folder" }]} type="button">N.Virginia</DropDownButtonComponent>
                                     </span>
                                     <div className="border-end border-secondary-subtle ms-2 ms-sm-3 me-0 me-sm-1" style={{ height: "24px" }}></div>
                                     <span className="d-none d-lg-block ms-2">
-                                        <DropDownButtonComponent ref={addressDropdown} cssClass="e-flat" items={[{ text: "Michael Gough @ 1234-567-935" }, { text: "Roberta Cases @ 1234-567-292" }]} type="button" aria-label="choose an address" role="button">Bonnie Green @ 1234-567-890</DropDownButtonComponent>
+                                        <DropDownButtonComponent ref={addressDropdown} cssClass="e-flat" items={[{ text: "Michael Gough @ 1234-567-935" }, { text: "Roberta Cases @ 1234-567-292" }]} type="button">Bonnie Green @ 1234-567-890</DropDownButtonComponent>
                                     </span>
                                     <span id={styles.menu} className="block d-lg-none">
-                                        <MenuComponent items={[{ text: "Home" }, { text: "Demo" }, { text: "Features" }, { text: "Shop" }, { text: "Pages" }, { text: "Blogs" }]} hamburgerMode={true} title="" aria-label="menu items" role="menu"></MenuComponent>
+                                        <MenuComponent items={[{ text: "Home" }, { text: "Demo" }, { text: "Features" }, { text: "Shop" }, { text: "Pages" }, { text: "Blogs" }]} hamburgerMode={true} title=""></MenuComponent>
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <div className="d-none d-lg-flex px-3 bg-body-tertiary border border-light-subtle border-top-0 border-start-0 border-end-0" style={{ height: "40px", display: "flex", alignItems: "center" }}>
-                            <MenuComponent items={[{ text: "Home" }, { text: "Demo" }, { text: "Features" }, { text: "Shop" }, { text: "Pages" }, { text: "Blogs" }]} aria-label="menu items" role="menu"></MenuComponent>
+                            <MenuComponent items={[{ text: "Home" }, { text: "Demo" }, { text: "Features" }, { text: "Shop" }, { text: "Pages" }, { text: "Blogs" }]}></MenuComponent>
                         </div>
                     </section>
                 );

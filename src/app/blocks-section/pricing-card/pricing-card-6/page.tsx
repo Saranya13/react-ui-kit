@@ -42,7 +42,7 @@ export default function PricingCard6() {
                                 <p className="mt-4 px-4 text-lg font-normal mb-8 sm:max-w-xl lg:max-w-full w-full mx-auto text-center text-gray-700 dark:text-gray-200">Get started in complete confidence. Our 30-day money-back guarantee means it’s risk-free.</p>
                                 <div className="flex items-center justify-center gap-3 mb-12 text-base font-medium text-gray-700 dark:text-gray-200">
                                     <p>Monthly</p>
-                                    <SwitchComponent cssClass="e-bigger" checked={true} aria-label="switch between monthly and yearly pricing plans" role="switch" style={{ width: "44px !important" }}></SwitchComponent>
+                                    <SwitchComponent cssClass="e-bigger" checked={true} style={{ width: "44px !important" }}></SwitchComponent>
                                     <p>Yearly</p>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ export default function PricingCard6() {
                                         <p className="mb-2 text-base text-gray-700 dark:text-gray-200">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent className="w-full text-lg" cssClass="e-outline e-primary" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                        <ButtonComponent className="w-full text-lg" cssClass="e-outline e-primary" content="Choose a plan" type="button"></ButtonComponent>
                                     </div>
                                     <ul className="flex flex-col gap-4 px-6 text-gray-700 dark:text-gray-200 text-base">
                                         <li className="flex items-center gap-3">
@@ -119,7 +119,7 @@ export default function PricingCard6() {
                                         <p className="mb-2 text-base text-gray-700 dark:text-gray-200">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent className="w-full text-lg" cssClass="e-primary" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                        <ButtonComponent className="w-full text-lg" cssClass="e-primary" content="Choose a plan" type="button"></ButtonComponent>
                                     </div>
                                     <ul className="flex flex-col gap-4 px-6 text-gray-700 dark:text-gray-200 text-base">
                                         <li className="flex items-center gap-3">
@@ -171,7 +171,7 @@ export default function PricingCard6() {
                                         <p className="mb-2 text-base text-gray-700 dark:text-gray-200">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent className="w-full text-lg" cssClass="e-outline e-primary" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                        <ButtonComponent className="w-full text-lg" cssClass="e-outline e-primary" content="Choose a plan" type="button"></ButtonComponent>
                                     </div>
                                     <ul className="flex flex-col gap-4 px-6 text-gray-700 dark:text-gray-200 text-base">
                                         <li className="flex items-center gap-3">
@@ -217,7 +217,7 @@ export default function PricingCard6() {
                                 <p className="mb-4 mx-3 px-1 px-md-5 px-lg-0 text-light-emphasis">Get started in complete confidence. Our 30-day money-back guarantee means it’s risk-free.</p>
                                 <div className="d-flex justify-content-center align-items-center gap-2 mb-5 pt-2">
                                     <p className="m-0 small text-light-emphasis">Monthly</p>
-                                    <SwitchComponent cssClass="e-bigger" checked={true} aria-label="switch between monthly and yearly pricing plans" role="switch" style={{ width: "37px" }}></SwitchComponent>
+                                    <SwitchComponent cssClass="e-bigger" checked={true} style={{ width: "37px" }}></SwitchComponent>
                                     <p className="m-0 small text-light-emphasis">Yearly</p>
                                 </div>
                             </div>
@@ -242,7 +242,7 @@ export default function PricingCard6() {
                                             <p className="mt-1 mb-0 text-light-emphasis fs-6">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                         </div>
                                         <div className="e-card-actions e-bigger">
-                                            <ButtonComponent cssClass="e-outline e-primary e-block" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-outline e-primary e-block" content="Choose a plan" type="button"></ButtonComponent>
                                         </div>
                                         <ul className="d-flex flex-column gap-3 fs-6 mt-2 mb-4 p-0 ps-3">
                                             <li className="d-flex align-items-center gap-3 m-0 text-light-emphasis">
@@ -297,7 +297,7 @@ export default function PricingCard6() {
                                             <p className="mt-1 mb-0 text-light-emphasis fs-6">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                         </div>
                                         <div className="e-card-actions e-bigger">
-                                            <ButtonComponent cssClass="e-primary e-block" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-block" content="Choose a plan" type="button"></ButtonComponent>
                                         </div>
                                         <ul className="d-flex flex-column gap-3 fs-6 mt-2 mb-4 p-0 ps-3">
                                             <li className="d-flex align-items-center gap-3 m-0 text-light-emphasis">
@@ -351,7 +351,7 @@ export default function PricingCard6() {
                                             <p className="mt-1 mb-0 text-light-emphasis fs-6">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                         </div>
                                         <div className="e-card-actions e-bigger">
-                                            <ButtonComponent cssClass="e-outline e-primary e-block" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-outline e-primary e-block" content="Choose a plan" type="button"></ButtonComponent>
                                         </div>
                                         <ul className="d-flex flex-column gap-3 fs-6 mt-2 mb-4 p-0 ps-3">
                                             <li className="d-flex align-items-center gap-3 m-0 text-light-emphasis">

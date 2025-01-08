@@ -60,21 +60,21 @@ export default function Checkout1() {
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
                                                     <div>
                                                         <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">First name</label>
-                                                        <TextBoxComponent cssClass="e-bigger" type="text" placeholder="First name" floatLabelType="Never" aria-label="enter the first name" role="textbox"></TextBoxComponent>
+                                                        <TextBoxComponent cssClass="e-bigger" type="text" placeholder="First name" floatLabelType="Never"></TextBoxComponent>
                                                     </div>
                                                     <div>
                                                         <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">Last name</label>
-                                                        <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Last name" floatLabelType="Never" aria-label="enter the last name" role="textbox"></TextBoxComponent>
+                                                        <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Last name" floatLabelType="Never"></TextBoxComponent>
                                                     </div>
                                                 </div>
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
                                                     <div>
                                                         <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">Country</label>
-                                                        <DropDownListComponent cssClass="e-bigger" placeholder="Country" aria-label="choose a country" role="listbox"></DropDownListComponent>
+                                                        <DropDownListComponent cssClass="e-bigger" placeholder="Country"></DropDownListComponent>
                                                     </div>
                                                     <div>
                                                         <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">City</label>
-                                                        <DropDownListComponent cssClass="e-bigger" placeholder="City" aria-label="choose a city" role="listbox"></DropDownListComponent>
+                                                        <DropDownListComponent cssClass="e-bigger" placeholder="City"></DropDownListComponent>
                                                     </div>
                                                 </div>
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
@@ -82,31 +82,31 @@ export default function Checkout1() {
                                                         <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">Phone number</label>
                                                         <div className="flex space-x-2">
                                                             <div className="w-2/5">
-                                                                <DropDownListComponent cssClass="e-bigger" placeholder="+1" aria-label="choose a country code" role="listbox"></DropDownListComponent>
+                                                                <DropDownListComponent cssClass="e-bigger" placeholder="+1"></DropDownListComponent>
                                                             </div>
                                                             <div className="w-4/5">
-                                                                <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" promptChar=" " placeholder="432 432 4321" aria-label="enter the phone number" role="textbox"></MaskedTextBoxComponent>
+                                                                <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" promptChar=" " placeholder="432 432 4321"></MaskedTextBoxComponent>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">Email</label>
-                                                        <TextBoxComponent cssClass="e-bigger" type="email" placeholder="Email" floatLabelType="Never" aria-label="enter the email address" role="textbox"></TextBoxComponent>
+                                                        <TextBoxComponent cssClass="e-bigger" type="email" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                                     </div>
                                                 </div>
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
                                                     <div>
                                                         <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">Company name</label>
-                                                        <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Company name" floatLabelType="Never" aria-label="enter the company name" role="textbox"></TextBoxComponent>
+                                                        <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Company name" floatLabelType="Never"></TextBoxComponent>
                                                     </div>
                                                     <div>
                                                         <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">VAT number</label>
-                                                        <TextBoxComponent cssClass="e-bigger" type="text" placeholder="VAT number" floatLabelType="Never" aria-label="enter the VAT number" role="textbox"></TextBoxComponent>
+                                                        <TextBoxComponent cssClass="e-bigger" type="text" placeholder="VAT number" floatLabelType="Never"></TextBoxComponent>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="mt-5">
-                                                <ButtonComponent cssClass="e-flat" type="button" content="Add new address" iconCss="e-icons e-plus" aria-label="add new address" role="button"></ButtonComponent>
+                                                <ButtonComponent cssClass="e-flat" type="button" content="Add new address" iconCss="e-icons e-plus"></ButtonComponent>
                                             </div>
                                         </form>
                                         <div>
@@ -115,37 +115,37 @@ export default function Checkout1() {
                                                 <div className="e-card pt-4 shadow-none border-transparent hover:border-primary-600 dark:hover:border-primary-400">
                                                     <div className="e-card-content">
                                                         <div className="e-bigger">
-                                                            <RadioButtonComponent label="Credit card" name="payment" aria-label="credit card" role="radio"></RadioButtonComponent>
+                                                            <RadioButtonComponent label="Credit card" name="payment"></RadioButtonComponent>
                                                         </div>
                                                         <div className="mt-1 ml-7 text-gray-500 dark:text-gray-400">Pay with your credit card</div>
                                                     </div>
                                                     <div className="e-card-actions">
-                                                        <ButtonComponent cssClass="e-flat mr-3" type="button" iconCss="e-icons e-trash e-medium" content="Delete" aria-label="delete" role="button"></ButtonComponent>
-                                                        <ButtonComponent cssClass="e-flat" type="button" iconCss="e-icons e-edit e-medium" content="Edit" aria-label="edit" role="button"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat mr-3" type="button" iconCss="e-icons e-trash e-medium" content="Delete"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat" type="button" iconCss="e-icons e-edit e-medium" content="Edit"></ButtonComponent>
                                                     </div>
                                                 </div>
                                                 <div className="e-card pt-4 shadow-none border-transparent hover:border-primary-600 dark:hover:border-primary-400">
                                                     <div className="e-card-content">
                                                         <div className="e-bigger">
-                                                            <RadioButtonComponent label="Payment on delivery" name="payment" checked={true} aria-label="payment on delivery" role="radio"></RadioButtonComponent>
+                                                            <RadioButtonComponent label="Payment on delivery" name="payment" checked={true}></RadioButtonComponent>
                                                         </div>
                                                         <div className="mt-1 ml-7 text-gray-500 dark:text-gray-400">+ $12 payment processing fee</div>
                                                     </div>
                                                     <div className="e-card-actions">
-                                                        <ButtonComponent cssClass="e-flat mr-3" type="button" iconCss="e-icons e-trash e-medium" content="Delete" aria-label="delete" role="button"></ButtonComponent>
-                                                        <ButtonComponent cssClass="e-flat" type="button" iconCss="e-icons e-edit e-medium" content="Edit" aria-label="edit" role="button"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat mr-3" type="button" iconCss="e-icons e-trash e-medium" content="Delete"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat" type="button" iconCss="e-icons e-edit e-medium" content="Edit"></ButtonComponent>
                                                     </div>
                                                 </div>
                                                 <div className="e-card pt-4 shadow-none border-transparent hover:border-primary-600 dark:hover:border-primary-400">
                                                     <div className="e-card-content">
                                                         <div className="e-bigger">
-                                                            <RadioButtonComponent label="PayPal account" name="payment" aria-label="paypal account" role="radio"></RadioButtonComponent>
+                                                            <RadioButtonComponent label="PayPal account" name="payment"></RadioButtonComponent>
                                                         </div>
                                                         <div className="mt-1 ml-7 text-gray-500 dark:text-gray-400">Connect to your account</div>
                                                     </div>
                                                     <div className="e-card-actions">
-                                                        <ButtonComponent cssClass="e-flat mr-3" type="button" iconCss="e-icons e-trash e-medium" content="Delete" aria-label="delete" role="button"></ButtonComponent>
-                                                        <ButtonComponent cssClass="e-flat" type="button" iconCss="e-icons e-edit e-medium" content="Edit" aria-label="edit" role="button"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat mr-3" type="button" iconCss="e-icons e-trash e-medium" content="Delete"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat" type="button" iconCss="e-icons e-edit e-medium" content="Edit"></ButtonComponent>
                                                     </div>
                                                 </div>
                                             </div>
@@ -156,7 +156,7 @@ export default function Checkout1() {
                                                 <div className="e-card pt-4 pb-1 shadow-none border-transparent hover:border-primary-600 dark:hover:border-primary-400">
                                                     <div className="e-card-content">
                                                         <div className="e-bigger">
-                                                            <RadioButtonComponent label="$15 - DHL fast delivery" name="delivery" aria-label="$15 - DHL fast delivery" role="radio"></RadioButtonComponent>
+                                                            <RadioButtonComponent label="$15 - DHL fast delivery" name="delivery"></RadioButtonComponent>
                                                         </div>
                                                         <div className="mt-1 ml-7 text-gray-500 dark:text-gray-400">Pay with your credit card</div>
                                                     </div>
@@ -164,7 +164,7 @@ export default function Checkout1() {
                                                 <div className="e-card pt-4 pb-1 shadow-none border-transparent hover:border-primary-600 dark:hover:border-primary-400">
                                                     <div className="e-card-content">
                                                         <div className="e-bigger">
-                                                            <RadioButtonComponent label="Free delivery - FedEx" name="delivery" checked={true} aria-label="FedEx - Free delivery" role="radio"></RadioButtonComponent>
+                                                            <RadioButtonComponent label="Free delivery - FedEx" name="delivery" checked={true}></RadioButtonComponent>
                                                         </div>
                                                         <div className="mt-1 ml-7 text-gray-500 dark:text-gray-400">+ $12 payment processing fee</div>
                                                     </div>
@@ -172,7 +172,7 @@ export default function Checkout1() {
                                                 <div className="e-card pt-4 pb-1 shadow-none border-transparent hover:border-primary-600 dark:hover:border-primary-400">
                                                     <div className="e-card-content">
                                                         <div className="e-bigger">
-                                                            <RadioButtonComponent label="Express delivery" name="delivery" aria-label="Express delivery" role="radio"></RadioButtonComponent>
+                                                            <RadioButtonComponent label="Express delivery" name="delivery"></RadioButtonComponent>
                                                         </div>
                                                         <div className="mt-1 ml-7 text-gray-500 dark:text-gray-400">Connect to your account</div>
                                                     </div>
@@ -183,10 +183,10 @@ export default function Checkout1() {
                                             <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">Enter a gift card, voucher or promotional code</label>
                                             <div className="grid md:flex gap-4 md:gap-6 w-full">
                                                 <div className="lg:w-full sm:w-full md:w-11/12">
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Promo Code" floatLabelType="Never" aria-label="enter the promo code" role="textbox" />
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Promo Code" floatLabelType="Never" />
                                                 </div>
                                                 <div className="e-bigger">
-                                                    <ButtonComponent cssClass="w-full md:w-max e-outline" content=" Apply" type="button" aria-label="apply" role="button"></ButtonComponent>
+                                                    <ButtonComponent cssClass="w-full md:w-max e-outline" content=" Apply" type="button"></ButtonComponent>
                                                 </div>
                                             </div>
                                         </div>
@@ -221,7 +221,7 @@ export default function Checkout1() {
                                                 </div>
                                             </div>
                                             <div className="mt-6">
-                                                <ButtonComponent cssClass="w-full e-primary" type="sublit" aria-label="proceed to payment" role="button">Proceed to payment</ButtonComponent>
+                                                <ButtonComponent cssClass="w-full e-primary" type="sublit">Proceed to payment</ButtonComponent>
                                             </div>
                                             <p className="text-center text-sm mt-3 text-gray-500 dark:text-gray-400">
                                                 One or more items in your cart require an account{" "}
@@ -255,21 +255,21 @@ export default function Checkout1() {
                                             <div className="row g-3">
                                                 <div className="col-md-6">
                                                     <label className="text-dark-emphasis fw-medium small mb-1">First name</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="firstName" placeholder="First name" floatLabelType="Never" aria-label="enter the first name" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="firstName" placeholder="First name" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <label className="text-dark-emphasis fw-medium small mb-1">Last name</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="lastName" placeholder="Last name" floatLabelType="Never" aria-label="enter the last name" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="lastName" placeholder="Last name" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                             </div>
                                             <div className="row g-3 mt-0">
                                                 <div className="col-md-6">
                                                     <label className="text-dark-emphasis fw-medium small mb-1">Country</label>
-                                                    <DropDownListComponent cssClass="e-bigger" placeholder="Country" aria-label="choose a country" role="listbox"></DropDownListComponent>
+                                                    <DropDownListComponent cssClass="e-bigger" placeholder="Country"></DropDownListComponent>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <label className="text-dark-emphasis fw-medium small mb-1">City</label>
-                                                    <DropDownListComponent cssClass="e-bigger" placeholder="City" aria-label="choose a city" role="listbox"></DropDownListComponent>
+                                                    <DropDownListComponent cssClass="e-bigger" placeholder="City"></DropDownListComponent>
                                                 </div>
                                             </div>
                                             <div className="row g-3 mt-0">
@@ -277,30 +277,30 @@ export default function Checkout1() {
                                                     <label className="text-dark-emphasis fw-medium small mb-1">Phone number</label>
                                                     <div className="d-flex gap-2">
                                                         <div className="w-25">
-                                                            <DropDownListComponent cssClass="e-bigger" placeholder="+1" aria-label="choose a country code" role="listbox"></DropDownListComponent>
+                                                            <DropDownListComponent cssClass="e-bigger" placeholder="+1"></DropDownListComponent>
                                                         </div>
                                                         <div className="flex-grow-1">
-                                                            <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" promptChar=" " placeholder="432 432 4321" aria-label="enter the phone number" role="textbox"></MaskedTextBoxComponent>
+                                                            <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" promptChar=" " placeholder="432 432 4321"></MaskedTextBoxComponent>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <label className="text-dark-emphasis fw-medium small mb-1">Email</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="email" name="email" placeholder="Email" floatLabelType="Never" aria-label="enter the email address" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="email" name="email" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                             </div>
                                             <div className="row g-3 mt-0">
                                                 <div className="col-md-6">
                                                     <label className="text-dark-emphasis fw-medium small mb-1">Company name</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="companyName" placeholder="Company name" floatLabelType="Never" aria-label="enter the company name" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="companyName" placeholder="Company name" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <label className="text-dark-emphasis fw-medium small mb-1">VAT number</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="vatNumber" placeholder="VAT number" floatLabelType="Never" aria-label="enter the VAT number" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="vatNumber" placeholder="VAT number" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                             </div>
                                             <div className="mt-3">
-                                                <ButtonComponent cssClass="e-flat" content="Add new address" iconCss="e-icons e-plus" type="button" aria-label="add new address" role="button"></ButtonComponent>
+                                                <ButtonComponent cssClass="e-flat" content="Add new address" iconCss="e-icons e-plus" type="button"></ButtonComponent>
                                             </div>
                                         </form>
                                         <div>
@@ -310,13 +310,13 @@ export default function Checkout1() {
                                                     <div className="e-card h-100">
                                                         <div className="e-card-content pb-2">
                                                             <div className="e-bigger">
-                                                                <RadioButtonComponent label="Credit card" name="payment" aria-label="credit card" role="radio"></RadioButtonComponent>
+                                                                <RadioButtonComponent label="Credit card" name="payment"></RadioButtonComponent>
                                                             </div>
                                                             <div className="text-dark-emphasis mt-1 ps-1 ms-4">Pay with your credit card</div>
                                                         </div>
                                                         <div className="e-card-actions">
-                                                            <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash" type="button" content="Delete" aria-label="delete" role="button"></ButtonComponent>
-                                                            <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit" type="button" content="Edit" aria-label="edit" role="button"></ButtonComponent>
+                                                            <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash" type="button" content="Delete"></ButtonComponent>
+                                                            <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit" type="button" content="Edit"></ButtonComponent>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -324,13 +324,13 @@ export default function Checkout1() {
                                                     <div className="e-card h-100">
                                                         <div className="e-card-content pb-2">
                                                             <div className="e-bigger">
-                                                                <RadioButtonComponent label="Payment on delivery" name="payment" checked={true} aria-label="payment on delivery" role="radio"></RadioButtonComponent>
+                                                                <RadioButtonComponent label="Payment on delivery" name="payment" checked={true}></RadioButtonComponent>
                                                             </div>
                                                             <div className="text-dark-emphasis mt-1 ms-4 ps-1">+ $12 payment processing fee</div>
                                                         </div>
                                                         <div className="e-card-actions">
-                                                            <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash" type="button" content="Delete" aria-label="delete" role="button"></ButtonComponent>
-                                                            <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit" type="button" content="Edit" aria-label="edit" role="button"></ButtonComponent>
+                                                            <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash" type="button" content="Delete"></ButtonComponent>
+                                                            <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit" type="button" content="Edit"></ButtonComponent>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -338,13 +338,13 @@ export default function Checkout1() {
                                                     <div className="e-card h-100">
                                                         <div className="e-card-content pb-2">
                                                             <div className="e-bigger">
-                                                                <RadioButtonComponent label="PayPal account" name="payment" aria-label="paypal account" role="radio"></RadioButtonComponent>
+                                                                <RadioButtonComponent label="PayPal account" name="payment"></RadioButtonComponent>
                                                             </div>
                                                             <div className="text-dark-emphasis mt-1 ms-4 ps-1">Connect to your account</div>
                                                         </div>
                                                         <div className="e-card-actions">
-                                                            <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash" type="button" content="Delete" aria-label="delete" role="button"></ButtonComponent>
-                                                            <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit" type="button" content="Edit" aria-label="edit" role="button"></ButtonComponent>
+                                                            <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash" type="button" content="Delete"></ButtonComponent>
+                                                            <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit" type="button" content="Edit"></ButtonComponent>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -357,7 +357,7 @@ export default function Checkout1() {
                                                     <div className="e-card h-100">
                                                         <div className="e-card-content">
                                                             <div className="e-bigger">
-                                                                <RadioButtonComponent label="$15 - DHL fast delivery" name="delivery" aria-label="$15 - DHL fast delivery" role="radio"></RadioButtonComponent>
+                                                                <RadioButtonComponent label="$15 - DHL fast delivery" name="delivery"></RadioButtonComponent>
                                                             </div>
                                                             <div className="text-dark-emphasis mt-1 ms-4 ps-1">Get it by tomorrow</div>
                                                         </div>
@@ -367,7 +367,7 @@ export default function Checkout1() {
                                                     <div className="e-card h-100">
                                                         <div className="e-card-content">
                                                             <div className="e-bigger">
-                                                                <RadioButtonComponent label="Free delivery - FedEx" name="delivery" checked={true} aria-label="FedEx - Free delivery" role="radio"></RadioButtonComponent>
+                                                                <RadioButtonComponent label="Free delivery - FedEx" name="delivery" checked={true}></RadioButtonComponent>
                                                             </div>
                                                             <div className="text-dark-emphasis mt-1 ms-4 ps-1">Get it by Friday, 13 Dec 2023</div>
                                                         </div>
@@ -377,7 +377,7 @@ export default function Checkout1() {
                                                     <div className="e-card h-100">
                                                         <div className="e-card-content">
                                                             <div className="e-bigger">
-                                                                <RadioButtonComponent label="$49 - Express delivery" name="delivery" aria-label="$49 - Express delivery" role="radio"></RadioButtonComponent>
+                                                                <RadioButtonComponent label="$49 - Express delivery" name="delivery"></RadioButtonComponent>
                                                             </div>
                                                             <div className="text-dark-emphasis mt-1 ms-4 ps-1">Get it today</div>
                                                         </div>
@@ -389,10 +389,10 @@ export default function Checkout1() {
                                             <label className="text-dark-emphasis fw-medium small mb-1">Enter a gift card, voucher or promotional code</label>
                                             <div className="row g-3 d-md-flex">
                                                 <div className="col-md-10">
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Promo Code" floatLabelType="Never" aria-label="enter the promo code" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Promo Code" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="col-md-auto e-bigger">
-                                                    <ButtonComponent cssClass="e-secondary e-block px-4" type="button" aria-label="apply" role="button">Apply</ButtonComponent>
+                                                    <ButtonComponent cssClass="e-secondary e-block px-4" type="button">Apply</ButtonComponent>
                                                 </div>
                                             </div>
                                         </div>
@@ -427,7 +427,7 @@ export default function Checkout1() {
                                                 </div>
                                             </div>
                                             <div className="mt-3">
-                                                <ButtonComponent cssClass="e-block e-primary" type="submit" aria-label="proceed to payment" role="button">Proceed to payment</ButtonComponent>
+                                                <ButtonComponent cssClass="e-block e-primary" type="submit">Proceed to payment</ButtonComponent>
                                             </div>
                                             <p className="text-center text-sm text-dark-emphasis mt-3">
                                                 One or more items in your cart require an account{" "}

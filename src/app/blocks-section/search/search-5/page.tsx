@@ -124,16 +124,16 @@ export default function Search5() {
                                     placeholder="Search"
                                     focus={() => search.current?.showPopup()}
                                     created={openPopup}
-                                    role="combobox"
+                                   
                                     headerTemplate={() => (
                                         <div>
                                             <div className="p-5 border-b border-gray-200 dark:border-gray-600 mb-2">
-                                                <ChipListComponent id="chip-filter" cssClass="!border-gray-200 !dark:border-gray-600" aria-label="filter options" role="option">
+                                                <ChipListComponent id="chip-filter" cssClass="!border-gray-200 !dark:border-gray-600">
                                                     <ChipsDirective>
-                                                        <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Ticket Id" aria-label="filter by ticket id" role="button" />
-                                                        <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Status" aria-label="filter by status" role="button" />
-                                                        <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Priority" aria-label="filter by priority" role="button" />
-                                                        <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Created by" aria-label="filter by created by" role="button" />
+                                                        <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Ticket Id" />
+                                                        <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Status" />
+                                                        <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Priority" />
+                                                        <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Created by" />
                                                     </ChipsDirective>
                                                 </ChipListComponent>
                                             </div>
@@ -174,16 +174,16 @@ export default function Search5() {
                                     placeholder="Search"
                                     focus={() => search.current?.showPopup()}
                                     created={openPopup}
-                                    role="combobox"
+                                   
                                     headerTemplate={() => (
                                         <div>
                                             <div className="p-3 border-bottom border-light-subtle mb-2">
-                                                <ChipListComponent id="chip-filter" cssClass="p-3" aria-label="filter options" role="option">
+                                                <ChipListComponent id="chip-filter" cssClass="p-3">
                                                     <ChipsDirective>
-                                                        <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Ticket Id" aria-label="filter by ticket id" role="button" />
-                                                        <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Status" aria-label="filter by status" role="button" />
-                                                        <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Priority" aria-label="filter by priority" role="button" />
-                                                        <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Created by" aria-label="filter by created by" role="button" />
+                                                        <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Ticket Id" />
+                                                        <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Status" />
+                                                        <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Priority" />
+                                                        <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Created by" />
                                                     </ChipsDirective>
                                                 </ChipListComponent>
                                             </div>

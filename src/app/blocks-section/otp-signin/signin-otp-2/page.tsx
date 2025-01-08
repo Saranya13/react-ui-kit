@@ -54,15 +54,15 @@ export default function SigninOTP2() {
                                             <p className="text-md text-center text-gray-700 dark:text-gray-300">We have sent an OTP to your mobile number</p>
                                             <form action="#" className="mt-6" onSubmit={(event) => event.preventDefault()}>
                                                 <div className="flex justify-evenly e-bigger">
-                                                    <OtpInputComponent aria-label="enter the OTP" role="group"></OtpInputComponent>
+                                                    <OtpInputComponent></OtpInputComponent>
                                                 </div>
                                                 <div className="e-bigger mt-6">
-                                                    <ButtonComponent className="e-primary w-full" type="submit" aria-label="verify OTP" role="button">Verify</ButtonComponent>
+                                                    <ButtonComponent className="e-primary w-full" type="submit">Verify</ButtonComponent>
                                                 </div>
                                             </form>
                                             <span className="flex items-center justify-center gap-2 mt-7">
                                                 <p className="text-center text-gray-900 dark:text-white">Not yet received?</p>
-                                                <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base !p-0" aria-label="resend OTP" role="link">Resend OTP</a>
+                                                <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base !p-0">Resend OTP</a>
                                             </span>
                                         </div>
                                     </div>
@@ -89,15 +89,15 @@ export default function SigninOTP2() {
                                         <p className="text-center text-light-emphasis mb-0">We have sent an OTP to your mobile number</p>
                                         <form action="#" className="mt-4" onSubmit={(event) => event.preventDefault()}>
                                             <div className="d-flex justify-content-evenly e-bigger">
-                                                <OtpInputComponent aria-label="enter the OTP" role="group"></OtpInputComponent>
+                                                <OtpInputComponent></OtpInputComponent>
                                             </div>
                                             <div className="mt-4 e-bigger">
-                                                <ButtonComponent className="e-block e-primary" type="submit" aria-label="verify OTP" role="button">Verify</ButtonComponent>
+                                                <ButtonComponent className="e-block e-primary" type="submit">Verify</ButtonComponent>
                                             </div>
                                         </form>
                                         <div className="d-flex align-items-center justify-content-center gap-2 mt-4">
                                             <p className="text-center text-body mb-0">Not yet received?</p>
-                                            <a href="javascript:void(0);" className="text-primary p-0 text-decoration-none fs-6 fw-medium" aria-label="resend OTP" role="link">Resend OTP</a>
+                                            <a href="javascript:void(0);" className="text-primary p-0 text-decoration-none fs-6 fw-medium">Resend OTP</a>
                                         </div>
                                     </div>
                                 </div>

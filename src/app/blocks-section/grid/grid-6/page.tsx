@@ -192,7 +192,7 @@ export default function Grid6() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="mx-auto w-full py-12 sm:px-6 px-4">
-                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={668} allowSorting={true} allowFiltering={true} filterSettings={{ type: "Menu" }} role="grid">
+                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={668} allowSorting={true} allowFiltering={true} filterSettings={{ type: "Menu" }}>
                                 <ColumnsDirective>
                                     <ColumnDirective type="checkbox" isPrimaryKey={true} textAlign="Center" width="40" />
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="143" />
@@ -211,7 +211,7 @@ export default function Grid6() {
                                     />
                                     <ColumnDirective field="invoiceNumber" headerText="Invoice Number" width="150"
                                         template={(data: any) => (
-                                            <a className="text-primary-700 dark:text-primary-500 font-medium" href="javascript:void(0);" aria-label="invoice number" role="link">{data.invoiceNumber}</a>
+                                            <a className="text-primary-700 dark:text-primary-500 font-medium" href="javascript:void(0);">{data.invoiceNumber}</a>
                                         )}
                                     />
                                     <ColumnDirective field="description" headerText="Description" width="214" />
@@ -246,7 +246,7 @@ export default function Grid6() {
                 return (
                     <section className="bg-body">
                         <div className="w-100 py-5 px-3 px-sm-4 mx-auto">
-                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={668} allowSorting={true} allowFiltering={true} filterSettings={{ type: "Menu" }} role="grid">
+                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={668} allowSorting={true} allowFiltering={true} filterSettings={{ type: "Menu" }}>
                                 <ColumnsDirective>
                                     <ColumnDirective type="checkbox" isPrimaryKey={true} textAlign="Center" width="40" />
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="155" />
@@ -265,7 +265,7 @@ export default function Grid6() {
                                     />
                                     <ColumnDirective field="invoiceNumber" headerText="Invoice Number" width="165"
                                         template={(data: any) => (
-                                            <a className="text-primary fw-medium text-decoration-none" href="javascript:void(0);" aria-label="invoice number" role="link">{data.invoiceNumber}</a>
+                                            <a className="text-primary fw-medium text-decoration-none" href="javascript:void(0);">{data.invoiceNumber}</a>
                                         )}
                                     />
                                     <ColumnDirective field="description" headerText="Description" width="214" />

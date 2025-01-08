@@ -187,7 +187,7 @@ export default function Grid8() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="mx-auto w-full py-10 sm:px-6 px-4">
-                            <GridComponent dataSource={data} key={"grid-1"} rowHeight={44} width="100%" height={440} allowGrouping={true} groupSettings={{ showDropArea: true }} role="grid">
+                            <GridComponent dataSource={data} key={"grid-1"} rowHeight={44} width="100%" height={440} allowGrouping={true} groupSettings={{ showDropArea: true }}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="name" headerText="Sales Representative" width="156" />
                                     <ColumnDirective field="totalSales" headerText="Total Revenue" width="124" format="C0" textAlign="Right"
@@ -210,7 +210,7 @@ export default function Grid8() {
                                     <ColumnDirective field="progressBar" headerText="% of Target" width="196"
                                         template={(data: any) => (
                                             <div className="flex flex-col w-48 pr-2.5">
-                                                <ProgressBarComponent id={data.progressBar.id} key={data.progressBar.id} progressThickness={8} trackThickness={8} value={data.progressBar.value} width={"182"} progressColor={data.progressBar.value === 100 ? "#15803D" : "#4F46E5"} aria-label="target percentage" role="progressbar" />
+                                                <ProgressBarComponent id={data.progressBar.id} key={data.progressBar.id} progressThickness={8} trackThickness={8} value={data.progressBar.value} width={"182"} progressColor={data.progressBar.value === 100 ? "#15803D" : "#4F46E5"} />
                                                 <p className="text-xs text-end">{data.progressBar.value.toFixed(1)}%</p>
                                             </div>
                                         )}
@@ -246,7 +246,7 @@ export default function Grid8() {
                 return (
                     <section className="bg-body">
                         <div className="py-4 px-4 px-sm-6 mx-auto">
-                            <GridComponent dataSource={data} key={"grid-2"} rowHeight={44} width="100%" height="440" allowGrouping={true} groupSettings={{ showDropArea: true }} role="grid">
+                            <GridComponent dataSource={data} key={"grid-2"} rowHeight={44} width="100%" height="440" allowGrouping={true} groupSettings={{ showDropArea: true }}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="name" headerText="Sales Representative" width="165" />
                                     <ColumnDirective field="totalSales" headerText="Total Revenue" width="124" format="C2" textAlign="Right"
@@ -269,7 +269,7 @@ export default function Grid8() {
                                     <ColumnDirective field="progressBar" headerText="% of Target" width="210"
                                         template={(data: any) => (
                                             <div className="d-flex flex-column w-48 pr-2.5">
-                                                <ProgressBarComponent id={data.progressBar.id} key={data.progressBar.id} progressThickness={8} trackThickness={8} value={data.progressBar.value} width={"182"} progressColor={data.progressBar.value === 100 ? "#15803D" : "#4F46E5"} aria-label="target percentage" role="progressbar" />
+                                                <ProgressBarComponent id={data.progressBar.id} key={data.progressBar.id} progressThickness={8} trackThickness={8} value={data.progressBar.value} width={"182"} progressColor={data.progressBar.value === 100 ? "#15803D" : "#4F46E5"} />
                                                 <p className="text-end small">{data.progressBar.value.toFixed(1)}%</p>
                                             </div>
                                         )}

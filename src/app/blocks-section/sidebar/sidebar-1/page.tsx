@@ -62,14 +62,14 @@ export default function Sidebar1() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["simple-sidebar"]} style={{ height: '710px' }}>
-                            <SidebarComponent key={'simple-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'simple-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="h-screen">
                                     <div className="flex items-center py-4 px-3">
                                         <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         <span className="text-lg font-bold text-gray-900 dark:text-white ml-3">Company Name</span>
                                     </div>
                                     <div className="mt-1">
-                                        <ListViewComponent cssClass="border-0" dataSource={data} aria-label="main navigation links" role="list" template={(data: any) => (
+                                        <ListViewComponent cssClass="border-0" dataSource={data} template={(data: any) => (
                                             <div className="e-list-wrapper flex items-center justify-between pr-2">
                                                 <span className="flex items-center">
                                                     <span className={`e-icons ${data.fontIcon} text-base`}></span>
@@ -80,7 +80,7 @@ export default function Sidebar1() {
                                         ></ListViewComponent>
                                     </div>
                                     <hr className="border-gray-200 dark:border-gray-700 m-4" />
-                                    <AccordionComponent className="bg-transparent !border-0" expandMode="Single" role="button">
+                                    <AccordionComponent className="bg-transparent !border-0" expandMode="Single">
                                         <AccordionItemsDirective>
                                             <AccordionItemDirective iconCss="e-icons e-notes e-medium" cssClass="!border-0" header={() => <div className="text-base font-normal pl-2">News</div>}></AccordionItemDirective>
                                             <AccordionItemDirective iconCss="e-icons sf-icon-announcement-01 text-base" cssClass="!border-0" header={() => <div className="text-base font-normal pl-2">Events</div>}></AccordionItemDirective>
@@ -103,7 +103,7 @@ export default function Sidebar1() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 left-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -112,14 +112,14 @@ export default function Sidebar1() {
                 return (
                     <section className="bg-body">
                         <div id={styles["simple-sidebar"]} style={{ height: '710px' }}>
-                            <SidebarComponent key={'simple-sidebar2'} width="256px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'simple-sidebar2'} width="256px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="min-vh-100">
                                     <div className="d-flex align-items-center p-3">
                                         <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         <span className="fs-5 ms-2 fw-bold text-body lh-sm">Company Name</span>
                                     </div>
                                     <div className="mt-1">
-                                        <ListViewComponent cssClass="border-0 e-bigger" dataSource={data} aria-label="main navigation links" role="list" template={(data: any) => (
+                                        <ListViewComponent cssClass="border-0 e-bigger" dataSource={data} template={(data: any) => (
                                             <div className="e-list-wrapper px-1 d-flex justify-content-between align-items-center">
                                                 <span className="d-flex align-items-center">
                                                     <span className={`e-icons ${data.fontIcon} fs-6`}></span>
@@ -132,7 +132,7 @@ export default function Sidebar1() {
                                         ></ListViewComponent>
                                     </div>
                                     <p className="m-3 fs-6 text-body-secondary">Others</p>
-                                    <AccordionComponent className="bg-transparent border-0" expandMode="Single" role="button">
+                                    <AccordionComponent className="bg-transparent border-0" expandMode="Single">
                                         <AccordionItemsDirective>
                                             <AccordionItemDirective iconCss="e-icons e-notes e-medium" cssClass="border-0" header={() => <div className="fs-6 fw-normal ps-1">News</div>}></AccordionItemDirective>
                                             <AccordionItemDirective iconCss="e-icons sf-icon-announcement-01 fs-6" cssClass="border-0" header={() => <div className="fs-6 fw-normal ps-1">Events</div>}></AccordionItemDirective>
@@ -155,7 +155,7 @@ export default function Sidebar1() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 start-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

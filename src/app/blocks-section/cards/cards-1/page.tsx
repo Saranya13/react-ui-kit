@@ -49,7 +49,7 @@ export default function Card1() {
                                             <p className="text-base mb-2 dark:text-gray-200">Discover exciting travel destinations that offer unique experiences and breathtaking landscapes, from serene beaches to rugged mountains.</p>
                                         </div>
                                         <div className="e-card-actions leading-9 w-full">
-                                            <ButtonComponent cssClass="e-block" type="button" aria-label="view details about adventure awaits" role="button">View Details</ButtonComponent>
+                                            <ButtonComponent cssClass="e-block" type="button">View Details</ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -63,7 +63,7 @@ export default function Card1() {
                                             <p className="text-base mb-2 dark:text-gray-200">Dive into a world of culinary delights with our selection of gourmet recipes and cooking tips, great for both seasoned chefs and home cooks.</p>
                                         </div>
                                         <div className="e-card-actions leading-9 w-full">
-                                            <ButtonComponent cssClass="e-block" type="button" aria-label="view details about gourmet delights" role="button">View Details</ButtonComponent>
+                                            <ButtonComponent cssClass="e-block" type="button">View Details</ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@ export default function Card1() {
                                             <p className="text-base mb-2 dark:text-gray-200">Unlock the secrets to enhanced productivity with practical tips and tools designed to help you stay organized and focused.</p>
                                         </div>
                                         <div className="e-card-actions leading-9 w-full">
-                                            <ButtonComponent cssClass="e-block" type="button" aria-label="view details about productivity boost" role="button">View Details</ButtonComponent>
+                                            <ButtonComponent cssClass="e-block" type="button">View Details</ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@ export default function Card1() {
                                                 <p className="fs-6 mb-0">Discover exciting travel destinations that offer unique experiences and breathtaking landscapes, from serene beaches to rugged mountains.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger pb-4 w-100 lh-lg">
-                                                <ButtonComponent cssClass="e-block e-outline" type="button" aria-label="view details about adventure awaits" role="button">View Details</ButtonComponent>
+                                                <ButtonComponent cssClass="e-block e-outline" type="button">View Details</ButtonComponent>
                                             </div>
                                         </div>
                                     </div>
@@ -117,7 +117,7 @@ export default function Card1() {
                                                 <p className="fs-6 mb-0">Dive into a world of culinary delights with our selection of gourmet recipes and cooking tips, great for both seasoned chefs and home cooks.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger pb-4 w-100 lh-lg">
-                                                <ButtonComponent cssClass="e-block e-outline" type="button" aria-label="view details about gourmet delights" role="button">View Details</ButtonComponent>
+                                                <ButtonComponent cssClass="e-block e-outline" type="button">View Details</ButtonComponent>
                                             </div>
                                         </div>
                                     </div>
@@ -133,7 +133,7 @@ export default function Card1() {
                                                 <p className="fs-6 mb-0">Unlock the secrets to enhanced productivity with practical tips and tools designed to help you stay organized and focused.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger pb-4 w-100 lh-lg">
-                                                <ButtonComponent cssClass="e-block e-outline" type="button" aria-label="view details about productivity boost" role="button">View Details</ButtonComponent>
+                                                <ButtonComponent cssClass="e-block e-outline" type="button">View Details</ButtonComponent>
                                             </div>
                                         </div>
                                     </div>

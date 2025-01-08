@@ -161,11 +161,11 @@ export default function Chat2() {
                                     </div>
                                     <div className="e-appbar-spacer"></div>
                                     <div className="flex items-center gap-3">
-                                        <ButtonComponent cssClass="e-flat sf-icon-phone-01 leading-3 text-base sm:block hidden" type="button" aria-label="audio call" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-flat e-icons e-video sm:block hidden" type="button" aria-label="video call" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat sf-icon-phone-01 leading-3 text-base sm:block hidden" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-video sm:block hidden" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button"></ButtonComponent>
                                         <div className="border-l h-6 border-gray-200 dark:border-gray-600 sm:block hidden"></div>
-                                        <ButtonComponent cssClass="e-flat e-icons e-show-hide-panel text-base leading-3 sm:block hidden" type="button" aria-label="show or hide panel" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-show-hide-panel text-base leading-3 sm:block hidden" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +173,7 @@ export default function Chat2() {
                                 <div className="w-full sm:w-4/6 pb-6">
                                     <div className="flex items-center flex-col pt-7 bg-white dark:bg-gray-900">
                                         <span className="e-badge e-badge-pill e-badge-secondary border border-gray-200 e-small">Wednesday, Sep 18th</span>
-                                        <ListViewComponent cssClass="!border-0 px-2 sm:px-4 sm:pr-7 py-4" dataSource={data} width="100%" height="100%" aria-label="chat conversations" role="list"
+                                        <ListViewComponent cssClass="!border-0 px-2 sm:px-4 sm:pr-7 py-4" dataSource={data} width="100%" height="100%"
                                             template={(data: any) => {
                                                 const senderTemplate = (
                                                     <div className="flex justify-end ml-auto sm:mr-3 gap-3 items-start w-4/5 sm:w-9/12 lg:w-11/12">
@@ -210,15 +210,15 @@ export default function Chat2() {
                                         ></ListViewComponent>
                                     </div>
                                     <div className="e-bigger w-full text-base px-4 px-4 sm:pl-6 sm:pr-12">
-                                        <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")} aria-label="enter a message" role="textbox"></TextBoxComponent>
+                                        <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")}></TextBoxComponent>
                                     </div>
                                 </div>
                                 <div className="w-full sm:w-2/6 sm:border-s border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
                                     <div className="flex justify-between items-center px-3 py-2 mx-4 sm:mx-0 border-b border-gray-200 dark:border-gray-800">
                                         <p className="text-base font-semibold text-gray-900 dark:text-gray-50">Translation</p>
-                                        <DropDownButtonComponent cssClass="e-flat" content="Spanish" type="button" beforeOpen={(event: any) => (event.cancel = true)} aria-label="select language" role="button"></DropDownButtonComponent>
+                                        <DropDownButtonComponent cssClass="e-flat" content="Spanish" type="button" beforeOpen={(event: any) => (event.cancel = true)}></DropDownButtonComponent>
                                     </div>
-                                    <ListViewComponent cssClass="!border-0 px-1 pt-1" dataSource={dataTranslate} width="100%" height="100%" aria-label="translated chat conversations" role="list"
+                                    <ListViewComponent cssClass="!border-0 px-1 pt-1" dataSource={dataTranslate} width="100%" height="100%"
                                         template={(data: any) => {
                                             const senderTemplate = (
                                                 <div className="flex justify-start gap-2 items-start">
@@ -276,11 +276,11 @@ export default function Chat2() {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center gap-3">
-                                        <ButtonComponent cssClass="e-flat sf-icon-phone-01 fs-6 d-none d-sm-block" type="button" aria-label="audio call" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-flat e-icons e-video d-none d-sm-block" type="button" aria-label="video call" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat sf-icon-phone-01 fs-6 d-none d-sm-block" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-video d-none d-sm-block" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button"></ButtonComponent>
                                         <div className="border-start border-secondary-subtle d-none d-sm-block" style={{ height: "24px" }}></div>
-                                        <ButtonComponent cssClass="e-flat e-icons e-show-hide-panel d-none d-sm-block" type="button" aria-label="show or hide panel" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-show-hide-panel d-none d-sm-block" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +288,7 @@ export default function Chat2() {
                                 <div className="col-12 col-sm-8 pb-4">
                                     <div className="d-flex flex-column align-items-center pt-4 bg-body">
                                         <span className="e-badge e-badge-pill border px-2">Wednesday, Sep 18th</span>
-                                        <ListViewComponent cssClass="border-0 px-2 px-sm-3 pe-md-4 pe-sm-3 pb-4 pt-3 bg-body" dataSource={data} width="100%" height="100%" aria-label="chat conversations" role="list"
+                                        <ListViewComponent cssClass="border-0 px-2 px-sm-3 pe-md-4 pe-sm-3 pb-4 pt-3 bg-body" dataSource={data} width="100%" height="100%"
                                             template={(data: any) => {
                                                 const senderTemplate = (
                                                     <div className="d-flex justify-content-end pe-sm-3 ms-auto align-items-start w-75">
@@ -325,7 +325,7 @@ export default function Chat2() {
                                         ></ListViewComponent>
                                     </div>
                                     <div className="e-bigger ms-sm-4 ms-3 me-md-5 me-3">
-                                        <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")} aria-label="enter a message" role="textbox"></TextBoxComponent>
+                                        <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")}></TextBoxComponent>
                                     </div>
                                 </div>
                                 <div className="col-12 col-sm-4 bg-body d-flex">
@@ -333,9 +333,9 @@ export default function Chat2() {
                                     <div className="h-100">
                                         <div className="d-flex justify-content-between align-items-center p-2 mx-3 mx-sm-0 border-bottom">
                                             <p className="h6 mb-0 text-body">Translation</p>
-                                            <DropDownButtonComponent cssClass="e-flat" content="Spanish" type="button" beforeOpen={(event: any) => (event.cancel = true)} aria-label="select language" role="button"></DropDownButtonComponent>
+                                            <DropDownButtonComponent cssClass="e-flat" content="Spanish" type="button" beforeOpen={(event: any) => (event.cancel = true)}></DropDownButtonComponent>
                                         </div>
-                                        <ListViewComponent cssClass="border-0 p-2 pe-4 overflow-auto" dataSource={dataTranslate} width="100%" height="100%" aria-label="translated chat conversations" role="list"
+                                        <ListViewComponent cssClass="border-0 p-2 pe-4 overflow-auto" dataSource={dataTranslate} width="100%" height="100%"
                                             template={(data: any) => {
                                                 const senderTemplate = (
                                                     <div className="d-flex justify-content-start gap-2 align-items-start">

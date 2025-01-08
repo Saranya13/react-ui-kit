@@ -106,9 +106,9 @@ export default function List1() {
                     <section className="bg-white dark:bg-gray-900">
                         <div className="flex items-center justify-center min-h-screen">
                             <div className="lg:max-w-xl w-full m-auto p-4 md:p-6 lg:p-8">
-                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={data} aria-label="list of to-do tasks" role="list" template={(data: any) => (
+                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={data} template={(data: any) => (
                                     <div className="e-list-wrapper border-b border-gray-200 dark:border-gray-600 !px-1 sm:!px-3 !py-4 flex items-start">
-                                        <CheckBoxComponent cssClass="pt-1" checked={data.completed} onChange={() => toggleItemCompletion(data.id)} aria-label="select tasks in the to-do list" role="checkbox"></CheckBoxComponent>
+                                        <CheckBoxComponent cssClass="pt-1" checked={data.completed} onChange={() => toggleItemCompletion(data.id)}></CheckBoxComponent>
                                         <div className="ml-3">
                                             <span className={`${data.completed ? "line-through text-gray-700 dark:text-gray-200" : "text-gray-900 dark:text-white"} e-list-item-header font-medium text-sm`}>{data.header}</span>
                                             {data.id === 3 && (
@@ -137,9 +137,9 @@ export default function List1() {
                     <section className="bg-body">
                         <div className="d-flex align-items-center justify-content-center min-vh-100">
                             <div className="container-lg w-100 m-auto p-3 p-md-4" style={width}>
-                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={data} aria-label="list of to-do tasks" role="list" template={(data: any) => (
+                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={data} template={(data: any) => (
                                     <div className="e-list-wrapper px-1 px-sm-2 py-3 d-flex align-items-start">
-                                        <CheckBoxComponent cssClass="e-bigger pt-1" checked={data.completed} onChange={() => toggleItemCompletion(data.id)} aria-label="select tasks in the to-do list" role="checkbox"></CheckBoxComponent>
+                                        <CheckBoxComponent cssClass="e-bigger pt-1" checked={data.completed} onChange={() => toggleItemCompletion(data.id)}></CheckBoxComponent>
                                         <div className="ms-2 ps-1 d-flex flex-column w-100">
                                             <span>
                                                 <span className={`${data.completed ? "text-decoration-line-through" : ""} e-list-item-header fw-medium`}>{data.header}</span>

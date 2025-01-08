@@ -82,7 +82,7 @@ export default function Sidebar8() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["user-contact-sidebar"]} style={{ height: '680px' }}>
-                            <SidebarComponent key={'user-contact-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'user-contact-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="flex items-center p-3 justify-between">
                                     <div className="flex items-center">
                                         <span className="e-avatar e-avatar-circle e-avatar-small">
@@ -93,10 +93,10 @@ export default function Sidebar8() {
                                             <p className="mb-0 text-gray-900 dark:text-white">johnwick&#64;123.com</p>
                                         </div>
                                     </div>
-                                    <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat e-large px-1" type="button" aria-label="view additional profile settings" role="button"></ButtonComponent>
+                                    <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat e-large px-1" type="button"></ButtonComponent>
                                 </div>
                                 <div>
-                                    <AccordionComponent className="bg-transparent !border-0" role="button">
+                                    <AccordionComponent className="bg-transparent !border-0">
                                         <AccordionItemsDirective>
                                             <AccordionItemDirective iconCss="e-icons e-notes e-medium" cssClass="!border-0" header={()=><div className="text-base font-normal pl-2">News</div>}></AccordionItemDirective>
                                             <AccordionItemDirective iconCss="e-icons sf-icon-announcement-01 text-base" cssClass="!border-0" header={()=><div className="text-base font-normal pl-2">Events</div>}></AccordionItemDirective>
@@ -107,7 +107,7 @@ export default function Sidebar8() {
                                 </div>
                                 <hr className="my-4 mx-3 border-gray-200 dark:border-gray-700" />
                                 <p className="text-base text-gray-900 dark:text-white pb-3 px-3">Active Contacts</p>
-                                <ListViewComponent className="border-0" dataSource={data} aria-label="view active contacts" role="list" template={(data: any)=>(
+                                <ListViewComponent className="border-0" dataSource={data} template={(data: any)=>(
                                     <div className="e-list-wrapper flex items-center">
                                         <span className="flex items-center">
                                             <span className="e-avatar e-avatar-xsmall e-avatar-circle">
@@ -121,7 +121,7 @@ export default function Sidebar8() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 left-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -130,7 +130,7 @@ export default function Sidebar8() {
                 return (
                     <section className="bg-body">
                         <div id={styles["user-contact-sidebar"]} style={{ height: '700px' }}>
-                            <SidebarComponent key={'user-contact-sidebar2'} width="256px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'user-contact-sidebar2'} width="256px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="d-flex justify-content-between align-items-center px-3 pb-3 mt-4">
                                     <div className="d-flex align-items-center">
                                         <span className="e-avatar e-avatar-small e-avatar-circle">
@@ -141,10 +141,10 @@ export default function Sidebar8() {
                                             <p className="mb-0 text-body-secondary">johnwick&#64;123.com</p>
                                         </div>
                                     </div>
-                                    <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat" type="button" aria-label="view additional profile settings" role="button"></ButtonComponent>
+                                    <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat" type="button"></ButtonComponent>
                                 </div>
                                 <div>
-                                    <AccordionComponent className="border-0 bg-transparent" role="button">
+                                    <AccordionComponent className="border-0 bg-transparent">
                                         <AccordionItemsDirective>
                                             <AccordionItemDirective iconCss="e-icons e-notes e-medium" header={() => <div className="fs-6 fw-normal ps-1">News</div>} cssClass="border-0"></AccordionItemDirective>
                                             <AccordionItemDirective iconCss="e-icons sf-icon-announcement-01 fs-6" header={() => <div className="fs-6 fw-normal ps-1">Events</div>} cssClass="border-0"></AccordionItemDirective>
@@ -155,7 +155,7 @@ export default function Sidebar8() {
                                 </div>
                                 <hr className="mx-3 opacity-100 border-light-subtle" />
                                 <p className="fs-6 text-body-secondary m-3">Active Contacts</p>
-                                <ListViewComponent className="border-0 e-bigger pb-3" dataSource={data} aria-label="view active contacts" role="list" template={(data: any) => (
+                                <ListViewComponent className="border-0 e-bigger pb-3" dataSource={data} template={(data: any) => (
                                     <div className="e-list-wrapper d-flex justify-content-between align-items-center ps-1">
                                         <span className="d-flex align-items-center">
                                             <span className="e-avatar e-avatar-xsmall e-avatar-circle">
@@ -169,7 +169,7 @@ export default function Sidebar8() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 start-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

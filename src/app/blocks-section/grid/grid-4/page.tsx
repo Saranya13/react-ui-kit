@@ -237,15 +237,15 @@ export default function Grid4() {
                                 <div className="w-full sm:w-72">
                                     <div className="e-input-group w-full">
                                         <span className="e-input-group-icon e-icons e-search"></span>
-                                        <input className="e-input" type="text" placeholder="Search" aria-label="enter contact details" role="textbox" />
+                                        <input className="e-input" type="text" placeholder="Search" />
                                     </div>
                                 </div>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={668} clipMode="EllipsisWithTooltip" role="grid">
+                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={668} clipMode="EllipsisWithTooltip">
                                 <ColumnsDirective>
                                     <ColumnDirective field="contactId" headerText="Contact ID" width="90"
                                         template={(data: any) => (
-                                            <a className="text-primary-700 dark:text-primary-500 font-medium" href="javascript:void(0);" aria-label="contact ID" role="link">{data.contactId}</a>
+                                            <a className="text-primary-700 dark:text-primary-500 font-medium" href="javascript:void(0);">{data.contactId}</a>
                                         )}
                                     />
                                     <ColumnDirective field="profile" headerText="Profile" textAlign="Left" width="264"
@@ -321,15 +321,15 @@ export default function Grid4() {
                                 <div className="col-12 col-sm-6 col-lg-4">
                                     <div className="e-input-group w-100">
                                         <span className="e-input-group-icon e-icons e-search border-end-0"></span>
-                                        <input className="e-input form-control" type="text" placeholder="Search" aria-label="enter contact details" role="textbox" />
+                                        <input className="e-input form-control" type="text" placeholder="Search" />
                                     </div>
                                 </div>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={668} clipMode="EllipsisWithTooltip" role="grid">
+                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={668} clipMode="EllipsisWithTooltip">
                                 <ColumnsDirective>
                                     <ColumnDirective field="contactId" headerText="Contact ID" width="100"
                                         template={(data: any) => (
-                                            <a className="text-primary fw-medium text-decoration-none" href="javascript:void(0);" aria-label="contact ID" role="link">{data.contactId}</a>
+                                            <a className="text-primary fw-medium text-decoration-none" href="javascript:void(0);">{data.contactId}</a>
                                         )}
                                     />
                                     <ColumnDirective field="profile" headerText="Profile" textAlign="Left" width="264"

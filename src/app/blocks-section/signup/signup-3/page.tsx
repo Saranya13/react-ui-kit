@@ -50,19 +50,19 @@ export default function SignUp3() {
                                         </p>
                                         <ul className="list-none md:text-lg text-base">
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>70+ components</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>Light and dark themes supported</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>100% automatic layouts</span>
                                             </li>
                                             <li className="flex lg:items-start gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>200+ reusable blocks to build templates easily</span>
                                             </li>
                                         </ul>
@@ -83,25 +83,25 @@ export default function SignUp3() {
                                             <form action="#" className="mb-6" onSubmit={(event) => event.preventDefault()}>
                                                 <div className="mb-4">
                                                     <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Name" floatLabelType="Never" aria-label="enter your name" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Name" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="mb-4">
                                                     <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="email" placeholder="Email" floatLabelType="Never" aria-label="enter your email address" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="email" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="mb-4 relative">
                                                     <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="password" placeholder="Password" floatLabelType="Never" aria-label="enter your email password" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="password" placeholder="Password" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="flex items-start md:items-center justify-start mb-6">
-                                                    <CheckBoxComponent cssClass="e-bigger md:mt-0 mt-1" aria-label="agree with terms and privacy policy" role="checkbox"></CheckBoxComponent>
+                                                    <CheckBoxComponent cssClass="e-bigger md:mt-0 mt-1"></CheckBoxComponent>
                                                     <span className="pl-3 text-base text-gray-900 dark:text-white">I agree with{" "}
-                                                        <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0" aria-label="read the terms" role="link">terms</a>{" "}and{" "}
-                                                        <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0" aria-label="read the privacy policy" role="link">privacy policy</a>
+                                                        <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0">terms</a>{" "}and{" "}
+                                                        <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0">privacy policy</a>
                                                     </span>
                                                 </div>
                                                 <div className="e-bigger">
-                                                    <ButtonComponent cssClass="w-full text-base e-primary" type="submit" aria-label="sign up" role="button">Sign up</ButtonComponent>
+                                                    <ButtonComponent cssClass="w-full text-base e-primary" type="submit">Sign up</ButtonComponent>
                                                 </div>
                                             </form>
                                         </div>
@@ -111,24 +111,24 @@ export default function SignUp3() {
                                                 <hr className="w-full absolute border-gray-200 dark:border-gray-600" />
                                             </div>
                                             <div className="flex items-center justify-center pt-10 space-x-4">
-                                                <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit" aria-label="sign in with google account" role="button">
+                                                <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit">
                                                     <Image src="/assets/images/common/brand-logos/png/google.png" width={20} height={20} alt="google logo" />
                                                 </ButtonComponent>
-                                                <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit" aria-label="sign in with facebook" role="button">
+                                                <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit">
                                                     <Image src="/assets/images/common/brand-logos/png/facebook.png" width={20} height={20} alt="facebook logo" />
                                                 </ButtonComponent>
-                                                <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit" aria-label="sign in with twitter account" role="button">
+                                                <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit">
                                                     <svg className="svg-icon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M0 0.617188L5.81975 8.93442L0.302812 15.3829H2.26965L6.70223 10.1918L10.3302 15.3829H16L9.81975 6.53788L14.8724 0.617188H12.9373L8.94593 5.28337L5.68709 0.617188H0ZM2.75415 2.07645H4.94881L13.2632 13.9236H11.0541L2.75415 2.07645Z" />
                                                     </svg>
                                                 </ButtonComponent>
-                                                <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit" aria-label="sign in with microsoft account" role="button">
+                                                <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit">
                                                     <Image src="/assets/images/common/brand-logos/png/microsoft.png" width={20} height={20} alt="microsoft logo" />
                                                 </ButtonComponent>
                                             </div>
                                             <span className="flex items-center justify-center gap-2 mt-5">
                                                 <p className="text-center text-base text-gray-900 dark:text-white">Already have an account?</p>
-                                                <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0" aria-label="sign in" role="link">Sign in</a>
+                                                <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0">Sign in</a>
                                             </span>
                                         </div>
                                     </div>
@@ -183,25 +183,25 @@ export default function SignUp3() {
                                     <form action="#" className="mt-4 mb-4" onSubmit={(event) => event.preventDefault()}>
                                         <div className="mb-3">
                                             <label className="form-label mb-1 fw-medium text-dark-emphasis small">Name</label>
-                                            <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Name" aria-label="enter your name" role="textbox"></TextBoxComponent>
+                                            <TextBoxComponent cssClass="e-bigger" type="text" placeholder="Name"></TextBoxComponent>
                                         </div>
                                         <div className="mb-3">
                                             <label className="form-label mb-1 fw-medium text-dark-emphasis small">Email</label>
-                                            <TextBoxComponent cssClass="e-bigger" type="email" placeholder="Email" aria-label="enter your email address" role="textbox"></TextBoxComponent>
+                                            <TextBoxComponent cssClass="e-bigger" type="email" placeholder="Email"></TextBoxComponent>
                                         </div>
                                         <div className="mb-3">
                                             <label className="form-label mb-1 fw-medium text-dark-emphasis small">Password</label>
-                                            <TextBoxComponent cssClass="e-bigger" type="password" placeholder="Password" aria-label="enter your email password" role="textbox"></TextBoxComponent>
+                                            <TextBoxComponent cssClass="e-bigger" type="password" placeholder="Password"></TextBoxComponent>
                                         </div>
                                         <div className="mb-4">
-                                            <CheckBoxComponent cssClass="e-bigger" aria-label="agree with terms and privacy policy" role="checkbox"></CheckBoxComponent>
+                                            <CheckBoxComponent cssClass="e-bigger"></CheckBoxComponent>
                                             <span className="ms-2 text-body">I agree with{" "}
-                                                <a href="javascript:void(0);" className="text-primary fs-6 px-0 text-decoration-none" style={{ paddingTop: '1px' }} aria-label="read the terms" role="link">terms</a>{" "}and{" "}
-                                                <a href="javascript:void(0);" className="text-primary fs-6 px-0 text-decoration-none" style={{ paddingTop: '1px' }} aria-label="read the privacy policy" role="link">privacy policy</a>
+                                                <a href="javascript:void(0);" className="text-primary fs-6 px-0 text-decoration-none" style={{ paddingTop: '1px' }}>terms</a>{" "}and{" "}
+                                                <a href="javascript:void(0);" className="text-primary fs-6 px-0 text-decoration-none" style={{ paddingTop: '1px' }}>privacy policy</a>
                                             </span>
                                         </div>
                                         <div className="e-bigger">
-                                            <ButtonComponent className="w-100" cssClass="e-primary" type="submit" aria-label="sign up" role="button">Sign up</ButtonComponent>
+                                            <ButtonComponent className="w-100" cssClass="e-primary" type="submit">Sign up</ButtonComponent>
                                         </div>
                                     </form>
                                     <div className="d-flex justify-content-center align-items-center position-relative mt-4">
@@ -209,24 +209,24 @@ export default function SignUp3() {
                                         <hr className="w-100 border-light-subtle opacity-100" />
                                     </div>
                                     <div className="d-flex justify-content-center mt-3 gap-3">
-                                        <ButtonComponent cssClass="e-outline" type="submit" aria-label="sign in with google account" role="button">
+                                        <ButtonComponent cssClass="e-outline" type="submit">
                                             <Image src="/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
                                         </ButtonComponent>
-                                        <ButtonComponent cssClass="e-outline" type="submit" aria-label="sign in with facebook account" role="button">
+                                        <ButtonComponent cssClass="e-outline" type="submit">
                                             <Image src="/assets/images/common/brand-logos/png/facebook.png" width={24} height={24} alt="facebook logo" />
                                         </ButtonComponent>
-                                        <ButtonComponent cssClass="e-outline" type="submit" aria-label="sign in with twitter account" role="button">
+                                        <ButtonComponent cssClass="e-outline" type="submit">
                                             <svg className="svg-icon" width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M0 0.617188L5.81975 8.93442L0.302812 15.3829H2.26965L6.70223 10.1918L10.3302 15.3829H16L9.81975 6.53788L14.8724 0.617188H12.9373L8.94593 5.28337L5.68709 0.617188H0ZM2.75415 2.07645H4.94881L13.2632 13.9236H11.0541L2.75415 2.07645Z" />
                                             </svg>
                                         </ButtonComponent>
-                                        <ButtonComponent cssClass="e-outline" type="submit" aria-label="sign in with microsoft account" role="button">
+                                        <ButtonComponent cssClass="e-outline" type="submit">
                                             <Image src="/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
                                         </ButtonComponent>
                                     </div>
                                     <span className="d-flex align-items-center justify-content-center gap-1 mt-3">
                                         <p className="text-center justify-center text-body mb-0">Already have an account?</p>
-                                        <a href="javascript:void(0);" className="text-primary py-0 text-decoration-none fs-6 fw-medium" aria-label="sign in" role="link">Sign in</a>
+                                        <a href="javascript:void(0);" className="text-primary py-0 text-decoration-none fs-6 fw-medium">Sign in</a>
                                     </span>
                                 </div>
                             </div>

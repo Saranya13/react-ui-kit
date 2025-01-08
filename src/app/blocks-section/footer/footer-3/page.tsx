@@ -45,8 +45,8 @@ export default function Footer3() {
                                     <p className="text-sm sm:text-base mt-2 text-gray-500 dark:text-gray-400">Never miss out on the latest trends, offers, and expert advice</p>
                                 </div>
                                 <div className="flex sm:flex-row flex-col items-center e-bigger gap-4 lg:w-96 md:w-4/5">
-                                    <TextBoxComponent className="e-bigger w-full" type="text" placeholder="Enter your email" floatLabelType="Never" aria-label="enter your email address" role="textbox"></TextBoxComponent>
-                                    <ButtonComponent className="w-full sm:w-28 text-base e-primary" type="button" content="Subscribe" aria-label="click to subscribe" role="button"></ButtonComponent>
+                                    <TextBoxComponent className="e-bigger w-full" type="text" placeholder="Enter your email" floatLabelType="Never"></TextBoxComponent>
+                                    <ButtonComponent className="w-full sm:w-28 text-base e-primary" type="button" content="Subscribe"></ButtonComponent>
                                 </div>
                             </div>
                             <div className="flex sm:flex-row flex-col gap-3 justify-between items-center pt-4 sm:py-7 border-t border-gray-200 dark:border-gray-600">
@@ -69,8 +69,8 @@ export default function Footer3() {
                                     <p className="mb-0 text-body-secondary">Never miss out on the latest trends, offers, and expert advice</p>
                                 </div>
                                 <div className="e-bigger d-flex flex-column flex-sm-row align-items-lg-center gap-3 col-md-8 col-lg-4">
-                                    <TextBoxComponent className="flex-grow-1" type="text" floatLabelType="Never" placeholder="Enter your email" aria-label="enter your email address" role="textbox"></TextBoxComponent>
-                                    <ButtonComponent className="flex-grow-1 flex-sm-grow-0 e-primary" content="Subscribe" type="button" aria-label="click to subscribe" role="button"></ButtonComponent>
+                                    <TextBoxComponent className="flex-grow-1" type="text" floatLabelType="Never" placeholder="Enter your email"></TextBoxComponent>
+                                    <ButtonComponent className="flex-grow-1 flex-sm-grow-0 e-primary" content="Subscribe" type="button"></ButtonComponent>
                                 </div>
                             </div>
                             <div className="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 border-top border-light-subtle pt-3 mt-2 mt-sm-0 pb-sm-3">

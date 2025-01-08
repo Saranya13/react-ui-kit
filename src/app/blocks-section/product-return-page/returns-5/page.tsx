@@ -84,7 +84,7 @@ export default function ReturnBlock5() {
                             <p className="mb-3 font-medium text-gray-900 dark:text-white">Your request has been successfully registered.</p>
                             <p className="sm:mb-6 mb-5 text-sm text-gray-700 dark:text-gray-300">We have successfully received your return request. As we process it, you can monitor the status of your order.</p>
                             <div className="flex justify-end">
-                                <ButtonComponent className="w-full sm:max-w-max" type="button" aria-label="view status" role="button">View Status</ButtonComponent>
+                                <ButtonComponent className="w-full sm:max-w-max" type="button">View Status</ButtonComponent>
                             </div>
                         </div>
                     </section>
@@ -108,7 +108,7 @@ export default function ReturnBlock5() {
                             <p className="h6 mb-2 fw-bold text-body">Your request has been successfully registered.</p>
                             <p className="mb-4 mb-sm-3 text-body-emphasis">We have successfully received your return request. As we process it, you can monitor the status of your order.</p>
                             <div className="d-flex justify-content-end">
-                                <ButtonComponent className="e-outline flex-grow-1 flex-sm-grow-0" type="button" aria-label="view status" role="button">View Status</ButtonComponent>
+                                <ButtonComponent className="e-outline flex-grow-1 flex-sm-grow-0" type="button">View Status</ButtonComponent>
                             </div>
                         </div>
                     </section>

@@ -69,9 +69,9 @@ export default function Grid9() {
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="mx-auto w-full py-12 sm:px-6 px-4">
                             <div className="flex justify-end items-center mb-6">
-                                <ButtonComponent cssClass="e-primary w-max" content="Edit Permissions" iconCss="e-icons e-edit" iconPosition="Left" type="button" aria-label="edit permissions" role="button"></ButtonComponent>
+                                <ButtonComponent cssClass="e-primary w-max" content="Edit Permissions" iconCss="e-icons e-edit" iconPosition="Left" type="button"></ButtonComponent>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={1117} rowHeight={44} allowGrouping={true} groupSettings={groupSettings} gridLines="Both" role="grid">
+                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={1117} rowHeight={44} allowGrouping={true} groupSettings={groupSettings} gridLines="Both">
                                 <ColumnsDirective>
                                     <ColumnDirective field="category" headerText="Category" width="120" />
                                     <ColumnDirective field="permission" headerText="Permission" width="230" textAlign="Left" />
@@ -121,9 +121,9 @@ export default function Grid9() {
                     <section className="bg-body">
                         <div className="py-5 px-4 px-sm-6 mx-auto">
                             <div className="d-flex justify-content-end align-items-center mb-4">
-                                <ButtonComponent cssClass="e-primary" content="Edit Permissions" iconCss="e-icons e-edit" iconPosition="Left" type="button" aria-label="edit permissions" role="button"></ButtonComponent>
+                                <ButtonComponent cssClass="e-primary" content="Edit Permissions" iconCss="e-icons e-edit" iconPosition="Left" type="button"></ButtonComponent>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={1117} rowHeight={44} allowGrouping={true} groupSettings={groupSettings} gridLines="Both" role="grid">
+                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={1117} rowHeight={44} allowGrouping={true} groupSettings={groupSettings} gridLines="Both">
                                 <ColumnsDirective>
                                     <ColumnDirective field="category" headerText="Category" width="140" />
                                     <ColumnDirective field="permission" headerText="Permission" textAlign="Left" width="220" />

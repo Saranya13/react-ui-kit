@@ -108,17 +108,17 @@ export default function Chat1() {
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <ButtonComponent cssClass="e-flat e-icons e-search text-base leading-3 sm:block hidden" type="button" aria-label="search" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-search text-base leading-3 sm:block hidden" type="button"></ButtonComponent>
                                         <div className="border-l h-6 border-gray-200 dark:border-gray-600 sm:block hidden"></div>
-                                        <ButtonComponent cssClass="e-flat sf-icon-phone-01 text-base leading-3 sm:block hidden" type="button" aria-label="audio call" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-flat e-icons e-video sm:block hidden" type="button" aria-label="video call" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat sf-icon-phone-01 text-base leading-3 sm:block hidden" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-video sm:block hidden" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
                             <div className="flex items-center flex-col pt-7 pb-2 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
                                 <span className="e-badge e-badge-pill e-badge-secondary border border-gray-200 e-small">Wednesday, Sep 18th</span>
-                                <ListViewComponent cssClass="!border-0 px-2 sm:px-4 sm:pr-7 lg:pr-12 py-4" dataSource={data} width="100%" height="100%" aria-label="chat conversations" role="list"
+                                <ListViewComponent cssClass="!border-0 px-2 sm:px-4 sm:pr-7 lg:pr-12 py-4" dataSource={data} width="100%" height="100%"
                                     template={(data: any) => {
                                         const senderTemplate = (
                                             <div className="flex justify-end ml-auto sm:mr-3 gap-3 items-start w-4/5">
@@ -155,7 +155,7 @@ export default function Chat1() {
                                 ></ListViewComponent>
                             </div>
                             <div className="e-bigger w-full text-base px-4 sm:pl-6 sm:pr-12 lg:pr-16 lg:mr-1">
-                                <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")} aria-label="enter a message" role="textbox"></TextBoxComponent>
+                                <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")}></TextBoxComponent>
                             </div>
                         </div>
                     </section>
@@ -176,18 +176,18 @@ export default function Chat1() {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center gap-3">
-                                        <ButtonComponent cssClass="e-flat e-icons e-search d-none d-sm-block" type="button" aria-label="search" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-search d-none d-sm-block" type="button"></ButtonComponent>
                                         <div className="border-start border-secondary-subtle d-none d-sm-block" style={{ height: "24px" }}></div>
-                                        <ButtonComponent cssClass="e-flat sf-icon-phone-01 fs-6 d-none d-sm-block" type="button" aria-label="audio call" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-flat e-icons e-video d-none d-sm-block" type="button" aria-label="video call" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat sf-icon-phone-01 fs-6 d-none d-sm-block" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-video d-none d-sm-block" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
                 
                             <div className="d-flex flex-column align-items-center pt-4 border-top bg-body">
                                 <span className="e-badge e-badge-pill border px-2">Wednesday, Sep 18th</span>
-                                <ListViewComponent cssClass="border-0 px-2 px-sm-3 pe-md-4 pe-sm-3 pb-4 pt-3" dataSource={data} width="100%" height="100%" aria-label="chat conversations" role="list"
+                                <ListViewComponent cssClass="border-0 px-2 px-sm-3 pe-md-4 pe-sm-3 pb-4 pt-3" dataSource={data} width="100%" height="100%"
                                     template={(data: any) => {
                                         const senderTemplate = (
                                             <div className="d-flex justify-content-end pe-sm-3 ms-auto align-items-start w-75">
@@ -224,7 +224,7 @@ export default function Chat1() {
                                 ></ListViewComponent>
                             </div>
                             <div className="e-bigger ms-sm-4 ms-3 me-md-5 me-3">
-                                <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")} aria-label="enter a message" role="textbox"></TextBoxComponent>
+                                <TextBoxComponent type="text" placeholder="Enter a message" ref={textboxRef} created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")}></TextBoxComponent>
                             </div>
                         </div>
                     </section>

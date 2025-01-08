@@ -76,38 +76,38 @@ export default function Navbar6() {
                                                 </span>
                                             </div>
                                             <div>
-                                                <DropDownButtonComponent ref={profileDropdown} className="pr-2 md:pr-4 hidden sm:block" cssClass="e-flat" items={[{ text: 'Michael Gough', iconCss: 'e-icons e-folder' }, { text: 'Roberta Cases', iconCss: 'e-icons e-folder' }]} type="button" aria-label="choose a profile" role="button">Bonnie Crane</DropDownButtonComponent>
+                                                <DropDownButtonComponent ref={profileDropdown} className="pr-2 md:pr-4 hidden sm:block" cssClass="e-flat" items={[{ text: 'Michael Gough', iconCss: 'e-icons e-folder' }, { text: 'Roberta Cases', iconCss: 'e-icons e-folder' }]} type="button">Bonnie Crane</DropDownButtonComponent>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="hidden lg:block">
-                                        <ButtonComponent className="py-2 mr-2" cssClass="e-flat" type="button" aria-label="changelog" role="button">Changelog</ButtonComponent>
-                                        <ButtonComponent className="py-2 mr-2" cssClass="e-flat" type="button" aria-label="support" role="button">Support</ButtonComponent>
-                                        <ButtonComponent className="py-2 mr-2" cssClass="e-flat" type="button" aria-label="documentation" role="button">Documentation</ButtonComponent>
-                                        <ButtonComponent className="py-2 mr-2 bg-transparent" type="button" aria-label="feedback" role="button">Feedback</ButtonComponent>
+                                        <ButtonComponent className="py-2 mr-2" cssClass="e-flat" type="button">Changelog</ButtonComponent>
+                                        <ButtonComponent className="py-2 mr-2" cssClass="e-flat" type="button">Support</ButtonComponent>
+                                        <ButtonComponent className="py-2 mr-2" cssClass="e-flat" type="button">Documentation</ButtonComponent>
+                                        <ButtonComponent className="py-2 mr-2 bg-transparent" type="button">Feedback</ButtonComponent>
                                     </div>
                                     <span id={styles.menu} className="lg:hidden">
-                                        <MenuComponent items={[{ text: 'Portfolio' }, { text: 'Blog' }, { text: 'Shop' }, { text: 'Elements' }, { text: 'Forum' }, { text: 'Support' }, { text: 'Others', items: [{ text: 'Changelog' }, { text: 'Support' }, { text: 'Docs' }, { text: 'Feedback' }] }]} hamburgerMode={true} title="" showItemOnClick={true} aria-label="menu items" role="menu"></MenuComponent>
+                                        <MenuComponent items={[{ text: 'Portfolio' }, { text: 'Blog' }, { text: 'Shop' }, { text: 'Elements' }, { text: 'Forum' }, { text: 'Support' }, { text: 'Others', items: [{ text: 'Changelog' }, { text: 'Support' }, { text: 'Docs' }, { text: 'Feedback' }] }]} hamburgerMode={true} title="" showItemOnClick={true}></MenuComponent>
                                     </span>
                                 </div>
                             </div>
                             <div className="px-4 py-1 bg-gray-100 dark:bg-gray-700 border border-t-0 border-gray-200 dark:border-gray-600 hidden lg:flex">
-                                <MenuComponent items={[{ text: 'Portfolio' }, { text: 'Blog' }, { text: 'Shop' }, { text: 'Elements' }, { text: 'Forum' }, { text: 'Support' }]} aria-label="menu items" role="menu"></MenuComponent>
+                                <MenuComponent items={[{ text: 'Portfolio' }, { text: 'Blog' }, { text: 'Shop' }, { text: 'Elements' }, { text: 'Forum' }, { text: 'Support' }]}></MenuComponent>
                             </div>
                             <div className="border border-t-0 border-gray-200 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 block mx-auto px-0 py-3">
                                 <div className="flex items-center flex-col lg:flex-row">
                                     <div className="flex items-center w-full lg:w-max lg:pl-6 lg:pr-3 pl-6 pr-6">
                                         <div className="e-input-group w-full lg:w-max">
-                                            <input className="e-input" type="text" placeholder="Search" aria-label="search" role="textbox" />
+                                            <input className="e-input" type="text" placeholder="Search" />
                                             <span className="e-input-group-icon e-icons e-search"></span>
                                         </div>
                                     </div>
                                     <div className="flex items-center w-full lg:w-max mt-3 lg:mt-0 pl-6 pr-6 lg:pl-0 lg:pr-0">
                                         <div className="w-4/5 mr-3 lg:mt-0">
-                                            <ButtonComponent cssClass="w-full" iconCss="e-icons e-user" iconPosition="Left" type="button" aria-label="create a team" role="button">Create Team</ButtonComponent>
+                                            <ButtonComponent cssClass="w-full" iconCss="e-icons e-user" iconPosition="Left" type="button">Create Team</ButtonComponent>
                                         </div>
                                         <div className="w-4/5 p-0 lg:mt-0">
-                                            <ButtonComponent cssClass="w-full e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button" aria-label="create a new project" role="button">New Project</ButtonComponent>
+                                            <ButtonComponent cssClass="w-full e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button">New Project</ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -132,40 +132,40 @@ export default function Navbar6() {
                                             </span>
                                         </div>
                                         <div>
-                                            <DropDownButtonComponent ref={profileDropdown} className="pe-2 pe-md-4 d-none d-sm-block" cssClass="e-flat" items={[{ text: "Michael Gough", iconCss: "e-icons e-folder" }, { text: "Roberta Cases", iconCss: "e-icons e-folder" }]} type="button" aria-label="choose a profile" role="button">Bonnie Crane</DropDownButtonComponent>
+                                            <DropDownButtonComponent ref={profileDropdown} className="pe-2 pe-md-4 d-none d-sm-block" cssClass="e-flat" items={[{ text: "Michael Gough", iconCss: "e-icons e-folder" }, { text: "Roberta Cases", iconCss: "e-icons e-folder" }]} type="button">Bonnie Crane</DropDownButtonComponent>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="d-none d-lg-block">
-                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button" aria-label="changelog" role="button">Changelog</ButtonComponent>
-                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button" aria-label="support" role="button">Support</ButtonComponent>
-                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button" aria-label="documentation" role="button">Documentation</ButtonComponent>
-                                    <ButtonComponent className="py-2 me-2" type="button" aria-label="feedback" role="button">Feedback</ButtonComponent>
+                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button">Changelog</ButtonComponent>
+                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button">Support</ButtonComponent>
+                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button">Documentation</ButtonComponent>
+                                    <ButtonComponent className="py-2 me-2" type="button">Feedback</ButtonComponent>
                                 </div>
                                 <span id={styles.menu} className="d-lg-none">
-                                    <MenuComponent className="bg-body-tertiary" hamburgerMode={true} title="" showItemOnClick={true} items={[{ text: "Portfolio" }, { text: "Blog" }, { text: "Shop" }, { text: "Elements" }, { text: "Forum" }, { text: "Support" }, { text: "Others", items: [{ text: "Changelog" }, { text: "Support" }, { text: "Docs" }, { text: "Feedback" }] }]} aria-label="menu items" role="menu"></MenuComponent>
+                                    <MenuComponent className="bg-body-tertiary" hamburgerMode={true} title="" showItemOnClick={true} items={[{ text: "Portfolio" }, { text: "Blog" }, { text: "Shop" }, { text: "Elements" }, { text: "Forum" }, { text: "Support" }, { text: "Others", items: [{ text: "Changelog" }, { text: "Support" }, { text: "Docs" }, { text: "Feedback" }] }]}></MenuComponent>
                                 </span>
                             </div>
                         </div>
                         <div className="border border-top-0 border-light-subtle">
                             <div className="px-3 py-1 bg-body-tertiary border-top-0 border-light-subtle d-none d-lg-flex" style={{ height: "40px", display: "flex", alignItems: "center" }}>
-                                <MenuComponent items={[{ text: "Portfolio" }, { text: "Blog" }, { text: "Shop" }, { text: "Elements" }, { text: "Forum" }, { text: "Support" }]} aria-label="menu items" role="menu"></MenuComponent>
+                                <MenuComponent items={[{ text: "Portfolio" }, { text: "Blog" }, { text: "Shop" }, { text: "Elements" }, { text: "Forum" }, { text: "Support" }]}></MenuComponent>
                             </div>
                         </div>
                         <div className="border border-top-0 border-light-subtle bg-body-tertiary h-100 d-block d-sm-flex mx-auto py-3">
                             <div className="row w-100 p-0 mx-auto px-4 gap-3">
                                 <div className="align-items-center col-xl-2 col-lg-3 p-0">
                                     <div className="e-input-group w-100">
-                                        <input className="e-input" type="text" placeholder="Search" aria-label="search" />
+                                        <input className="e-input" type="text" placeholder="Search" />
                                         <span className="e-input-group-icon e-icons e-search border-start-0"></span>
                                     </div>
                                 </div>
                                 <div className="d-flex align-items-center col-xl-3 col-lg-4 p-0 overflow-hidden">
                                     <div className="w-50 me-3">
-                                        <ButtonComponent className="w-100" cssClass="e-outline e-secondary" iconCss="e-icons e-user" iconPosition="Left" type="button" aria-label="create a team" role="button">Create Team</ButtonComponent>
+                                        <ButtonComponent className="w-100" cssClass="e-outline e-secondary" iconCss="e-icons e-user" iconPosition="Left" type="button">Create Team</ButtonComponent>
                                     </div>
                                     <div className="w-50">
-                                        <ButtonComponent className="w-100" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button" aria-label="create a new project" role="button">New Project</ButtonComponent>
+                                        <ButtonComponent className="w-100" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button">New Project</ButtonComponent>
                                     </div>
                                 </div>
                             </div>

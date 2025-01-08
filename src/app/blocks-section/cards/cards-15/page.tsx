@@ -46,7 +46,7 @@ export default function Card15() {
                                         <p className="text-base">Enhance your study sessions with proven strategies to improve focus and retention. Learn time management techniques to active learning methods.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-fill mt-1" content="View More" type="button" iconCss="e-icons e-chevron-right-double" iconPosition="Right" aria-label="view more" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-fill mt-1" content="View More" type="button" iconCss="e-icons e-chevron-right-double" iconPosition="Right"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="e-card e-bigger rounded-lg justify-start">
@@ -57,7 +57,7 @@ export default function Card15() {
                                         <p className="text-base">Whip up tasty meals with minimal effort using our quick and easy recipes. Ideal for busy weeknights or last-minute dinners, these recipes feature simple ingredients.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-fill mt-1" content="View More" type="button" iconCss="e-icons e-chevron-right-double" iconPosition="Right" aria-label="view more" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-fill mt-1" content="View More" type="button" iconCss="e-icons e-chevron-right-double" iconPosition="Right"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="e-card e-bigger rounded-lg justify-start">
@@ -68,7 +68,7 @@ export default function Card15() {
                                         <p className="text-base">Uncover the best-kept secrets in your area with our guide to local hotspots. Whether it's a cozy cafe, a charming bookstore, or a hidden park, find new places to explore.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-fill mt-1" content="View More" type="button" iconCss="e-icons e-chevron-right-double" iconPosition="Right" aria-label="view more" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-fill mt-1" content="View More" type="button" iconCss="e-icons e-chevron-right-double" iconPosition="Right"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ export default function Card15() {
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-fill" content="View More" type="button" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right" aria-label="learn more" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-fill" content="View More" type="button" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@ export default function Card15() {
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-fill" content="View More" type="button" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right" aria-label="learn more" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-fill" content="View More" type="button" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@ export default function Card15() {
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-fill" content="View More" type="button" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right" aria-label="learn more" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-fill" content="View More" type="button" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>

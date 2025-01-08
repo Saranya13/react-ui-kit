@@ -243,12 +243,12 @@ export default function Grid3() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="mx-auto w-full py-12 sm:px-6 px-4">
-                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={658} gridLines="None" role="grid">
+                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={658} gridLines="None">
                                 <ColumnsDirective>
                                     <ColumnDirective type="checkbox" isPrimaryKey={true} textAlign="Center" width="40" />
                                     <ColumnDirective field="invoiceId" headerText="Invoice ID" width="111"
                                         template={(data: any) => (
-                                            <a className="text-primary-700 dark:text-primary-500 font-medium" href="javascript:void(0);" aria-label="invoice ID" role="link">{data.invoiceId}</a>
+                                            <a className="text-primary-700 dark:text-primary-500 font-medium" href="javascript:void(0);">{data.invoiceId}</a>
                                         )}
                                     />
                                     <ColumnDirective field="customerDetails" headerText="Customer Details" textAlign="Left" width="272"
@@ -312,8 +312,8 @@ export default function Grid3() {
                                     <ColumnDirective headerText="Action" width="102"
                                         template={() => (
                                             <div className="e-small flex gap-1">
-                                                <ButtonComponent cssClass="e-flat me-1" iconCss="e-icons e-eye" type="button" aria-label="view invoice details" role="button"></ButtonComponent>
-                                                <ButtonComponent cssClass="e-flat" iconCss="e-icons e-print" type="button" aria-label="print" role="button"></ButtonComponent>
+                                                <ButtonComponent cssClass="e-flat me-1" iconCss="e-icons e-eye" type="button"></ButtonComponent>
+                                                <ButtonComponent cssClass="e-flat" iconCss="e-icons e-print" type="button"></ButtonComponent>
                                             </div>
                                         )}
                                     />
@@ -326,12 +326,12 @@ export default function Grid3() {
                 return (
                     <section className="bg-body">
                         <div className="w-100 py-5 px-3 px-sm-4 mx-auto">
-                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={658} gridLines="None" role="grid">
+                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={658} gridLines="None">
                                 <ColumnsDirective>
                                     <ColumnDirective type="checkbox" isPrimaryKey={true} textAlign="Center" width="40" />
                                     <ColumnDirective field="invoiceId" headerText="Invoice ID" width="111"
                                         template={(data: any) => (
-                                            <a className="text-primary fw-medium text-decoration-none" href="javascript:void(0);" aria-label="invoice ID" role="link">{data.invoiceId}</a>
+                                            <a className="text-primary fw-medium text-decoration-none" href="javascript:void(0);">{data.invoiceId}</a>
                                         )}
                                     />
                                     <ColumnDirective field="customerDetails" headerText="Customer Details" textAlign="Left" width="272"
@@ -395,8 +395,8 @@ export default function Grid3() {
                                     <ColumnDirective headerText="Action" width="102"
                                         template={() => (
                                             <div className="d-flex gap-1">
-                                                <ButtonComponent className="e-flat" iconCss="e-icons e-eye" type="button" aria-label="view invoice details" role="button"></ButtonComponent>
-                                                <ButtonComponent className="e-flat" iconCss="e-icons e-print" type="button" aria-label="print" role="button"></ButtonComponent>
+                                                <ButtonComponent className="e-flat" iconCss="e-icons e-eye" type="button"></ButtonComponent>
+                                                <ButtonComponent className="e-flat" iconCss="e-icons e-print" type="button"></ButtonComponent>
                                             </div>
                                         )}
                                     />

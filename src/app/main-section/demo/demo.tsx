@@ -83,9 +83,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         if (currentView === Mode.Tablet && window.innerWidth <= 996 && iframeRef.current) {
             iframeRef.current.style.minWidth = '100%';
         }
-        setTimeout(() => {
-            updateIframeHeight();
-        }, 200);
+        setTimeout(updateIframeHeight, 1000);
     };
 
     const addStylesheetsToIframe = (selectedTheme: string, mode?: boolean) => {
@@ -146,9 +144,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
 
         Promise.all(loadPromises)
             .then(() => {
-                setTimeout(() => {
-                    updateIframeHeight();
-                }, 200);
+                setTimeout(updateIframeHeight, 1000);
             })
             .catch((error) => console.error('Error loading stylesheets:', error));
 
@@ -160,13 +156,13 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
     };
 
     const updateIframeHeight = () => {
-        if (!iframeRef.current) return;
-
-        const iframeDocument = iframeRef.current.contentDocument || iframeRef.current.contentWindow?.document;
-        const contentHeight = iframeDocument?.body.scrollHeight !== 0 ? iframeDocument?.body.scrollHeight : iframeDocument?.documentElement.scrollHeight;
-
-        iframeRef.current.style.height = `${(contentHeight ? contentHeight : 0) + 1}px`;
-        onHandleOverlayVisibility('hide');
+        const iframeDocument = iframeRef.current?.contentDocument || iframeRef.current?.contentWindow?.document;
+        if (!iframeDocument) return;
+        if (iframeRef && iframeRef.current) {
+            const contentHeight = iframeDocument?.body.scrollHeight !== 0 ? iframeDocument?.body.scrollHeight : iframeDocument?.documentElement.scrollHeight;
+            iframeRef.current.style.height = `${(contentHeight ? contentHeight : 0) + 1}px`;
+            onHandleOverlayVisibility('hide');
+        }
     };
 
     const switchMode = (mode: Mode) => {
@@ -175,9 +171,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
             const minWidth = mode !== Mode.Tablet ? widths[mode] : (window.innerWidth > 996 ? widths[mode] : '100%');
             iframeRef.current.style.minWidth = minWidth;
         }
-        setTimeout(() => {
-            updateIframeHeight();
-        }, 200);
+        setTimeout(updateIframeHeight, 1000);
     };
 
     const togglePreviewCode = (event: React.MouseEvent<HTMLLIElement> | React.KeyboardEvent<HTMLLIElement>) => {

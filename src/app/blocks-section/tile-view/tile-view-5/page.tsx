@@ -88,11 +88,11 @@ export default function TileView5() {
                         <div id={styles["job-details"]}>
                             <AppBarComponent className="shadow-none px-0 h-auto">
                                 <div className="flex flex-wrap gap-x-4 gap-y-3 px-6 xl:px-10">
-                                    <DropDownButtonComponent cssClass="e-primary" content="All jobs" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose job options" role="button"></DropDownButtonComponent>
-                                    <DropDownButtonComponent content="Any time" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose time" role="button"></DropDownButtonComponent>
-                                    <DropDownButtonComponent content="Any experience" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose experience" role="button"></DropDownButtonComponent>
-                                    <DropDownButtonComponent content="Any company" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose company" role="button"></DropDownButtonComponent>
-                                    <DropDownButtonComponent content="Any location" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose location" role="button"></DropDownButtonComponent>
+                                    <DropDownButtonComponent cssClass="e-primary" content="All jobs" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <DropDownButtonComponent content="Any time" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <DropDownButtonComponent content="Any experience" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <DropDownButtonComponent content="Any company" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <DropDownButtonComponent content="Any location" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
                                 </div>
                             </AppBarComponent>
                             <div className="border-t border-gray-200 dark:border-gray-600">
@@ -100,15 +100,15 @@ export default function TileView5() {
                                     <div className="flex justify-between mb-6 dark:text-gray-50">
                                         <p className="text-xl font-semibold">250 jobs found</p>
                                         <div className="flex items-center gap-2 text-sm">
-                                            <SwitchComponent cssClass="w-9" checked={true} aria-label="remote only" role="switch"></SwitchComponent>
+                                            <SwitchComponent cssClass="w-9" checked={true}></SwitchComponent>
                                             <span>Remote Only</span>
                                         </div>
                                     </div>
                                     <div className="e-input-group mb-6">
                                         <span className="e-input-group-icon e-icons e-search"></span>
-                                        <input className="e-input !pl-0" type="text" placeholder="Search Jobs" aria-label="search jobs" role="textbox" />
+                                        <input className="e-input !pl-0" type="text" placeholder="Search Jobs" />
                                     </div>
-                                    <ListViewComponent className="!border-0 mb-2" cssClass="e-list-template" dataSource={jobDetails} aria-label="list of job with details" role="list" template={(data: any) => (
+                                    <ListViewComponent className="!border-0 mb-2" cssClass="e-list-template" dataSource={jobDetails} template={(data: any) => (
                                         <div className="e-card flex-col gap-4 p-4 rounded-2xl sm:pr-5 sm:p-6 sm:flex-row">
                                             <span className="e-avatar e-avatar-xlarge e-avatar-circle shrink-0">
                                                 <Image src={"/assets/images/tile-view/job-site/" + data.logo} width={56} height={56} alt="company logo" />
@@ -121,7 +121,7 @@ export default function TileView5() {
                                                     <div className="e-card-sub-title text-nowrap !flex items-center gap-1.5">
                                                         <p className="border-e text-sm text-gray-500 pr-3 dark:border-gray-600 dark:text-gray-400 text-truncate">{data.company}</p>
                                                         <div className="flex items-center gap-1">
-                                                            <ButtonComponent cssClass="e-flat e-small" iconCss="e-icons e-star-filled !text-yellow-300" type="button" aria-label="favorite" role="button"></ButtonComponent>
+                                                            <ButtonComponent cssClass="e-flat e-small" iconCss="e-icons e-star-filled !text-yellow-300" type="button"></ButtonComponent>
                                                             <span className="text-xs text-gray-700 dark:text-gray-200">{data.reviews} reviews</span>
                                                         </div>
                                                     </div>
@@ -139,13 +139,13 @@ export default function TileView5() {
                                                         <p className="border-e pr-2 dark:border-gray-600">Openings: 1</p>
                                                         <p>Applicants: {data.applicants}</p>
                                                     </div>
-                                                    <ButtonComponent className="e-primary ml-auto w-full sm:w-fit" type="button" aria-label="apply" role="button">Apply</ButtonComponent>
+                                                    <ButtonComponent className="e-primary ml-auto w-full sm:w-fit" type="button">Apply</ButtonComponent>
                                                 </div>
                                             </div>
-                                            <ButtonComponent className="e-flat e-round absolute top-6 right-4 sm:right-6" iconCss="e-icons e-bookmark" type="button" aria-label="bookmark" role="button"></ButtonComponent>
+                                            <ButtonComponent className="e-flat e-round absolute top-6 right-4 sm:right-6" iconCss="e-icons e-bookmark" type="button"></ButtonComponent>
                                         </div>)}
                                     ></ListViewComponent>
-                                    <ButtonComponent className="mx-auto !px-11" type="button" aria-label="load more jobs" role="button">Load More Jobs</ButtonComponent>
+                                    <ButtonComponent className="mx-auto !px-11" type="button">Load More Jobs</ButtonComponent>
                                 </div>
                             </div>
                         </div>
@@ -157,11 +157,11 @@ export default function TileView5() {
                         <div id={styles["job-details"]}>
                             <AppBarComponent className="px-0 h-auto">
                                 <div className="d-flex flex-wrap gap-3 px-3 px-sm-4 px-xl-5">
-                                    <DropDownButtonComponent cssClass="e-primary" content="All jobs" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose job options" role="button"></DropDownButtonComponent>
-                                    <DropDownButtonComponent cssClass="e-outline" content="Any time" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose time" role="button"></DropDownButtonComponent>
-                                    <DropDownButtonComponent cssClass="e-outline" content="Any experience" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose experience" role="button"></DropDownButtonComponent>
-                                    <DropDownButtonComponent cssClass="e-outline" content="Any company" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose company" role="button"></DropDownButtonComponent>
-                                    <DropDownButtonComponent cssClass="e-outline" content="Any location" type="button" beforeOpen={(event) => (event.cancel = true)} aria-label="choose location" role="button"></DropDownButtonComponent>
+                                    <DropDownButtonComponent cssClass="e-primary" content="All jobs" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <DropDownButtonComponent cssClass="e-outline" content="Any time" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <DropDownButtonComponent cssClass="e-outline" content="Any experience" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <DropDownButtonComponent cssClass="e-outline" content="Any company" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                    <DropDownButtonComponent cssClass="e-outline" content="Any location" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
                                 </div>
                             </AppBarComponent>
                             <div className="border-top border-light-subtle">
@@ -169,15 +169,15 @@ export default function TileView5() {
                                     <div className="d-flex justify-content-between text-body mb-4">
                                         <h5 className="fw-bold mb-0">250 jobs found</h5>
                                         <div className="d-flex align-items-center gap-2">
-                                            <SwitchComponent checked={true} aria-label="remote only" role="switch" style={{ width: "36px" }}></SwitchComponent>
+                                            <SwitchComponent checked={true} style={{ width: "36px" }}></SwitchComponent>
                                             <span>Remote Only</span>
                                         </div>
                                     </div>
                                     <div className="e-input-group mb-4">
                                         <span className="e-input-group-icon e-icons e-search border-0"></span>
-                                        <input className="e-input" type="text" placeholder="Search Jobs" aria-label="search jobs" role="textbox" />
+                                        <input className="e-input" type="text" placeholder="Search Jobs" />
                                     </div>
-                                    <ListViewComponent className="border-0 mb-1" cssClass="e-list-template" dataSource={jobDetails} aria-label="list of job with details" role="list" template={(data: any) => (
+                                    <ListViewComponent className="border-0 mb-1" cssClass="e-list-template" dataSource={jobDetails} template={(data: any) => (
                                         <div className="e-card d-flex flex-column gap-3 flex-md-row rounded-4 p-3 ps-4">
                                             <span className="e-avatar e-avatar-xlarge e-avatar-circle flex-shrink-0">
                                                 <Image src={"/assets/images/tile-view/job-site/" + data.logo} width={56} height={56} alt="company logo" />
@@ -190,7 +190,7 @@ export default function TileView5() {
                                                     <div className="e-card-sub-title d-flex align-items-center gap-2 mb-1">
                                                         <p className="border-end text-body-secondary pe-3 mb-0 border-light-subtle text-truncate">{data.company}</p>
                                                         <div className="d-flex align-items-center gap-1 ms-1">
-                                                            <ButtonComponent className="e-flat" iconCss="e-icons e-star-filled text-warning" type="button" aria-label="favorite" role="button"></ButtonComponent>
+                                                            <ButtonComponent className="e-flat" iconCss="e-icons e-star-filled text-warning" type="button"></ButtonComponent>
                                                             <span className="small text-body-secondary mb-0 text-nowrap">{data.reviews} reviews</span>
                                                         </div>
                                                     </div>
@@ -208,13 +208,13 @@ export default function TileView5() {
                                                         <p className="border-end pe-2 mb-0">Openings: {data.openings}</p>
                                                         <p className="mb-0">Applicants: {data.applicants}</p>
                                                     </div>
-                                                    <ButtonComponent className="e-primary col-12 col-sm-auto" type="button" aria-label="apply" role="button">Apply</ButtonComponent>
+                                                    <ButtonComponent className="e-primary col-12 col-sm-auto" type="button">Apply</ButtonComponent>
                                                 </div>
                                             </div>
-                                            <ButtonComponent className="e-flat e-round position-absolute" iconCss="e-icons e-bookmark" type="button" aria-label="bookmark" role="button" style={{ right: "24px", top: "24px" }}></ButtonComponent>
+                                            <ButtonComponent className="e-flat e-round position-absolute" iconCss="e-icons e-bookmark" type="button" style={{ right: "24px", top: "24px" }}></ButtonComponent>
                                         </div>)}
                                     ></ListViewComponent>
-                                    <ButtonComponent className="e-outline mx-auto px-5" type="button" aria-label="load more jobs" role="button">Load More Jobs</ButtonComponent>
+                                    <ButtonComponent className="e-outline mx-auto px-5" type="button">Load More Jobs</ButtonComponent>
                                 </div>
                             </div>
                         </div>

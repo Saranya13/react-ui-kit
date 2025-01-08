@@ -51,19 +51,19 @@ export default function SigninMobile3() {
                                         </p>
                                         <ul className="list-none md:text-lg text-base">
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>70+ components</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>Light and dark themes supported</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>100% automatic layouts</span>
                                             </li>
                                             <li className="flex lg:items-start gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>200+ reusable blocks to build templates easily</span>
                                             </li>
                                         </ul>
@@ -84,15 +84,15 @@ export default function SigninMobile3() {
                                             <div className="flex space-x-4">
                                                 <div className="w-1/3">
                                                     <label className="block text-sm mb-1 font-medium text-gray-700 dark:text-gray-300">Country code</label>
-                                                    <DropDownListComponent cssClass="e-bigger" placeholder="+1" beforeOpen={(event) => (event.cancel = true)} aria-label="choose your country code" role="listbox"></DropDownListComponent>
+                                                    <DropDownListComponent cssClass="e-bigger" placeholder="+1" beforeOpen={(event) => (event.cancel = true)}></DropDownListComponent>
                                                 </div>
                                                 <div className="w-2/3">
                                                     <label className="block text-sm mb-1 font-medium text-gray-700 dark:text-gray-300">Mobile number</label>
-                                                    <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" promptChar=" " placeholder="432 432 4321" aria-label="enter your mobile number" role="textbox"></MaskedTextBoxComponent>
+                                                    <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" promptChar=" " placeholder="432 432 4321"></MaskedTextBoxComponent>
                                                 </div>
                                             </div>
                                             <div className="e-bigger mt-6">
-                                                <ButtonComponent className="w-full text-lg e-primary" type="submit" aria-label="continue" role="button">Continue</ButtonComponent>
+                                                <ButtonComponent className="w-full text-lg e-primary" type="submit">Continue</ButtonComponent>
                                             </div>
                                         </form>
                                     </div>
@@ -154,15 +154,15 @@ export default function SigninMobile3() {
                                         <div className="d-flex justify-content-center gap-3 row p-0">
                                             <div className="col-4 col-lg-3 p-0">
                                                 <label className="form-label mb-1 fw-medium text-dark-emphasis small">Country code</label>
-                                                <DropDownListComponent cssClass="e-bigger" placeholder="+1" beforeOpen={(event) => (event.cancel = true)} aria-label="choose your country code" role="listbox"></DropDownListComponent>
+                                                <DropDownListComponent cssClass="e-bigger" placeholder="+1" beforeOpen={(event) => (event.cancel = true)}></DropDownListComponent>
                                             </div>
                                             <div className="col-7 col-lg-8 m-0">
                                                 <label className="form-label mb-1 fw-medium text-dark-emphasis small">Mobile number</label>
-                                                <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" promptChar=" " placeholder="432 432 4321" aria-label="enter your mobile number" role="textbox"></MaskedTextBoxComponent>
+                                                <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" promptChar=" " placeholder="432 432 4321"></MaskedTextBoxComponent>
                                             </div>
                                         </div>
                                         <div className="mt-4 e-bigger">
-                                            <ButtonComponent className="e-block e-primary" type="submit" aria-label="continue" role="button">Continue</ButtonComponent>
+                                            <ButtonComponent className="e-block e-primary" type="submit">Continue</ButtonComponent>
                                         </div>
                                     </form>
                                 </div>

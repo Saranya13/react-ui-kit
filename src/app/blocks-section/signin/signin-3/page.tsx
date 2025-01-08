@@ -49,19 +49,19 @@ export default function Signin3() {
                                             Join us and start building your application today.</p>
                                         <ul className="list-none md:text-lg text-base">
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>70+ components</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>Light and dark theme supported</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>100% auto layouts</span>
                                             </li>
                                             <li className="flex lg:items-start gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>200+ reusable blocks to easily build templates</span>
                                             </li>
                                         </ul>
@@ -82,35 +82,35 @@ export default function Signin3() {
                                             <form action="#" className="mt-6 mb-6" onSubmit={(event) => event.preventDefault()}>
                                                 <div className="mb-4">
                                                     <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
-                                                    <TextBoxComponent cssClass="e-bigger" className="py-2" type="email" placeholder="Email" floatLabelType="Never" aria-label="enter your email address" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" className="py-2" type="email" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="mb-5 relative">
                                                     <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
-                                                    <TextBoxComponent cssClass="e-bigger" className="py-2" type="password" placeholder="Password" floatLabelType="Never" aria-label="enter your email password" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" className="py-2" type="password" placeholder="Password" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="flex items-center justify-between mb-6">
-                                                    <CheckBoxComponent cssClass="e-bigger" label="Remember me" aria-label="remember me" role="checkbox"></CheckBoxComponent>
-                                                    <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base" style={{ paddingRight: 0 }} aria-label="forgot password" role="link">Forgot password?</a>
+                                                    <CheckBoxComponent cssClass="e-bigger" label="Remember me"></CheckBoxComponent>
+                                                    <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base" style={{ paddingRight: 0 }}>Forgot password?</a>
                                                 </div>
                                                 <div className="e-bigger mt-6">
-                                                    <ButtonComponent className="w-full e-primary" type="submit" aria-label="sign in" role="button">Sign in</ButtonComponent>
+                                                    <ButtonComponent className="w-full e-primary" type="submit">Sign in</ButtonComponent>
                                                 </div>
                                             </form>
                                             <div>
                                                 <span className="flex items-center justify-center gap-2">
                                                     <p className="text-center text-base text-gray-900 dark:text-white">Don't have an account yet?</p>
-                                                    <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0" aria-label="sign up" role="link">Sign up</a>
+                                                    <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0">Sign up</a>
                                                 </span>
                                                 <div className="relative flex justify-center items-center mt-10">
                                                     <span className="bg-gray-50 dark:bg-gray-950 px-2 z-10 absolute text-sm text-gray-700 dark:text-gray-300">Or continue with</span>
                                                     <hr className="w-full absolute border-gray-200 dark:border-gray-600" />
                                                 </div>
                                                 <div className="flex items-center justify-center pt-10 gap-3 flex-col">
-                                                    <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit" aria-label="sign in with google account" role="button">
+                                                    <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit">
                                                         <Image src="/assets/images/common/brand-logos/png/google.png" alt="google logo" width={16} height={16} />
                                                         <span className="text-base pl-2.5">Sign in with Google</span>
                                                     </ButtonComponent>
-                                                    <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit" aria-label="sign in with microsoft account" role="button">
+                                                    <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit">
                                                         <Image src="/assets/images/common/brand-logos/png/microsoft.png" alt="microsoft logo" width={16} height={16} />
                                                         <span className="text-base pl-2.5">Sign in with Microsoft</span>
                                                     </ButtonComponent>
@@ -171,23 +171,23 @@ export default function Signin3() {
                                     <form action="#" onSubmit={(event) => event.preventDefault()}>
                                         <div className="mb-3">
                                             <label className="form-label mb-1 fw-medium text-dark-emphasis small">Email</label>
-                                            <TextBoxComponent cssClass="e-bigger" className="py-2" type="email" placeholder="Email" floatLabelType="Never" aria-label="enter your email address" role="textbox"></TextBoxComponent>
+                                            <TextBoxComponent cssClass="e-bigger" className="py-2" type="email" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                         </div>
                                         <div className="mb-3">
                                             <label className="form-label mb-1 fw-medium text-dark-emphasis small">Password</label>
-                                            <TextBoxComponent cssClass="e-bigger" className=" py-2" type="password" placeholder="Password" floatLabelType="Never" aria-label="enter your email password" role="textbox"></TextBoxComponent>
+                                            <TextBoxComponent cssClass="e-bigger" className=" py-2" type="password" placeholder="Password" floatLabelType="Never"></TextBoxComponent>
                                         </div>
                                         <div className="d-flex align-items-center justify-content-between">
-                                            <CheckBoxComponent cssClass="e-bigger" label="Remember me" aria-label="remember me" role="checkbox"></CheckBoxComponent>
-                                            <a href="javascript:void(0);" className="text-primary fs-6 fw-medium text-decoration-none" style={{ paddingRight: '0 !important', paddingTop: '4px !important' }} aria-label="forgot password" role="link">Forgot password?</a>
+                                            <CheckBoxComponent cssClass="e-bigger" label="Remember me"></CheckBoxComponent>
+                                            <a href="javascript:void(0);" className="text-primary fs-6 fw-medium text-decoration-none" style={{ paddingRight: '0 !important', paddingTop: '4px !important' }}>Forgot password?</a>
                                         </div>
                                         <div className="mt-4 e-bigger">
-                                            <ButtonComponent className="e-block e-primary" type="submit" aria-label="sign in" role="button">Sign in</ButtonComponent>
+                                            <ButtonComponent className="e-block e-primary" type="submit">Sign in</ButtonComponent>
                                         </div>
                                     </form>
                                     <div className="d-flex flex-wrap align-items-center justify-content-center mt-3 gap-1">
                                         <p className="text-body w-sm-auto m-0">Don't have an account yet?</p>
-                                        <a href="javascript:void(0);" className="text-primary fs-6 fw-medium text-decoration-none" aria-label="sign up" role="link">Sign up</a>
+                                        <a href="javascript:void(0);" className="text-primary fs-6 fw-medium text-decoration-none">Sign up</a>
                                     </div>
                                     <div>
                                         <div className="d-flex justify-content-center align-items-center position-relative mt-3">
@@ -195,11 +195,11 @@ export default function Signin3() {
                                             <hr className="w-100 border-light-subtle opacity-100" />
                                         </div>
                                         <div className="d-flex flex-column mt-3 align-items-center justify-content-center gap-3">
-                                            <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit" aria-label="sign in with google account" role="button">
+                                            <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit">
                                                 <Image src="/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
                                                 <span className="fs-6 fw-medium" style={{ paddingLeft: '8px' }}>Sign in with Google</span>
                                             </ButtonComponent>
-                                            <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit" aria-label="sign in with microsoft account" role="button">
+                                            <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit">
                                                 <Image src="/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
                                                 <span className="fs-6 fw-medium" style={{ paddingLeft: '8px' }}>Sign in with Microsoft</span>
                                             </ButtonComponent>

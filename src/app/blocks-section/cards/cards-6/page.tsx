@@ -40,7 +40,7 @@ export default function Card6() {
                             <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-6">
                                 <div className="e-card e-bigger rounded-lg w-full sm:w-3/6 justify-start">
                                     <div className="e-card-header items-center !w-full">
-                                        <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-600 bg-primary-100" aria-label="smart home icon"></span>
+                                        <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-600 bg-primary-100"></span>
                                         <div className="e-card-header-caption !pl-3">
                                             <div className="e-card-header-title">
                                                 <p className="text-lg font-semibold text-gray-950 dark:text-gray-50">Amazing Destinations</p>
@@ -63,12 +63,12 @@ export default function Card6() {
                                         </div>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-outline w-full" content="Get Started Now" iconCss="e-icons e-chevron-right-double" iconPosition="Right" type="button" aria-label="get started now" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-outline w-full" content="Get Started Now" iconCss="e-icons e-chevron-right-double" iconPosition="Right" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="e-card e-bigger rounded-lg w-full sm:w-3/6 justify-start">
                                     <div className="e-card-header items-center !w-full">
-                                        <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-600 bg-primary-100" aria-label="smart home icon"></span>
+                                        <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-600 bg-primary-100"></span>
                                         <div className="e-card-header-caption !pl-3">
                                             <div className="e-card-header-title">
                                                 <p className="text-lg font-semibold text-gray-950 dark:text-gray-50">Smart Home</p>
@@ -91,7 +91,7 @@ export default function Card6() {
                                         </div>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-outline w-full" content="Get Started Now" iconCss="e-icons e-chevron-right-double" iconPosition="Right" type="button" aria-label="get started now" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-outline w-full" content="Get Started Now" iconCss="e-icons e-chevron-right-double" iconPosition="Right" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ export default function Card6() {
                                 <div className="col-sm-6 col-lg-5 col-xl-4">
                                     <div className="e-card e-bigger shadow p-2 h-100 justify-content-start">
                                         <div className="e-card-header align-items-center mb-2">
-                                            <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-emphasis bg-body-tertiary" aria-label="amazing destinations icon"></span>
+                                            <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-emphasis bg-body-tertiary"></span>
                                             <div className="e-card-header-caption">
                                                 <div className="e-card-header-title text-body">
                                                     <p className="h6 fw-bold mb-0 text-truncate">Amazing Destinations</p>
@@ -129,14 +129,14 @@ export default function Card6() {
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-outline e-block" content="Get Started Now" iconCss="e-icons e-chevron-right-double fs-6" iconPosition="Right" type="button" aria-label="get started now" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-outline e-block" content="Get Started Now" iconCss="e-icons e-chevron-right-double fs-6" iconPosition="Right" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 col-lg-5 col-xl-4">
                                     <div className="e-card shadow p-0 p-2 h-100 justify-content-start">
                                         <div className="e-card-header align-items-center mb-2">
-                                            <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-emphasis bg-body-tertiary" aria-label="amazing destinations icon"></span>
+                                            <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-emphasis bg-body-tertiary"></span>
                                             <div className="e-card-header-caption">
                                                 <div className="e-card-header-title text-body">
                                                     <p className="h6 fw-bold mb-0 text-truncate">Smart Home</p>
@@ -159,7 +159,7 @@ export default function Card6() {
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-outline e-block" content="Get Started Now" iconCss="e-icons e-chevron-right-double fs-6" iconPosition="Right" type="button" aria-label="get started now" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-outline e-block" content="Get Started Now" iconCss="e-icons e-chevron-right-double fs-6" iconPosition="Right" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>

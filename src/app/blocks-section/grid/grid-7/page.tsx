@@ -278,16 +278,16 @@ export default function Grid7() {
                                 <div className="w-full sm:w-56">
                                     <div className="e-input-group">
                                         <span className="e-input-group-icon e-icons e-search"></span>
-                                        <input className="e-input" type="text" placeholder="Search transactions" aria-label="enter transaction details" role="textbox" />
+                                        <input className="e-input" type="text" placeholder="Search transactions" />
                                     </div>
                                 </div>
-                                <ButtonComponent cssClass="e-primary self-end" content="Export to CSV" iconCss="e-icons e-export" iconPosition="Left" type="button" aria-label="export to CSV file format" role="button"></ButtonComponent>
+                                <ButtonComponent cssClass="e-primary self-end" content="Export to CSV" iconCss="e-icons e-export" iconPosition="Left" type="button"></ButtonComponent>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-1"} width={"100%"} height={668} allowPaging={true} role="grid">
+                            <GridComponent dataSource={data} key={"grid-1"} width={"100%"} height={668} allowPaging={true}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="116"
                                         template={(data: any) => (
-                                            <a className="text-primary-700 dark:text-primary-500 font-medium" href="javascript:void(0);" aria-label="transaction ID" role="link">{data.transactionId}</a>
+                                            <a className="text-primary-700 dark:text-primary-500 font-medium" href="javascript:void(0);">{data.transactionId}</a>
                                         )}
                                     />
                                     <ColumnDirective field="customerDetails" headerText="Customer Name" width="320"
@@ -334,7 +334,7 @@ export default function Grid7() {
                                             </div>
                                         )}
                                     />
-                                    <ColumnDirective headerText="Action" width="82" template={() => <ButtonComponent cssClass="e-link" content="View" type="button" aria-label="view sales details" role="button"></ButtonComponent>} />
+                                    <ColumnDirective headerText="Action" width="82" template={() => <ButtonComponent cssClass="e-link" content="View" type="button"></ButtonComponent>} />
                                 </ColumnsDirective>
                                 <Inject services={[Page]} />
                             </GridComponent>
@@ -350,17 +350,17 @@ export default function Grid7() {
                                     <div className="col-12">
                                         <div className="e-input-group">
                                             <span className="e-input-group-icon e-icons e-search border-end-0"></span>
-                                            <input className="e-input" type="text" placeholder="Search transactions" aria-label="enter transaction details" role="textbox" />
+                                            <input className="e-input" type="text" placeholder="Search transactions" />
                                         </div>
                                     </div>
                                 </div>
-                                <ButtonComponent cssClass="e-primary align-self-end" content="Export to CSV" iconCss="e-icons e-export" iconPosition="Left" type="button" aria-label="export to CSV file format" role="button"></ButtonComponent>
+                                <ButtonComponent cssClass="e-primary align-self-end" content="Export to CSV" iconCss="e-icons e-export" iconPosition="Left" type="button"></ButtonComponent>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={668} allowPaging={true} role="grid">
+                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={668} allowPaging={true}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="126"
                                         template={(data: any) => (
-                                            <a className="text-primary fw-medium text-decoration-none" href="javascript:void(0);" aria-label="transaction ID" role="link">{data.transactionId}</a>
+                                            <a className="text-primary fw-medium text-decoration-none" href="javascript:void(0);">{data.transactionId}</a>
                                         )}
                                     />
                                     <ColumnDirective field="customerDetails" headerText="Customer Name" textAlign="Left" width="270"
@@ -407,7 +407,7 @@ export default function Grid7() {
                                             </div>
                                         )}
                                     />
-                                    <ColumnDirective headerText="Action" width="72" template={() => <ButtonComponent cssClass="e-link !p-0" content="View" type="button" aria-label="view sales details" role="button"></ButtonComponent>} />
+                                    <ColumnDirective headerText="Action" width="72" template={() => <ButtonComponent cssClass="e-link !p-0" content="View" type="button"></ButtonComponent>} />
                                 </ColumnsDirective>
                                 <Inject services={[Page]} />
                             </GridComponent>

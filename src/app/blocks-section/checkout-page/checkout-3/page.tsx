@@ -85,7 +85,7 @@ export default function Checkout3() {
                         <div className="grid grid-cols-1 gap-6 px-4 md:px-6 lg:px-6 xl:px-11 pb-10 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
                             <div className="order-1 lg:order-2 bg-gray-50 dark:bg-gray-950 md:border rounded-lg md:border-gray-200 md:dark:border-gray-600">
                                 <h6 className="px-0 md:p-6 pb-0 text-lg font-semibold text-gray-900 dark:text-white">Product summary</h6>
-                                <GridComponent className="pt-4 sm:pt-0" dataSource={data} rowHeight={68} gridLines="None" width="100%" role="grid" style={{ maxWidth: "1280px", border: "none" }}>
+                                <GridComponent className="pt-4 sm:pt-0" dataSource={data} rowHeight={68} gridLines="None" width="100%" style={{ maxWidth: "1280px", border: "none" }}>
                                     <ColumnsDirective>
                                         <ColumnDirective field="Items" width="56" textAlign="Center" template={({ image })=> (
                                             <div className="flex items-center justify-center">
@@ -105,21 +105,21 @@ export default function Checkout3() {
                                         <div className="grid grid-cols-1 gap-5 w-full">
                                             <h5 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Billing address</h5>
                                             <div className="e-bigger">
-                                                <RadioButtonComponent name="billingType" value="individual" label="Individual" checked={true} aria-label="individual" role="radio"></RadioButtonComponent>
-                                                <RadioButtonComponent cssClass="ml-6" name="billingType" value="company" label="Company" aria-label="company" role="radio"></RadioButtonComponent>
+                                                <RadioButtonComponent name="billingType" value="individual" label="Individual" checked={true}></RadioButtonComponent>
+                                                <RadioButtonComponent cssClass="ml-6" name="billingType" value="company" label="Company"></RadioButtonComponent>
                                             </div>
                                             <div className="w-full">
                                                 <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Saved address</label>
-                                                <DropDownListComponent cssClass="e-bigger" placeholder="Saved address" aria-label="choose a saved address" role="listbox"></DropDownListComponent>
+                                                <DropDownListComponent cssClass="e-bigger" placeholder="Saved address"></DropDownListComponent>
                                             </div>
                                             <div className="flex flex-col justify-between gap-5 w-full md:flex-row">
                                                 <div className="w-full md:w-1/2">
                                                     <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">First name</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="firstName" placeholder="First name" floatLabelType="Never" aria-label="enter the first name" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="firstName" placeholder="First name" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="w-full md:w-1/2">
                                                     <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Last name</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="lastName" placeholder="Last name" floatLabelType="Never" aria-label="enter the last name" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="lastName" placeholder="Last name" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                             </div>
                                         </div>
@@ -128,30 +128,30 @@ export default function Checkout3() {
                                                 <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Phone number</label>
                                                 <div className="flex space-x-2">
                                                     <div className="w-2/5 sm:w-1/5 md:w-1/5 lg:1/5 xl:w-1/5">
-                                                        <DropDownListComponent cssClass="e-bigger" placeholder="+1" aria-label="choose a country code" role="listbox"></DropDownListComponent>
+                                                        <DropDownListComponent cssClass="e-bigger" placeholder="+1"></DropDownListComponent>
                                                     </div>
                                                     <div className="w-3/5 sm:w-4/5 md:w-4/5 lg:w-4/5 xl:w-4/5">
-                                                        <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" placeholder="432 432 4321" promptChar=" " aria-label="enter the phone number" role="textbox"></MaskedTextBoxComponent>
+                                                        <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" placeholder="432 432 4321" promptChar=" "></MaskedTextBoxComponent>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="grid grid-cols-1">
                                             <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Shipping address</label>
-                                            <TextAreaComponent cssClass="e-bigger" placeholder="Shipping address" resizeMode="Vertical" aria-label="enter the shipping address" role="textbox"></TextAreaComponent>
+                                            <TextAreaComponent cssClass="e-bigger" placeholder="Shipping address" resizeMode="Vertical"></TextAreaComponent>
                                         </div>
                                         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 w-full">
                                             <div>
                                                 <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Country</label>
-                                                <DropDownListComponent cssClass="e-bigger" placeholder="Country" aria-label="choose a country" role="listbox"></DropDownListComponent>
+                                                <DropDownListComponent cssClass="e-bigger" placeholder="Country"></DropDownListComponent>
                                             </div>
                                             <div>
                                                 <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">City</label>
-                                                <DropDownListComponent cssClass="e-bigger" placeholder="City" aria-label="choose a city" role="listbox"></DropDownListComponent>
+                                                <DropDownListComponent cssClass="e-bigger" placeholder="City"></DropDownListComponent>
                                             </div>
                                         </div>
                                         <div className="e-bigger">
-                                            <CheckBoxComponent label="Save the data in the address list" aria-label="save the data in the address list" role="checkbox"></CheckBoxComponent>
+                                            <CheckBoxComponent label="Save the data in the address list"></CheckBoxComponent>
                                         </div>
                                     </div>
                                 </form>
@@ -160,18 +160,18 @@ export default function Checkout3() {
                                 <div className="md:border rounded-lg px-0 md:p-6 md:border-gray-200 md:dark:border-gray-600">
                                     <div className="text-lg font-semibold text-gray-900 dark:text-white">Delivery address</div>
                                     <div className="flex flex-col gap-4 pt-4 e-bigger">
-                                        <RadioButtonComponent label="Delivery to the same address" name="deliveryType" value="same address" checked={true} aria-label="delivery to the same address" role="radio"></RadioButtonComponent>
-                                        <RadioButtonComponent label="Delivery to another address" name="deliveryType" value="another address" aria-label="delivery to the another address" role="radio"></RadioButtonComponent>
-                                        <RadioButtonComponent label="Store pickup" name="deliveryType" value="store pickup" aria-label="store pickup" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="Delivery to the same address" name="deliveryType" value="same address" checked={true}></RadioButtonComponent>
+                                        <RadioButtonComponent label="Delivery to another address" name="deliveryType" value="another address"></RadioButtonComponent>
+                                        <RadioButtonComponent label="Store pickup" name="deliveryType" value="store pickup"></RadioButtonComponent>
                                     </div>
                                 </div>
                                 <div className="md:border rounded-lg px-0 md:p-6 mt-6 md:border-gray-200 md:dark:border-gray-600">
                                     <div className="text-lg font-semibold text-gray-900 dark:text-white">Payment details</div>
                                     <div className="flex flex-col gap-4 pt-4 e-bigger">
-                                        <RadioButtonComponent label="Debit card" name="paymentdetails" value="bank" checked={true} aria-label="debit card" role="radio"></RadioButtonComponent>
-                                        <RadioButtonComponent label="Credit card" name="paymentdetails" value="payments" aria-label="credit card" role="radio"></RadioButtonComponent>
-                                        <RadioButtonComponent label="Net banking" name="paymentdetails" value="banking" aria-label="net banking" role="radio"></RadioButtonComponent>
-                                        <RadioButtonComponent label="UPI transaction" name="paymentdetails" value="UPI transaction" aria-label="UPI transaction" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="Debit card" name="paymentdetails" value="bank" checked={true}></RadioButtonComponent>
+                                        <RadioButtonComponent label="Credit card" name="paymentdetails" value="payments"></RadioButtonComponent>
+                                        <RadioButtonComponent label="Net banking" name="paymentdetails" value="banking"></RadioButtonComponent>
+                                        <RadioButtonComponent label="UPI transaction" name="paymentdetails" value="UPI transaction"></RadioButtonComponent>
                                     </div>
                                 </div>
                             </div>
@@ -207,10 +207,10 @@ export default function Checkout3() {
                                     </div>
                                     <div className="flex flex-col md:flex-row items-center justify-center pt-8 gap-4 sm:gap-4 md:gap-0 lg:gap-0 xl:gap-0">
                                         <div className="w-full md:w-1/2 md:pr-3">
-                                            <ButtonComponent className="w-full text-base e-primary" type="submit" aria-label="proceed to payment" role="button">Proceed to payment</ButtonComponent>
+                                            <ButtonComponent className="w-full text-base e-primary" type="submit">Proceed to payment</ButtonComponent>
                                         </div>
                                         <div className="w-full md:w-1/2 md:pl-3">
-                                            <ButtonComponent className="w-full text-base e-outline" type="submit" aria-label="return to shopping" role="button">Return to shopping</ButtonComponent>
+                                            <ButtonComponent className="w-full text-base e-outline" type="submit">Return to shopping</ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -226,7 +226,7 @@ export default function Checkout3() {
                             <div className="d-lg-flex mx-0 gap-4 mb-sm-4 pe-lg-4">
                                 <div className="col-md-12 col-lg-6 order-lg-2 bg-body border border-light-subtle rounded px-0">
                                     <h6 className="fs-5 fw-medium text-body pb-2 p-4 mb-0">Product summary</h6>
-                                    <GridComponent className="border-0 pt-3" dataSource={data} rowHeight={68} gridLines="None" width="100%" role="grid" style={{ maxWidth: "1280px", border: "none" }}>
+                                    <GridComponent className="border-0 pt-3" dataSource={data} rowHeight={68} gridLines="None" width="100%" style={{ maxWidth: "1280px", border: "none" }}>
                                         <ColumnsDirective>
                                             <ColumnDirective field="Items" width="56" textAlign="Center" template={({ image })=> (
                                                 <div className="d-flex align-items-center justify-content-center">
@@ -245,21 +245,21 @@ export default function Checkout3() {
                                         <div className="mb-3">
                                             <h5 className="mb-3 fs-5 fw-medium text-body">Billing address</h5>
                                             <div className="mb-3 e-bigger">
-                                                <RadioButtonComponent name="billingType" value="individual" label="Individual" checked={true} aria-label="individual" role="radio"></RadioButtonComponent>
-                                                <RadioButtonComponent cssClass="ms-3" name="billingType" value="company" label="Company" aria-label="company" role="radio"></RadioButtonComponent>
+                                                <RadioButtonComponent name="billingType" value="individual" label="Individual" checked={true}></RadioButtonComponent>
+                                                <RadioButtonComponent cssClass="ms-3" name="billingType" value="company" label="Company"></RadioButtonComponent>
                                             </div>
                                             <div className="mb-3">
                                                 <label className="fs-6 fw-medium text-dark-emphasis mb-1">Saved address</label>
-                                                <DropDownListComponent cssClass="e-bigger" placeholder="Saved address" aria-label="choose a saved address" role="listbox"></DropDownListComponent>
+                                                <DropDownListComponent cssClass="e-bigger" placeholder="Saved address"></DropDownListComponent>
                                             </div>
                                             <div className="row g-3">
                                                 <div className="col-md-6 pe-lg-2">
                                                     <label className="fs-6 fw-medium text-dark-emphasis mb-1">First name</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="firstName" placeholder="First name" floatLabelType="Never" aria-label="enter the first name" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="firstName" placeholder="First name" floatLabelType="Never"></TextBoxComponent>
                                                 </div>
                                                 <div className="col-md-6 ps-lg-2">
                                                     <label className="fs-6 fw-medium text-dark-emphasis mb-1">Last name</label>
-                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="lastName" placeholder="Last name" floatLabelType="Never" aria-label="enter the last name" role="textbox"></TextBoxComponent>
+                                                    <TextBoxComponent cssClass="e-bigger" type="text" name="lastName" placeholder="Last name" floatLabelType="Never"></TextBoxComponent>
                                             </div>
                                             </div>
                                         </div>
@@ -267,29 +267,29 @@ export default function Checkout3() {
                                             <label className="fs-6 fw-medium text-dark-emphasis mb-1">Phone number</label>
                                             <div className="row">
                                                 <div className="col-4 col-sm-3 pe-0">
-                                                    <DropDownListComponent cssClass="e-bigger" placeholder="+1" aria-label="choose a country code" role="listbox"></DropDownListComponent>
+                                                    <DropDownListComponent cssClass="e-bigger" placeholder="+1"></DropDownListComponent>
                                                 </div>
                                                 <div className="col-8 col-sm-9 ps-2">
-                                                    <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" placeholder="432 432 4321" promptChar=" " aria-label="enter the phone number" role="textbox"></MaskedTextBoxComponent>
+                                                    <MaskedTextBoxComponent cssClass="e-bigger" mask="9999999999" placeholder="432 432 4321" promptChar=" "></MaskedTextBoxComponent>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="mb-3">
                                             <label className="fs-6 fw-medium text-dark-emphasis d-block mb-1">Shipping address</label>
-                                            <TextAreaComponent cssClass="e-bigger" placeholder="Shipping address" resizeMode="Vertical" aria-label="enter the shipping address" role="textbox"></TextAreaComponent>
+                                            <TextAreaComponent cssClass="e-bigger" placeholder="Shipping address" resizeMode="Vertical"></TextAreaComponent>
                                         </div>
                                         <div className="row g-3 mb-3">
                                             <div className="col-12 col-md-6 pe-lg-2">
                                                 <label className="fs-6 fw-medium text-dark-emphasis mb-1">Country</label>
-                                                <DropDownListComponent cssClass="e-bigger" placeholder="Country" aria-label="choose a country" role="listbox"></DropDownListComponent>
+                                                <DropDownListComponent cssClass="e-bigger" placeholder="Country"></DropDownListComponent>
                                             </div>
                                             <div className="col-12 col-md-6 ps-lg-2">
                                                 <label className="fs-6 fw-medium text-dark-emphasis mb-1">City</label>
-                                                <DropDownListComponent cssClass="e-bigger" placeholder="City" aria-label="choose a city" role="listbox"></DropDownListComponent>
+                                                <DropDownListComponent cssClass="e-bigger" placeholder="City"></DropDownListComponent>
                                             </div>
                                         </div>
                                         <div className="mb-3 e-bigger">
-                                            <CheckBoxComponent label="Save the data in the address list" aria-label="save the data in the address list" role="checkbox"></CheckBoxComponent>
+                                            <CheckBoxComponent label="Save the data in the address list"></CheckBoxComponent>
                                         </div>
                                     </form>
                                 </div>
@@ -299,18 +299,18 @@ export default function Checkout3() {
                                     <div className="col-lg-12 border border-light-subtle rounded p-3 p-md-4">
                                         <h6 className="fs-5 fw-medium text-body mb-0">Delivery address</h6>
                                         <div className="e-bigger d-flex flex-column gap-3 pt-3">
-                                            <RadioButtonComponent label="Delivery to the same address" name="deliveryType" value="same address" checked={true} aria-label="delivery to the same address" role="radio"></RadioButtonComponent>
-                                            <RadioButtonComponent label="Delivery to the another address" name="deliveryType" value="another address" aria-label="delivery to the another address" role="radio"></RadioButtonComponent>
-                                            <RadioButtonComponent label="Store pickup" name="deliveryType" value="store pickup" aria-label="store pickup" role="radio"></RadioButtonComponent>
+                                            <RadioButtonComponent label="Delivery to the same address" name="deliveryType" value="same address" checked={true}></RadioButtonComponent>
+                                            <RadioButtonComponent label="Delivery to the another address" name="deliveryType" value="another address"></RadioButtonComponent>
+                                            <RadioButtonComponent label="Store pickup" name="deliveryType" value="store pickup"></RadioButtonComponent>
                                         </div>
                                     </div>
                                     <div className="col-lg-12 border border-light-subtle rounded p-3 p-md-4 mt-4">
                                         <h6 className="fs-5 fw-medium text-body mb-0">Payment details</h6>
                                         <div className="e-bigger d-flex flex-column gap-3 pt-3">
-                                            <RadioButtonComponent label="Debit card" name="paymentdetails" value="bank" checked={true} aria-label="debit card" role="radio"></RadioButtonComponent>
-                                            <RadioButtonComponent label="Credit card" name="paymentdetails" value="payments" aria-label="credit card" role="radio"></RadioButtonComponent>
-                                            <RadioButtonComponent label="Net banking" name="paymentdetails" value="banking" aria-label="net banking" role="radio"></RadioButtonComponent>
-                                            <RadioButtonComponent label="UPI transaction" name="paymentdetails" value="UPI transaction" aria-label="UPI transaction" role="radio"></RadioButtonComponent>
+                                            <RadioButtonComponent label="Debit card" name="paymentdetails" value="bank" checked={true}></RadioButtonComponent>
+                                            <RadioButtonComponent label="Credit card" name="paymentdetails" value="payments"></RadioButtonComponent>
+                                            <RadioButtonComponent label="Net banking" name="paymentdetails" value="banking"></RadioButtonComponent>
+                                            <RadioButtonComponent label="UPI transaction" name="paymentdetails" value="UPI transaction"></RadioButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -342,8 +342,8 @@ export default function Checkout3() {
                                         <div className="fs-6 fw-medium text-body">$9,599.00</div>
                                     </div>
                                     <div className="d-flex flex-column flex-md-row align-items-center justify-content-between pt-4">
-                                        <ButtonComponent className="e-primary e-block mb-3 mb-md-0 me-md-3" type="submit" aria-label="proceed to payment" role="button">Proceed to payment</ButtonComponent>
-                                        <ButtonComponent className="e-secondary e-block" type="submit" aria-label="return to shopping" role="button">Return to shopping</ButtonComponent>
+                                        <ButtonComponent className="e-primary e-block mb-3 mb-md-0 me-md-3" type="submit">Proceed to payment</ButtonComponent>
+                                        <ButtonComponent className="e-secondary e-block" type="submit">Return to shopping</ButtonComponent>
                                     </div>
                                 </div>
                             </div>

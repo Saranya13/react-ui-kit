@@ -56,7 +56,7 @@ export default function Calendar6() {
         setMenuItems(updatedItems);
     };
 
-    const getMonthAbbreviation = (date: any): void => {
+    const getMonthAbbreviation = (date: any): string => {
         return date.split(", ")[1].split(" ")[0];
     };
   
@@ -103,20 +103,20 @@ export default function Calendar6() {
                 return (
                     <section className="bg-white dark:bg-gray-900">
                         <div id={styles["calendar-timeline"]} style={{ height: '912px', width: width, float: 'right' }}>
-                            <SidebarComponent className="w-full bg-white dark:bg-gray-900" ref={sidebar} position="Right" type="Push" width={width} isOpen={true} showBackdrop={true} role="complementary" style={{ display: "block" }}>
+                            <SidebarComponent className="w-full bg-white dark:bg-gray-900" ref={sidebar} position="Right" type="Push" width={width} isOpen={true} showBackdrop={true} style={{ display: "block" }}>
                                 <div>
                                     <div className="flex justify-between items-center px-4 py-3">
                                         <div className="w-32">
                                             <label className="text-sm text-gray-900 dark:text-white">CALENDAR</label>
-                                            <DatePickerComponent start="Decade" depth="Decade" format="yyyy" aria-label="enter a year here" role="combobox"></DatePickerComponent>
+                                            <DatePickerComponent start="Decade" depth="Decade" format="yyyy"></DatePickerComponent>
                                         </div>
-                                        <ButtonComponent className="e-flat text-base" iconCss="e-icons e-close" onClick={() => sidebar.current?.hide()} content=" " type="button" aria-label="close sidebar" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat text-base" iconCss="e-icons e-close" onClick={() => sidebar.current?.hide()} content=" " type="button"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="flex px-4 py-2 border-y border-gray-200 dark:border-gray-600 justify-between">
-                                    <ButtonComponent className="e-primary e-outline" content="Request time off" iconCss="e-icons e-plus" type="button" aria-label="request time off" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-primary e-outline" content="Request time off" iconCss="e-icons e-plus" type="button"></ButtonComponent>
                                     <div className="my-auto">
-                                        <DropDownButtonComponent items={menuItems} cssClass="e-flat background-none !border-none e-caret-hide" iconCss="e-icons e-more-vertical-2" type="button" content=" " select={leaveOptions} aria-label="select the leave options" role="button"></DropDownButtonComponent>
+                                        <DropDownButtonComponent items={menuItems} cssClass="e-flat background-none !border-none e-caret-hide" iconCss="e-icons e-more-vertical-2" type="button" content=" " select={leaveOptions}></DropDownButtonComponent>
                                     </div>
                                 </div>
                                 <div className="p-4">
@@ -208,7 +208,7 @@ export default function Calendar6() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 right-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button" aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button"></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -217,20 +217,20 @@ export default function Calendar6() {
                 return (
                     <section className="bg-light">
                         <div id={styles["calendar-timeline"]} style={{ height: "940px", width: width, float: "right" }}>
-                            <SidebarComponent className="bg-body" ref={sidebar} position="Right" type="Push" width={width} isOpen={true} showBackdrop={true} role="complementary" style={{ display: "block" }}>
+                            <SidebarComponent className="bg-body" ref={sidebar} position="Right" type="Push" width={width} isOpen={true} showBackdrop={true} style={{ display: "block" }}>
                                 <div>
                                     <div className="d-flex justify-content-between align-items-center p-3">
                                         <div className="w-50">
                                             <label className="fs-6 text-body-secondary">CALENDAR</label>
-                                            <DatePickerComponent start="Year" depth="Year" format="yyyy" aria-label="enter a year here" role="combobox"></DatePickerComponent>
+                                            <DatePickerComponent start="Year" depth="Year" format="yyyy"></DatePickerComponent>
                                         </div>
-                                        <ButtonComponent className="e-flat fs-6" iconCss="e-icons e-close" onClick={() => sidebar.current?.hide()} content=" " type="button" aria-label="close sidebar" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat fs-6" iconCss="e-icons e-close" onClick={() => sidebar.current?.hide()} content=" " type="button"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="d-flex p-3 border-bottom border-top border-light-subtle justify-content-between">
-                                    <ButtonComponent className="e-primary e-outline" content="Request time off" iconCss="e-icons e-plus" type="button" aria-label="request time off" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-primary e-outline" content="Request time off" iconCss="e-icons e-plus" type="button"></ButtonComponent>
                                     <div className="my-auto">
-                                        <DropDownButtonComponent items={menuItems} cssClass="e-flat border-0 e-caret-hide" iconCss="e-icons e-more-vertical-2" type="button" content=" " select={leaveOptions} aria-label="select the leave options" role="button"></DropDownButtonComponent>
+                                        <DropDownButtonComponent items={menuItems} cssClass="e-flat border-0 e-caret-hide" iconCss="e-icons e-more-vertical-2" type="button" content=" " select={leaveOptions}></DropDownButtonComponent>
                                     </div>
                                 </div>
                                 {selectedItem === "Holiday" ? (
@@ -320,7 +320,7 @@ export default function Calendar6() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 position-absolute top-0 end-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button" aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button"></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

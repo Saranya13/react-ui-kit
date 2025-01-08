@@ -49,33 +49,33 @@ export default function Navbar2() {
                                         </span>
                                     </div>
                                     <div className="flex hidden lg:block px-4">
-                                        <ButtonComponent className="py-2 mr-1.5" cssClass="e-flat" type="button" aria-label="home" role="button">Home</ButtonComponent>
-                                        <ButtonComponent className="py-2 mr-1.5" cssClass="e-flat" type="button" aria-label="clients" role="button">Clients</ButtonComponent>
-                                        <ButtonComponent className="py-2 mr-1.5" cssClass="e-flat" type="button" aria-label="marketing" role="button">Marketing</ButtonComponent>
-                                        <ButtonComponent className="py-2 mr-1.5" cssClass="e-flat" type="button" aria-label="contacts" role="button">Contacts</ButtonComponent>
+                                        <ButtonComponent className="py-2 mr-1.5" cssClass="e-flat" type="button">Home</ButtonComponent>
+                                        <ButtonComponent className="py-2 mr-1.5" cssClass="e-flat" type="button">Clients</ButtonComponent>
+                                        <ButtonComponent className="py-2 mr-1.5" cssClass="e-flat" type="button">Marketing</ButtonComponent>
+                                        <ButtonComponent className="py-2 mr-1.5" cssClass="e-flat" type="button">Contacts</ButtonComponent>
                                     </div>
                                     <div className="flex items-center">
-                                        <ButtonComponent className="mr-2 hidden sm:block" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button" aria-label="upgrade" role="button">Upgrade</ButtonComponent>
+                                        <ButtonComponent className="mr-2 hidden sm:block" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button">Upgrade</ButtonComponent>
                                         <div className="border border-gray-200 dark:border-gray-600 h-7 hidden sm:block mx-2"></div>
-                                        <ButtonComponent className="sf-icon-notification-bell-02 leading-3 text-base hidden sm:block" cssClass="e-flat" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                        <ButtonComponent className="sf-icon-notification-bell-02 leading-3 text-base hidden sm:block" cssClass="e-flat" type="button"></ButtonComponent>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 h-7 hidden sm:block mx-2"></div>
-                                        <ButtonComponent className="e-icons e-grid-view hidden sm:block mr-2" cssClass="e-flat" aria-label="grid view" type="button" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-icons e-grid-view hidden sm:block mr-2" cssClass="e-flat" type="button"></ButtonComponent>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 h-7 hidden sm:block mr-2"></div>
                                         <span className="e-avatar e-avatar-small e-avatar-circle ml-1.5 mr-1.5 lg:mr-0">
                                             <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />
                                         </span>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 h-7 block lg:hidden ml-2"></div>
                                         <span id={styles.menu} className="block lg:hidden">
-                                            <MenuComponent items={[{ text: 'Home' }, { text: 'Clients' }, { text: 'Marketing' }, { text: 'Contacts' }, { text: 'Others', items: [{ text: 'Demos' }, { text: 'Features' }, { text: 'Video Tutorials' }, { text: 'Support Center' }, { text: 'Forum' }] }]} hamburgerMode={true} title="" showItemOnClick={true} aria-label="menu items" role="menu"></MenuComponent>
+                                            <MenuComponent items={[{ text: 'Home' }, { text: 'Clients' }, { text: 'Marketing' }, { text: 'Contacts' }, { text: 'Others', items: [{ text: 'Demos' }, { text: 'Features' }, { text: 'Video Tutorials' }, { text: 'Support Center' }, { text: 'Forum' }] }]} hamburgerMode={true} title="" showItemOnClick={true}></MenuComponent>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div className="hidden lg:flex justify-between ps-4 pe-6 py-1 bg-gray-100 dark:bg-gray-700 border border-t-0 border-r-0 border-l-0 border-gray-200 dark:border-gray-600">
-                                <MenuComponent items={[{ text: 'Demos' }, { text: 'Features' }, { text: 'Video Tutorials' }, { text: 'Support Center' }, { text: 'Forum' }]} aria-label="menu items" role="menu"></MenuComponent>
+                                <MenuComponent items={[{ text: 'Demos' }, { text: 'Features' }, { text: 'Video Tutorials' }, { text: 'Support Center' }, { text: 'Forum' }]}></MenuComponent>
                                 <div className="flex items-center">
                                     <div className="e-input-group w-72">
-                                        <input className="e-input" type="text" placeholder="Search" aria-label="search" role="textbox" />
+                                        <input className="e-input" type="text" placeholder="Search" />
                                         <span className="e-input-group-icon e-icons e-search"></span>
                                     </div>
                                 </div>
@@ -93,34 +93,34 @@ export default function Navbar2() {
                                     <h5 className="fw-bold text-body fs-5 mb-0">Company Name</h5>
                                 </div>
                                 <div className="d-none d-lg-flex px-3">
-                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button" aria-label="home" role="button">Home</ButtonComponent>
-                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button" aria-label="clients" role="button">Clients</ButtonComponent>
-                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button" aria-label="marketing" role="button">Marketing</ButtonComponent>
-                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button" aria-label="contacts" role="button">Contacts</ButtonComponent>
+                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button">Home</ButtonComponent>
+                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button">Clients</ButtonComponent>
+                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button">Marketing</ButtonComponent>
+                                    <ButtonComponent className="py-2 me-2" cssClass="e-flat" type="button">Contacts</ButtonComponent>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <ButtonComponent className="me-3 d-none d-sm-block" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button" aria-label="upgrade" role="button">Upgrade</ButtonComponent>
+                                    <ButtonComponent className="me-3 d-none d-sm-block" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button">Upgrade</ButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-sm-block me-3" style={{ height: '24px' }}></div>
-                                    <ButtonComponent className="sf-icon-notification-bell-01 fs-6 d-none d-sm-block me-3" cssClass="e-flat" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                    <ButtonComponent className="sf-icon-notification-bell-01 fs-6 d-none d-sm-block me-3" cssClass="e-flat" type="button"></ButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-sm-block me-3" style={{ height: '24px' }}></div>
-                                    <ButtonComponent className="e-icons e-grid-view d-none d-sm-block me-3 e-medium" cssClass="e-flat" type="button" aria-label="grid view" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-icons e-grid-view d-none d-sm-block me-3 e-medium" cssClass="e-flat" type="button"></ButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-sm-block me-3" style={{ height: '24px' }}></div>
                                     <span className="e-avatar e-avatar-small e-avatar-circle">
                                         <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />
                                     </span>
                                     <div className="border-end border-secondary-subtle d-block d-lg-none ms-3" style={{ height: '24px' }}></div>
                                     <span id={styles.menu} className="d-lg-none">
-                                        <MenuComponent className="bg-body-tertiary" items={[{ text: 'Home' }, { text: 'Clients' }, { text: 'Marketing' }, { text: 'Contacts' }, { text: 'Others', items: [{ text: 'Demos' }, { text: 'Features' }, { text: 'Video Tutorials' }, { text: 'Support Center' }, { text: 'Forum' }] }]} hamburgerMode={true} title="" showItemOnClick={true} aria-label="menu items" role="menu"></MenuComponent>
+                                        <MenuComponent className="bg-body-tertiary" items={[{ text: 'Home' }, { text: 'Clients' }, { text: 'Marketing' }, { text: 'Contacts' }, { text: 'Others', items: [{ text: 'Demos' }, { text: 'Features' }, { text: 'Video Tutorials' }, { text: 'Support Center' }, { text: 'Forum' }] }]} hamburgerMode={true} title="" showItemOnClick={true}></MenuComponent>
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <div className="d-none d-lg-block border border-top-0 border-light-subtle bg-body-tertiary py-1 ps-3 pe-4">
                             <div className="justify-content-between" style={{ height: '40px', display: 'flex', alignItems: 'center' }}>
-                                <MenuComponent items={[{ text: 'Demos' }, { text: 'Features' }, { text: 'Video Tutorials' }, { text: 'Support Center' }, { text: 'Forum' }]} aria-label="menu items" role="menu"></MenuComponent>
+                                <MenuComponent items={[{ text: 'Demos' }, { text: 'Features' }, { text: 'Video Tutorials' }, { text: 'Support Center' }, { text: 'Forum' }]}></MenuComponent>
                                 <div className="d-flex align-items-center w-md-auto col-6 col-xl-2 col-lg-3 col-md-2">
                                     <div className="e-input-group">
-                                        <input className="e-input" type="text" placeholder="Search" aria-label="search" role="textbox" />
+                                        <input className="e-input" type="text" placeholder="Search" />
                                         <span className="e-input-group-icon e-icons e-search border-start-0"></span>
                                     </div>
                                 </div>

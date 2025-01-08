@@ -110,7 +110,7 @@ export default function List4() {
                     <section className="bg-white dark:bg-gray-900">
                         <div className="flex items-center justify-center min-h-screen">
                             <div className="lg:max-w-2xl w-full m-auto p-4 md:p-6 lg:py-8 lg:px-14">
-                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={data} aria-label="items in shopping cart" role="list" template={(data: any) => (
+                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={data} template={(data: any) => (
                                     <div className="e-list-wrapper !px-1 sm:!px-3 border-b border-gray-200 dark:border-gray-600 !py-4 flex flex-col">
                                         <span className="flex">
                                             <Image className="rounded-lg" src={`/assets/images/listview/carts/${data.pic}`} width={80} height={80} alt="product image" />
@@ -132,22 +132,22 @@ export default function List4() {
                                         <div className="flex items-center mt-4 sm:mt-0 ml-0 sm:ml-24">
                                             <div className="flex items-center">
                                                 <span className="e-small">
-                                                    <ButtonComponent className="e-round mr-2" iconCss="e-icons e-plus !text-sm" type="button" aria-label="add another item to cart" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-round mr-2" iconCss="e-icons e-plus !text-sm" type="button"></ButtonComponent>
                                                 </span>
-                                                <TextBoxComponent cssClass="e-small" className="text-center !pl-0" width="50px" value='1' aria-label="quantity of the product" role="textbox"></TextBoxComponent>
+                                                <TextBoxComponent cssClass="e-small" className="text-center !pl-0" width="50px" value='1'></TextBoxComponent>
                                                 <span className="e-small">
-                                                    <ButtonComponent className="e-round ml-2" iconCss="e-icons e-intermediate-state !text-sm" type="button" aria-label="remove item from cart" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-round ml-2" iconCss="e-icons e-intermediate-state !text-sm" type="button"></ButtonComponent>
                                                 </span>
                                             </div>
                                             <div className="flex items-center ml-4">
                                                 <span className="e-small border-r border-gray-200 dark:border-gray-600 px-2">
-                                                    <ButtonComponent cssClass="e-flat" iconCss="e-icons e-trash e-medium" type="button" aria-label="delete the product" role="button"></ButtonComponent>
+                                                    <ButtonComponent cssClass="e-flat" iconCss="e-icons e-trash e-medium" type="button"></ButtonComponent>
                                                 </span>
                                                 <span className="e-small border-r border-gray-200 dark:border-gray-600 px-2">
-                                                    <ButtonComponent cssClass="e-flat" iconCss="e-icons e-medium e-bookmark" type="button" aria-label="bookmark this product" role="button"></ButtonComponent>
+                                                    <ButtonComponent cssClass="e-flat" iconCss="e-icons e-medium e-bookmark" type="button"></ButtonComponent>
                                                 </span>
                                                 <span className="e-small px-2">
-                                                    <ButtonComponent cssClass="e-flat" iconCss="e-icons text-sm sf-icon-share-arrow-02" type="button" aria-label="share this product details" role="button"></ButtonComponent>
+                                                    <ButtonComponent cssClass="e-flat" iconCss="e-icons text-sm sf-icon-share-arrow-02" type="button"></ButtonComponent>
                                                 </span>
                                             </div>
                                         </div>
@@ -162,7 +162,7 @@ export default function List4() {
                     <section className="bg-body">
                         <div className="d-flex align-items-center justify-content-center min-vh-100">
                             <div className="container-lg w-100 m-auto p-3 p-md-4" style={width}>
-                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={data} aria-label="items in shopping cart" role="list" template={(data: any)=> (
+                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={data} template={(data: any)=> (
                                     <div className="e-list-wrapper px-1 px-sm-3 py-3 d-flex flex-column">
                                         <span className="d-flex">
                                             <Image className="rounded" src={`/assets/images/listview/carts/${data.pic}`} width={80} height={80} alt="product image" />
@@ -184,22 +184,22 @@ export default function List4() {
                                         <div className="d-flex align-items-center mt-3 mt-sm-0 ms-0 ms-sm-5 ps-sm-5">
                                             <div className="d-flex align-items-center">
                                                 <span className="e-small">
-                                                    <ButtonComponent className="e-round e-outline me-2" iconCss="e-icons e-plus" type="button" aria-label="add another item to cart" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-round e-outline me-2" iconCss="e-icons e-plus" type="button"></ButtonComponent>
                                                 </span>
-                                                <TextBoxComponent className="ps-0 text-center" cssClass="e-small" width="50px" value='1' aria-label="quantity of the product" role="textbox"></TextBoxComponent>
+                                                <TextBoxComponent className="ps-0 text-center" cssClass="e-small" width="50px" value='1'></TextBoxComponent>
                                                 <span className="e-small">
-                                                    <ButtonComponent className="e-round e-outline ms-2" iconCss="e-icons e-intermediate-state-2" type="button" aria-label="remove item from cart" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-round e-outline ms-2" iconCss="e-icons e-intermediate-state-2" type="button"></ButtonComponent>
                                                 </span>
                                             </div>
                                             <div className="d-flex align-items-center ms-4">
                                                 <span className="border-end px-2">
-                                                    <ButtonComponent className="e-flat" iconCss="e-icons e-trash e-medium" type="button" aria-label="delete this product" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-flat" iconCss="e-icons e-trash e-medium" type="button"></ButtonComponent>
                                                 </span>
                                                 <span className="border-end px-2">
-                                                    <ButtonComponent className="e-flat" iconCss="e-icons e-medium e-bookmark" type="button" aria-label="bookmark this product" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-flat" iconCss="e-icons e-medium e-bookmark" type="button"></ButtonComponent>
                                                 </span>
                                                 <span className="px-2">
-                                                    <ButtonComponent className="e-flat" iconCss="e-icons small sf-icon-share-arrow-02" type="button" aria-label="share this product details" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-flat" iconCss="e-icons small sf-icon-share-arrow-02" type="button"></ButtonComponent>
                                                 </span>
                                             </div>
                                         </div>

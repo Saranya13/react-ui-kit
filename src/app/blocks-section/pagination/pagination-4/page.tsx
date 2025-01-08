@@ -42,14 +42,14 @@ export default function Pagination4() {
                         <div className="px-6">
                             <PagerComponent key={"page-enter-pagination1"} className="border-t-0 border-x-0 px-0 py-2 bg-transparent" template={() => (
                                 <div className="!flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300">
-                                    <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-left" type="button" aria-label="go to previous page" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
                                     <span className="px-4">Page</span>
-                                    <TextBoxComponent className="e-outline" value="2" width="68" aria-label="enter the page number" role="textbox"></TextBoxComponent>
+                                    <TextBoxComponent className="e-outline" value="2" width="68"></TextBoxComponent>
                                     <span className="px-2">of 218</span>
-                                    <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-right" type="button" aria-label="go to next page" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-right" type="button"></ButtonComponent>
                                     <div className="sm:!flex !hidden items-center ml-auto space-x-4">
                                         <span>Items per page</span>
-                                        <DropDownButtonComponent className="e-outline leading-6" content="2" type="button" beforeOpen={(event: any) => (event.cancel = true)} aria-label="choose the page number" role="dropdown button"></DropDownButtonComponent>
+                                        <DropDownButtonComponent className="e-outline leading-6" content="2" type="button" beforeOpen={(event: any) => (event.cancel = true)}></DropDownButtonComponent>
                                     </div>
                                 </div>)}
                             ></PagerComponent>
@@ -62,14 +62,14 @@ export default function Pagination4() {
                         <div className="px-4">
                             <PagerComponent key={"page-enter-pagination2"} className="border-top-0 border-start-0 border-end-0 py-2 px-0" template={() => (
                                 <div className="d-flex align-items-center gap-2 fs-6 text-body">
-                                    <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-left" type="button" aria-label="go to previous page" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
                                     <span className="ms-1">Page</span>
-                                    <TextBoxComponent value="2" width="68" aria-label="enter the page number" role="textbox"></TextBoxComponent>
+                                    <TextBoxComponent value="2" width="68"></TextBoxComponent>
                                     <span className="me-1">of 218</span>
-                                    <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-right" type="button" aria-label="go to next page" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-right" type="button"></ButtonComponent>
                                     <div className="d-none d-sm-flex align-items-center ms-auto gap-2">
                                         <span>Items per page</span>
-                                        <DropDownButtonComponent className="e-outline" content="2" type="button" beforeOpen={(event: any) => (event.cancel = true)} aria-label="choose the page number" role="dropdown button"></DropDownButtonComponent>
+                                        <DropDownButtonComponent className="e-outline" content="2" type="button" beforeOpen={(event: any) => (event.cancel = true)}></DropDownButtonComponent>
                                     </div>
                                 </div>)}
                             ></PagerComponent>

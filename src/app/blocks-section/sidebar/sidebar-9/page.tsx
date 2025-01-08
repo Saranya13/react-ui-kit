@@ -111,13 +111,13 @@ export default function Sidebar9() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["nested-sidebar"]} style={{ height: '580px' }}>
-                            <SidebarComponent key={'nested-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="328px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'nested-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="328px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="flex h-screen">
                                     <div className="py-4" style={{ width: '72px' }}>
                                         <div className="flex justify-center items-center px-3 mb-2">
                                             <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         </div>
-                                        <ListViewComponent className="border-0 e-bigger" dataSource={data1} aria-label="quick navigation links" role="list" template={(data: any) => (
+                                        <ListViewComponent className="border-0 e-bigger" dataSource={data1} template={(data: any) => (
                                             <div className="e-list-wrapper flex justify-center items-center">
                                                 <span className={`e-icons e-large ${data.fontIcon}`}></span>
                                             </div>)}
@@ -126,7 +126,7 @@ export default function Sidebar9() {
                                     <div className="pt-4 border-l h-screen border-gray-200 dark:border-gray-700 flex flex-col justify-between" style={{ width: '256px' }}>
                                         <div>
                                             <p className="text-base text-gray-700 dark:text-gray-300 pb-2 px-4">Overview</p>
-                                            <ListViewComponent className="border-0" dataSource={data2} aria-label="main navigation links" role="list" template={(data: any) => (
+                                            <ListViewComponent className="border-0" dataSource={data2} template={(data: any) => (
                                                 <div className="e-list-wrapper flex items-center justify-between ml-1.5 pr-1.5">
                                                     <span className="flex items-center">
                                                         <span className={`e-icons ${data.fontIcon} text-base`}></span>
@@ -142,7 +142,7 @@ export default function Sidebar9() {
                                             ></ListViewComponent>
                                             <hr className="border-gray-200 dark:border-gray-700 m-4" />
                                             <div>
-                                                <ListViewComponent className="!border-0" dataSource={data3} aria-label="other navigation links" role="list" template={(data: any) => (
+                                                <ListViewComponent className="!border-0" dataSource={data3} template={(data: any) => (
                                                     <div className="e-list-wrapper ml-1.5">
                                                         <span className="text-base font-normal">{data.field}</span>
                                                     </div>
@@ -150,14 +150,14 @@ export default function Sidebar9() {
                                                 ></ListViewComponent>
                                             </div>
                                         </div>
-                                        <ButtonComponent cssClass="e-icons e-chevron-left e-large e-flat ml-auto m-4" type="button" aria-label="expand/collapse menu" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-icons e-chevron-left e-large e-flat ml-auto m-4" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 left-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -166,13 +166,13 @@ export default function Sidebar9() {
                 return (
                     <section className="bg-body">
                         <div id={styles["nested-sidebar"]} style={{ height: '600px' }}>
-                            <SidebarComponent key={'nested-sidebar2'} width="328px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'nested-sidebar2'} width="328px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="d-flex vh-100">
                                     <div className="py-4 d-flex flex-column align-items-center" style={{ width: '72px' }}>
                                         <div className="d-flex justify-content-center align-items-center px-3 mb-2">
                                             <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         </div>
-                                        <ListViewComponent className="border-0 e-bigger" dataSource={data1} aria-label="quick navigation links" role="list" template={(data: any) => (
+                                        <ListViewComponent className="border-0 e-bigger" dataSource={data1} template={(data: any) => (
                                             <div className="e-list-wrapper d-flex justify-content-center align-items-center">
                                                 <span className={`e-icons e-large ${data.fontIcon}`}></span>
                                             </div>)}
@@ -181,7 +181,7 @@ export default function Sidebar9() {
                                     <div className="pt-4 vh-100 border-start border-light-subtle opacity-100 d-flex flex-column justify-content-between" style={{ width: '256px' }}>
                                         <div>
                                             <p className="text-body-secondary pb-2 px-3 mb-0 fs-6 mt-2">Overview</p>
-                                            <ListViewComponent className="border-0 e-bigger" dataSource={data2} aria-label="main navigation links" role="list" template={(data: any) => (
+                                            <ListViewComponent className="border-0 e-bigger" dataSource={data2} template={(data: any) => (
                                                 <div className="e-list-wrapper d-flex align-items-center justify-content-between ps-1 pe-2">
                                                     <span className="d-flex align-items-center">
                                                         <span className={`e-icons ${data.fontIcon} fs-6`}></span>
@@ -197,7 +197,7 @@ export default function Sidebar9() {
                                             ></ListViewComponent>
                                             <p className="m-3 fs-6 text-body-secondary">Others</p>
                                             <div>
-                                                <ListViewComponent className="border-0 e-bigger" dataSource={data3} aria-label="other navigation links" role="list" template={(data: any) => (
+                                                <ListViewComponent className="border-0 e-bigger" dataSource={data3} template={(data: any) => (
                                                     <div className="e-list-wrapper px-1">
                                                         <span className="fs-6 fw-normal">{data.field}</span>
                                                     </div>
@@ -205,14 +205,14 @@ export default function Sidebar9() {
                                                 ></ListViewComponent>
                                             </div>
                                         </div>
-                                        <ButtonComponent cssClass="e-icons e-chevron-left e-large e-flat ms-auto m-3" type="button" aria-label="expand/collapse menu" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-icons e-chevron-left e-large e-flat ms-auto m-3" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 start-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

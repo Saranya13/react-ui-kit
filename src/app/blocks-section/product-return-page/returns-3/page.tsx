@@ -86,27 +86,27 @@ export default function ReturnBlock3() {
                             <div className="mb-6 flex sm:gap-5 flex-col sm:flex-row gap-4 e-bigger">
                                 <div className="e-card pt-3 rounded-lg shadow-none border-transparent">
                                     <div className="e-card-content grow !pt-1">
-                                        <RadioButtonComponent label="Express Courier - $19" checked={true} name="pickupOptions" value="0" aria-label="express courier option costing $19" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="Express Courier - $19" checked={true} name="pickupOptions" value="0"></RadioButtonComponent>
                                         <p className="text-gray-700 dark:text-gray-300 text-sm ml-7 mt-1">Send it by tomorrow.</p>
                                     </div>
                                 </div>
                                 <div className="e-card pt-3 rounded-lg shadow-none border-transparent">
                                     <div className="e-card-content grow !pt-1">
-                                        <RadioButtonComponent label="Store Pickup - Free" name="pickupOptions" value="1" aria-label="store pickup option with no additional cost" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="Store Pickup - Free" name="pickupOptions" value="1"></RadioButtonComponent>
                                         <p className="text-gray-700 dark:text-gray-300 text-sm ml-7 mt-1">Send it by today.</p>
                                     </div>
                                 </div>
                                 <div className="e-card pt-3 rounded-lg shadow-none border-transparent">
                                     <div className="e-card-content grow !pt-1">
-                                        <RadioButtonComponent label="FedEx - $39" name="pickupOptions" value="2" aria-label="FedEx shipping option costing $39" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="FedEx - $39" name="pickupOptions" value="2"></RadioButtonComponent>
                                         <p className="text-gray-700 dark:text-gray-300 text-sm ml-7 mt-1">Send it by 02/02/2024.</p>
                                     </div>
                                 </div>
                             </div>
                             <MessageComponent className="mb-6 items-center" showIcon={false} showCloseIcon={true} content="If you opt for FedEx automated pickup, follow the instructions for a seamless return process."></MessageComponent>
                             <div className="flex justify-end lg:gap-3 gap-4">
-                                <ButtonComponent className="grow sm:grow-0" type="button" aria-label="previous" role="button">Previous</ButtonComponent>
-                                <ButtonComponent isPrimary={true} className="grow sm:grow-0" type="button" aria-label="next" role="button">Next</ButtonComponent>
+                                <ButtonComponent className="grow sm:grow-0" type="button">Previous</ButtonComponent>
+                                <ButtonComponent isPrimary={true} className="grow sm:grow-0" type="button">Next</ButtonComponent>
                             </div>
                         </div>
                     </section>
@@ -131,27 +131,27 @@ export default function ReturnBlock3() {
                             <div className="mb-4 d-flex flex-column flex-sm-row gap-3 e-bigger">
                                 <div className="e-card rounded shadow-none">
                                     <div className="e-card-content flex-grow-1">
-                                        <RadioButtonComponent label="Express Courier - $19" checked={true} name="pickupOptions" value="0" aria-label="express courier option costing $19" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="Express Courier - $19" checked={true} name="pickupOptions" value="0"></RadioButtonComponent>
                                         <p className="ms-4 mt-2 mb-0 ps-1 text-body-secondary">Send it by tomorrow.</p>
                                     </div>
                                 </div>
                                 <div className="e-card rounded shadow-none">
                                     <div className="e-card-content flex-grow-1">
-                                        <RadioButtonComponent label="Store Pickup - Free" name="pickupOptions" value="1" aria-label="store pickup option with no additional cost" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="Store Pickup - Free" name="pickupOptions" value="1"></RadioButtonComponent>
                                         <p className="ms-4 mt-2 mb-0 ps-1 text-body-secondary">Send it by today.</p>
                                     </div>
                                 </div>
                                 <div className="e-card rounded shadow-none">
                                     <div className="e-card-content flex-grow-1">
-                                        <RadioButtonComponent label="FedEx - $39" name="pickupOptions" value="2" aria-label="FedEx shipping option costing $39" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="FedEx - $39" name="pickupOptions" value="2"></RadioButtonComponent>
                                         <p className="ms-4 mt-2 mb-0 ps-1 text-body-secondary">Send it by 02/02/2024.</p>
                                     </div>
                                 </div>
                             </div>
                             <MessageComponent className="mb-4 align-items-center" showIcon={false} showCloseIcon={true} content="If you opt for FedEx automated pickup, follow the instructions for a seamless return process."></MessageComponent>
                             <div className="d-flex justify-content-end gap-1">
-                                <ButtonComponent className="e-outline flex-grow-1 flex-sm-grow-0 me-2" type="button" aria-label="previous" role="button">Previous</ButtonComponent>
-                                <ButtonComponent isPrimary={true} className="flex-grow-1 flex-sm-grow-0" type="button" aria-label="next" role="button">Next</ButtonComponent>
+                                <ButtonComponent className="e-outline flex-grow-1 flex-sm-grow-0 me-2" type="button">Previous</ButtonComponent>
+                                <ButtonComponent isPrimary={true} className="flex-grow-1 flex-sm-grow-0" type="button">Next</ButtonComponent>
                             </div>
                         </div>
                     </section>

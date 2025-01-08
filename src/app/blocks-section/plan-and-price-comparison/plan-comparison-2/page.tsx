@@ -58,7 +58,7 @@ export default function PlanComparison2() {
                                                         <p className="text-gray-700 text-base px-6 font-normal dark:text-gray-200">No monthly subscription, you only pay once.</p>
                                                     </div>
                                                     <div className="e-card-actions leading-9">
-                                                        <ButtonComponent className="e-primary text-lg font-medium e-outline w-full" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                                        <ButtonComponent className="e-primary text-lg font-medium e-outline w-full" content="Choose a plan" type="button"></ButtonComponent>
                                                     </div>
                                                 </div>
                                             </th>
@@ -76,7 +76,7 @@ export default function PlanComparison2() {
                                                         <p className="text-gray-700 text-base px-6 font-normal dark:text-gray-200">No monthly subscription, you only pay once.</p>
                                                     </div>
                                                     <div className="e-card-actions leading-9">
-                                                        <ButtonComponent className="e-primary text-lg font-medium w-full" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                                        <ButtonComponent className="e-primary text-lg font-medium w-full" content="Choose a plan" type="button"></ButtonComponent>
                                                     </div>
                                                 </div>
                                             </th>
@@ -94,7 +94,7 @@ export default function PlanComparison2() {
                                                         <p className="text-gray-700 text-base px-6 font-normal dark:text-gray-200">No monthly subscription, you only pay once.</p>
                                                     </div>
                                                     <div className="e-card-actions leading-9">
-                                                        <ButtonComponent className="e-primary text-lg font-medium e-outline w-full" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                                        <ButtonComponent className="e-primary text-lg font-medium e-outline w-full" content="Choose a plan" type="button"></ButtonComponent>
                                                     </div>
                                                 </div>
                                             </th>
@@ -181,7 +181,7 @@ export default function PlanComparison2() {
                                                     </div>
                                                     <div className="e-card-actions p-0">
                                                         <div className="mt-4 e-bigger">
-                                                            <ButtonComponent className="e-primary e-outline e-block" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                                            <ButtonComponent className="e-primary e-outline e-block" content="Choose a plan" type="button"></ButtonComponent>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -200,7 +200,7 @@ export default function PlanComparison2() {
                                                     </div>
                                                     <div className="e-card-actions p-0">
                                                         <div className="mt-4 e-bigger">
-                                                            <ButtonComponent className="e-primary e-block" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                                            <ButtonComponent className="e-primary e-block" content="Choose a plan" type="button"></ButtonComponent>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -218,7 +218,7 @@ export default function PlanComparison2() {
                                                     </div>
                                                     <div className="e-card-actions p-0">
                                                         <div className="mt-4 e-bigger">
-                                                            <ButtonComponent className="e-outline e-primary e-block" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                                            <ButtonComponent className="e-outline e-primary e-block" content="Choose a plan" type="button"></ButtonComponent>
                                                         </div>
                                                     </div>
                                                 </div>

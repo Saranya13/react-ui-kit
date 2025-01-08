@@ -92,7 +92,7 @@ export default function List9() {
                     <section className="bg-white dark:bg-gray-900">
                         <div className="flex items-center justify-center min-h-screen">
                             <div className="max-w-none lg:max-w-2xl w-full m-auto p-4 md:py-8 lg:px-14">
-                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={data} aria-label="list of notifications" role="list" template={(data: any) => (
+                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={data} template={(data: any) => (
                                     <div className="e-list-wrapper e-list-multi-line border-b border-gray-200 dark:border-gray-600 !py-4 !px-1 sm:!px-3">
                                         <div className="flex justify-between contents">
                                             <div className="flex">
@@ -123,7 +123,7 @@ export default function List9() {
                     <section className="bg-body">
                         <div className="d-flex align-items-center justify-content-center min-vh-100">
                             <div className="container-lg w-100 m-auto p-3 p-md-4" style={width}>
-                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={data} aria-label="list of notifications" role="list" template={(data: any) => (
+                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={data} template={(data: any) => (
                                     <div className="e-list-wrapper e-list-multi-line py-3 px-1 px-sm-3">
                                         <div className="d-flex justify-content-between">
                                             <div className="d-flex w-100">

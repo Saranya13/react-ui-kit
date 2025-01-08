@@ -85,26 +85,26 @@ export default function ReturnBlock4() {
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mb-6 e-bigger">
                                 <div className="e-card pt-3 rounded-lg shadow-none border-transparent">
                                     <div className="e-card-content grow !pt-1">
-                                        <RadioButtonComponent label="I want a shop voucher" checked={true} name="refundOptions" aria-label="i want a shop voucher" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="I want a shop voucher" checked={true} name="refundOptions"></RadioButtonComponent>
                                         <p className="text-sm text-gray-700 dark:text-gray-300 ml-7 mt-1">Get an immediate voucher for use on new orders.</p>
                                     </div>
                                 </div>
                                 <div className="e-card pt-3 rounded-lg shadow-none border-transparent">
                                     <div className="e-card-content grow !pt-1">
-                                        <RadioButtonComponent label="I want my money back" name="refundOptions" aria-label="i want my money back" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="I want my money back" name="refundOptions"></RadioButtonComponent>
                                         <p className="text-sm text-gray-700 dark:text-gray-300 ml-7 mt-1">We will refund your original method of payment. This can take up to 7 business days.</p>
                                     </div>
                                 </div>
                                 <div className="e-card pt-3 rounded-lg shadow-none border-transparent">
                                     <div className="e-card-content grow !pt-1">
-                                        <RadioButtonComponent label="I want another product" name="refundOptions" aria-label="i want another product" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="I want another product" name="refundOptions"></RadioButtonComponent>
                                         <p className="text-sm text-gray-700 dark:text-gray-300 ml-7 mt-1">We will exchange your product for a new one.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="flex justify-end gap-4 lg:gap-3">
-                                <ButtonComponent className="grow sm:grow-0" type="button" aria-label="previous" role="button">Previous</ButtonComponent>
-                                <ButtonComponent isPrimary={true} className="grow sm:grow-0" type="button" aria-label="submit to return" role="button">Submit to Return</ButtonComponent>
+                                <ButtonComponent className="grow sm:grow-0" type="button">Previous</ButtonComponent>
+                                <ButtonComponent isPrimary={true} className="grow sm:grow-0" type="button">Submit to Return</ButtonComponent>
                             </div>
                         </div>
                     </section>
@@ -129,26 +129,26 @@ export default function ReturnBlock4() {
                             <div className="d-flex flex-column flex-sm-row gap-3 mb-4 e-bigger">
                                 <div className="e-card rounded shadow-none">
                                     <div className="e-card-content flex-grow-1">
-                                        <RadioButtonComponent label="I want a shop voucher" checked={true} name="refundOptions" aria-label="i want a shop voucher" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="I want a shop voucher" checked={true} name="refundOptions"></RadioButtonComponent>
                                         <p className="ms-4 mt-2 mb-0 ps-1 text-body-secondary">Get an immediate voucher for use on new orders.</p>
                                     </div>
                                 </div>
                                 <div className="e-card rounded shadow-none">
                                     <div className="e-card-content flex-grow-1">
-                                        <RadioButtonComponent label="I want my money back" name="refundOptions" aria-label="i want my money back" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="I want my money back" name="refundOptions"></RadioButtonComponent>
                                         <p className="ms-4 mt-2 mb-0 ps-1 text-body-secondary">We will refund your original method of payment. This can take up to 7 business days.</p>
                                     </div>
                                 </div>
                                 <div className="e-card rounded shadow-none">
                                     <div className="e-card-content flex-grow-1">
-                                        <RadioButtonComponent label="I want another product" name="refundOptions" aria-label="i want another product" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="I want another product" name="refundOptions"></RadioButtonComponent>
                                         <p className="ms-4 mt-2 mb-0 ps-1 text-body-secondary">We will exchange your product for a new one.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="d-flex justify-content-end gap-1">
-                                <ButtonComponent className="e-outline flex-grow-1 flex-sm-grow-0 me-2" type="button" aria-label="previous" role="button">Previous</ButtonComponent>
-                                <ButtonComponent isPrimary={true} className="flex-grow-1 flex-sm-grow-0" type="button" aria-label="submit to return" role="button">Submit to Return</ButtonComponent>
+                                <ButtonComponent className="e-outline flex-grow-1 flex-sm-grow-0 me-2" type="button">Previous</ButtonComponent>
+                                <ButtonComponent isPrimary={true} className="flex-grow-1 flex-sm-grow-0" type="button">Submit to Return</ButtonComponent>
                             </div>
                         </div>
                     </section>

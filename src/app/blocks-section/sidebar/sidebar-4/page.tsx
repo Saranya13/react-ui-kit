@@ -110,7 +110,7 @@ export default function Sidebar4() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["revenue-sidebar"]} style={{ height: '730px' }}>
-                            <SidebarComponent key={'revenue-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'revenue-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="h-screen">
                                     <div className="flex justify-between items-center p-4">
                                         <div className="flex items-center">
@@ -122,16 +122,16 @@ export default function Sidebar4() {
                                                 <p className="mb-0 text-gray-900 dark:text-white">johnwick&#64;123.com</p>
                                             </div>
                                         </div>
-                                        <ButtonComponent cssClass="e-icons e-chevron-down-double e-large e-flat px-1" type="button" aria-label="view additional profile settings" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-icons e-chevron-down-double e-large e-flat px-1" type="button"></ButtonComponent>
                                     </div>
                                     <div className="px-4 py-3">
                                         <div className="e-input-group">
                                             <span className="e-input-group-icon e-icons e-search"></span>
-                                            <input className="e-input !pl-0" type="text" placeholder="Search projects" aria-label="search projects" role="textbox" />
+                                            <input className="e-input !pl-0" type="text" placeholder="Search projects" />
                                         </div>
                                     </div>
                                     <div>
-                                        <ListViewComponent className="border-0" dataSource={data1} aria-label="main navigation links" role="list" template={(data: any) => (
+                                        <ListViewComponent className="border-0" dataSource={data1} template={(data: any) => (
                                             <div className="e-list-wrapper flex items-center px-1">
                                                 <span className={`e-icons ${data.fontIcon} text-base`}></span>
                                                 <span className="text-base font-normal pl-4">{data.field}</span>
@@ -142,10 +142,10 @@ export default function Sidebar4() {
                                     <div>
                                         <div className="flex justify-between items-center px-4 py-3">
                                             <span className="text-base text-gray-900 dark:text-white">Collection</span>
-                                            <ButtonComponent cssClass="e-icons e-circle-add e-medium e-flat" type="button" aria-label="add new item" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-icons e-circle-add e-medium e-flat" type="button"></ButtonComponent>
                                         </div>
                                         <div>
-                                            <ListViewComponent className="border-0" dataSource={data2} aria-label="other navigation links" role="list" template={(data: any) => (
+                                            <ListViewComponent className="border-0" dataSource={data2} template={(data: any) => (
                                                 <div className="e-list-wrapper flex items-center px-1">
                                                     <span className={`e-icons ${data.fontIcon} text-base`}></span>
                                                     <span className="text-base font-normal pl-4">{data.field}</span>
@@ -153,7 +153,7 @@ export default function Sidebar4() {
                                             ></ListViewComponent>
                                         </div>
                                         <div className="p-4">
-                                            <ButtonComponent iconCss="e-icons e-plus e-medium" cssClass="e-outline w-full" type="button" content="Add Collection" aria-label="add collection" role="button"></ButtonComponent>
+                                            <ButtonComponent iconCss="e-icons e-plus e-medium" cssClass="e-outline w-full" type="button" content="Add Collection"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@ export default function Sidebar4() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 left-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -170,7 +170,7 @@ export default function Sidebar4() {
                 return (
                     <section className="bg-body">
                         <div id={styles["revenue-sidebar"]} style={{ height: '730px' }}>
-                            <SidebarComponent key={'revenue-sidebar2'} width="256px" ref={sidebar} aria-label="main navigation menu" role="complementary" style={{ display: 'block' }}>
+                            <SidebarComponent key={'revenue-sidebar2'} width="256px" ref={sidebar} style={{ display: 'block' }}>
                                 <div className="vh-100">
                                     <div className="d-flex justify-content-between align-items-center p-3">
                                         <div className="d-flex align-items-center">
@@ -182,16 +182,16 @@ export default function Sidebar4() {
                                                 <p className="mb-0 text-body-secondary">johnwick&#64;123.com</p>
                                             </div>
                                         </div>
-                                        <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat" type="button" aria-label="view additional profile settings" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat" type="button"></ButtonComponent>
                                     </div>
                                     <div className="px-3">
                                         <div className="e-input-group">
                                             <span className="e-input-group-icon e-icons e-search border-end-0"></span>
-                                            <input className="e-input" type="text" placeholder="Search projects" aria-label="search projects" role="textbox" />
+                                            <input className="e-input" type="text" placeholder="Search projects" />
                                         </div>
                                     </div>
                                     <div className="mt-2 pt-1">
-                                        <ListViewComponent cssClass="border-0 e-bigger" dataSource={data1} aria-label="main navigation links" role="list" template={(data: any) => (
+                                        <ListViewComponent cssClass="border-0 e-bigger" dataSource={data1} template={(data: any) => (
                                             <div className="e-list-wrapper d-flex align-items-center px-1">
                                                 <span className={`e-icons ${data.fontIcon} fs-6`}></span>
                                                 <span className="mb-0 ms-1 ps-2 fs-6">{data.field}</span>
@@ -201,10 +201,10 @@ export default function Sidebar4() {
                                     <div>
                                         <div className="d-flex justify-content-between align-items-center p-3">
                                             <span className="mb-0 text-body-secondary fs-6">Collection</span>
-                                            <ButtonComponent cssClass="e-icons e-circle-add e-medium e-flat" type="button" aria-label="add new item" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-icons e-circle-add e-medium e-flat" type="button"></ButtonComponent>
                                         </div>
                                         <div className="mt-1">
-                                            <ListViewComponent cssClass="border-0 e-bigger" dataSource={data2} aria-label="other navigation links" role="list" template={(data: any) => (
+                                            <ListViewComponent cssClass="border-0 e-bigger" dataSource={data2} template={(data: any) => (
                                                 <div className="e-list-wrapper d-flex align-items-center px-1">
                                                     <span className={`e-icons ${data.fontIcon} fs-6`}></span>
                                                     <span className="mb-0 ms-1 ps-2 fs-6">{data.field}</span>
@@ -212,7 +212,7 @@ export default function Sidebar4() {
                                             ></ListViewComponent>
                                         </div>
                                         <div className="p-3">
-                                            <ButtonComponent className="e-outline w-100 mb-0" iconCss="e-icons e-plus e-medium" type="button" content="Add Collection" aria-label="add collection" role="button"></ButtonComponent>
+                                            <ButtonComponent className="e-outline w-100 mb-0" iconCss="e-icons e-plus e-medium" type="button" content="Add Collection"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -220,7 +220,7 @@ export default function Sidebar4() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 start-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()} aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

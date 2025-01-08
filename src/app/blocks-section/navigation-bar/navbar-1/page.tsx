@@ -49,15 +49,15 @@ export default function Navbar1() {
                                         <div className="e-appbar-spacer"></div>
                                         <div className="hidden lg:block flex items-center pr-4">
                                             <div className="e-input-group">
-                                                <input className="e-input" type="text" placeholder="Search" aria-label="search" role="textbox" />
+                                                <input className="e-input" type="text" placeholder="Search" />
                                                 <span className="e-input-group-icon e-icons e-search"></span>
                                             </div>
                                         </div>
                                         <div className="flex items-center">
-                                            <ButtonComponent className="mr-2.5 hidden sm:block" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button" aria-label="add new widget" role="button">New Widget</ButtonComponent>
-                                            <ButtonComponent className="e-icons e-search hidden sm:block lg:hidden mr-2.5" cssClass="e-flat" type="button" aria-label="search" role="button"></ButtonComponent>
-                                            <ButtonComponent className="sf-icon-notification-bell-02 leading-3 text-base mr-2.5" cssClass="e-flat" type="button" aria-label="notification" role="button"></ButtonComponent>
-                                            <ButtonComponent className="e-icons e-grid-view hidden sm:block mr-2.5" cssClass="e-flat" type="button" aria-label="grid view" role="button"></ButtonComponent>
+                                            <ButtonComponent className="mr-2.5 hidden sm:block" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button">New Widget</ButtonComponent>
+                                            <ButtonComponent className="e-icons e-search hidden sm:block lg:hidden mr-2.5" cssClass="e-flat" type="button"></ButtonComponent>
+                                            <ButtonComponent className="sf-icon-notification-bell-02 leading-3 text-base mr-2.5" cssClass="e-flat" type="button"></ButtonComponent>
+                                            <ButtonComponent className="e-icons e-grid-view hidden sm:block mr-2.5" cssClass="e-flat" type="button"></ButtonComponent>
                                             <div className="e-avatar e-avatar-small e-avatar-circle">
                                                 <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />
                                             </div>
@@ -81,15 +81,15 @@ export default function Navbar1() {
                                     <div className="e-appbar-spacer"></div>
                                     <div className="d-none d-lg-flex align-items-center pe-3">
                                         <div className="e-input-group">
-                                            <input className="e-input" type="text" placeholder="Search" aria-label="search" role="textbox" />
+                                            <input className="e-input" type="text" placeholder="Search" />
                                             <span className="e-input-group-icon e-icons e-search border-start-0"></span>
                                         </div>
                                     </div>
                                     <div className="d-flex align-items-center">
-                                        <ButtonComponent className="me-3 d-none d-sm-block" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button" aria-label="add new widget" role="button">New Widget</ButtonComponent>
-                                        <ButtonComponent className="e-icons e-search d-none d-sm-block d-lg-none me-3 e-medium" cssClass="e-flat" type="button" aria-label="search" role="button"></ButtonComponent>
-                                        <ButtonComponent className="sf-icon-notification-bell-01 fs-6 me-3" cssClass="e-flat" type="button" aria-label="notification" role="button"></ButtonComponent>
-                                        <ButtonComponent className="e-icons e-grid-view d-none d-sm-block me-3 e-medium" cssClass="e-flat" type="button" aria-label="grid view" role="button"></ButtonComponent>
+                                        <ButtonComponent className="me-3 d-none d-sm-block" cssClass="e-primary" iconCss="e-icons e-plus" iconPosition="Left" type="button">New Widget</ButtonComponent>
+                                        <ButtonComponent className="e-icons e-search d-none d-sm-block d-lg-none me-3 e-medium" cssClass="e-flat" type="button"></ButtonComponent>
+                                        <ButtonComponent className="sf-icon-notification-bell-01 fs-6 me-3" cssClass="e-flat" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-icons e-grid-view d-none d-sm-block me-3 e-medium" cssClass="e-flat" type="button"></ButtonComponent>
                                         <span className="e-avatar e-avatar-small e-avatar-circle">
                                             <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />
                                         </span>

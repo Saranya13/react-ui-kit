@@ -115,7 +115,7 @@ export default function ReturnBlock2() {
                                 <p className="mb-3 font-medium text-gray-900 dark:text-white">Choose the reason for your return</p>
                                 <p className="mb-4 text-sm text-gray-900 dark:text-white">To assist us in addressing your request promptly, please respond to the following questions.</p>
                                 <div className="mb-5">
-                                    <GridComponent dataSource={data} width="100%" rowHeight={60} gridLines="None" allowTextWrap={true} className="e-bigger" textWrapSettings={{ wrapMode: "Content" }} role="grid">
+                                    <GridComponent dataSource={data} width="100%" rowHeight={60} gridLines="None" allowTextWrap={true} className="e-bigger" textWrapSettings={{ wrapMode: "Content" }}>
                                         <ColumnsDirective>
                                             <ColumnDirective type="checkbox" width="40"></ColumnDirective>
                                             <ColumnDirective field="product" headerText="Product" width="488" template={(data: any) => (
@@ -137,43 +137,43 @@ export default function ReturnBlock2() {
                                     <div className="flex flex-col gap-4 lg:mb-5 mb-4 e-bigger">
                                         <p className="text-base font-medium text-gray-900 dark:text-white">What is the current state of the product?</p>
                                         <div className="leading-6">
-                                            <RadioButtonComponent label="I want to return a sealed product" name="condition" aria-label="i want to return a sealed product" role="radio"></RadioButtonComponent>
+                                            <RadioButtonComponent label="I want to return a sealed product" name="condition"></RadioButtonComponent>
                                         </div>
                                         <div className="leading-6">
-                                            <RadioButtonComponent label="I want to return a functional but unsealed product" name="condition" aria-label="i want to return a functional but unsealed product" role="radio"></RadioButtonComponent>
+                                            <RadioButtonComponent label="I want to return a functional but unsealed product" name="condition"></RadioButtonComponent>
                                         </div>
                                         <div className="leading-6">
-                                            <RadioButtonComponent label="I want to return a non-functional but unsealed product" name="condition" aria-label="i want to return a non-functional but unsealed product" role="radio"></RadioButtonComponent>
+                                            <RadioButtonComponent label="I want to return a non-functional but unsealed product" name="condition"></RadioButtonComponent>
                                         </div>
                                         <div className="leading-6">
-                                            <RadioButtonComponent label="The product was not delivered" name="condition" aria-label="the product was not delivered" role="radio"></RadioButtonComponent>
+                                            <RadioButtonComponent label="The product was not delivered" name="condition"></RadioButtonComponent>
                                         </div>
                                         <div className="leading-6">
-                                            <RadioButtonComponent label="The product was not dispatched" name="condition" aria-label="the product was not dispatched" role="radio"></RadioButtonComponent>
+                                            <RadioButtonComponent label="The product was not dispatched" name="condition"></RadioButtonComponent>
                                         </div>
                                     </div>
-                                    <ButtonComponent className="self-start" type="button" aria-label="other condition" role="button">Other Condition</ButtonComponent>
+                                    <ButtonComponent className="self-start" type="button">Other Condition</ButtonComponent>
                                 </div>
                                 <div className="flex flex-col justify-between sm:w-1/2 md:w-auto">
                                     <div className="flex flex-col gap-4 lg:mb-5 mb-4 e-bigger">
                                         <p className="text-base font-medium text-gray-900 dark:text-white">What is the main reason for returning the product?</p>
                                         <div className="leading-6">
-                                            <CheckBoxComponent label="Defective or damaged product" name="reason" aria-label="defective or damaged product" role="checkbox"></CheckBoxComponent>
+                                            <CheckBoxComponent label="Defective or damaged product" name="reason"></CheckBoxComponent>
                                         </div>
                                         <div className="leading-6">
-                                            <CheckBoxComponent label="Incorrect product received" name="reason" aria-label="incorrect product received" role="checkbox"></CheckBoxComponent>
+                                            <CheckBoxComponent label="Incorrect product received" name="reason"></CheckBoxComponent>
                                         </div>
                                         <div className="leading-6">
-                                            <CheckBoxComponent label="Unsatisfactory quality" name="reason" aria-label="unsatisfactory quality" role="checkbox"></CheckBoxComponent>
+                                            <CheckBoxComponent label="Unsatisfactory quality" name="reason"></CheckBoxComponent>
                                         </div>
                                         <div className="leading-6">
-                                            <CheckBoxComponent label="Changed mind/not as expected" name="reason" aria-label="changed mind/not as expected" role="checkbox"></CheckBoxComponent>
+                                            <CheckBoxComponent label="Changed mind/not as expected" name="reason"></CheckBoxComponent>
                                         </div>
                                         <div className="leading-6">
-                                            <CheckBoxComponent label="Misleading product information" name="reason" aria-label="misleading product information" role="checkbox"></CheckBoxComponent>
+                                            <CheckBoxComponent label="Misleading product information" name="reason"></CheckBoxComponent>
                                         </div>
                                     </div>
-                                    <ButtonComponent className="self-start" type="button" aria-label="i have other reason" role="button">I have other reason</ButtonComponent>
+                                    <ButtonComponent className="self-start" type="button">I have other reason</ButtonComponent>
                                 </div>
                             </div>
                             <MessageComponent
@@ -184,8 +184,8 @@ export default function ReturnBlock2() {
                                 content="Please carefully select your reasons for returning the product, as this will help us process your request more efficiently and ensure your satisfaction with your purchase experience."
                             ></MessageComponent>
                             <div className="flex justify-end lg:gap-3 gap-4">
-                                <ButtonComponent className="grow sm:grow-0" type="button" aria-label="previous" role="button">Previous</ButtonComponent>
-                                <ButtonComponent isPrimary={true} className="grow sm:grow-0" type="button" aria-label="next" role="button">Next</ButtonComponent>
+                                <ButtonComponent className="grow sm:grow-0" type="button">Previous</ButtonComponent>
+                                <ButtonComponent isPrimary={true} className="grow sm:grow-0" type="button">Next</ButtonComponent>
                             </div>
                         </div>
                     </section>
@@ -210,7 +210,7 @@ export default function ReturnBlock2() {
                                 <p className="h6 mb-2 fw-bold text-body">Choose the reason for your return</p>
                                 <p className="mb-4 text-body">To assist us in addressing your request promptly, please respond to the following questions.</p>
                                 <div className="mb-4">
-                                    <GridComponent dataSource={data} width="100%" rowHeight={60} gridLines="None" allowTextWrap={true} className="e-bigger" textWrapSettings={{ wrapMode: "Content" }} role="grid">
+                                    <GridComponent dataSource={data} width="100%" rowHeight={60} gridLines="None" allowTextWrap={true} className="e-bigger" textWrapSettings={{ wrapMode: "Content" }}>
                                         <ColumnsDirective>
                                             <ColumnDirective type="checkbox" width="40"></ColumnDirective>
                                             <ColumnDirective field="product" headerText="Product" width="488" template={(data: any) => (
@@ -231,24 +231,24 @@ export default function ReturnBlock2() {
                                 <div className="d-flex flex-column justify-content-between">
                                     <div className="d-flex flex-column gap-3 mb-4 mb-md-3 e-bigger">
                                         <p className="h-6 lh-sm mb-0 fw-bold text-body">What is the current state of the product?</p>
-                                        <RadioButtonComponent label="I want to return a sealed product" name="condition" aria-label="i want to return a sealed product" role="radio"></RadioButtonComponent>
-                                        <RadioButtonComponent label="I want to return a functional but unsealed product" name="condition" aria-label="i want to return a functional but unsealed product" role="radio"></RadioButtonComponent>
-                                        <RadioButtonComponent label="I want to return a non-functional but unsealed product" name="condition" aria-label="i want to return a non-functional but unsealed product" role="radio"></RadioButtonComponent>
-                                        <RadioButtonComponent label="The product was not delivered" name="condition" aria-label="the product was not delivered" role="radio"></RadioButtonComponent>
-                                        <RadioButtonComponent label="The product was not dispatched" name="condition" aria-label="the product was not dispatched" role="radio"></RadioButtonComponent>
+                                        <RadioButtonComponent label="I want to return a sealed product" name="condition"></RadioButtonComponent>
+                                        <RadioButtonComponent label="I want to return a functional but unsealed product" name="condition"></RadioButtonComponent>
+                                        <RadioButtonComponent label="I want to return a non-functional but unsealed product" name="condition"></RadioButtonComponent>
+                                        <RadioButtonComponent label="The product was not delivered" name="condition"></RadioButtonComponent>
+                                        <RadioButtonComponent label="The product was not dispatched" name="condition"></RadioButtonComponent>
                                     </div>
-                                    <ButtonComponent className="e-outline align-self-start" type="button" aria-label="other condition" role="button">Other Condition</ButtonComponent>
+                                    <ButtonComponent className="e-outline align-self-start" type="button">Other Condition</ButtonComponent>
                                 </div>
                                 <div className="d-flex flex-column justify-content-between">
                                     <div className="d-flex flex-column gap-3 mb-4 mb-md-3 e-bigger">
                                         <p className="h-6 lh-sm mb-0 fw-bold text-body">What is the main reason for returning the product?</p>
-                                        <CheckBoxComponent label="Defective or damaged product" name="reason" aria-label="defective or damaged product" role="checkbox"></CheckBoxComponent>
-                                        <CheckBoxComponent label="Incorrect product received" name="reason" aria-label="incorrect product received" role="checkbox"></CheckBoxComponent>
-                                        <CheckBoxComponent label="Unsatisfactory quality" name="reason" aria-label="unsatisfactory quality" role="checkbox"></CheckBoxComponent>
-                                        <CheckBoxComponent label="Changed mind/not as expected" name="reason" aria-label="changed mind/not as expected" role="checkbox"></CheckBoxComponent>
-                                        <CheckBoxComponent label="Misleading product information" name="reason" aria-label="misleading product information" role="checkbox"></CheckBoxComponent>
+                                        <CheckBoxComponent label="Defective or damaged product" name="reason"></CheckBoxComponent>
+                                        <CheckBoxComponent label="Incorrect product received" name="reason"></CheckBoxComponent>
+                                        <CheckBoxComponent label="Unsatisfactory quality" name="reason"></CheckBoxComponent>
+                                        <CheckBoxComponent label="Changed mind/not as expected" name="reason"></CheckBoxComponent>
+                                        <CheckBoxComponent label="Misleading product information" name="reason"></CheckBoxComponent>
                                     </div>
-                                    <ButtonComponent className="e-outline align-self-start" type="button" aria-label="i have other reason" role="button">I have other reason</ButtonComponent>
+                                    <ButtonComponent className="e-outline align-self-start" type="button">I have other reason</ButtonComponent>
                                 </div>
                             </div>
                             <MessageComponent
@@ -259,8 +259,8 @@ export default function ReturnBlock2() {
                                 content="Please carefully select your reasons for returning the product, as this will help us process your request more efficiently and ensure your satisfaction with your purchase experience."
                             ></MessageComponent>
                             <div className="d-flex justify-content-end gap-1">
-                                <ButtonComponent className="e-outline flex-grow-1 flex-sm-grow-0 me-2" type="button" aria-label="previous" role="button">Previous</ButtonComponent>
-                                <ButtonComponent isPrimary={true} className="flex-grow-1 flex-sm-grow-0" type="button" aria-label="next" role="button">Next</ButtonComponent>
+                                <ButtonComponent className="e-outline flex-grow-1 flex-sm-grow-0 me-2" type="button">Previous</ButtonComponent>
+                                <ButtonComponent isPrimary={true} className="flex-grow-1 flex-sm-grow-0" type="button">Next</ButtonComponent>
                             </div>
                         </div>
                     </section>

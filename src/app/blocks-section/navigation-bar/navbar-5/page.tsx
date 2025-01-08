@@ -29,7 +29,7 @@ export default function Navbar5() {
     };
 
     const closeMainDropdown = (): void => {
-        let popup = document.querySelector('#mainDropdown-popup.e-dropdown-popup.e-popup-open');
+        const popup = document.querySelector('#mainDropdown-popup.e-dropdown-popup.e-popup-open');
         if (popup) {
             popup.remove();
         }
@@ -81,20 +81,20 @@ export default function Navbar5() {
                                     <div className="flex items-center">
                                         <div className="hidden lg:block mr-4">
                                             <div className="e-input-group flex">
-                                                <input className="e-input" type="text" placeholder="Search" aria-label="search" role="textbox" />
+                                                <input className="e-input" type="text" placeholder="Search" />
                                                 <span className="e-input-group-icon e-icons e-search"></span>
                                             </div>
                                         </div>
-                                        <ButtonComponent className="sf-icon-notification-bell-02 leading-3 text-base mr-1 sm:mr-2" cssClass="e-flat" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                        <ButtonComponent className="sf-icon-notification-bell-02 leading-3 text-base mr-1 sm:mr-2" cssClass="e-flat" type="button"></ButtonComponent>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 hidden sm:block mr-2 h-7"></div>
-                                        <ButtonComponent className="e-icons e-grid-view hidden sm:block mr-2" cssClass="e-flat" type="button" aria-label="grid view" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-icons e-grid-view hidden sm:block mr-2" cssClass="e-flat" type="button"></ButtonComponent>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 hidden sm:block mr-2 h-7"></div>
                                         <span className="e-avatar e-avatar-small e-avatar-circle hidden sm:block ml-2 mr-2 lg:mr-0">
                                             <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />
                                         </span>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 block lg:hidden ms-1  h-7"></div>
                                         <span id={styles.menu} className="block lg:hidden">
-                                            <MenuComponent items={[{ text: 'Builders' }, { text: 'Features' }, { text: 'Websites' }, { text: 'Elements' }, { text: 'Pricing' }]} hamburgerMode={true} title="" aria-label="menu items" role="menu"></MenuComponent>
+                                            <MenuComponent items={[{ text: 'Builders' }, { text: 'Features' }, { text: 'Websites' }, { text: 'Elements' }, { text: 'Pricing' }]} hamburgerMode={true} title=""></MenuComponent>
                                         </span>
                                     </div>
                                 </div>
@@ -109,33 +109,33 @@ export default function Navbar5() {
                                                         <span className="e-avatar e-avatar-xsmall e-avatar-circle me-1">
                                                             <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />
                                                         </span>
-                                                        <DropDownButtonComponent id="mainDropdown" className="pe-2 pe-md-4" cssClass="e-flat" content={data.text} items={[{ text: "CompanyName.com" }]} type="button" aria-label="choose a address" role="button" select={() => {
+                                                        <DropDownButtonComponent id="mainDropdown" className="pe-2 pe-md-4" cssClass="e-flat" content={data.text} items={[{ text: "CompanyName.com" }]} type="button" select={() => {
                                                             if (breadcrumb.current) {
                                                                 breadcrumb.current.activeItem = "CompanyName.com";
                                                             }
                                                         }}></DropDownButtonComponent>
                                                     </div>
-                                                ) : <ButtonComponent cssClass="e-flat" content={data.text} type="button" aria-label="open company name website" role="button"></ButtonComponent>
+                                                ) : <ButtonComponent cssClass="e-flat" content={data.text} type="button"></ButtonComponent>
                                             }
                                         >
                                             <BreadcrumbItemsDirective>
-                                                <BreadcrumbItemDirective text="Personal" aria-label="personal breadcrumb items" />
-                                                <BreadcrumbItemDirective text="CompanyName.com" aria-label="company-oriented breadcrumb items" />
+                                                <BreadcrumbItemDirective text="Personal" />
+                                                <BreadcrumbItemDirective text="CompanyName.com" />
                                             </BreadcrumbItemsDirective>
                                         </BreadcrumbComponent>
                                     </div>
                                     <div className="flex items-center gap-2 w-full sm:w-max px-6 sm:px-0">
                                         <div className="w-1/2 mt-3 sm:mt-0">
-                                            <ButtonComponent cssClass="e-primary w-full" type="button" aria-label="open app" role="button">Open App</ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary w-full" type="button">Open App</ButtonComponent>
                                         </div>
                                         <div className="w-1/2 md:w-full mt-3 sm:mt-0 p-0">
-                                            <DropDownButtonComponent ref={moreOptionsDropdown} className="e-outline e-primary w-full" items={[{ text: 'Create new app', iconCss: 'e-icons e-folder' }, { text: 'Inbox', iconCss: 'e-icons e-folder' }, { text: 'App info', iconCss: 'e-icons e-folder' }, { text: 'Edit app', iconCss: 'e-icons e-folder' }]} type="button" aria-label="choose from more options" role="button">More</DropDownButtonComponent>
+                                            <DropDownButtonComponent ref={moreOptionsDropdown} className="e-outline e-primary w-full" items={[{ text: 'Create new app', iconCss: 'e-icons e-folder' }, { text: 'Inbox', iconCss: 'e-icons e-folder' }, { text: 'App info', iconCss: 'e-icons e-folder' }, { text: 'Edit app', iconCss: 'e-icons e-folder' }]} type="button">More</DropDownButtonComponent>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="hidden lg:flex px-4 py-1 bg-gray-100 dark:bg-gray-700 border border-t-0 border-gray-200 dark:border-gray-600">
-                                <MenuComponent items={[{ text: 'Builders' }, { text: 'Features' }, { text: 'Websites' }, { text: 'Elements' }, { text: 'Pricing' }]} aria-label="menu items" role="menu"></MenuComponent>
+                                <MenuComponent items={[{ text: 'Builders' }, { text: 'Features' }, { text: 'Websites' }, { text: 'Elements' }, { text: 'Pricing' }]}></MenuComponent>
                             </div>
                         </div>
                     </section>
@@ -152,20 +152,20 @@ export default function Navbar5() {
                                 <div className="d-flex align-items-center">
                                     <div className="d-none d-lg-block me-3">
                                         <div className="e-input-group d-flex">
-                                            <input className="e-input" type="text" placeholder="Search" aria-label="search" role="textbox" />
+                                            <input className="e-input" type="text" placeholder="Search" />
                                             <span className="e-input-group-icon e-icons e-search border-start-0"></span>
                                         </div>
                                     </div>
-                                    <ButtonComponent className="sf-icon-notification-bell-01 fs-6 me-0 me-sm-3" cssClass="e-flat" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                    <ButtonComponent className="sf-icon-notification-bell-01 fs-6 me-0 me-sm-3" cssClass="e-flat" type="button"></ButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-sm-block me-3" style={{ height: "24px" }}></div>
-                                    <ButtonComponent className="e-icons e-grid-view d-none d-sm-block me-3 e-medium" cssClass="e-flat" type="button" aria-label="grid view" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-icons e-grid-view d-none d-sm-block me-3 e-medium" cssClass="e-flat" type="button"></ButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-sm-block" style={{ height: "24px" }}></div>
                                     <span className="e-avatar e-avatar-small e-avatar-circle d-none d-sm-block ms-3">
                                         <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />
                                     </span>
                                     <div className="border-end border-secondary-subtle d-block d-lg-none ms-2 ms-sm-3" style={{ height: "24px" }}></div>
                                     <span id={styles.menu} className="d-block d-lg-none">
-                                        <MenuComponent className="bg-body-tertiary" hamburgerMode={true} title="" items={[{ text: "Builders" }, { text: "Features" }, { text: "Websites" }, { text: "Elements" }, { text: "Pricing" }]} aria-label="menu items" role="menu"></MenuComponent>
+                                        <MenuComponent className="bg-body-tertiary" hamburgerMode={true} title="" items={[{ text: "Builders" }, { text: "Features" }, { text: "Websites" }, { text: "Elements" }, { text: "Pricing" }]}></MenuComponent>
                                     </span>
                                 </div>
                             </div>
@@ -180,33 +180,33 @@ export default function Navbar5() {
                                                     <span className="e-avatar e-avatar-small e-avatar-circle me-1">
                                                         <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />
                                                     </span>
-                                                    <DropDownButtonComponent id="mainDropdown" cssClass="e-flat" content={data.text} items={[{ text: "CompanyName.com" }]} type="button" aria-label="choose a address" role="button" select={() => {
+                                                    <DropDownButtonComponent id="mainDropdown" cssClass="e-flat" content={data.text} items={[{ text: "CompanyName.com" }]} type="button" select={() => {
                                                         if (breadcrumb.current) {
                                                             breadcrumb.current.activeItem = "CompanyName.com";
                                                         }
                                                     }}></DropDownButtonComponent>
                                                 </div>
-                                            ) : <ButtonComponent cssClass="e-flat" content={data.text} type="button" aria-label="open company name website" role="button"></ButtonComponent>
+                                            ) : <ButtonComponent cssClass="e-flat" content={data.text} type="button"></ButtonComponent>
                                         }
                                     >
                                         <BreadcrumbItemsDirective>
-                                            <BreadcrumbItemDirective text="Personal" aria-label="personal breadcrumb items" />
-                                            <BreadcrumbItemDirective text="CompanyName.com" aria-label="company-oriented breadcrumb items" />
+                                            <BreadcrumbItemDirective text="Personal" />
+                                            <BreadcrumbItemDirective text="CompanyName.com" />
                                         </BreadcrumbItemsDirective>
                                     </BreadcrumbComponent>
                                 </div>
                                 <div className="d-flex p-0 pe-2 pe-md-2 gap-2 col-sm-4 col-md-4 col-lg-2 col-xl-2 m-0">
                                     <div className="col-6 mt-3 mt-sm-0">
-                                        <ButtonComponent className="e-primary p-lg-1 px-2 w-100" type="button" aria-label="open app" role="button">Open App</ButtonComponent>
+                                        <ButtonComponent className="e-primary p-lg-1 px-2 w-100" type="button">Open App</ButtonComponent>
                                     </div>
                                     <div className="p-0 col-6 mt-3 mt-sm-0">
-                                        <DropDownButtonComponent ref={moreOptionsDropdown} className="e-outline e-primary w-100" items={[{ text: "Create new app", iconCss: "e-icons e-folder" }, { text: "Inbox", iconCss: "e-icons e-folder" }, { text: "App info", iconCss: "e-icons e-folder" }, { text: "Edit app", iconCss: "e-icons e-folder" }]} type="button" aria-label="choose from more options" role="button">More</DropDownButtonComponent>
+                                        <DropDownButtonComponent ref={moreOptionsDropdown} className="e-outline e-primary w-100" items={[{ text: "Create new app", iconCss: "e-icons e-folder" }, { text: "Inbox", iconCss: "e-icons e-folder" }, { text: "App info", iconCss: "e-icons e-folder" }, { text: "Edit app", iconCss: "e-icons e-folder" }]} type="button">More</DropDownButtonComponent>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="d-none d-lg-flex ps-3 pe-4 bg-body-tertiary border border-top-0 border-light-subtle bg-body-tertiary" style={{ height: "40px", display: "flex", alignItems: "center" }}>
-                            <MenuComponent items={[{ text: "Builders" }, { text: "Features" }, { text: "Websites" }, { text: "Elements" }, { text: "Pricing" }]} aria-label="menu items" role="menu"></MenuComponent>
+                            <MenuComponent items={[{ text: "Builders" }, { text: "Features" }, { text: "Websites" }, { text: "Elements" }, { text: "Pricing" }]}></MenuComponent>
                         </div>
                     </section>
                 );

@@ -49,7 +49,7 @@ export default function Card5() {
                                                 <p className="text-sm text-gray-700 dark:text-gray-300 truncate">Content Creator</p>
                                             </div>
                                         </div>
-                                        <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button" aria-label="edit" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button"></ButtonComponent>
                                     </div>
                                     <div className="e-card-content">
                                         <h2 className="pt-2 text-xl font-semibold text-gray-900 dark:text-white truncate">Travel Destinations</h2>
@@ -67,7 +67,7 @@ export default function Card5() {
                                                 <p className="text-sm text-gray-700 dark:text-gray-300 truncate">Story Writer</p>
                                             </div>
                                         </div>
-                                        <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button" aria-label="edit" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button"></ButtonComponent>
                                     </div>
                                     <div className="e-card-content">
                                         <h2 className="pt-2 text-xl font-semibold text-gray-900 dark:text-white truncate">Healthy Lifestyle</h2>
@@ -85,7 +85,7 @@ export default function Card5() {
                                                 <p className="text-sm text-gray-700 dark:text-gray-300 truncate">Script Writer</p>
                                             </div>
                                         </div>
-                                        <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button" aria-label="edit" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button"></ButtonComponent>
                                     </div>
                                     <div className="e-card-content">
                                         <h2 className="pt-2 text-xl font-semibold text-gray-900 dark:text-white truncate">Tech Gadget</h2>
@@ -113,7 +113,7 @@ export default function Card5() {
                                                     <p className="small mb-0 text-truncate">Content Creator</p>
                                                 </div>
                                             </div>
-                                            <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button" aria-label="edit" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button"></ButtonComponent>
                                         </div>
                                         <div className="e-card-content text-body">
                                             <h2 className="fs-5 fw-bolder mb-2 text-truncate">Travel Destinations</h2>
@@ -133,7 +133,7 @@ export default function Card5() {
                                                     <p className="small mb-0 text-truncate">Story Writer</p>
                                                 </div>
                                             </div>
-                                            <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button" aria-label="edit" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button"></ButtonComponent>
                                         </div>
                                         <div className="e-card-content text-body">
                                             <h2 className="fs-5 fw-bolder mb-2 text-truncate">Healthy Lifestyle</h2>
@@ -153,7 +153,7 @@ export default function Card5() {
                                                     <p className="small mb-0 text-truncate">Script Writer</p>
                                                 </div>
                                             </div>
-                                            <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button" aria-label="edit" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-round e-flat e-icons e-edit" type="button"></ButtonComponent>
                                         </div>
                                         <div className="e-card-content text-body">
                                             <h2 className="fs-5 fw-bolder mb-2 text-truncate">Tech Gadget</h2>

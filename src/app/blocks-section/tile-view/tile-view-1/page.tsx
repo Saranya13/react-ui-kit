@@ -98,8 +98,8 @@ export default function TileView1() {
                                 <div className="w-full px-4 md:px-6 xl:px-10">
                                     <span className="text-xl font-semibold text-gray-900 dark:text-gray-50">All Tickets</span>
                                     <div className="e-appbar-spacer"></div>
-                                    <ButtonComponent className="e-primary !hidden md:!block" iconCss="e-icons e-plus e-medium" type="button" content="Create Ticket" aria-label="create ticket" role="button"></ButtonComponent>
-                                    <ButtonComponent className="e-primary e-icons e-plus e-medium !block md:!hidden" type="button" aria-label="create ticket" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-primary !hidden md:!block" iconCss="e-icons e-plus e-medium" type="button" content="Create Ticket"></ButtonComponent>
+                                    <ButtonComponent className="e-primary e-icons e-plus e-medium !block md:!hidden" type="button"></ButtonComponent>
                                 </div>
                             </AppBarComponent>
                             <div className="border-t border-gray-200 dark:border-gray-600">
@@ -107,32 +107,32 @@ export default function TileView1() {
                                     <div className="md:flex justify-between space-y-6 md:space-y-0">
                                         <div className="e-input-group md:w-72 w-full">
                                             <span className="e-input-group-icon e-icons e-search border-0"></span>
-                                            <input className="e-input !pl-0" type="text" placeholder="Search Ticket ID" aria-label="search ticket id" role="textbox" />
+                                            <input className="e-input !pl-0" type="text" placeholder="Search Ticket ID" />
                                         </div>
                                         <div className="flex items-center justify-between">
                                             <span className="flex items-center">
-                                                <SwitchComponent checked={true} cssClass="w-9" aria-label="show closed tickets" role="switch"></SwitchComponent>
+                                                <SwitchComponent checked={true} cssClass="w-9"></SwitchComponent>
                                                 <span className="text-base md:text-sm text-gray-900 dark:text-gray-50 ml-2 md:mr-4">Show Closed Tickets</span>
                                             </span>
-                                            <ButtonComponent className="!hidden md:!block" iconCss="e-icons e-filter e-medium" type="button" content="Filter" aria-label="filter options" role="button"></ButtonComponent>
-                                            <ButtonComponent className="e-icons e-filter e-medium !block md:!hidden" type="button" aria-label="filter options" role="button"></ButtonComponent>
+                                            <ButtonComponent className="!hidden md:!block" iconCss="e-icons e-filter e-medium" type="button" content="Filter"></ButtonComponent>
+                                            <ButtonComponent className="e-icons e-filter e-medium !block md:!hidden" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                     <hr className="my-4 border-gray-200 dark:border-gray-600" />
-                                    <ListViewComponent cssClass="e-list-template !border-0" dataSource={ticketDetails} aria-label="list of ticket details" role="list" template={(data: any) => (
+                                    <ListViewComponent cssClass="e-list-template !border-0" dataSource={ticketDetails} template={(data: any) => (
                                         <div className="e-card">
                                             <div className="e-card-stacked">
                                                 <div className="e-card-header items-start md:items-center">
                                                     <div className="flex e-card-header-title mr-1">
-                                                        <span><CheckBoxComponent aria-label="select ticket" role="checkbox"></CheckBoxComponent></span>
+                                                        <span><CheckBoxComponent></CheckBoxComponent></span>
                                                         <span className="text-base font-medium text-gray-900 dark:text-gray-50 ml-3">{data.title}</span>
                                                     </div>
                                                     <div className="e-card-sub-title flex items-center space-x-3 ml-auto">
                                                         <span className="e-small flex items-center">
-                                                            <ButtonComponent cssClass="e-flat" iconCss="sf-icon-message-text-01 !text-base" type="button" content={data.commentCount || '0'} aria-label="notification count" role="button"></ButtonComponent>
+                                                            <ButtonComponent cssClass="e-flat" iconCss="sf-icon-message-text-01 !text-base" type="button" content={data.commentCount || '0'}></ButtonComponent>
                                                         </span>
                                                         <span className="e-small">
-                                                            <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1 !text-base" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                                            <ButtonComponent cssClass="e-flat e-icons e-more-vertical-1 !text-base" type="button"></ButtonComponent>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -151,16 +151,16 @@ export default function TileView1() {
                                                 <div className="e-card-separator"></div>
                                                 <div className="e-card-actions !py-3 !flex">
                                                     <span className="e-small block md:hidden ml-3">
-                                                        <ButtonComponent cssClass="e-flat e-icons e-grid-view !text-base" type="button" aria-label="choose the category" role="button"></ButtonComponent>
-                                                        <ButtonComponent cssClass="ml-9 e-flat sf-icon-calendar-check-01 !text-base" type="button" aria-label="choose the date" role="button"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat e-icons e-grid-view !text-base" type="button"></ButtonComponent>
+                                                        <ButtonComponent cssClass="ml-9 e-flat sf-icon-calendar-check-01 !text-base" type="button"></ButtonComponent>
                                                     </span>
                                                     <span className="hidden md:block flex items-center">
-                                                        <DropDownButtonComponent cssClass="e-flat mr-6" iconCss="e-icons e-grid-view !text-base" type="button" content={data.category} beforeOpen={(event) => (event.cancel = true)} aria-label="choose the category" role="button"></DropDownButtonComponent>
-                                                        <DropDownButtonComponent cssClass="e-flat mr-6" type="button" content={data.assignee} beforeOpen={(event) => (event.cancel = true)} aria-label="choose the agent" role="button"></DropDownButtonComponent>
-                                                        <DropDownButtonComponent className="e-flat mr-6 !hidden lg:!inline-block" iconCss={`sf-icon-${data.priorityLevel === 'Medium' ? 'normal' : data.priorityLevel.toLowerCase()} !text-base`} cssClass={data.priorityLevel === 'Medium' ? 'e-success' : data.priorityLevel === 'High' ? 'e-danger' : data.priorityLevel === 'Low' ? 'e-info' : ''} type="button" content={data.priorityLevel} beforeOpen={(event) => { event.cancel = true; }} aria-label="choose the priority" role="button"></DropDownButtonComponent>
-                                                        <DropDownButtonComponent cssClass="e-flat" iconCss="sf-icon-calendar-check-01 !text-base" type="button" content={new Date(data.dueDate).toLocaleDateString()} beforeOpen={(event) => (event.cancel = true)} aria-label="choose the date" role="button"></DropDownButtonComponent>
+                                                        <DropDownButtonComponent cssClass="e-flat mr-6" iconCss="e-icons e-grid-view !text-base" type="button" content={data.category} beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                                        <DropDownButtonComponent cssClass="e-flat mr-6" type="button" content={data.assignee} beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                                        <DropDownButtonComponent className="e-flat mr-6 !hidden lg:!inline-block" iconCss={`sf-icon-${data.priorityLevel === 'Medium' ? 'normal' : data.priorityLevel.toLowerCase()} !text-base`} cssClass={data.priorityLevel === 'Medium' ? 'e-success' : data.priorityLevel === 'High' ? 'e-danger' : data.priorityLevel === 'Low' ? 'e-info' : ''} type="button" content={data.priorityLevel} beforeOpen={(event) => { event.cancel = true; }}></DropDownButtonComponent>
+                                                        <DropDownButtonComponent cssClass="e-flat" iconCss="sf-icon-calendar-check-01 !text-base" type="button" content={new Date(data.dueDate).toLocaleDateString()} beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
                                                     </span>
-                                                    <DropDownButtonComponent className="w-32 ml-auto" cssClass={`${data.status === 'In-progress' ? 'e-info' : data.status === 'Open' ? 'e-primary' : data.status === 'Closed' ? 'e-success' : ''} e-outline`} type="button" content={data.status} beforeOpen={(event) => (event.cancel = true)} aria-label="choose the status" role="button"></DropDownButtonComponent>
+                                                    <DropDownButtonComponent className="w-32 ml-auto" cssClass={`${data.status === 'In-progress' ? 'e-info' : data.status === 'Open' ? 'e-primary' : data.status === 'Closed' ? 'e-success' : ''} e-outline`} type="button" content={data.status} beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
                                                 </div>
                                             </div>
                                         </div>)}
@@ -178,8 +178,8 @@ export default function TileView1() {
                                 <div className="px-3 px-md-4 px-xl-5">
                                     <span className="h5 mb-0 fw-bold text-body">All Tickets</span>
                                     <div className="e-appbar-spacer"></div>
-                                    <ButtonComponent cssClass="e-primary d-none d-md-block" iconCss="e-icons e-plus e-medium" type="button" content="Create Ticket" aria-label="create ticket" role="button"></ButtonComponent>
-                                    <ButtonComponent cssClass="e-primary e-icons e-plus e-medium d-block d-md-none" type="button" aria-label="create ticket" role="button"></ButtonComponent>
+                                    <ButtonComponent cssClass="e-primary d-none d-md-block" iconCss="e-icons e-plus e-medium" type="button" content="Create Ticket"></ButtonComponent>
+                                    <ButtonComponent cssClass="e-primary e-icons e-plus e-medium d-block d-md-none" type="button"></ButtonComponent>
                                 </div>
                             </AppBarComponent>
                             <div className="border-top border-light-subtle">
@@ -188,33 +188,33 @@ export default function TileView1() {
                                         <div className="col-12 col-md-4">
                                             <div className="e-input-group">
                                                 <span className="e-input-group-icon e-icons e-search border-0"></span>
-                                                <input className="e-input" type="text" placeholder="Search Ticket ID" aria-label="search ticket id" role="textbox" />
+                                                <input className="e-input" type="text" placeholder="Search Ticket ID" />
                                             </div>
                                         </div>
                                         <div className="d-flex align-items-center justify-content-between mt-3 mt-md-0">
                                             <span className="d-flex align-items-center">
-                                                <SwitchComponent checked={true} aria-label="show closed tickets" role="switch" style={{ width: '36px' }}></SwitchComponent>
+                                                <SwitchComponent checked={true} style={{ width: '36px' }}></SwitchComponent>
                                                 <span className="text-body ms-2 me-3 small">Show Closed Tickets</span>
                                             </span>
-                                            <ButtonComponent className="d-none d-md-block e-outline" iconCss="e-icons e-filter e-medium" type="button" content="Filter" aria-label="filter options" role="button"></ButtonComponent>
-                                            <ButtonComponent className="e-outline e-icons e-filter e-medium d-block d-md-none" type="button" aria-label="filter options" role="button"></ButtonComponent>
+                                            <ButtonComponent className="d-none d-md-block e-outline" iconCss="e-icons e-filter e-medium" type="button" content="Filter"></ButtonComponent>
+                                            <ButtonComponent className="e-outline e-icons e-filter e-medium d-block d-md-none" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                     <hr className="border-light-subtle opacity-100 my-4" />
-                                    <ListViewComponent cssClass="e-list-template border-0" dataSource={ticketDetails} aria-label="list of ticket details" role="list" template={(data: any) => (
+                                    <ListViewComponent cssClass="e-list-template border-0" dataSource={ticketDetails} template={(data: any) => (
                                         <div className="e-card rounded-3">
                                             <div className="e-card-stacked">
                                                 <div className="e-card-header d-flex flex-row pt-3 px-3 align-items-start align-items-sm-center">
                                                     <div className="d-flex e-card-header-title me-1">
-                                                        <span><CheckBoxComponent aria-label="select ticket" role="checkbox"></CheckBoxComponent></span>
+                                                        <span><CheckBoxComponent></CheckBoxComponent></span>
                                                         <span className="fs-6 fw-medium text-body ms-2 ps-1 e-card-header-title">{data.title}</span>
                                                     </div>
                                                     <div className="e-card-sub-title d-flex align-items-center gap-3 ms-auto justify-content-end">
                                                         <span className="e-small d-flex align-items-center">
-                                                            <ButtonComponent className="e-flat" iconCss="sf-icon-message-text-01 fs-6" type="button" content={data.commentCount || '0'} aria-label="notification count" role="button"></ButtonComponent>
+                                                            <ButtonComponent className="e-flat" iconCss="sf-icon-message-text-01 fs-6" type="button" content={data.commentCount || '0'}></ButtonComponent>
                                                         </span>
                                                         <span className="e-small">
-                                                            <ButtonComponent className="e-flat e-icons e-more-vertical-1 fs-6 py-1" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                                            <ButtonComponent className="e-flat e-icons e-more-vertical-1 fs-6 py-1" type="button"></ButtonComponent>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -233,16 +233,16 @@ export default function TileView1() {
                                                 <div className="e-card-separator"></div>
                                                 <div className="e-card-actions px-3 py-2 d-flex">
                                                     <span className="e-small d-block d-md-none ms-3">
-                                                        <ButtonComponent className="e-flat e-icons e-grid-view fs-6" type="button" aria-label="choose the category" role="button"></ButtonComponent>
-                                                        <ButtonComponent className="ms-5 e-flat sf-icon-calendar-check-01 fs-6" type="button" aria-label="choose the date" role="button"></ButtonComponent>
+                                                        <ButtonComponent className="e-flat e-icons e-grid-view fs-6" type="button"></ButtonComponent>
+                                                        <ButtonComponent className="ms-5 e-flat sf-icon-calendar-check-01 fs-6" type="button"></ButtonComponent>
                                                     </span>
                                                     <span className="d-none d-md-flex align-items-center gap-4">
-                                                        <DropDownButtonComponent className="e-flat" iconCss="e-icons e-grid-view fs-6" type="button" content={data.category} beforeOpen={(event) => (event.cancel = true)} aria-label="choose the category" role="button"></DropDownButtonComponent>
-                                                        <DropDownButtonComponent className="e-flat" type="button" content={data.assignee} beforeOpen={(event) => (event.cancel = true)} aria-label="choose the agent" role="button"></DropDownButtonComponent>
-                                                        <DropDownButtonComponent className="e-flat d-none d-lg-inline-block" iconCss={`sf-icon-${data.priorityLevel === 'Medium' ? 'normal' : data.priorityLevel.toLowerCase()} fs-6`} cssClass={data.priorityLevel === 'Medium' ? 'e-success' : data.priorityLevel === 'High' ? 'e-danger' : data.priorityLevel === 'Low' ? 'e-info' : ''} type="button" content={data.priorityLevel} beforeOpen={(event) => (event.cancel = true)} aria-label="choose the priority" role="button"></DropDownButtonComponent>
-                                                        <DropDownButtonComponent className="e-flat" iconCss="sf-icon-calendar-check-01 fs-6" type="button" content={new Date(data.dueDate).toLocaleDateString()} beforeOpen={(event) => (event.cancel = true)} aria-label="choose the date" role="button"></DropDownButtonComponent>
+                                                        <DropDownButtonComponent className="e-flat" iconCss="e-icons e-grid-view fs-6" type="button" content={data.category} beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                                        <DropDownButtonComponent className="e-flat" type="button" content={data.assignee} beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                                        <DropDownButtonComponent className="e-flat d-none d-lg-inline-block" iconCss={`sf-icon-${data.priorityLevel === 'Medium' ? 'normal' : data.priorityLevel.toLowerCase()} fs-6`} cssClass={data.priorityLevel === 'Medium' ? 'e-success' : data.priorityLevel === 'High' ? 'e-danger' : data.priorityLevel === 'Low' ? 'e-info' : ''} type="button" content={data.priorityLevel} beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
+                                                        <DropDownButtonComponent className="e-flat" iconCss="sf-icon-calendar-check-01 fs-6" type="button" content={new Date(data.dueDate).toLocaleDateString()} beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
                                                     </span>
-                                                    <DropDownButtonComponent className="ms-auto" cssClass={`${data.status === 'In-progress' ? 'e-info' : data.status === 'Open' ? 'e-primary' : data.status === 'Closed' ? 'e-success' : ''} e-outline`} type="button" content={data.status} beforeOpen={(event) => (event.cancel = true)} aria-label="choose the status" role="button" style={{ width: '114px' }}></DropDownButtonComponent>
+                                                    <DropDownButtonComponent className="ms-auto" cssClass={`${data.status === 'In-progress' ? 'e-info' : data.status === 'Open' ? 'e-primary' : data.status === 'Closed' ? 'e-success' : ''} e-outline`} type="button" content={data.status} beforeOpen={(event) => (event.cancel = true)} style={{ width: '114px' }}></DropDownButtonComponent>
                                                 </div>
                                             </div>
                                         </div>)}

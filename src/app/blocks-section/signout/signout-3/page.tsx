@@ -48,19 +48,19 @@ export default function SignOut3() {
                                         </p>
                                         <ul className="list-none md:text-lg text-base">
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>70+ components</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>Light and dark themes supported</span>
                                             </li>
                                             <li className="flex items-center gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>100% automatic layouts</span>
                                             </li>
                                             <li className="flex lg:items-start gap-3 mb-3">
-                                                <span className="e-icons e-circle-check text-xl" aria-hidden="true"></span>
+                                                <span className="e-icons e-circle-check text-xl"></span>
                                                 <span>200+ reusable blocks to build templates easily</span>
                                             </li>
                                         </ul>
@@ -83,7 +83,7 @@ export default function SignOut3() {
                                                 </div>
                                                 <span className="flex items-center justify-center gap-2 mt-7">
                                                     <p className="text-center text-base text-gray-900 dark:text-white">Go to</p>
-                                                    <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0" aria-label="sign in" role="link">Sign in</a>
+                                                    <a href="javascript:void(0);" className="text-primary-600 dark:text-primary-400 font-medium text-base p-0">Sign in</a>
                                                 </span>
                                             </div>
                                         </div>
@@ -139,7 +139,7 @@ export default function SignOut3() {
                                         <p className="text-center text-light-emphasis m-0">Redirecting in 5 seconds</p>
                                         <div className="d-flex align-items-center justify-content-center gap-1 mt-4">
                                             <p className="text-body mb-0">Go to</p>
-                                            <a href="javascript:void(0);" className="text-primary fs-6 p-0 text-decoration-none fw-medium" aria-label="sign in" role="link">Sign in</a>
+                                            <a href="javascript:void(0);" className="text-primary fs-6 p-0 text-decoration-none fw-medium">Sign in</a>
                                         </div>
                                     </div>
                                 </div>

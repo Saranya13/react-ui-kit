@@ -42,7 +42,7 @@ export default function PricingCard3() {
                                 <p className="mt-4 px-4 text-lg font-normal mb-8 sm:max-w-xl lg:max-w-full w-full mx-auto text-center text-gray-700 dark:text-gray-200">Get started in complete confidence. Our 30-day money-back guarantee means it’s risk-free.</p>
                                 <div className="flex items-center justify-center gap-3 mb-12">
                                     <p className="text-gray-700 dark:text-gray-200 text-base font-medium">Monthly</p>
-                                    <SwitchComponent cssClass="e-bigger" checked={true} aria-label="switch between monthly and yearly pricing plans" role="switch" style={{ width: "44px !important" }}></SwitchComponent>
+                                    <SwitchComponent cssClass="e-bigger" checked={true} style={{ width: "44px !important" }}></SwitchComponent>
                                     <p className="text-gray-700 dark:text-gray-200 text-base font-medium">Yearly</p>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ export default function PricingCard3() {
                                             <p className="mb-2 text-base font-normal text-gray-700 dark:text-gray-200">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                         </div>
                                         <div className="e-card-actions leading-9">
-                                            <ButtonComponent cssClass="e-outline e-primary w-full text-lg" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-outline e-primary w-full text-lg" content="Choose a plan" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                     <div className="e-card e-bigger pb-2 pt-8 rounded-3xl shadow-none hover:border-primary-600 dark:hover:border-primary-400">
@@ -90,7 +90,7 @@ export default function PricingCard3() {
                                             <p className="mb-2 text-base font-normal text-gray-700 dark:text-gray-200">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                         </div>
                                         <div className="e-card-actions leading-9">
-                                            <ButtonComponent cssClass="e-primary w-full text-lg" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary w-full text-lg" content="Choose a plan" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@ export default function PricingCard3() {
                                 <p className="mb-4 mx-3 px-1 px-md-5 px-lg-0 text-light-emphasis">Get started in complete confidence. Our 30-day money-back guarantee means it’s risk-free.</p>
                                 <div className="d-flex justify-content-center align-items-center gap-2 mb-5 pt-2">
                                     <p className="m-0 small text-light-emphasis">Monthly</p>
-                                    <SwitchComponent cssClass="e-bigger" checked={true} aria-label="switch between monthly and yearly pricing plans" role="switch" style={{ width: "37px" }}></SwitchComponent>
+                                    <SwitchComponent cssClass="e-bigger" checked={true} style={{ width: "37px" }}></SwitchComponent>
                                     <p className="m-0 small text-light-emphasis">Yearly</p>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@ export default function PricingCard3() {
                                             <p className="mt-1 m-0 text-light-emphasis fs-6">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                         </div>
                                         <div className="e-card-actions e-bigger mb-2">
-                                            <ButtonComponent cssClass="e-primary e-outline e-block" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-outline e-block" content="Choose a plan" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@ export default function PricingCard3() {
                                             <p className="mt-1 m-0 text-light-emphasis fs-6">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                         </div>
                                         <div className="e-card-actions e-bigger mb-2">
-                                            <ButtonComponent cssClass="e-primary e-block" content="Choose a plan" type="button" aria-label="choose a plan" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-block" content="Choose a plan" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>

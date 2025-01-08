@@ -51,23 +51,23 @@ export default function Email1() {
                                 <form action="#" onSubmit={(event) => event.preventDefault()}>
                                     <div className="mb-3 flex items-center ml-4">
                                         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mr-3">From:</label>
-                                        <TextBoxComponent cssClass='e-bigger w-full' type="text" value='Peterson (peterson@example.com)' placeholder="Email" floatLabelType="Never" aria-label="enter your email address" role="textbox"></TextBoxComponent>
+                                        <TextBoxComponent cssClass='e-bigger w-full' type="text" value='Peterson (peterson@example.com)' placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                     </div>
                                     <div className="mb-3 flex items-center ml-8 relative">
                                         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mr-3">To:</label>
-                                        <MultiSelectComponent cssClass='e-bigger w-full pl-1' dataSource={[{ text: 'Thomas' }, { text: 'Henry' }]} fields={{ text: "text" }} value={["Thomas"]} placeholder="Select recipients" mode="Box" aria-label="select the email recipients" role="listbox"></MultiSelectComponent>
+                                        <MultiSelectComponent cssClass='e-bigger w-full pl-1' dataSource={[{ text: 'Thomas' }, { text: 'Henry' }]} fields={{ text: "text" }} value={["Thomas"]} placeholder="Select recipients" mode="Box"></MultiSelectComponent>
                                         <div className="absolute right-12">
-                                            <a href="javascript:void(0);" className="mr-4 text-sm font-medium text-gray-700 dark:text-white" role="link">Cc</a>
-                                            <a href="javascript:void(0);" className="text-sm font-medium text-gray-700 dark:text-white" role="link">Bcc</a>
+                                            <a href="javascript:void(0);" className="mr-4 text-sm font-medium text-gray-700 dark:text-white">Cc</a>
+                                            <a href="javascript:void(0);" className="text-sm font-medium text-gray-700 dark:text-white">Bcc</a>
                                         </div>
                                     </div>
                                     <div className="mb-4 flex items-center">
                                         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mr-3">Subject:</label>
-                                        <TextBoxComponent cssClass='e-bigger w-full' type="text" value='Issue with Online Banking App - Transactions Not Completing' placeholder="Enter the subject" floatLabelType="Never" aria-label="enter the subject" role="textbox"></TextBoxComponent>
+                                        <TextBoxComponent cssClass='e-bigger w-full' type="text" value='Issue with Online Banking App - Transactions Not Completing' placeholder="Enter the subject" floatLabelType="Never"></TextBoxComponent>
                                     </div>
                                     <div className="mb-4">
                                         <RichTextEditorComponent key={'defaultRTE1'} toolbarSettings={{
-                                            items: ['Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|', 'Alignments', 'OrderedList', 'UnorderedList', 'Blockquote', '|', 'CreateLink', 'Image', 'CreateTable'], type: 'MultiRow' as ToolbarType }} aria-label="enter and format your text message" role="application" style={{ maxHeight: "540px", overflowY: 'auto' }}>
+                                            items: ['Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|', 'Alignments', 'OrderedList', 'UnorderedList', 'Blockquote', '|', 'CreateLink', 'Image', 'CreateTable'], type: 'MultiRow' as ToolbarType }} style={{ maxHeight: "540px", overflowY: 'auto' }}>
                                             <p>Dear Support Team,</p>
                                             <p className="!mb-0">I am having trouble completing transactions in the Online Banking App. The app freezes at the confirmation screen every time I attempt to transfer money.</p>
                                             <ul className="list-disc ml-6">
@@ -78,16 +78,16 @@ export default function Email1() {
                                             <p>Please assist with resolving this issue as soon as possible. Let me know if you need any further details.</p>
                                             <p className="!mb-0">Best regards,</p>
                                             <p className="font-bold !mb-0">Peterson</p>
-                                            <p className="!mb-0"><a href="javascript:void(0);" role="link">peterson&#64;email.com</a></p>
+                                            <p className="!mb-0"><a href="javascript:void(0);">peterson&#64;email.com</a></p>
                                             <Inject services={[Toolbar, HtmlEditor, Link, Image, Table]} />
                                         </RichTextEditorComponent>
                                     </div>
                                     <div className="mb-6">
-                                        <UploaderComponent id='fileUpload' type='file' multiple={true} asyncSettings={path} aria-label="upload files" role="button"></UploaderComponent>
+                                        <UploaderComponent id='fileUpload' type='file' multiple={true} asyncSettings={path}></UploaderComponent>
                                     </div>
                                     <div className="flex justify-end space-x-4">
-                                        <ButtonComponent cssClass="e-outline" type="button" content="Discard" aria-label="discard this email" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-primary" type="submit" content="Send" aria-label="send this email" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-outline" type="button" content="Discard"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary" type="submit" content="Send"></ButtonComponent>
                                     </div>
                                 </form>
                             </div>
@@ -102,23 +102,23 @@ export default function Email1() {
                                 <form action="#" onSubmit={(event) => event.preventDefault()}>
                                     <div className="mb-3 d-flex align-items-center ms-3">
                                         <label className="form-label small me-3 text-body-secondary mb-0">From:</label>
-                                        <TextBoxComponent cssClass="w-100 e-bigger" type="email" value='Peterson (peterson@example.com)' placeholder="Email" floatLabelType="Never" aria-label="enter your email address" role="textbox"></TextBoxComponent>
+                                        <TextBoxComponent cssClass="w-100 e-bigger" type="email" value='Peterson (peterson@example.com)' placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                     </div>
                                     <div className="mb-3 d-flex align-items-center ms-4 ps-1 position-relative">
                                         <label className="form-label small text-body-secondary ps-1 pe-3 mb-0">To:</label>
-                                        <MultiSelectComponent cssClass="e-bigger ps-1 w-100" dataSource={[{ text: "Thomas" }, { text: "Henry" }]} fields={{ text: "text" }} value={["Thomas"]} mode="Box" placeholder="Select recipients" aria-label="select the email recipients" role="listbox"></MultiSelectComponent>
+                                        <MultiSelectComponent cssClass="e-bigger ps-1 w-100" dataSource={[{ text: "Thomas" }, { text: "Henry" }]} fields={{ text: "text" }} value={["Thomas"]} mode="Box" placeholder="Select recipients"></MultiSelectComponent>
                                         <div className="position-absolute d-flex align-items-center end-0 me-4 pe-2">
-                                            <a href="javascript:void(0);" className="me-3 small text-body-secondary text-decoration-none fw-medium" role="link">Cc</a>
-                                            <a href="javascript:void(0);" className="small text-body-secondary text-decoration-none fw-medium" role="link">Bcc</a>
+                                            <a href="javascript:void(0);" className="me-3 small text-body-secondary text-decoration-none fw-medium">Cc</a>
+                                            <a href="javascript:void(0);" className="small text-body-secondary text-decoration-none fw-medium">Bcc</a>
                                         </div>
                                     </div>
                                     <div className="mb-3 d-flex align-items-center">
                                         <label className="form-label small text-body-secondary me-3 mb-0">Subject:</label>
-                                        <TextBoxComponent cssClass="e-bigger w-100" type="text" value='Issue with Online Banking App - Transactions Not Completing' placeholder="Enter the subject" floatLabelType="Never" aria-label="enter the subject" role="textbox"></TextBoxComponent>
+                                        <TextBoxComponent cssClass="e-bigger w-100" type="text" value='Issue with Online Banking App - Transactions Not Completing' placeholder="Enter the subject" floatLabelType="Never"></TextBoxComponent>
                                     </div>
                                     <div className="mb-3">
                                         <RichTextEditorComponent key={'defaultRTE2'} toolbarSettings={{
-                                            items: ['Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|', 'Alignments', 'OrderedList', 'UnorderedList', 'Blockquote', '|', 'CreateLink', 'Image', 'CreateTable'], type: 'MultiRow' as ToolbarType }} aria-label="enter and format your text message" role="application" style={{ maxHeight: "540px", overflowY: "auto" }}>
+                                            items: ['Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|', 'Alignments', 'OrderedList', 'UnorderedList', 'Blockquote', '|', 'CreateLink', 'Image', 'CreateTable'], type: 'MultiRow' as ToolbarType }} style={{ maxHeight: "540px", overflowY: "auto" }}>
                                             <p>Dear Support Team,</p>
                                             <p className="mb-0">I am having trouble completing transactions in the Online Banking App. The app freezes at the confirmation screen every time I attempt to transfer money.</p>
                                             <ul className="list-disc ms-6 mb-0">
@@ -129,16 +129,16 @@ export default function Email1() {
                                             <p>Please assist with resolving this issue as soon as possible. Let me know if you need any further details.</p>
                                             <p className="mb-0">Best regards,</p>
                                             <p className="fw-bold mb-0">Peterson</p>
-                                            <p className="mb-0"><a href="javascript:void(0);" role="link">peterson&#64;email.com</a></p>
+                                            <p className="mb-0"><a href="javascript:void(0);">peterson&#64;email.com</a></p>
                                             <Inject services={[Toolbar, HtmlEditor, Link, Image, Table]} />
                                         </RichTextEditorComponent>
                                     </div>
                                     <div className="mb-4">
-                                        <UploaderComponent id='fileUpload' type='file' multiple={true} asyncSettings={path} aria-label="upload files" role="button"></UploaderComponent>
+                                        <UploaderComponent id='fileUpload' type='file' multiple={true} asyncSettings={path}></UploaderComponent>
                                     </div>
                                     <div className="d-flex justify-content-end gap-3">
-                                        <ButtonComponent cssClass="e-outline" type="button" content="Discard" aria-label="discard this email" role="button"></ButtonComponent>
-                                        <ButtonComponent cssClass="e-primary" type="submit" content="Send" aria-label="send this email" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-outline" type="button" content="Discard"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary" type="submit" content="Send"></ButtonComponent>
                                     </div>
                                 </form>
                             </div>

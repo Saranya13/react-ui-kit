@@ -51,11 +51,11 @@ export default function Calendar1() {
                 return (
                     <section className="bg-white dark:bg-gray-800">
                         <div style={{ height: "815px", width: width, float: "right" }}>
-                            <SidebarComponent className="w-full bg-white dark:bg-gray-800" width={width} position="Right" ref={sidebar} type="Push" isOpen={true} closeOnDocumentClick={false} showBackdrop={true} role="complementary" style={{ display: "block" }}>
+                            <SidebarComponent className="w-full bg-white dark:bg-gray-800" width={width} position="Right" ref={sidebar} type="Push" isOpen={true} closeOnDocumentClick={false} showBackdrop={true} style={{ display: "block" }}>
                                 <div className="border-b border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800">
                                     <div className="flex justify-between items-center px-4 py-3 border-b border-gray-200 dark:border-gray-600">
                                         <h2 className="text-base font-semibold text-gray-900 dark:text-white">Quick view</h2>
-                                        <ButtonComponent className="e-flat text-base" iconCss="e-icons e-close" onClick={()=> sidebar.current?.hide()} content=" " type="button" aria-label="close sidebar" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat text-base" iconCss="e-icons e-close" onClick={()=> sidebar.current?.hide()} content=" " type="button"></ButtonComponent>
                                     </div>
                                     <div className="p-4 flex justify-center items-center">
                                         <CalendarComponent className="e-bigger shadow-none border-none"></CalendarComponent>
@@ -115,7 +115,7 @@ export default function Calendar1() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 right-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button" aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button"></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -124,12 +124,12 @@ export default function Calendar1() {
                 return (
                     <section className="bg-body">
                         <div style={{ height: "930px", width: width, float: 'right' }}>
-                            <SidebarComponent className="d-flex flex-column h-100 bg-body" width={width} position="Right" ref={sidebar} isOpen={true} type="Push" closeOnDocumentClick={false} showBackdrop={true} role="complementary" style={{ display: "block" }}>
+                            <SidebarComponent className="d-flex flex-column h-100 bg-body" width={width} position="Right" ref={sidebar} isOpen={true} type="Push" closeOnDocumentClick={false} showBackdrop={true} style={{ display: "block" }}>
                                 <div className="bg-body">
                                     <div className="border-bottom">
                                         <div className="d-flex justify-content-between align-items-center px-3 py-2 pt-3 border-bottom">
                                             <h2 className="h6 text-body fw-bold mb-0">Quick view</h2>
-                                            <ButtonComponent className="e-flat fs-6" iconCss="e-icons e-close" onClick={()=> sidebar.current?.hide()} content=" " type="button" aria-label="close sidebar" role="button"></ButtonComponent>
+                                            <ButtonComponent className="e-flat fs-6" iconCss="e-icons e-close" onClick={()=> sidebar.current?.hide()} content=" " type="button"></ButtonComponent>
                                         </div>
                                         <div className="p-3 pb-0 d-flex justify-content-center align-items-center">
                                             <CalendarComponent className="e-bigger shadow-none border-0"></CalendarComponent>
@@ -190,7 +190,7 @@ export default function Calendar1() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 position-absolute top-0 end-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button" aria-label="expand menu" role="button"></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" onClick={() => sidebar.current?.show()} type="button"></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

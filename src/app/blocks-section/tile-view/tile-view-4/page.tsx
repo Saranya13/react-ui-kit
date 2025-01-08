@@ -108,7 +108,7 @@ export default function TileView4() {
                                         </BreadcrumbItemsDirective>
                                     </BreadcrumbComponent>
                                     <div className="e-appbar-spacer"></div>
-                                    <ButtonComponent className="e-flat sf-icon-notification-bell-ring-03 text-base" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-flat sf-icon-notification-bell-ring-03 text-base" type="button"></ButtonComponent>
                                     <span className="e-avatar e-avatar-circle e-avatar-small shrink-0 ml-6">
                                         <Image src="/assets/images/common/avatar/avatar-1.jpg" width={32} height={32} alt="profile picture" />
                                     </span>
@@ -120,16 +120,16 @@ export default function TileView4() {
                                     <div className="flex gap-3">
                                         <div className="e-input-group w-full md:w-72">
                                             <span className="e-input-group-icon e-icons e-search"></span>
-                                            <input className="e-input !pl-0" type="text" placeholder="Search Buses" aria-label="search buses" role="textbox" />
+                                            <input className="e-input !pl-0" type="text" placeholder="Search Buses" />
                                         </div>
-                                        <ButtonComponent className="hidden sm:inline-block" iconCss="e-icons e-filter" content="Filter" type="button" aria-label="filter" role="button"></ButtonComponent>
-                                        <ButtonComponent className="sm:hidden" iconCss="e-icons e-filter" type="button" aria-label="filter" role="button"></ButtonComponent>
+                                        <ButtonComponent className="hidden sm:inline-block" iconCss="e-icons e-filter" content="Filter" type="button"></ButtonComponent>
+                                        <ButtonComponent className="sm:hidden" iconCss="e-icons e-filter" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-4 py-6 px-4 sm:px-6 xl:px-10">
                                 <p className="text-xl font-semibold text-gray-900 dark:text-gray-50">{busDetails.length} Buses Found</p>
-                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={busDetails} aria-label="list of bus with details" role="list" template={(data: any) => (
+                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={busDetails} template={(data: any) => (
                                     <div className="e-card flex-col gap-3 p-6 rounded-2xl sm:flex-row">
                                         <span className="e-avatar e-avatar-xlarge e-avatar-circle shrink-0">
                                             <Image src={"/assets/images/tile-view/travels/" + data.logo} width={56} height={56} alt="company logo" />
@@ -145,7 +145,7 @@ export default function TileView4() {
                                             </div>
                                             <div className="e-card-content !p-0 flex items-center flex-wrap gap-4 text-gray-500 dark:text-gray-400">
                                                 <div className="flex items-center gap-2">
-                                                    <RatingComponent cssClass="e-small" value={data.rating} precision="Exact" readOnly={true} aria-label="rate us out of 5" role="slider"></RatingComponent>
+                                                    <RatingComponent cssClass="e-small" value={data.rating} precision="Exact" readOnly={true}></RatingComponent>
                                                     <span>{data.reviews} reviews</span>
                                                 </div>
                                                 <span className="e-bigger e-badge e-badge-pill e-badge-success">Free date change</span>
@@ -159,7 +159,7 @@ export default function TileView4() {
                                                 <p>{data.seats} seats</p>
                                             </div>
                                             <p className="text-base mb-4 sm:mb-3">Starting at <span className="text-2xl font-semibold text-gray-900 dark:text-gray-50">{data.price.toLocaleString("en-US", { style: "currency", currency: "USD" })}</span></p>
-                                            <ButtonComponent className="e-primary e-block" type="button" aria-label="show seats" role="button">Show seats</ButtonComponent>
+                                            <ButtonComponent className="e-primary e-block" type="button">Show seats</ButtonComponent>
                                         </div>
                                     </div>)}
                                 ></ListViewComponent>
@@ -180,7 +180,7 @@ export default function TileView4() {
                                         </BreadcrumbItemsDirective>
                                     </BreadcrumbComponent>
                                     <div className="e-appbar-spacer"></div>
-                                    <ButtonComponent className="e-flat sf-icon-notification-bell-ring-03 fs-6" type="button" aria-label="notification" role="button"></ButtonComponent>
+                                    <ButtonComponent className="e-flat sf-icon-notification-bell-ring-03 fs-6" type="button"></ButtonComponent>
                                     <span className="e-avatar e-avatar-circle e-avatar-small flex-shrink-0 ms-4">
                                         <Image src="/assets/images/common/avatar/avatar-1.jpg" width={32} height={32} alt="profile picture" />
                                     </span>
@@ -192,16 +192,16 @@ export default function TileView4() {
                                     <div className="d-flex gap-2">
                                         <div className="e-input-group me-1 flex-grow-1 felx-sm-grow-0">
                                             <span className="e-input-group-icon e-icons e-search border-0"></span>
-                                            <input className="e-input ps-0" type="text" placeholder="Search Buses" aria-label="search buses" role="textbox" />
+                                            <input className="e-input ps-0" type="text" placeholder="Search Buses" />
                                         </div>
-                                        <ButtonComponent className="e-outline d-none d-sm-inline-block" iconCss="e-icons e-filter" content="Filter" type="button" aria-label="filter" role="button"></ButtonComponent>
-                                        <ButtonComponent className="e-outline d-sm-none" iconCss="e-icons e-filter" type="button" aria-label="filter" role="button"></ButtonComponent>
+                                        <ButtonComponent className="e-outline d-none d-sm-inline-block" iconCss="e-icons e-filter" content="Filter" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-outline d-sm-none" iconCss="e-icons e-filter" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
                             <div className="d-flex flex-column gap-3 py-4 px-3 px-sm-4 px-xl-5">
                                 <h5 className="fw-bold mb-0 text-body">{busDetails.length} Buses Found</h5>
-                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={busDetails} aria-label="list of bus with details" role="list" template={(data: any) => (
+                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={busDetails} template={(data: any) => (
                                     <div className="e-card d-flex flex-column gap-3 p-4 rounded-4 flex-sm-row">
                                         <span className="e-avatar e-avatar-xlarge e-avatar-circle flex-shrink-0">
                                             <Image src={"/assets/images/tile-view/travels/" + data.logo} width={56} height={56} alt="company logo" />
@@ -217,7 +217,7 @@ export default function TileView4() {
                                             </div>
                                             <div className="e-card-content p-0 d-flex align-items-center flex-wrap gap-3">
                                                 <div className="d-flex align-items-center gap-2">
-                                                    <RatingComponent cssClass="e-small" value={data.rating} precision="Exact" readOnly={true} aria-label="rate us out of 5" role="slider"></RatingComponent>
+                                                    <RatingComponent cssClass="e-small" value={data.rating} precision="Exact" readOnly={true}></RatingComponent>
                                                     <span className="text-body-secondary">{data.reviews} reviews</span>
                                                 </div>
                                                 <span className="e-bigger e-badge e-badge-pill e-badge-success">Free date change</span>
@@ -231,7 +231,7 @@ export default function TileView4() {
                                                 <p className="mb-0">{data.seats} seats</p>
                                             </div>
                                             <p className="mb-2 pb-1 fs-6 fw-medium text-body-secondary">Starting at <span className="fs-5 fw-bold lh-sm text-body">{data.price.toLocaleString("en-US", { style: "currency", currency: "USD" })}</span></p>
-                                            <ButtonComponent className="e-primary e-block" type="button" aria-label="show seats" role="button">Show seats</ButtonComponent>
+                                            <ButtonComponent className="e-primary e-block" type="button">Show seats</ButtonComponent>
                                         </div>
                                     </div>)}
                                 ></ListViewComponent>

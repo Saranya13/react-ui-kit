@@ -94,7 +94,7 @@ export default function List3() {
                     <section className="bg-white dark:bg-gray-900">
                         <div className="flex items-center justify-center min-h-screen">
                             <div className="lg:max-w-2xl w-full m-auto p-2 md:p-6 lg:py-8 lg:px-14">
-                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={data} aria-label="messages" role="list" template={(data: any) => (
+                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={data} template={(data: any) => (
                                     <div className="e-list-wrapper !px-1 sm:!px-3 border-b border-gray-200 dark:border-gray-600 !py-3 flex items-start">
                                         <span className="e-avatar e-avatar-circle shrink-0">
                                             <Image src={`/assets/images/common/avatar/${data.avatar}`} width={40} height={40} alt="profile picture" />
@@ -106,12 +106,12 @@ export default function List3() {
                                             </div>
                                             <span className="!text-sm !text-gray-700 dark:!text-gray-200 !whitespace-normal !mt-1 !truncate w-full md:w-full !line-clamp-1">{data.content}</span>
                                             <span className="flex items-center space-x-4 mt-2">
-                                                <ButtonComponent cssClass="e-flat e-lib" iconCss="e-icons sf-icon-message-circle-reply text-base" type="button" content="Reply" aria-label="reply" role="button"></ButtonComponent>
-                                                <ButtonComponent cssClass="e-flat e-lib" iconCss="e-icons e-eye e-medium" type="button" content="Mark as read" aria-label="mark as read" role="button"></ButtonComponent>
+                                                <ButtonComponent cssClass="e-flat e-lib" iconCss="e-icons sf-icon-message-circle-reply text-base" type="button" content="Reply"></ButtonComponent>
+                                                <ButtonComponent cssClass="e-flat e-lib" iconCss="e-icons e-eye e-medium" type="button" content="Mark as read"></ButtonComponent>
                                             </span>
                                         </span>
                                         <span className="ml-auto">
-                                            <ButtonComponent cssClass="e-icons e-medium e-more-horizontal-1 e-flat !px-2" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-icons e-medium e-more-horizontal-1 e-flat !px-2" type="button"></ButtonComponent>
                                         </span>
                                     </div>)}
                                 ></ListViewComponent>
@@ -124,7 +124,7 @@ export default function List3() {
                     <section className="bg-body">
                         <div className="d-flex align-items-center justify-content-center min-vh-100">
                             <div className="container-lg w-100 m-auto p-2 p-md-4" style={width}>
-                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={data} aria-label="messages" role="list" template={(data: any) => (
+                                <ListViewComponent className="border-0" cssClass="e-list-template" dataSource={data} template={(data: any) => (
                                     <div className="e-list-wrapper px-1 px-sm-3 d-flex align-items-start w-100">
                                         <span className="e-avatar e-avatar-circle flex-shrink-0">
                                             <Image src={`/assets/images/common/avatar/${data.avatar}`} width={40} height={40} alt="profile picture" />
@@ -136,11 +136,11 @@ export default function List3() {
                                             </div>
                                             <span className="mt-1 text-wrap overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical' }}>{data.content}</span>
                                             <span className="d-flex align-items-center gap-4 mt-2">
-                                                <ButtonComponent cssClass="e-flat e-lib e-inherit" iconCss="e-icons sf-icon-message-circle-reply" type="button" content="Reply" aria-label="reply" role="button"></ButtonComponent>
-                                                <ButtonComponent cssClass="e-flat e-lib e-inherit" iconCss="e-icons e-eye e-medium" type="button" content="Mark as read" aria-label="mark as read" role="button"></ButtonComponent>
+                                                <ButtonComponent cssClass="e-flat e-lib e-inherit" iconCss="e-icons sf-icon-message-circle-reply" type="button" content="Reply"></ButtonComponent>
+                                                <ButtonComponent cssClass="e-flat e-lib e-inherit" iconCss="e-icons e-eye e-medium" type="button" content="Mark as read"></ButtonComponent>
                                             </span>
                                         </div>
-                                        <ButtonComponent cssClass="e-icons e-medium e-more-horizontal-1 e-flat px-2" type="button" aria-label="more options" role="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-icons e-medium e-more-horizontal-1 e-flat px-2" type="button"></ButtonComponent>
                                     </div>)}
                                 ></ListViewComponent>
                             </div>

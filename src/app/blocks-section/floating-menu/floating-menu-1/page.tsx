@@ -95,14 +95,14 @@ export default function FloatingMenu1() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div id="target" className="w-full" style={{ height: isMobileView ? "591px" : "720px" }}>
-                            <DialogComponent id={styles["floating-article"]} className="sm:!rounded-t !rounded-none overflow-hidden !border-0" width="400px" minHeight="591px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()} aria-label="get help from helpdesk" role="dialog"
+                            <DialogComponent id={styles["floating-article"]} className="sm:!rounded-t !rounded-none overflow-hidden !border-0" width="400px" minHeight="591px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => {
                                     return (
                                         <div className="flex flex-col justify-between items-center bg-indigo-600 dark:bg-cyan-400 p-3">
                                             <div className="w-full text-center">
                                                 <p className="text-lg font-semibold text-white dark:text-gray-900">Help</p>
                                                 <div className="e-input-group e-bigger mt-3">
-                                                    <input className="e-input" type="text" placeholder="Search for help" aria-label="search for help" role="textbox" />
+                                                    <input className="e-input" type="text" placeholder="Search for help" />
                                                     <span className="e-input-group-icon e-icons e-search !text-lg !leading-4"></span>
                                                 </div>
                                             </div>
@@ -110,7 +110,7 @@ export default function FloatingMenu1() {
                                     );
                                 }}
                             >
-                                <ListViewComponent className="border-0 bg-white dark:bg-gray-900" dataSource={data} width="100%" height="486px" aria-label="help articles" role="list"
+                                <ListViewComponent className="border-0 bg-white dark:bg-gray-900" dataSource={data} width="100%" height="486px"
                                     template={(data: any) => {
                                         return (
                                             <div className="e-list-wrapper px-3 pt-4 border-b border-solid border-gray-200 dark:border-gray-600">
@@ -119,14 +119,14 @@ export default function FloatingMenu1() {
                                                         <p className="text-sm font-medium truncate">{data.question}</p>
                                                         <p className="text-sm sm:w-80 line-clamp-2 mt-1">{data.answer}</p>
                                                     </div>
-                                                    <ButtonComponent className="e-flat e-round shrink-0" iconCss="e-icons e-chevron-right !text-lg" type="button" aria-label="view invoice details" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-flat e-round shrink-0" iconCss="e-icons e-chevron-right !text-lg" type="button"></ButtonComponent>
                                                 </div>
                                             </div>
                                         );
                                     }}
                                 ></ListViewComponent>
                             </DialogComponent>
-                            <FabComponent cssClass="e-primary e-round e-bigger !hidden sm:!block" iconCss={!toggleState ? "sf-icon-help-circle !text-2xl" : "e-icons e-close !text-2xl"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog} aria-label="show/hide helpdesk" role="button"></FabComponent>
+                            <FabComponent cssClass="e-primary e-round e-bigger !hidden sm:!block" iconCss={!toggleState ? "sf-icon-help-circle !text-2xl" : "e-icons e-close !text-2xl"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog}></FabComponent>
                         </div>
                     </section>
                 );
@@ -134,14 +134,14 @@ export default function FloatingMenu1() {
                 return (
                     <section className="bg-body">
                         <div id="target" className="w-100" style={{ height: isMobileView ? "591px" : "720px" }}>
-                            <DialogComponent id={styles["floating-article"]} className="rounded-1 overflow-hidden border-0" width="400px" minHeight="592px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()} aria-label="get help from helpdesk" role="dialog"
+                            <DialogComponent id={styles["floating-article"]} className="rounded-1 overflow-hidden border-0" width="400px" minHeight="592px" ref={dialogRef} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => {
                                     return (
                                         <div className="d-flex flex-column justify-content-between align-items-center bg-primary text-white p-3">
                                             <div className="w-100 text-center">
                                                 <p className="fs-6 fw-semibold m-0 lh-sm text-white">Help</p>
                                                 <div className="e-input-group e-bigger mt-3">
-                                                    <input className="e-input form-control" type="text" placeholder="Search for help" aria-label="search for help" role="textbox" />
+                                                    <input className="e-input form-control" type="text" placeholder="Search for help" />
                                                     <span className="e-input-group-icon e-icons e-search border-start-0 text-secondary"></span>
                                                 </div>
                                             </div>
@@ -149,7 +149,7 @@ export default function FloatingMenu1() {
                                     );
                                 }}
                             >
-                                <ListViewComponent className="border-0 rounded-0" dataSource={data} width="100%" height="486px" aria-label="help articles" role="list"
+                                <ListViewComponent className="border-0 rounded-0" dataSource={data} width="100%" height="486px"
                                     template={(data: any) => {
                                         return (
                                             <div className="e-list-wrapper px-3 pt-3">
@@ -158,14 +158,14 @@ export default function FloatingMenu1() {
                                                         <p className="fw-medium m-0 mb-1 text-truncate">{data.question}</p>
                                                         <p className="m-0" style={{ maxWidth: "320px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>{data.answer}</p>
                                                     </div>
-                                                    <ButtonComponent className="e-flat e-round flex-shrink-0" iconCss="e-icons e-chevron-right" type="button" aria-label="view invoice details" role="button"></ButtonComponent>
+                                                    <ButtonComponent className="e-flat e-round flex-shrink-0" iconCss="e-icons e-chevron-right" type="button"></ButtonComponent>
                                                 </div>
                                             </div>
                                         );
                                     }}
                                 ></ListViewComponent>
                             </DialogComponent>
-                            <FabComponent cssClass="e-primary e-round e-bigger d-none d-sm-block" iconCss={!toggleState ? "sf-icon-help-circle fs-4" : "e-icons e-close fs-5"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog} aria-label="show/hide helpdesk" role="button"></FabComponent>
+                            <FabComponent cssClass="e-primary e-round e-bigger d-none d-sm-block" iconCss={!toggleState ? "sf-icon-help-circle fs-4" : "e-icons e-close fs-5"} position="BottomRight" type="button" target="#target" ref={fabRef} onClick={toggleDialog}></FabComponent>
                         </div>
                     </section>
                 );
