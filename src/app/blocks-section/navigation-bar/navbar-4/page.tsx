@@ -80,7 +80,7 @@ export default function Navbar4() {
                                         <div className="border border-r border-gray-200 dark:border-gray-600 hidden xl:block mr-2 h-7"></div>
                                         <ButtonComponent className="e-icons e-grid-view hidden xl:block mr-2" cssClass="e-flat" type="button"></ButtonComponent>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 hidden lg:block mr-2 h-7"></div>
-                                        <DropDownButtonComponent ref={brandDropdown} className="me-2 ms-1 hidden lg:block" cssClass="e-flat" items={[{ text: "React" }, { text: "Vue.js" }, { text: "Angular" }]} type="button">CompanyName.com</DropDownButtonComponent>
+                                        <DropDownButtonComponent ref={brandDropdown} className="me-2 hidden lg:block" cssClass="e-flat" items={[{ text: "React" }, { text: "Vue.js" }, { text: "Angular" }]} type="button">CompanyName.com</DropDownButtonComponent>
                                         <div className="border border-r border-gray-200 dark:border-gray-600 hidden sm:block h-7"></div>
                                         <span className="e-avatar e-avatar-small e-avatar-circle ml-4">
                                             <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />
@@ -124,7 +124,7 @@ export default function Navbar4() {
                                     <div className="border-end border-secondary-subtle d-none d-xl-block me-3" style={{ height: "24px" }}></div>
                                     <ButtonComponent className="e-icons e-grid-view d-none d-xl-block me-3 e-medium" cssClass="e-flat" type="button"></ButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-lg-block me-3" style={{ height: "24px" }}></div>
-                                    <DropDownButtonComponent ref={brandDropdown} className="me-3 ms-1 d-none d-lg-block" cssClass="e-flat" items={[{ text: "React" }, { text: "Vue.js" }, { text: "Angular" }]} type="button">CompanyName.com</DropDownButtonComponent>
+                                    <DropDownButtonComponent ref={brandDropdown} className="me-3 d-none d-lg-block" cssClass="e-flat" items={[{ text: "React" }, { text: "Vue.js" }, { text: "Angular" }]} type="button">CompanyName.com</DropDownButtonComponent>
                                     <div className="border-end border-secondary-subtle d-none d-sm-block" style={{ height: "24px" }}></div>
                                     <span className="e-avatar e-avatar-small e-avatar-circle ms-3">
                                         <Image src="/assets/images/common/avatar/avatar-3.jpg" width={32} height={32} alt="profile picture" />

@@ -229,7 +229,7 @@ export default function Checkout5() {
                 return (
                     <section key="dialog5">
                         <div id="dialog-container" className="position-relative" style={{ minHeight: "1340px" }}>
-                            <DialogComponent target="#dialog-container" ref={checkout} visible={true} showCloseIcon={true} width="662px" height="100%"  closeOnEscape={true} 
+                            <DialogComponent target="#dialog-container" ref={checkout} visible={true} showCloseIcon={true} width="662px" height="100%"  closeOnEscape={true} open={(event) => (event.preventFocus = true)}
                                 header={() => {
                                     return (
                                         <span style={{ fontSize: "18px" }}>My shopping cart</span>

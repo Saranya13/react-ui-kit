@@ -222,7 +222,7 @@ export default function Calendar6() {
                                     <div className="d-flex justify-content-between align-items-center p-3">
                                         <div className="w-50">
                                             <label className="fs-6 text-body-secondary">CALENDAR</label>
-                                            <DatePickerComponent start="Year" depth="Year" format="yyyy"></DatePickerComponent>
+                                            <DatePickerComponent start="Decade" depth="Decade" format="yyyy"></DatePickerComponent>
                                         </div>
                                         <ButtonComponent className="e-flat fs-6" iconCss="e-icons e-close" onClick={() => sidebar.current?.hide()} content=" " type="button"></ButtonComponent>
                                     </div>

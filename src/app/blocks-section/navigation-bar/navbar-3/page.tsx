@@ -82,7 +82,7 @@ export default function Navbar3() {
                                         <span className="hidden lg:block py-2">
                                             <DropDownButtonComponent ref={addressDropdown} cssClass="e-flat" items={[{ text: 'Michael Gough @ 1234-567-935' }, { text: 'Roberta Cases @ 1234-567-292' }]} type="button">Bonnie Green @ 1234-567-890</DropDownButtonComponent>
                                         </span>
-                                        <div className="border border-r border-gray-200 dark:border-gray-600 h-7 block lg:hidden ms-1 sm:ms-2"></div>
+                                        <div className="border border-r border-gray-200 dark:border-gray-600 h-7 block lg:hidden ms-2"></div>
                                         <span id={styles.menu} className="block lg:hidden">
                                             <MenuComponent hamburgerMode={true} title="" items={[{ text: 'Home' }, { text: 'Demo' }, { text: 'Features' }, { text: 'Shop' }, { text: 'Pages' }, { text: 'Blogs' }]}></MenuComponent>
                                         </span>

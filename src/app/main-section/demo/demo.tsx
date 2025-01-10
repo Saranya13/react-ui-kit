@@ -83,7 +83,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         if (currentView === Mode.Tablet && window.innerWidth <= 996 && iframeRef.current) {
             iframeRef.current.style.minWidth = '100%';
         }
-        setTimeout(updateIframeHeight, 500);
+        setTimeout(updateIframeHeight, 200);
     };
 
     const addStylesheetsToIframe = (selectedTheme: string, mode?: boolean) => {
@@ -95,7 +95,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         const stylesheetLinks = iframeDocument.head.getElementsByTagName('link');
 
         Array.from(stylesheetLinks).forEach((linkElement: HTMLLinkElement) => {
-            if (linkElement.rel === 'stylesheet' && !linkElement.href.includes('page.css')) {
+            if (linkElement.rel === 'stylesheet' && ['syncfusion-style', 'font-icon-style', 'framework-style', 'framework-support-style'].includes(linkElement.id)) {
                 iframeDocument.head.removeChild(linkElement);
             }
         });
@@ -144,7 +144,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
 
         Promise.all(loadPromises)
             .then(() => {
-                setTimeout(updateIframeHeight, 500);
+                setTimeout(updateIframeHeight, 200);
             })
             .catch((error) => console.error('Error loading stylesheets:', error));
 
@@ -171,7 +171,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
             const minWidth = mode !== Mode.Tablet ? widths[mode] : (window.innerWidth > 996 ? widths[mode] : '100%');
             iframeRef.current.style.minWidth = minWidth;
         }
-        setTimeout(updateIframeHeight, 500);
+        setTimeout(updateIframeHeight, 200);
     };
 
     const togglePreviewCode = (event: React.MouseEvent<HTMLLIElement> | React.KeyboardEvent<HTMLLIElement>) => {
