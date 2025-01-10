@@ -83,7 +83,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         if (currentView === Mode.Tablet && window.innerWidth <= 996 && iframeRef.current) {
             iframeRef.current.style.minWidth = '100%';
         }
-        setTimeout(updateIframeHeight, 1000);
+        setTimeout(updateIframeHeight, 500);
     };
 
     const addStylesheetsToIframe = (selectedTheme: string, mode?: boolean) => {
@@ -144,7 +144,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
 
         Promise.all(loadPromises)
             .then(() => {
-                setTimeout(updateIframeHeight, 1000);
+                setTimeout(updateIframeHeight, 500);
             })
             .catch((error) => console.error('Error loading stylesheets:', error));
 
@@ -171,7 +171,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
             const minWidth = mode !== Mode.Tablet ? widths[mode] : (window.innerWidth > 996 ? widths[mode] : '100%');
             iframeRef.current.style.minWidth = minWidth;
         }
-        setTimeout(updateIframeHeight, 1000);
+        setTimeout(updateIframeHeight, 500);
     };
 
     const togglePreviewCode = (event: React.MouseEvent<HTMLLIElement> | React.KeyboardEvent<HTMLLIElement>) => {

@@ -52,7 +52,7 @@ export default function MainPage() {
     }
 
     const navigateToDemo = (url: string) => {
-        router.push(`blocks/${url}`);
+        router.push(`${url}`);
     }
 
     return (

@@ -110,7 +110,7 @@ export default function Sidebar4() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["revenue-sidebar"]} style={{ height: '730px' }}>
-                            <SidebarComponent key={'revenue-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} style={{ display: 'block' }}>
+                            <SidebarComponent key={'revenue-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="h-screen">
                                     <div className="flex justify-between items-center p-4">
                                         <div className="flex items-center">
@@ -161,7 +161,7 @@ export default function Sidebar4() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 left-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-right e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -170,7 +170,7 @@ export default function Sidebar4() {
                 return (
                     <section className="bg-body">
                         <div id={styles["revenue-sidebar"]} style={{ height: '730px' }}>
-                            <SidebarComponent key={'revenue-sidebar2'} width="256px" ref={sidebar} style={{ display: 'block' }}>
+                            <SidebarComponent key={'revenue-sidebar2'} width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="vh-100">
                                     <div className="d-flex justify-content-between align-items-center p-3">
                                         <div className="d-flex align-items-center">
@@ -220,7 +220,7 @@ export default function Sidebar4() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 start-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-right e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

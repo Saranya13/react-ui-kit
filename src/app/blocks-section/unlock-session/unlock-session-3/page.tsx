@@ -71,7 +71,7 @@ export default function Unlocksession3() {
                                 </div>
                             </div>
                             <div className="w-full lg:w-5/12">
-                                <section className="bg-gray-50 dark:bg-gray-950">
+                                <div className="bg-gray-50 dark:bg-gray-950">
                                     <div className="flex justify-center">
                                         <div className="w-full max-w-md rounded-lg p-6 py-12">
                                             <div className="flex justify-center mb-6">
@@ -97,7 +97,7 @@ export default function Unlocksession3() {
                                             </span>
                                         </div>
                                     </div>
-                                </section>
+                                </div>
                             </div>
                         </div>
                     </section>

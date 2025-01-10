@@ -7,7 +7,9 @@ export default function Header() {
     return (
         <header className={styles['header-content']} role="banner">
             <div className={styles['title-container']}>
-                <Image className={styles['ui-kit-img']} src="/assets/images/sample-browser/ui-kit.png" alt="Essential UI Kit for React: Logo" width={40} height={40} />
+                <span className={styles['ui-kit-img']}>
+                    <Image src="/assets/images/sample-browser/ui-kit.png" alt="Essential UI Kit for React: Logo" width={40} height={40} />
+                </span>
                 <div>
                     <div className={styles['title-text']}>Essential UI Kit</div>
                     <div className={styles['platform-text']}>for React</div>

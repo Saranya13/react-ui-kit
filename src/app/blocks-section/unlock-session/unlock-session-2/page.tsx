@@ -76,8 +76,8 @@ export default function Unlocksession2() {
                 return (
                     <section className="bg-body">
                         <div className="d-flex flex-column flex-lg-row min-vh-100" key={"unlock2"}>
-                            <div className="col-12 col-lg-7 p-0">
-                                <Image className="img-fluid w-100 h-100" src="/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
+                            <div className="col-12 col-lg-6 col-xl-7 p-0">
+                                <Image className="img-fluid w-100 h-100 object-fit-cover" src="/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
                             </div>
                             <div className="col-12 col-lg-5 p-0">
                                 <div className="d-flex justify-content-center bg-body">

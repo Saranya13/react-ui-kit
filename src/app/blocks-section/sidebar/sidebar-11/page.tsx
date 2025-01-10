@@ -82,7 +82,7 @@ export default function Sidebar11() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["contact-sidebar"]} className="float-right" style={{ height: '600px' }}>
-                            <SidebarComponent key={'contact-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-l !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} position="Right" showBackdrop={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={'contact-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-l !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} position="Right" showBackdrop={true} style={{ display: 'block' }}>
                                 <div className="py-6 h-screen">
                                     <div className="flex justify-between mb-2 px-3">
                                         <span className="text-base text-gray-900 dark:text-white">Contacts</span>
@@ -121,7 +121,7 @@ export default function Sidebar11() {
                 return (
                     <section className="bg-body">
                         <div id={styles["contact-sidebar"]} className="float-end" style={{ height: '600px' }}>
-                            <SidebarComponent key={'contact-sidebar2'} width="256px" ref={sidebar} position="Right" showBackdrop={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={'contact-sidebar2'} width="256px" ref={sidebar} position="Right" showBackdrop={true} isOpen={true} style={{ display: 'block' }}>
                                 <div className="py-4 vh-100">
                                     <div className="d-flex justify-content-between mb-2 px-2 ms-1">
                                         <span className="fs-6 text-body-secondary">Contacts</span>

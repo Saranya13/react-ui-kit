@@ -92,7 +92,7 @@ export default function Sidebar3() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["notification-sidebar"]} style={{ height: '700px' }}>
-                            <SidebarComponent key={'notification-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} style={{ display: 'block' }}>
+                            <SidebarComponent key={'notification-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="flex flex-col justify-between h-screen">
                                     <div>
                                         <div className="flex flex-col justify-center items-center pt-6">
@@ -120,7 +120,7 @@ export default function Sidebar3() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 left-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-right e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -129,7 +129,7 @@ export default function Sidebar3() {
                 return (
                     <section className="bg-body">
                         <div id={styles["notification-sidebar"]} style={{ height: '700px' }}>
-                            <SidebarComponent key={'notification-sidebar2'} width="256px" ref={sidebar} style={{ display: 'block' }}>
+                            <SidebarComponent key={'notification-sidebar2'} width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="d-flex flex-column justify-content-between vh-100">
                                     <div>
                                         <div className="d-flex flex-column justify-content-center align-items-center pt-4 mb-3">
@@ -156,7 +156,7 @@ export default function Sidebar3() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 start-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-right e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

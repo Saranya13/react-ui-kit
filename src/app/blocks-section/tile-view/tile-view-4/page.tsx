@@ -145,7 +145,7 @@ export default function TileView4() {
                                             </div>
                                             <div className="e-card-content !p-0 flex items-center flex-wrap gap-4 text-gray-500 dark:text-gray-400">
                                                 <div className="flex items-center gap-2">
-                                                    <RatingComponent cssClass="e-small" value={data.rating} precision="Exact" readOnly={true}></RatingComponent>
+                                                    <RatingComponent cssClass="e-small" value={data.rating} precision="Exact"></RatingComponent>
                                                     <span>{data.reviews} reviews</span>
                                                 </div>
                                                 <span className="e-bigger e-badge e-badge-pill e-badge-success">Free date change</span>
@@ -217,7 +217,7 @@ export default function TileView4() {
                                             </div>
                                             <div className="e-card-content p-0 d-flex align-items-center flex-wrap gap-3">
                                                 <div className="d-flex align-items-center gap-2">
-                                                    <RatingComponent cssClass="e-small" value={data.rating} precision="Exact" readOnly={true}></RatingComponent>
+                                                    <RatingComponent cssClass="e-small" value={data.rating} precision="Exact"></RatingComponent>
                                                     <span className="text-body-secondary">{data.reviews} reviews</span>
                                                 </div>
                                                 <span className="e-bigger e-badge e-badge-pill e-badge-success">Free date change</span>

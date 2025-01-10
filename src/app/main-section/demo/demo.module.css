@@ -359,7 +359,7 @@
     .device-buttons,
     .copy-button,
     .dropdown-text {
-        display: none;
+        display: none !important;
     }
 
     .custom-dropdown {

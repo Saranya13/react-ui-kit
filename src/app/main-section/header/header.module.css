@@ -16,14 +16,12 @@
 .title-container {
     display: flex;
     align-items: center;
-    padding: 8px 0 8px 32px;
+    padding: 8px 0 8px 35px;
     text-decoration: none;
 }
 
 .ui-kit-img {
     margin-right: 8px;
-    width: 40px;
-    height: 40px;
 }
 
 .title-text {

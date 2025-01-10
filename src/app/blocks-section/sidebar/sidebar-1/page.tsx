@@ -62,7 +62,7 @@ export default function Sidebar1() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["simple-sidebar"]} style={{ height: '710px' }}>
-                            <SidebarComponent key={'simple-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} style={{ display: 'block' }}>
+                            <SidebarComponent key={'simple-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="h-screen">
                                     <div className="flex items-center py-4 px-3">
                                         <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
@@ -103,7 +103,7 @@ export default function Sidebar1() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 left-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-right e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -112,7 +112,7 @@ export default function Sidebar1() {
                 return (
                     <section className="bg-body">
                         <div id={styles["simple-sidebar"]} style={{ height: '710px' }}>
-                            <SidebarComponent key={'simple-sidebar2'} width="256px" ref={sidebar} style={{ display: 'block' }}>
+                            <SidebarComponent key={'simple-sidebar2'} width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="min-vh-100">
                                     <div className="d-flex align-items-center p-3">
                                         <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
@@ -155,7 +155,7 @@ export default function Sidebar1() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 start-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-large e-icons e-chevron-right e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
