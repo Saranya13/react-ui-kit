@@ -38,7 +38,7 @@ export default function ForgetPassword3() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
-                        <div className="flex flex-col lg:flex-row mx-auto p-0 md:min-h-screen">
+                        <div className="flex flex-col lg:flex-row mx-auto p-0" style={{ minHeight: '580px' }}>
                             <div className="w-full lg:w-7/12 px-6 py-14 bg-green-600 text-white flex items-center" style={{ backgroundImage: "url('/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                                 <div className="flex flex-wrap mx-0 w-full sm:p-6 xl:p-0 md:p-8 lg:px-6">
                                     <div className="hidden xl:block xl:w-1/6"></div>
@@ -102,7 +102,7 @@ export default function ForgetPassword3() {
                 );
             case 'bootstrap5':
                 return (
-                    <section className="container-fluid d-md-flex d-block flex-wrap mx-auto p-0 min-vh-100">
+                    <section className="container-fluid d-md-flex d-block flex-wrap mx-auto p-0" style={{ minHeight: '580px' }}>
                         <div className="col-12 col-lg-7 d-flex align-items-center bg-success p-4 p-lg-4" style={{ backgroundImage: "url('/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                             <div className="row mx-0 w-100 py-5">
                                 <div className="col-xl-2 d-lg-block"></div>

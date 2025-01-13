@@ -38,7 +38,7 @@ export default function Signin2() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
-                        <div className="flex flex-col lg:flex-row md:min-h-screen">
+                        <div className="flex flex-col lg:flex-row" style={{ minHeight: '770px' }}>
                             <div className="w-full lg:w-7/12 p-0">
                                 <Image className="w-full h-full object-cover" src="/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
                             </div>
@@ -99,11 +99,11 @@ export default function Signin2() {
             case 'bootstrap5':
                 return (
                     <section>
-                        <div className="d-flex flex-column flex-lg-row">
+                        <div className="d-flex flex-column flex-lg-row h-100" style={{ minHeight: '770px' }}>
                             <div className="col-12 col-lg-7 p-0">
                                 <Image className="img-fluid w-100 h-100 object-fit-cover" src="/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
                             </div>
-                            <div className="col-12 col-lg-6 col-xl-5 p-0">
+                            <div className="col-12 col-lg-5 p-0">
                                 <div className="d-flex justify-content-center align-items-center bg-body">
                                     <div className="max-w-lg bg-body rounded-lg p-4 p-md-5 w-100" style={{ maxWidth: '508px' }}>
                                         <div className="d-flex justify-content-center align-items-center mb-4">

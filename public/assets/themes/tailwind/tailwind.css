@@ -481,16 +481,6 @@ menu {
   padding: 0;
 }
 
-.e-richtexteditor .e-rte-content .e-content ol {
-  list-style: auto;
-  margin-left: 24px;
-}
-
-.e-richtexteditor .e-rte-content .e-content ul {
-  list-style: disc;
-  margin-left: 24px;
-}
-
 /*
 Reset default styling for dialogs.
 */

@@ -38,7 +38,7 @@ export default function Signin3() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
-                        <div className="flex flex-col lg:flex-row mx-auto p-0 lg:min-h-screen">
+                        <div className="flex flex-col lg:flex-row mx-auto p-0" style={{ minHeight: '770px' }}>
                             <div className="w-full lg:w-7/12 px-6 py-14 bg-green-600 text-white flex items-center" style={{ backgroundImage: "url('/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                                 <div className="flex flex-wrap mx-0 w-full sm:p-6 xl:p-0 md:p-8 lg:px-6">
                                     <div className="hidden xl:block xl:w-1/6"></div>
@@ -71,7 +71,7 @@ export default function Signin3() {
                             </div>
                             <div className="w-full lg:w-5/12">
                                 <div className="bg-gray-50 dark:bg-gray-950">
-                                    <div className="flex items-center justify-center lg:min-h-screen">
+                                    <div className="flex items-center justify-center">
                                         <div className="w-full max-w-md rounded-lg px-4 py-14 md:px-6 md:py-20">
                                             <div className="flex justify-center mb-6">
                                                 <Image className="mr-2" src="/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
@@ -125,8 +125,8 @@ export default function Signin3() {
                 );
             case 'bootstrap5':
                 return (
-                    <section className="container-fluid d-md-flex d-block flex-wrap mx-auto p-0 min-vh-100">
-                        <div className="col-12 col-lg-6 col-xl-7 d-flex align-items-center bg-success p-4 p-lg-4" style={{ backgroundImage: "url('/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+                    <section className="container-fluid d-md-flex d-block flex-wrap mx-auto p-0" style={{ minHeight: '770px' }}>
+                        <div className="col-12 col-lg-7 d-flex align-items-center bg-success p-4 p-lg-4" style={{ backgroundImage: "url('/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                             <div className="row mx-0 w-100 py-5">
                                 <div className="col-xl-2 d-lg-block"></div>
                                 <div className="col-xl-8">
@@ -157,7 +157,7 @@ export default function Signin3() {
                                 <div className="col-xl-2 d-lg-block"></div>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6 col-xl-5 p-0">
+                        <div className="col-12 col-lg-5 p-0">
                             <div className="d-flex justify-content-center align-items-center bg-body">
                                 <div className="max-w-lg bg-body rounded-lg p-4 p-md-5 w-100" style={{ maxWidth: '508px' }}>
                                     <div className="d-flex justify-content-center align-items-center mb-4">

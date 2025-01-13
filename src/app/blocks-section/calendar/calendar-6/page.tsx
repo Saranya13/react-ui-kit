@@ -62,6 +62,9 @@ export default function Calendar6() {
   
     const handleResize = () => {
         setWidth(window.innerWidth < 540 ? '100%' : '310px');
+        setTimeout(() => {
+            timeline.current?.refresh();  
+        }, 250);
     };
     
     /* SB Code - Start */

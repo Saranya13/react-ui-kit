@@ -115,7 +115,7 @@ export default function ReturnBlock2() {
                                 <p className="mb-3 font-medium text-gray-900 dark:text-white">Choose the reason for your return</p>
                                 <p className="mb-4 text-sm text-gray-900 dark:text-white">To assist us in addressing your request promptly, please respond to the following questions.</p>
                                 <div className="mb-5">
-                                    <GridComponent dataSource={data} width="100%" rowHeight={60} gridLines="None" allowTextWrap={true} className="e-bigger" textWrapSettings={{ wrapMode: "Content" }}>
+                                    <GridComponent dataSource={data} key={"grid1"} width="100%" rowHeight={60} gridLines="None" allowTextWrap={true} className="e-bigger" textWrapSettings={{ wrapMode: "Content" }}>
                                         <ColumnsDirective>
                                             <ColumnDirective type="checkbox" width="40"></ColumnDirective>
                                             <ColumnDirective field="product" headerText="Product" width="488" template={(data: any) => (
@@ -210,7 +210,7 @@ export default function ReturnBlock2() {
                                 <p className="h6 mb-2 fw-bold text-body">Choose the reason for your return</p>
                                 <p className="mb-4 text-body">To assist us in addressing your request promptly, please respond to the following questions.</p>
                                 <div className="mb-4">
-                                    <GridComponent dataSource={data} width="100%" rowHeight={60} gridLines="None" allowTextWrap={true} className="e-bigger" textWrapSettings={{ wrapMode: "Content" }}>
+                                    <GridComponent dataSource={data} key={"grid2"} width="100%" rowHeight={60} gridLines="None" allowTextWrap={true} className="e-bigger" textWrapSettings={{ wrapMode: "Content" }}>
                                         <ColumnsDirective>
                                             <ColumnDirective type="checkbox" width="40"></ColumnDirective>
                                             <ColumnDirective field="product" headerText="Product" width="488" template={(data: any) => (

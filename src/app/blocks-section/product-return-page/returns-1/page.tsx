@@ -137,7 +137,7 @@ export default function ReturnBlock1() {
                             <div>
                                 <p className="mb-4 text-gray-900 font-medium dark:text-white">Select the product you want to return:</p>
                                 <div className="mb-6">
-                                    <GridComponent dataSource={data} width="100%" rowHeight={60} gridLines="None" className="e-bigger" allowTextWrap={true} textWrapSettings={{ wrapMode: "Content" }}>
+                                    <GridComponent dataSource={data} key={"grid1"} width="100%" rowHeight={60} gridLines="None" className="e-bigger" allowTextWrap={true} textWrapSettings={{ wrapMode: "Content" }}>
                                         <ColumnsDirective>
                                             <ColumnDirective type="checkbox" width="40"></ColumnDirective>
                                             <ColumnDirective field="product" headerText="Product" width="488" template={(data: any) => (
@@ -180,7 +180,7 @@ export default function ReturnBlock1() {
                             <div>
                                 <p className="h6 mb-4 fw-bold text-body">Select the product you want to return:</p>
                                 <div className="mb-4">
-                                    <GridComponent dataSource={data} width="100%" rowHeight={60} gridLines="None" className="e-bigger" allowTextWrap={true} textWrapSettings={{ wrapMode: "Content" }}>
+                                    <GridComponent dataSource={data} key={"grid2"} width="100%" rowHeight={60} gridLines="None" className="e-bigger" allowTextWrap={true} textWrapSettings={{ wrapMode: "Content" }}>
                                         <ColumnsDirective>
                                             <ColumnDirective type="checkbox" width="40"></ColumnDirective>
                                             <ColumnDirective field="product" headerText="Product" width="438" template={(data: any) => (

@@ -38,7 +38,7 @@ export default function Unlocksession2() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
-                        <div className="flex flex-col lg:flex-row md:min-h-screen">
+                        <div className="flex flex-col lg:flex-row" style={{ minHeight: '580px' }}>
                             <div className="w-full lg:w-7/12 p-0">
                                 <Image className="w-full h-full object-cover" src="/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
                             </div>
@@ -75,7 +75,7 @@ export default function Unlocksession2() {
             case 'bootstrap5':
                 return (
                     <section className="bg-body">
-                        <div className="d-flex flex-column flex-lg-row min-vh-100" key={"unlock2"}>
+                        <div className="d-flex flex-column flex-lg-row" key={"unlock2"} style={{ minHeight: '580px' }}>
                             <div className="col-12 col-lg-7 p-0">
                                 <Image className="img-fluid w-100 h-100 object-fit-cover" src="/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
                             </div>

@@ -60,8 +60,8 @@ export default function Checkout5() {
                                 footerTemplate={() =>
                                     <div>
                                         <div className="e-bigger mb-4 text-right">
-                                            <ButtonComponent className="md:mr-4 w-full md:w-fit e-primary" type="submit">Proceed to checkout</ButtonComponent>
-                                            <ButtonComponent className="dark:text-white w-full md:w-fit mt-4 md:mt-0 e-outline" type="submit">Continue shopping</ButtonComponent>
+                                            <ButtonComponent className="md:mr-4 !ml-0 w-full md:w-fit e-primary" type="submit">Proceed to checkout</ButtonComponent>
+                                            <ButtonComponent className="dark:text-white w-full md:w-fit !ml-0 mt-4 md:mt-0 e-outline" type="submit">Continue shopping</ButtonComponent>
                                         </div>
                                     </div>
                                 }
@@ -189,7 +189,7 @@ export default function Checkout5() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="mt-6 xl:mb-8">
+                                            <div className="mt-6">
                                                 <h2 className="mb-4 font-semibold text-lg text-gray-900 dark:text-white">Delivery methods</h2>
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-4">
                                                     <div className="e-card pt-4 shadow-none border-transparent hover:border-primary-600 dark:hover:border-primary-400">
@@ -334,8 +334,8 @@ export default function Checkout5() {
                                                         <div className="text-dark-emphasis mt-1 ps-1 ms-4">Pay with your credit card</div>
                                                     </div>
                                                     <div className="e-card-actions">
-                                                        <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash me-2" type="button" content="Delete"></ButtonComponent>
-                                                        <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit me-2" type="button" content="Edit"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash" type="button" content="Delete"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit" type="button" content="Edit"></ButtonComponent>
                                                     </div>
                                                 </div>
                                             </div>
@@ -348,8 +348,8 @@ export default function Checkout5() {
                                                         <div className="text-dark-emphasis mt-1 ms-4 ps-1">+ $12 payment processing fee</div>
                                                     </div>
                                                     <div className="e-card-actions">
-                                                        <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash me-2" type="button" content="Delete"></ButtonComponent>
-                                                        <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit me-2" type="button" content="Edit"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash" type="button" content="Delete"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit" type="button" content="Edit"></ButtonComponent>
                                                     </div>
                                                 </div>
                                             </div>
@@ -362,8 +362,8 @@ export default function Checkout5() {
                                                         <div className="text-dark-emphasis mt-1 ms-4 ps-1">Connect to your account</div>
                                                     </div>
                                                     <div className="e-card-actions">
-                                                        <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash me-2" type="button" content="Delete"></ButtonComponent>
-                                                        <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit me-2" type="button" content="Edit"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat me-3" iconCss="e-icons e-trash" type="button" content="Delete"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat" iconCss="e-icons e-edit" type="button" content="Edit"></ButtonComponent>
                                                     </div>
                                                 </div>
                                             </div>
