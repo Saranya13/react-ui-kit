@@ -86,10 +86,170 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         setTimeout(updateIframeHeight, 200);
     };
 
+    const showTab = (tabId: string) => {
+        setCurrentTab(tabId);
+    };
+
+    const togglePreviewCode = (event: React.MouseEvent<HTMLLIElement> | React.KeyboardEvent<HTMLLIElement>) => {
+        const targetElement = event.target as HTMLElement;
+        const isPreview = targetElement.getAttribute('tab-text') === 'Preview';
+        setIsPreviewMode(isPreview);
+        isPreview ? showPreview() : showSourceCode();
+    };
+
+    const showPreview = () => {
+        const elementsToUpdate = [
+            { ref: iframeRef.current?.parentElement, display: '' },
+            { ref: deviceButtonRef.current, display: 'flex' },
+            { ref: themeDropdownRef.current, display: 'block' },
+            { ref: themeModeButtonRef.current, display: 'block' },
+            { ref: previewCodeContainerRef.current, display: 'none' }
+        ];
+
+        elementsToUpdate.forEach(({ ref, display }) => {
+            if (ref) {
+                ref.style.display = display;
+            }
+        });
+    };
+
+    const showSourceCode = () => {
+        const tsxCodeBlock = document.getElementById(`${componentUrl}_tsx-code`);
+        const cssCodeBlock = document.getElementById(`${componentUrl}_css-code`);
+        fetch(`/assets/code-snippet/${componentUrl}/page.tsx`)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Network error: Unable to fetch data. Please try again.');
+                }
+                return response.text();
+            })
+            .then((text) => {
+                const code = extractHTMLSectionContent(text);
+                setTsxContent(code);
+                if (tsxCodeBlock) {
+                    tsxCodeBlock.textContent = code;
+                    hljs.highlightElement(tsxCodeBlock);
+                }
+            })
+            .catch((error) => {
+                setTsxContent('');
+                console.error('Error fetching TSX content: ', error);
+                if (tsxCodeBlock) {
+                    tsxCodeBlock.textContent = 'No content available.';
+                }
+            });
+        fetch(`/assets/code-snippet/${componentUrl}/page.module.css`)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Network error: Unable to fetch data. Please try again.');
+                }
+                return response.text();
+            })
+            .then((text) => {
+                if (text.trim() !== '') {
+                    setTabs(['tsx', 'css']);
+                    setCssContent(text);
+                    if (cssCodeBlock) {
+                        cssCodeBlock.textContent = text;
+                        hljs.highlightElement(cssCodeBlock);
+                    }
+                }
+            })
+            .catch((error) => {
+                setCssContent('');
+                console.error('Error fetching CSS content: ', error);
+                if (cssCodeBlock) {
+                    cssCodeBlock.textContent = 'No content available.';
+                }
+            });
+        if (iframeRef.current?.parentElement) {
+            iframeRef.current.parentElement.style.display = 'none';
+        }
+        previewCodeContainerRef.current!.style.display = 'block';
+        [deviceButtonRef, themeDropdownRef, themeModeButtonRef].forEach(ref => {
+            if (ref.current) {
+                ref.current.style.display = 'none';
+            }
+        });
+    };
+
+    const extractHTMLSectionContent = (code: string): string => {
+        const getContentMatch = code.match(/const getContent = \(\) => {([\s\S]*?)return getContent\(\);/);
+
+        if (!getContentMatch)
+            return code;
+
+        const getContentBody = getContentMatch[0];
+        const sectionContents = getContentBody.match(/<section[\s\S]*?<\/section>/g) || [];
+        let extractedContent = sectionContents[theme === 'tailwind' ? 0 : 1]?.trim() || '';
+        extractedContent = formatHTML(extractedContent);
+        return code.replace(/const getContent = \(\) => {[\s\S]*?return getContent\(\);/, `\n    return (\n        ${extractedContent}\n    );`).trim();
+    };
+
+    const formatHTML = (html: string): string => {
+        const lines = html.split('\n');
+        const leadingSpaces = lines[1].search(/\S|$/) - 12;
+
+        const formattedLines = lines.map(line => {
+            return line.startsWith(' '.repeat(leadingSpaces))
+                ? line.slice(leadingSpaces)
+                : line;
+        });
+
+        return formattedLines.join('\n');
+    };
+
+    const switchMode = (mode: Mode) => {
+        setCurrentView(mode);
+        if (iframeRef.current) {
+            const minWidth = mode !== Mode.Tablet ? widths[mode] : (window.innerWidth > 996 ? widths[mode] : '100%');
+            iframeRef.current.style.minWidth = minWidth;
+        }
+        setTimeout(updateIframeHeight, 200);
+    };
+
+    const updateIframeHeight = () => {
+        const iframeDocument = iframeRef.current?.contentDocument || iframeRef.current?.contentWindow?.document;
+
+        if (!iframeDocument)
+            return;
+
+        if (iframeRef && iframeRef.current) {
+            const contentHeight = iframeDocument?.body.scrollHeight !== 0 ? iframeDocument?.body.scrollHeight : iframeDocument?.documentElement.scrollHeight;
+            iframeRef.current.style.height = `${(contentHeight ? contentHeight : 0) + 1}px`;
+            onHandleOverlayVisibility('hide');
+        }
+    };
+
+    const toggleDropdown = (args?: string) => {
+        const dropdownContent = themeDropdownContentRef.current;
+        if (dropdownContent) {
+            dropdownContent.style.display = args === 'hide' ? 'none' : dropdownContent.style.display === 'block' ? 'none' : 'block';
+            setIsDropdownOpen(dropdownContent.style.display === 'block' ? true : false);
+        }
+    };
+
+    const onThemeChange = (selectedTheme: string) => {
+        toggleDropdown('hide');
+        if (theme !== selectedTheme) {
+            onHandleOverlayVisibility('show');
+            selectedTheme === 'tailwind' ? setThemeIndex(0) : setThemeIndex(1);
+            setTheme(selectedTheme);
+            const message = JSON.stringify({
+                name: componentUrl,
+                theme: selectedTheme,
+            });
+            iframeRef.current?.contentWindow?.postMessage(message, '*');
+            addStylesheetsToIframe(selectedTheme);
+        }
+    };
+
     const addStylesheetsToIframe = (selectedTheme: string, mode?: boolean) => {
         mode = mode !== undefined ? mode : isDarkMode;
         const iframeDocument = iframeRef.current?.contentDocument || iframeRef.current?.contentWindow?.document;
-        if (!iframeDocument) return;
+
+        if (!iframeDocument)
+            return;
 
         const themeName = mode ? `${selectedTheme}dark` : `${selectedTheme}light`;
         const stylesheetLinks = iframeDocument.head.getElementsByTagName('link');
@@ -129,6 +289,7 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         };
 
         const styles = stylesheets[themeName] || {};
+
         const loadPromises = Object.entries(styles).map(([key, href]) => {
             const linkElement = iframeDocument.createElement('link');
             linkElement.rel = 'stylesheet';
@@ -155,133 +316,10 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         }
     };
 
-    const updateIframeHeight = () => {
-        const iframeDocument = iframeRef.current?.contentDocument || iframeRef.current?.contentWindow?.document;
-        if (!iframeDocument) return;
-        if (iframeRef && iframeRef.current) {
-            const contentHeight = iframeDocument?.body.scrollHeight !== 0 ? iframeDocument?.body.scrollHeight : iframeDocument?.documentElement.scrollHeight;
-            iframeRef.current.style.height = `${(contentHeight ? contentHeight : 0) + 1}px`;
-            onHandleOverlayVisibility('hide');
-        }
-    };
-
-    const switchMode = (mode: Mode) => {
-        setCurrentView(mode);
-        if (iframeRef.current) {
-            const minWidth = mode !== Mode.Tablet ? widths[mode] : (window.innerWidth > 996 ? widths[mode] : '100%');
-            iframeRef.current.style.minWidth = minWidth;
-        }
-        setTimeout(updateIframeHeight, 200);
-    };
-
-    const togglePreviewCode = (event: React.MouseEvent<HTMLLIElement> | React.KeyboardEvent<HTMLLIElement>) => {
-        const targetElement = event.target as HTMLElement;
-        const isPreview = targetElement.getAttribute('tab-text') === 'Preview';
-        setIsPreviewMode(isPreview);
-        isPreview ? showPreview() : showSourceCode();
-    };
-
-    const extractSectionContent = (code: string): string => {
-        const getContentMatch = code.match(/const getContent = \(\) => {([\s\S]*?)return getContent\(\);/);
-        if (!getContentMatch) return code;
-        const getContentBody = getContentMatch[0];
-        const sectionContents = getContentBody.match(/<section[\s\S]*?<\/section>/g) || [];
-        let extractedContent = sectionContents[theme === 'tailwind' ? 0 : 1]?.trim() || '';
-        extractedContent = formatHTML(extractedContent);
-        return code.replace(/const getContent = \(\) => {[\s\S]*?return getContent\(\);/, `\n    return (\n        ${extractedContent}\n    );`).trim();
-    };
-
-    const formatHTML = (html: string): string => {
-        const lines = html.split('\n');
-        const leadingSpaces = lines[1].search(/\S|$/) - 12;
-    
-        const formattedLines = lines.map(line => {
-            return line.startsWith(' '.repeat(leadingSpaces))
-                ? line.slice(leadingSpaces)
-                : line;
-        });
-    
-        return formattedLines.join('\n');
-    };  
-    
-    const showSourceCode = () => {
-        const tsxCodeBlock = document.getElementById(`${componentUrl}_tsx-code`);
-        const cssCodeBlock = document.getElementById(`${componentUrl}_css-code`);
-        fetch(`/assets/code-snippet/${componentUrl}/page.tsx`)
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then((text) => {
-                const code = extractSectionContent(text);
-                setTsxContent(code);
-                if (tsxCodeBlock) {
-                    tsxCodeBlock.textContent = code;
-                    hljs.highlightElement(tsxCodeBlock);
-                }
-            })
-            .catch((error) => {
-                setTsxContent('');
-                console.error('Error fetching TSX content: ', error);
-                if (tsxCodeBlock) {
-                    tsxCodeBlock.textContent = 'No content available !!!';
-                }
-            });
-        fetch(`/assets/code-snippet/${componentUrl}/page.module.css`)
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then((text) => {
-                if (text.trim() !== '') {
-                    setTabs(['tsx', 'css']);
-                    setCssContent(text);
-                    if (cssCodeBlock) {
-                        cssCodeBlock.textContent = text;
-                        hljs.highlightElement(cssCodeBlock);
-                    }
-                }
-            })
-            .catch((error) => {
-                setCssContent('');
-                console.error('Error fetching CSS content: ', error);
-                if (cssCodeBlock) {
-                    cssCodeBlock.textContent = 'No content available !!!';
-                }
-            });
-        if (iframeRef.current?.parentElement) {
-            iframeRef.current.parentElement.style.display = 'none';
-        }
-        previewCodeContainerRef.current!.style.display = 'block';
-        [deviceButtonRef, themeDropdownRef, themeModeButtonRef].forEach(ref => {
-            if (ref.current) {
-                ref.current.style.display = 'none';
-            }
-        });
-    };
-
-    const showPreview = () => {
-        const elementsToUpdate = [
-            { ref: iframeRef.current?.parentElement, display: '' },
-            { ref: deviceButtonRef.current, display: 'flex' },
-            { ref: themeDropdownRef.current, display: 'block' },
-            { ref: themeModeButtonRef.current, display: 'block' },
-            { ref: previewCodeContainerRef.current, display: 'none' }
-        ];
-
-        elementsToUpdate.forEach(({ ref, display }) => {
-            if (ref) {
-                ref.style.display = display;
-            }
-        });
-    };
-
-    const showTab = (tabId: string) => {
-        setCurrentTab(tabId);
+    const toggleLightDarkModes = () => {
+        onHandleOverlayVisibility('show');
+        setIsDarkMode(!isDarkMode);
+        addStylesheetsToIframe(theme, !isDarkMode);
     };
 
     const onHandleOverlayVisibility = (action: 'show' | 'hide') => {
@@ -289,35 +327,6 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
             const method = action === 'show' ? 'remove' : 'add';
             overlayRef.current.classList[method](styles['remove-overlay']);
         }
-    };
-
-    const toggleDropdown = (args?: string) => {
-        const dropdownContent = themeDropdownContentRef.current;
-        if (dropdownContent) {
-            dropdownContent.style.display = args === 'hide' ? 'none' : dropdownContent.style.display === 'block' ? 'none' : 'block';
-            setIsDropdownOpen(dropdownContent.style.display === 'block' ? true : false);
-        }
-    };
-
-    const onThemeChange = (selectedTheme: string) => {
-        toggleDropdown('hide');
-        if (theme !== selectedTheme) {
-            onHandleOverlayVisibility('show');
-            selectedTheme === 'tailwind' ? setThemeIndex(0) : setThemeIndex(1);
-            setTheme(selectedTheme);
-            const message = JSON.stringify({
-                name: componentUrl,
-                theme: selectedTheme,
-            });
-            iframeRef.current?.contentWindow?.postMessage(message, '*');
-            addStylesheetsToIframe(selectedTheme);
-        }
-    };
-
-    const toggleLightDarkModes = () => {
-        onHandleOverlayVisibility('show');
-        setIsDarkMode(!isDarkMode);
-        addStylesheetsToIframe(theme, !isDarkMode);
     };
 
     const copyCode = () => {
