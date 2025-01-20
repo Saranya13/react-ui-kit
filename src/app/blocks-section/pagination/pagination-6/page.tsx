@@ -39,7 +39,7 @@ export default function Pagination6() {
                 return (
                     <section className="bg-white dark:bg-gray-900">
                         <div className="px-6">
-                            <PagerComponent key={"top-level-pagination1"} className="border-t-0 border-x-0 px-0 py-2 bg-transparent" template={() => (
+                            <PagerComponent key={"pagination-6-tw"} className="border-t-0 border-x-0 px-0 py-2 bg-transparent" template={() => (
                                 <div className="!flex justify-end gap-3 sm:gap-4">
                                     <ButtonComponent className="e-flat rounded-none" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
                                     <DropDownButtonComponent className="e-outline" content="20" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
@@ -58,7 +58,7 @@ export default function Pagination6() {
                 return (
                     <section className="bg-body">
                         <div className="px-4">
-                            <PagerComponent key={"top-level-pagination2"} className="border-top-0 border-start-0 border-end-0 py-2 px-0" template={() => (
+                            <PagerComponent key={"pagination-6-bs"} className="border-top-0 border-start-0 border-end-0 py-2 px-0" template={() => (
                                 <div className="d-flex justify-content-end gap-2">
                                     <ButtonComponent className="e-flat rounded-0" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
                                     <DropDownButtonComponent className="e-outline mx-1" content="20" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>

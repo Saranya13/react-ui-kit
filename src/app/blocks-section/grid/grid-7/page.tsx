@@ -283,7 +283,7 @@ export default function Grid7() {
                                 </div>
                                 <ButtonComponent cssClass="e-primary self-end" content="Export to CSV" iconCss="e-icons e-export" iconPosition="Left" type="button"></ButtonComponent>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-1"} width={"100%"} height={668} allowPaging={true}>
+                            <GridComponent dataSource={data} key={"grid-7-tw"} width={"100%"} height={668} allowPaging={true}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="116"
                                         template={(data: any) => (
@@ -356,7 +356,7 @@ export default function Grid7() {
                                 </div>
                                 <ButtonComponent cssClass="e-primary align-self-end" content="Export to CSV" iconCss="e-icons e-export" iconPosition="Left" type="button"></ButtonComponent>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={668} allowPaging={true}>
+                            <GridComponent dataSource={data} key={"grid-7-bs"} width="100%" height={668} allowPaging={true}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="126"
                                         template={(data: any) => (

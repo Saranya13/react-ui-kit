@@ -71,7 +71,7 @@ export default function Grid9() {
                             <div className="flex justify-end items-center mb-6">
                                 <ButtonComponent cssClass="e-primary w-max" content="Edit Permissions" iconCss="e-icons e-edit" iconPosition="Left" type="button"></ButtonComponent>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={1117} rowHeight={44} allowGrouping={true} groupSettings={groupSettings} gridLines="Both">
+                            <GridComponent dataSource={data} key={"grid-9-tw"} width="100%" height={1117} rowHeight={44} allowGrouping={true} groupSettings={groupSettings} gridLines="Both">
                                 <ColumnsDirective>
                                     <ColumnDirective field="category" headerText="Category" width="120" />
                                     <ColumnDirective field="permission" headerText="Permission" width="230" textAlign="Left" />
@@ -123,7 +123,7 @@ export default function Grid9() {
                             <div className="d-flex justify-content-end align-items-center mb-4">
                                 <ButtonComponent cssClass="e-primary" content="Edit Permissions" iconCss="e-icons e-edit" iconPosition="Left" type="button"></ButtonComponent>
                             </div>
-                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={1117} rowHeight={44} allowGrouping={true} groupSettings={groupSettings} gridLines="Both">
+                            <GridComponent dataSource={data} key={"grid-9-bs"} width="100%" height={1117} rowHeight={44} allowGrouping={true} groupSettings={groupSettings} gridLines="Both">
                                 <ColumnsDirective>
                                     <ColumnDirective field="category" headerText="Category" width="140" />
                                     <ColumnDirective field="permission" headerText="Permission" textAlign="Left" width="220" />

@@ -91,9 +91,9 @@ export default function List10() {
             case 'tailwind':
                 return (
                     <section className="bg-white dark:bg-gray-900">
-                        <div className="flex items-center justify-center min-h-screen" key={'taskList1'}>
+                        <div className="flex items-center justify-center min-h-screen">
                             <div className="max-w-none lg:max-w-2xl w-full m-auto p-4 md:py-8 lg:px-24">
-                                <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={data} template={(data: any) => (
+                                <ListViewComponent className="!border-0" cssClass="e-list-template" key={"list-10-tw"} dataSource={data} template={(data: any) => (
                                     <div className="border border-gray-200 dark:border-gray-600 !py-4 px-4 my-4">
                                         <div className="flex justify-between">
                                             <div className="flex w-full">
@@ -126,9 +126,9 @@ export default function List10() {
             case 'bootstrap5':
                 return (
                     <section className="bg-body">
-                        <div className="d-flex align-items-center justify-content-center min-vh-100" key={'taskList2'}>
+                        <div className="d-flex align-items-center justify-content-center min-vh-100">
                             <div className="container-xl w-100 m-auto p-3 p-md-4" style={width}>
-                                <ListViewComponent cssClass="e-list-template" dataSource={data} template={(data: any) => (
+                                <ListViewComponent cssClass="e-list-template" key={"list-10-bs"} dataSource={data} template={(data: any) => (
                                     <div className="e-list-wrapper e-list-multi-line py-3 px-2 px-sm-3">
                                         <div className="d-flex justify-content-between">
                                             <span className="flex-shrink-0">

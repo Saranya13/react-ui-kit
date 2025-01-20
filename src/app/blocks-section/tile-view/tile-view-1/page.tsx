@@ -93,7 +93,7 @@ export default function TileView1() {
             case 'tailwind':
                 return (
                     <section className="bg-white dark:bg-gray-900">
-                        <div id={styles["ticket-details"]} key={'ticket-details1'}>
+                        <div id={styles["ticket-details"]} key={"tile-1-tw"}>
                             <AppBarComponent className="shadow-none px-0">
                                 <div className="w-full px-4 md:px-6 xl:px-10">
                                     <span className="text-xl font-semibold text-gray-900 dark:text-gray-50">All Tickets</span>
@@ -173,7 +173,7 @@ export default function TileView1() {
             case 'bootstrap5':
                 return (
                     <section className="bg-body-tertiary">
-                        <div id={styles["ticket-details"]} key={'ticket-details2'}>
+                        <div id={styles["ticket-details"]} key={"tile-1-bs"}>
                             <AppBarComponent className="shadow-none px-0">
                                 <div className="px-3 px-md-4 px-xl-5">
                                     <span className="h5 mb-0 fw-bold text-body">All Tickets</span>

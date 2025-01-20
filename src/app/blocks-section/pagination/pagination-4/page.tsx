@@ -40,7 +40,7 @@ export default function Pagination4() {
                 return (
                     <section className="bg-white dark:bg-gray-900">
                         <div className="px-6">
-                            <PagerComponent key={"page-enter-pagination1"} className="border-t-0 border-x-0 px-0 py-2 bg-transparent" template={() => (
+                            <PagerComponent key={"pagination-4-tw"} className="border-t-0 border-x-0 px-0 py-2 bg-transparent" template={() => (
                                 <div className="!flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300">
                                     <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
                                     <span className="px-4">Page</span>
@@ -60,7 +60,7 @@ export default function Pagination4() {
                 return (
                     <section className="bg-body">
                         <div className="px-4">
-                            <PagerComponent key={"page-enter-pagination2"} className="border-top-0 border-start-0 border-end-0 py-2 px-0" template={() => (
+                            <PagerComponent key={"pagination-4-bs"} className="border-top-0 border-start-0 border-end-0 py-2 px-0" template={() => (
                                 <div className="d-flex align-items-center gap-2 fs-6 text-body">
                                     <ButtonComponent className="e-flat" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
                                     <span className="ms-1">Page</span>

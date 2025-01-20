@@ -11,6 +11,7 @@ import styles from './page.module.css';
 export default function Sidebar2() {
     /* SB Code - Start */ 
     const [theme, setTheme] = useState('tailwind');
+    const accordion = useRef<AccordionComponent | null>(null);
     /* SB Code - End */ 
     const sidebar = useRef<SidebarComponent | null>(null);
     const toast = useRef<ToastComponent | null>(null);
@@ -51,6 +52,9 @@ export default function Sidebar2() {
     useEffect(() => {
         /* SB Code - Start */
         window.addEventListener('message', handleMessageEvent);
+        setTimeout(() => {
+            accordion.current?.refresh();
+        }, 300);
 
         return () => {
             window.removeEventListener('message', handleMessageEvent);
@@ -64,7 +68,7 @@ export default function Sidebar2() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["alert-sidebar"]} style={{ height: '710px' }}>
-                            <SidebarComponent key={'alert-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-2-tw"} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="h-screen">
                                     <div className="flex items-center py-4 px-3">
                                         <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
@@ -84,7 +88,7 @@ export default function Sidebar2() {
                                         ></ListViewComponent>
                                     </div>
                                     <hr className="border-gray-200 dark:border-gray-700 m-4" />
-                                    <AccordionComponent className="bg-transparent !border-0" expandMode="Single">
+                                    <AccordionComponent className="bg-transparent !border-0" ref={accordion} expandMode="Single">
                                         <AccordionItemsDirective>
                                             <AccordionItemDirective iconCss="e-icons e-notes e-medium" cssClass="!border-0" header={() => <div className="text-base font-normal pl-2">News</div>}></AccordionItemDirective>
                                             <AccordionItemDirective iconCss="e-icons sf-icon-announcement-01 text-base" cssClass="!border-0" header={() => <div className="text-base font-normal pl-2">Events</div>}></AccordionItemDirective>
@@ -118,7 +122,7 @@ export default function Sidebar2() {
                 return (
                     <section className="bg-body">
                         <div id={styles["alert-sidebar"]} style={{ height: '710px' }}>
-                            <SidebarComponent key={'alert-sidebar2'} width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-2-bs"} width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="min-vh-100">
                                     <div className="d-flex align-items-center p-3">
                                         <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
@@ -138,7 +142,7 @@ export default function Sidebar2() {
                                         ></ListViewComponent>
                                     </div>
                                     <p className="m-3 fs-6 text-body-secondary">Others</p>
-                                    <AccordionComponent className="bg-transparent border-0" expandMode="Single">
+                                    <AccordionComponent className="bg-transparent border-0" ref={accordion} expandMode="Single">
                                         <AccordionItemsDirective>
                                             <AccordionItemDirective iconCss="e-icons e-notes e-medium" cssClass="border-0" header={() => <div className="fs-6 fw-normal ps-1">News</div>}></AccordionItemDirective>
                                             <AccordionItemDirective iconCss="e-icons sf-icon-announcement-01 fs-6" cssClass="border-0" header={() => <div className="fs-6 fw-normal ps-1">Events</div>}></AccordionItemDirective>

@@ -38,7 +38,7 @@ export default function Pagination5() {
                 return (
                     <section className="bg-white dark:bg-gray-900">
                         <div className="px-6">
-                            <PagerComponent key={"shorten-pagination1"} className="border-0 bg-transparent" template={() => (
+                            <PagerComponent key={"pagination-5-tw"} className="border-0 bg-transparent" template={() => (
                                 <div className="!flex w-fit shadow text-gray-700 rounded sm:gap-3 gap-2 text-sm font-medium px-2 sm:px-3 py-1 dark:text-gray-300 bg-gray-50 dark:bg-gray-800">
                                     <ButtonComponent className="e-flat rounded-none" iconCss="e-icons e-chevron-left-double" type="button"></ButtonComponent>
                                     <div className="border-s border-gray-200 my-1 dark:border-gray-600 leading-6"></div>
@@ -58,7 +58,7 @@ export default function Pagination5() {
                 return (
                     <section className="bg-body">
                         <div className="px-4">
-                            <PagerComponent key={"shorten-pagination2"} className="border-0" template={() => (
+                            <PagerComponent key={"pagination-5-bs"} className="border-0" template={() => (
                                 <div className="d-flex shadow rounded gap-2 fs-6 p-1 text-body bg-body-tertiary" style={{ width: "fit-content" }}>
                                     <ButtonComponent className="e-flat rounded-0" iconCss="e-icons e-chevron-left-double" type="button"></ButtonComponent>
                                     <div className="mx-0 mx-sm-1 my-2 border border-light-subtle"></div>

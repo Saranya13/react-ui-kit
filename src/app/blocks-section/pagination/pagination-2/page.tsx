@@ -39,7 +39,7 @@ export default function Pagination2() {
                 return (
                     <section className="bg-white dark:bg-gray-900">
                         <div className="px-6">
-                            <PagerComponent key={"advance-pagination1"} className="border-t-0 border-x-0 px-0 py-2 bg-transparent" template={() => (
+                            <PagerComponent key={"pagination-2-tw"} className="border-t-0 border-x-0 px-0 py-2 bg-transparent" template={() => (
                                 <div className="!flex items-center gap-2 sm:gap-4 text-lg font-medium text-gray-700 dark:text-gray-300">
                                     <ButtonComponent className="e-flat lg:hidden" iconCss="e-icons e-chevron-left" type="button" disabled={true}></ButtonComponent>
                                     <ButtonComponent className="e-flat hidden lg:inline-block" iconCss="e-icons e-chevron-left" content="Previous" type="button" disabled={true}></ButtonComponent>
@@ -70,7 +70,7 @@ export default function Pagination2() {
                 return (
                     <section className="bg-body">
                         <div className="px-4">
-                            <PagerComponent key={"advance-pagination2"} className="border-top-0 border-start-0 border-end-0 px-0 py-2" template={() => (
+                            <PagerComponent key={"pagination-2-bs"} className="border-top-0 border-start-0 border-end-0 px-0 py-2" template={() => (
                                 <div className="d-flex align-items-center gap-2 fs-6 text-body">
                                     <ButtonComponent className="e-flat d-lg-none" iconCss="e-icons e-chevron-left" type="button" disabled={true}></ButtonComponent>
                                     <ButtonComponent className="e-flat d-none d-lg-inline-block" iconCss="e-icons e-chevron-left" content="Previous" type="button" disabled={true}></ButtonComponent>

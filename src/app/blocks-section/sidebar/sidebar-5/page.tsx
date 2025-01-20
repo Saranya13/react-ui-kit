@@ -65,7 +65,7 @@ export default function Sidebar5() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["notification-sidebar"]} style={{ height: '700px' }}>
-                            <SidebarComponent key={'notification-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-5-tw"} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="h-screen">
                                     <div className="flex items-center py-4 px-3">
                                         <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
@@ -109,7 +109,7 @@ export default function Sidebar5() {
                 return (
                     <section className="bg-body">
                         <div id={styles["notification-sidebar"]} style={{ height: '700px' }}>
-                            <SidebarComponent key={'notification-sidebar2'} width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-5-bs"} width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="vh-100">
                                     <div className="d-flex align-items-center p-3">
                                         <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />

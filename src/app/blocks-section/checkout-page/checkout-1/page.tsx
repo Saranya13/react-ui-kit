@@ -39,7 +39,7 @@ export default function Checkout1() {
             case 'tailwind':
                 return (
                     <section className="bg-white dark:bg-gray-900">
-                        <div className="flex" key="checkout">
+                        <div className="flex" key={"checkout-1-tw"}>
                             <div className="w-full m-auto text-gray-700 dark:text-gray-300">
                                 <div className="lg:flex container-lg">
                                     <div className="lg:w-8/12 px-4 pt-8 pb-6 md:px-6 lg:pb-8 xl:pl-11 xl:pt-8 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800">
@@ -237,7 +237,7 @@ export default function Checkout1() {
             case 'bootstrap5':
                 return (
                     <section className="bg-body">
-                        <div className="d-flex">
+                        <div className="d-flex" key={"checkout-1-bs"}>
                             <div className="w-100 mx-auto">
                                 <div className="d-lg-flex">
                                     <div className="col-lg-8 bg-body border-end border-light-subtle px-3 pt-5 pb-4 px-md-4 pb-lg-5 ps-xl-5">

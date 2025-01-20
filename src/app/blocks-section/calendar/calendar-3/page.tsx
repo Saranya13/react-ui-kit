@@ -49,7 +49,7 @@ export default function Calendar3() {
         switch (theme) {
             case 'tailwind':
                 return (
-                    <section className="bg-white dark:bg-gray-900" key={"agenda"}>
+                    <section className="bg-white dark:bg-gray-900" key={"calendar-3-tw"}>
                         <div style={{ height: "752px", width: width, float: "right" }}>
                             <SidebarComponent className="w-full h-full flex flex-col bg-white dark:bg-gray-900" position="Right" type="Push" width={width} ref={sidebar} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} style={{ display: "block" }}>
                                 <div className="flex-none bg-white dark:bg-gray-900">
@@ -117,7 +117,7 @@ export default function Calendar3() {
                 );
             case 'bootstrap5':
                 return (
-                    <section className="bg-body" key={"view"}>
+                    <section className="bg-body" key={"calendar-3-bs"}>
                         <div style={{ height: "798px", width: width, float: 'right' }}>
                             <SidebarComponent className="h-100 d-flex flex-column bg-body sidebar-1" position="Right" type="Push" width={width} ref={sidebar} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} style={{ display: 'block' }}>
                                 <div className="bg-body">

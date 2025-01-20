@@ -56,7 +56,7 @@ export default function Email1() {
                                     <div className="mb-3 flex items-center ml-8 relative">
                                         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mr-3">To:</label>
                                         <MultiSelectComponent cssClass='e-bigger w-full pl-1' dataSource={[{ text: 'Thomas' }, { text: 'Henry' }]} fields={{ text: "text" }} value={["Thomas"]} placeholder="Select recipients" mode="Box"></MultiSelectComponent>
-                                        <div className="absolute right-12">
+                                        <div className="absolute right-12" style={{ bottom:'8px' }}>
                                             <a href="javascript:void(0);" className="mr-4 text-sm font-medium text-gray-700 dark:text-white">Cc</a>
                                             <a href="javascript:void(0);" className="text-sm font-medium text-gray-700 dark:text-white">Bcc</a>
                                         </div>
@@ -66,7 +66,7 @@ export default function Email1() {
                                         <TextBoxComponent cssClass='e-bigger w-full' type="text" value='Issue with Online Banking App - Transactions Not Completing' placeholder="Enter the subject" floatLabelType="Never"></TextBoxComponent>
                                     </div>
                                     <div className="mb-4">
-                                        <RichTextEditorComponent key={'defaultRTE1'} toolbarSettings={{
+                                        <RichTextEditorComponent key={"RTE-1-tw"} toolbarSettings={{
                                             items: ['Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|', 'Alignments', 'OrderedList', 'UnorderedList', 'Blockquote', '|', 'CreateLink', 'Image', 'CreateTable'], type: 'MultiRow' as ToolbarType }} style={{ maxHeight: "540px", overflowY: 'auto' }}>
                                             <p>Dear Support Team,</p>
                                             <p className="!mb-0">I am having trouble completing transactions in the Online Banking App. The app freezes at the confirmation screen every time I attempt to transfer money.</p>
@@ -106,8 +106,8 @@ export default function Email1() {
                                     </div>
                                     <div className="mb-3 d-flex align-items-center ms-4 ps-1 position-relative">
                                         <label className="form-label small text-body-secondary ps-1 pe-3 mb-0">To:</label>
-                                        <MultiSelectComponent cssClass="e-bigger ps-1 w-100" dataSource={[{ text: "Thomas" }, { text: "Henry" }]} fields={{ text: "text" }} value={["Thomas"]} mode="Box" placeholder="Select recipients"></MultiSelectComponent>
-                                        <div className="position-absolute d-flex align-items-center end-0 me-4 pe-2">
+                                        <MultiSelectComponent cssClass="e-bigger ps-1" dataSource={[{ text: "Thomas" }, { text: "Henry" }]} fields={{ text: "text" }} value={["Thomas"]} mode="Box" placeholder="Select recipients"></MultiSelectComponent>
+                                        <div className="position-absolute d-flex align-items-center end-0 me-4 pe-2" style={{ bottom:'8px' }}>
                                             <a href="javascript:void(0);" className="me-3 small text-body-secondary text-decoration-none fw-medium">Cc</a>
                                             <a href="javascript:void(0);" className="small text-body-secondary text-decoration-none fw-medium">Bcc</a>
                                         </div>
@@ -117,7 +117,7 @@ export default function Email1() {
                                         <TextBoxComponent cssClass="e-bigger w-100" type="text" value='Issue with Online Banking App - Transactions Not Completing' placeholder="Enter the subject" floatLabelType="Never"></TextBoxComponent>
                                     </div>
                                     <div className="mb-3">
-                                        <RichTextEditorComponent key={'defaultRTE2'} toolbarSettings={{
+                                        <RichTextEditorComponent key={"RTE-1-bs"} toolbarSettings={{
                                             items: ['Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|', 'Alignments', 'OrderedList', 'UnorderedList', 'Blockquote', '|', 'CreateLink', 'Image', 'CreateTable'], type: 'MultiRow' as ToolbarType }} style={{ maxHeight: "540px", overflowY: "auto" }}>
                                             <p>Dear Support Team,</p>
                                             <p className="mb-0">I am having trouble completing transactions in the Online Banking App. The app freezes at the confirmation screen every time I attempt to transfer money.</p>

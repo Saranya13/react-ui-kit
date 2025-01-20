@@ -51,9 +51,9 @@ export default function Checkout4() {
         switch (theme) {
             case 'tailwind':
                 return (
-                    <section className="bg-gray-100 dark:bg-gray-900" key={"checkout4"}>
-                        <div style={{ height: "1298px", width: width, float: "right" }} key={"checkout4"}>
-                            <SidebarComponent className="w-full" ref={sidebar} position="Right" type="Push" width={width} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} style={{ display: "block" }}>
+                    <section className="bg-gray-100 dark:bg-gray-900">
+                        <div style={{ height: "1298px", width: width, float: "right" }}>
+                            <SidebarComponent className="w-full" ref={sidebar} key={"checkout-4-tw"} position="Right" type="Push" width={width} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} style={{ display: "block" }}>
                                 <div className="p-4 md:p-6 bg-gray-100 dark:bg-gray-900">
                                     <div className="flex justify-between items-center mb-5">
                                         <h2 className="text-lg font-medium text-gray-900 dark:text-white">My shopping cart</h2>
@@ -188,9 +188,9 @@ export default function Checkout4() {
                 );
             case 'bootstrap5':
                 return (
-                    <section className="bg-light-subtle" key={"sidepanel"}>
+                    <section className="bg-light-subtle">
                         <div style={{ height: "1298px", width: width, float: "right" }}>
-                            <SidebarComponent position="Right" ref={sidebar} type="Push" width={width} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} style={{ display: "block" }}>
+                            <SidebarComponent position="Right" ref={sidebar} key={"checkout-4-bs"} type="Push" width={width} isOpen={true} closeOnDocumentClick={false} showBackdrop={true} style={{ display: "block" }}>
                                 <div className="p-3 p-md-4 bg-light-subtle">
                                     <div className="d-flex justify-content-between align-items-center mb-4">
                                         <h2 className="h5 fs-5 fw-bold text-body mb-0">My shopping cart</h2>

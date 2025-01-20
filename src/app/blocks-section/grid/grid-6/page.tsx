@@ -192,11 +192,11 @@ export default function Grid6() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="mx-auto w-full py-12 sm:px-6 px-4">
-                            <GridComponent dataSource={data} key={"grid-1"} width="100%" height={668} allowSorting={true} allowFiltering={true} filterSettings={{ type: "Menu" }}>
+                            <GridComponent dataSource={data} key={"grid-6-tw"} width="100%" height={668} allowSorting={true} allowFiltering={true} filterSettings={{ type: "Menu" }}>
                                 <ColumnsDirective>
                                     <ColumnDirective type="checkbox" isPrimaryKey={true} textAlign="Center" width="40" />
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="143" />
-                                    <ColumnDirective field="customerDetails" headerText="Customer Name" width="270" textAlign="Left"
+                                    <ColumnDirective field="customerDetails" headerText="Customer Name" width="270" textAlign="Left" allowFiltering={false}
                                         template={(data: any) => (
                                             <div className="flex gap-3 items-center py-1.5">
                                                 <div className="w-8 h-8">
@@ -246,11 +246,11 @@ export default function Grid6() {
                 return (
                     <section className="bg-body">
                         <div className="w-100 py-5 px-3 px-sm-4 mx-auto">
-                            <GridComponent dataSource={data} key={"grid-2"} width="100%" height={668} allowSorting={true} allowFiltering={true} filterSettings={{ type: "Menu" }}>
+                            <GridComponent dataSource={data} key={"grid-6-bs"} width="100%" height={668} allowSorting={true} allowFiltering={true} filterSettings={{ type: "Menu" }}>
                                 <ColumnsDirective>
                                     <ColumnDirective type="checkbox" isPrimaryKey={true} textAlign="Center" width="40" />
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="155" />
-                                    <ColumnDirective field="customerDetails" headerText="Customer Name" width="270" textAlign="Left"
+                                    <ColumnDirective field="customerDetails" headerText="Customer Name" width="270" textAlign="Left" allowFiltering={false}
                                         template={(data: any) => (
                                             <div className="d-flex gap-3 align-items-center py-1">
                                                 <div style={{ width: "32px", height: "32px" }}>

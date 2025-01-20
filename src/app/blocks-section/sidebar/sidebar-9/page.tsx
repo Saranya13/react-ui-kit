@@ -111,7 +111,7 @@ export default function Sidebar9() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["nested-sidebar"]} style={{ height: '580px' }}>
-                            <SidebarComponent key={'nested-sidebar1'} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="328px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-9-tw"} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="328px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="flex h-screen">
                                     <div className="py-4" style={{ width: '72px' }}>
                                         <div className="flex justify-center items-center px-3 mb-2">
@@ -166,7 +166,7 @@ export default function Sidebar9() {
                 return (
                     <section className="bg-body">
                         <div id={styles["nested-sidebar"]} style={{ height: '600px' }}>
-                            <SidebarComponent key={'nested-sidebar2'} width="328px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-9-bs"} width="328px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="d-flex vh-100">
                                     <div className="py-4 d-flex flex-column align-items-center" style={{ width: '72px' }}>
                                         <div className="d-flex justify-content-center align-items-center px-3 mb-2">

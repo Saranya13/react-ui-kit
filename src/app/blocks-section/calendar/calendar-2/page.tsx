@@ -9,6 +9,8 @@ import { SliderComponent } from '@syncfusion/ej2-react-inputs';
 export default function Calendar2() {
     /* SB Code - Start */
     const [theme, setTheme] = useState('tailwind');
+    const accordion1 = useRef<AccordionComponent | null>(null);
+    const accordion2 = useRef<AccordionComponent | null>(null);
     /* SB Code - End */
     const [width, setWidth] = useState("310px");
     const sidebar = useRef<SidebarComponent | null>(null);
@@ -36,6 +38,10 @@ export default function Calendar2() {
     useEffect(() => {
         /* SB Code - Start */
         window.addEventListener('message', handleMessageEvent);
+        setTimeout(() => {
+            accordion1.current?.refresh();
+            accordion2.current?.refresh();
+        }, 300);
         /* SB Code - End */
         window.addEventListener('resize', handleResize);
 
@@ -65,7 +71,7 @@ export default function Calendar2() {
                                         </div>
                                     </div>
                                     <div className="pt-4 px-1">
-                                        <AccordionComponent className="border-0 bg-transparent" expandMode="Multiple">
+                                        <AccordionComponent className="border-0 bg-transparent" ref={accordion1} expandMode="Multiple">
                                             <AccordionItemsDirective>
                                                 <AccordionItemDirective expanded={true}
                                                     header={() => <div className="font-normal text-gray-500 dark:text-gray-400">Floors</div>}
@@ -99,7 +105,7 @@ export default function Calendar2() {
                                                 <SliderComponent type="Range" value={[2500, 4000]} tooltip={tooltipInfo} min={1000} max={5000} step={1} ticks={{ placement: 'After', largeStep: 4000, format: 'c0' }} style={{ width: '225px', left: '15px' }}></SliderComponent>
                                             </div>
                                         </div>
-                                        <AccordionComponent expandMode="Multiple" className="border-0 bg-transparent">
+                                        <AccordionComponent className="border-0 bg-transparent" ref={accordion2} expandMode="Multiple">
                                             <AccordionItemsDirective>
                                                 <AccordionItemDirective expanded={true}
                                                     header={() => <div className="font-normal text-gray-500 dark:text-gray-400">Facility</div>}
@@ -149,7 +155,7 @@ export default function Calendar2() {
                                         </div>
                                     </div>
                                     <div className="pt-2 px-1">
-                                        <AccordionComponent className="border-0 bg-transparent" expandMode="Multiple">
+                                        <AccordionComponent className="border-0 bg-transparent" ref={accordion1} expandMode="Multiple">
                                             <AccordionItemsDirective>
                                                 <AccordionItemDirective expanded={true}
                                                     header={() => <div className="fw-medium text-body-secondary">Floors</div>}
@@ -181,7 +187,7 @@ export default function Calendar2() {
                                                 <SliderComponent type="Range" value={[2500, 4000]} tooltip={tooltipInfo} min={1000} max={5000} step={1} ticks={{ placement: "After", largeStep: 4000, format: "C0" }}></SliderComponent>
                                             </div>
                                         </div>
-                                        <AccordionComponent className="border-0 bg-transparent" expandMode="Multiple">
+                                        <AccordionComponent className="border-0 bg-transparent" ref={accordion2} expandMode="Multiple">
                                             <AccordionItemsDirective>
                                                 <AccordionItemDirective expanded={true}
                                                     header={() => <div className="fw-medium text-body-secondary">Facility</div>}

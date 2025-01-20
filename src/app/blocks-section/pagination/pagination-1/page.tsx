@@ -38,7 +38,7 @@ export default function Pagination1() {
                 return (
                     <section className="bg-white dark:bg-gray-900">
                         <div className="px-6">
-                            <PagerComponent key={"separate-pagination1"} className="border-0 bg-transparent" template={() => (
+                            <PagerComponent key={"pagination-1-tw"} className="border-0 bg-transparent" template={() => (
                                 <div className="!flex gap-5 xl:gap-3">
                                     <ButtonComponent className="sm:hidden" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
                                     <ButtonComponent className="hidden sm:inline-block" iconCss="e-icons e-chevron-left" content="PREVIOUS" type="button"></ButtonComponent>
@@ -61,7 +61,7 @@ export default function Pagination1() {
                 return (
                     <section className="bg-body">
                         <div className="px-4">
-                            <PagerComponent key={"separate-pagination2"} className="border-0 px-0" template={() => (
+                            <PagerComponent key={"pagination-1-bs"} className="border-0 px-0" template={() => (
                                 <div className="d-flex gap-2">
                                     <ButtonComponent className="e-outline d-sm-none" iconCss="e-icons e-chevron-left" type="button"></ButtonComponent>
                                     <ButtonComponent className="e-outline d-none d-sm-inline-block" iconCss="e-icons e-chevron-left" content="PREVIOUS" type="button"></ButtonComponent>

@@ -187,7 +187,7 @@ export default function Grid8() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="mx-auto w-full py-10 sm:px-6 px-4">
-                            <GridComponent dataSource={data} key={"grid-1"} rowHeight={44} width="100%" height={440} allowGrouping={true} groupSettings={{ showDropArea: true }}>
+                            <GridComponent dataSource={data} key={"grid-8-tw"} rowHeight={44} width="100%" height={440} allowGrouping={true} groupSettings={{ showDropArea: true }}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="name" headerText="Sales Representative" width="156" />
                                     <ColumnDirective field="totalSales" headerText="Total Revenue" width="124" format="C0" textAlign="Right"
@@ -246,7 +246,7 @@ export default function Grid8() {
                 return (
                     <section className="bg-body">
                         <div className="py-4 px-4 px-sm-6 mx-auto">
-                            <GridComponent dataSource={data} key={"grid-2"} rowHeight={44} width="100%" height="440" allowGrouping={true} groupSettings={{ showDropArea: true }}>
+                            <GridComponent dataSource={data} key={"grid-8-bs"} rowHeight={44} width="100%" height="440" allowGrouping={true} groupSettings={{ showDropArea: true }}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="name" headerText="Sales Representative" width="165" />
                                     <ColumnDirective field="totalSales" headerText="Total Revenue" width="124" format="C2" textAlign="Right"
@@ -276,13 +276,13 @@ export default function Grid8() {
                                     />
                                     <ColumnDirective field="avgDealSize" headerText="Average Deal Size" width="160" format="C0" textAlign="Right" />
                                     <ColumnDirective field="winPercent" headerText="Win Rate" width="125"
-                                        template={(data: any) => {
+                                        template={(data: any) => (
                                             <div className="e-bigger">
                                                 <span className={`e-badge !px-2 ${data.winRate < 70 ? "e-badge-warning" : data.winRate >= 70 && data.winRate < 80 ? "e-badge-info" : "e-badge-success"}`}>
                                                     {data.winRate !== null && data.winRate !== undefined ? `${data.winRate}%` : "Unknown"}
                                                 </span>
                                             </div>
-                                        }}
+                                        )}
                                     />
                                     <ColumnDirective field="callsMade" headerText="Calls Made" width="105" textAlign="Right" />
                                     <ColumnDirective field="meetings" headerText="Meetings Scheduled" width="165" textAlign="Right" />

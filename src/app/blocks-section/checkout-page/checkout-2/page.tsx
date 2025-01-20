@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { MaskedTextBoxComponent, TextAreaComponent, TextBoxComponent } from '@syncfusion/ej2-react-inputs';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import { RadioButtonComponent, ButtonComponent } from '@syncfusion/ej2-react-buttons';
@@ -9,6 +9,7 @@ import { AccordionComponent, AccordionItemDirective, AccordionItemsDirective } f
 export default function Checkout2() {
     /* SB Code - Start */
     const [theme, setTheme] = useState('tailwind');
+    const accordion = useRef<AccordionComponent | null>(null);
 
     const handleMessageEvent = (event: MessageEvent) => {
         if (event.origin === window.location.origin) {
@@ -27,6 +28,9 @@ export default function Checkout2() {
     useEffect(() => {
         /* SB Code - Start */
         window.addEventListener('message', handleMessageEvent);
+        setTimeout(() => {
+            accordion.current?.refresh();
+        }, 200);
 
         return () => {
             window.removeEventListener('message', handleMessageEvent);
@@ -44,7 +48,7 @@ export default function Checkout2() {
                             <div className="m-auto w-full max-w-3xl">
                                 <h2 className="font-semibold text-xl">Checkout</h2>
                                 <div className="e-bigger mt-4 mb-6">
-                                    <AccordionComponent className="border-t-0 border-l-0 border-r-0 border-b border-gray-200 dark:border-gray-600" expandMode="Single">
+                                    <AccordionComponent className="border-t-0 border-l-0 border-r-0 border-b border-gray-200 dark:border-gray-600" ref={accordion} expandMode="Single">
                                         <AccordionItemsDirective>
                                             <AccordionItemDirective header="Delivery information" expanded={true} content={() =>
                                                 <div>
@@ -149,7 +153,7 @@ export default function Checkout2() {
                             <div className="mx-auto px-0 col-md-12 col-xl-6 col-lg-9">
                                 <h2 className="fw-semibold fs-4">Checkout</h2>
                                 <div className="e-bigger my-4">
-                                    <AccordionComponent className="border-0 border-bottom rounded-0 border-light-subtle" expandMode="Single">
+                                    <AccordionComponent className="border-0 border-bottom rounded-0 border-light-subtle" ref={accordion} expandMode="Single">
                                         <AccordionItemsDirective>
                                             <AccordionItemDirective header="Delivery information" expanded={true} content={() =>
                                                 <div>

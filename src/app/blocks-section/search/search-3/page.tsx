@@ -80,7 +80,8 @@ export default function Search3() {
                             <div className="px-4 mx-auto lg:px-0" style={width}>
                                 <AutoCompleteComponent
                                     cssClass="e-bigger"
-                                    ref={search} 
+                                    ref={search}
+                                    key={"search-3-tw"}
                                     dataSource={data}
                                     fields={fields}
                                     popupHeight="750px"
@@ -119,6 +120,7 @@ export default function Search3() {
                                     <AutoCompleteComponent
                                         cssClass="e-bigger"
                                         ref={search}
+                                        key={"search-3-bs"}
                                         dataSource={data}
                                         fields={fields}
                                         popupHeight="750px"

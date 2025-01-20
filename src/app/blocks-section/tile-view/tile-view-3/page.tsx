@@ -123,8 +123,8 @@ export default function TileView3() {
                                         </div>
                                     </div>
                                     <ListViewComponent className="!border-0" cssClass="e-list-template" dataSource={transactionDetails} template={(data: any) => (
-                                        <div className="e-card flex-row gap-3 rounded-lg sm:gap-0 p-4">
-                                            <span className={`e-avatar e-avatar-large e-avatar-circle shrink-0 sm:mr-4 ${data.paymentType === "Credit Card" ? "bg-green-100 text-green-700 dark:text-green-500" : data.paymentType === "Wire Transfer" ? "bg-indigo-100 dark:bg-cyan-800 text-indigo-600 dark:text-cyan-400" : data.paymentType === "Deposit" ? "bg-orange-100 text-orange-500 dark:text-orange-700" : "bg-cyan-100 dark:bg-sky-100 text-cyan-700 dark:text-cyan-600"}`}>
+                                        <div className="e-card flex-row gap-1 rounded-lg sm:gap-0 p-4">
+                                            <span className={`e-avatar e-avatar-large e-avatar-circle shrink-0 mr-2 sm:mr-4 ${data.paymentType === "Credit Card" ? "bg-green-100 text-green-700 dark:text-green-500" : data.paymentType === "Wire Transfer" ? "bg-indigo-100 dark:bg-cyan-800 text-indigo-600 dark:text-cyan-400" : data.paymentType === "Deposit" ? "bg-orange-100 text-orange-500 dark:text-orange-700" : "bg-cyan-100 dark:bg-sky-100 text-cyan-700 dark:text-cyan-600"}`}>
                                                 <i className="sf-icon-dollar text-2xl"></i>
                                             </span>
                                             <div className="e-card-stacked grow sm:space-y-3">
@@ -135,7 +135,7 @@ export default function TileView3() {
                                                     </div>
                                                     <div className="e-card-sub-title !flex flex-row-reverse grow gap-2 justify-between items-center sm:flex-row sm:mr-4">
                                                         <span className={`e-bigger e-badge e-badge-pill ${data.status === "Completed" ? "e-badge-success" : "e-badge-danger"}`}>{data.status}</span>
-                                                        <p className="text-base sm:text-lg xl:text-xl font-medium text-gray-900 dark:text-gray-50">{data.amount.toLocaleString("en-US", { style: "currency", currency: "USD" })}</p>
+                                                        <p className="text-base sm:text-lg xl:text-xl font-medium text-gray-900 dark:text-gray-50">{data.amount.toLocaleString("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0 })}</p>
                                                     </div>
                                                 </div>
                                                 <div className="e-card-content !p-0 text-gray-700 dark:text-gray-200">
@@ -199,8 +199,8 @@ export default function TileView3() {
                                         </div>
                                     </div>
                                     <ListViewComponent className="border-0 mt-4" cssClass="e-list-template" dataSource={transactionDetails} template={(data: any) => (
-                                        <div className="e-card d-flex flex-row gap-3 gap-sm-0 lh-base px-2 py-3 rounded-3 px-sm-3">
-                                            <span className={`e-avatar e-avatar-large e-avatar-circle flex-shrink-0 me-sm-3 ${data.paymentType === "Deposit" ? "bg-warning-subtle text-warning-emphasis" : data.paymentType === "Wire Transfer" ? "bg-success-subtle text-success-emphasis" : data.paymentType === "Credit Card" ? "bg-info-subtle text-info-emphasis" : "bg-primary-subtle text-primary"}`}>
+                                        <div className="e-card d-flex flex-row gap-2 gap-sm-0 lh-base px-2 py-3 rounded-3 px-sm-3">
+                                            <span className={`e-avatar e-avatar-large e-avatar-circle flex-shrink-0 me-2 me-sm-3 ${data.paymentType === "Deposit" ? "bg-warning-subtle text-warning-emphasis" : data.paymentType === "Wire Transfer" ? "bg-success-subtle text-success-emphasis" : data.paymentType === "Credit Card" ? "bg-info-subtle text-info-emphasis" : "bg-primary-subtle text-primary"}`}>
                                                 <i className="sf-icon-dollar fs-3"></i>
                                             </span>
                                             <div className="e-card-stacked flex-grow-1">
@@ -209,9 +209,9 @@ export default function TileView3() {
                                                         <h6 className="fw-medium mb-0 text-body">{data.title}</h6>
                                                         <p className="fs-6 text-body-secondary my-1">{data.company}</p>
                                                     </div>
-                                                    <div className="e-card-sub-title d-flex flex-row-reverse gap-2 justify-content-between flex-sm-row align-items-center flex-grow-1 me-md-3">
+                                                    <div className="e-card-sub-title d-flex flex-row-reverse gap-2 justify-content-between flex-sm-row align-items-center flex-grow-1 me-sm-3">
                                                         <span className={`e-bigger e-badge e-badge-pill ${data.status === "Completed" ? "e-badge-success" : "e-badge-danger"}`}>{data.status}</span>
-                                                        <p className="fw-medium text-body fs-5 mb-0 lh-sm">{data.amount.toLocaleString("en-US", { style: "currency", currency: "USD" })}</p>
+                                                        <p className="fw-medium text-body fs-5 mb-0 lh-sm">{data.amount.toLocaleString("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0 })}</p>
                                                     </div>
                                                 </div>
                                                 <div className="e-card-content p-0">

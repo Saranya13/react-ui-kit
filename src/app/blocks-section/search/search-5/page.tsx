@@ -115,7 +115,7 @@ export default function Search5() {
                         <div className="w-full pt-5 pb-4" style={{ height: '750px' }}>
                             <div className="px-4 mx-auto lg:px-0" style={width}>
                                 <AutoCompleteComponent
-                                    key={'search-5'}
+                                    key={"search-5-tw"}
                                     cssClass="e-bigger"
                                     ref={search}
                                     dataSource={data}
@@ -168,6 +168,7 @@ export default function Search5() {
                                 <AutoCompleteComponent
                                     cssClass="e-bigger"
                                     ref={search}
+                                    key={"search-5-bs"}
                                     dataSource={data}
                                     fields={{ value: 'ticket' }}
                                     popupHeight="730"
