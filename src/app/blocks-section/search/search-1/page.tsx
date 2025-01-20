@@ -67,8 +67,8 @@ export default function Search1() {
                 const inputContainer = search.current['inputWrapper'].container;
                 const searchIcon = document.createElement('span');
                 searchIcon.className = 'e-icons e-search';
-                searchIcon.style.cssText = 'display: flex; align-items: center; margin-right: 10px;';
-                inputContainer?.insertAdjacentElement('beforeend', searchIcon);
+                searchIcon.style.cssText = 'display: flex; align-items: center; margin-left: 10px;';
+                inputContainer?.insertAdjacentElement('afterbegin', searchIcon);
             }
         }, 250);
     };
