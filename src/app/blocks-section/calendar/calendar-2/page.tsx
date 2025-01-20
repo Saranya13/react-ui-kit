@@ -41,7 +41,7 @@ export default function Calendar2() {
         setTimeout(() => {
             accordion1.current?.refresh();
             accordion2.current?.refresh();
-        }, 300);
+        }, 500);
         /* SB Code - End */
         window.addEventListener('resize', handleResize);
 

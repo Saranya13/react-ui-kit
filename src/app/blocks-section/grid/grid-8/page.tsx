@@ -268,7 +268,7 @@ export default function Grid8() {
                                     />
                                     <ColumnDirective field="progressBar" headerText="% of Target" width="210"
                                         template={(data: any) => (
-                                            <div className="d-flex flex-column w-48 pr-2.5">
+                                            <div className="d-flex flex-column w-48 pe-3">
                                                 <ProgressBarComponent id={data.progressBar.id} key={data.progressBar.id} progressThickness={8} trackThickness={8} value={data.progressBar.value} width={"182"} progressColor={data.progressBar.value === 100 ? "#15803D" : "#4F46E5"} />
                                                 <p className="text-end small">{data.progressBar.value.toFixed(1)}%</p>
                                             </div>

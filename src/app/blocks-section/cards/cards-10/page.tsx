@@ -43,7 +43,7 @@ export default function Card10() {
                                         <Image src="/assets/images/card/image-author-info-card/ai-innovations.jpg" layout="fill" objectFit="cover" alt="AI innovations" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
-                                        <div className="e-card-header mb-2 items-center">
+                                        <div className="e-card-header mb-1 items-center">
                                             <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-1.jpg)" }}></span>
                                             <div className="e-card-header-caption !pl-3">
                                                 <div className="e-card-header-title">
@@ -65,7 +65,7 @@ export default function Card10() {
                                         <Image src="/assets/images/card/image-author-info-card/cybersecurity-solutions.jpg" layout="fill" objectFit="cover" alt="cybersecurity solutions" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
-                                        <div className="e-card-header mb-2 items-center">
+                                        <div className="e-card-header mb-1 items-center">
                                             <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-10.jpg)" }}></span>
                                             <div className="e-card-header-caption !pl-3">
                                                 <div className="e-card-header-title">
@@ -87,7 +87,7 @@ export default function Card10() {
                                         <Image src="/assets/images/card/image-author-info-card/virtual-reality.jpg" layout="fill" objectFit="cover" alt="virtual reality" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
-                                        <div className="e-card-header mb-2 items-center">
+                                        <div className="e-card-header mb-1 items-center">
                                             <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-2.jpg)" }}></span>
                                             <div className="e-card-header-caption !pl-3">
                                                 <div className="e-card-header-title">
@@ -109,7 +109,7 @@ export default function Card10() {
                                         <Image src="/assets/images/card/image-author-info-card/smart-home-tech.jpg" layout="fill" objectFit="cover" alt="smart home tech" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
-                                        <div className="e-card-header mb-2 items-center">
+                                        <div className="e-card-header mb-1 items-center">
                                             <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/assets/images/common/avatar/avatar-6.jpg)" }}></span>
                                             <div className="e-card-header-caption !pl-3">
                                                 <div className="e-card-header-title">

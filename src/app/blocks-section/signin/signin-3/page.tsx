@@ -105,7 +105,7 @@ export default function Signin3() {
                                                     <span className="bg-gray-50 dark:bg-gray-950 px-2 z-10 absolute text-sm text-gray-700 dark:text-gray-300">Or continue with</span>
                                                     <hr className="w-full absolute border-gray-200 dark:border-gray-600" />
                                                 </div>
-                                                <div className="flex items-center justify-center pt-10 gap-3 flex-col">
+                                                <div className="flex items-center justify-center pt-10 gap-4 flex-col">
                                                     <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit">
                                                         <Image src="/assets/images/common/brand-logos/png/google.png" alt="google logo" width={16} height={16} />
                                                         <span className="text-base pl-2.5">Sign in with Google</span>

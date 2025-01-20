@@ -134,7 +134,7 @@ export default function Search1() {
                                             <div className="flex items-center">
                                                 <div className="indent-0 shrink-0">
                                                     {data.image && (
-                                                        <Image className="rounded-lg" src={`/assets/images/search/${data.image}`} alt={`${data.title.toLowerCase()} logo`} layout="responsive" width={100} height={100} />
+                                                        <Image className="rounded-xl" src={`/assets/images/search/${data.image}`} alt={`${data.title.toLowerCase()} logo`} layout="responsive" width={100} height={100} />
                                                     )}
                                                     {data.tag && (
                                                         <span className={`e-avatar indent-0 e-avatar-large ${data.tag === "Automation" ? "text-green-600 bg-green-200 dark:bg-green-800 dark:text-green-200" : data.tag === "Logging" ? "text-cyan-600 bg-cyan-100 dark:bg-cyan-800 dark:text-cyan-200" : data.tag === "Integration" ? "text-orange-600 bg-orange-100 dark:bg-orange-800 dark:text-orange-200" : ""}`}>
@@ -185,7 +185,7 @@ export default function Search1() {
                                             <div className="d-flex align-items-center">
                                                 <div className="flex-shrink-0">
                                                     {data.image && (
-                                                        <Image className="rounded" src={`/assets/images/search/${data.image}`} alt={`${data.title.toLowerCase()} logo`} layout="responsive" width={100} height={100} />
+                                                        <Image className="rounded-3" src={`/assets/images/search/${data.image}`} alt={`${data.title.toLowerCase()} logo`} layout="responsive" width={100} height={100} />
                                                     )}
                                                     {data.tag && (
                                                         <span className={`e-avatar ms-0 e-avatar-large ${data.tag === 'Automation' ? 'text-success-emphasis bg-success-subtle' : data.tag === 'Logging' ? 'text-info-emphasis bg-info-subtle' : 'text-warning-emphasis bg-warning-subtle'}`}>

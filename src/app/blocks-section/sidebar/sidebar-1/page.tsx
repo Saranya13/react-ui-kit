@@ -52,7 +52,7 @@ export default function Sidebar1() {
         window.addEventListener('message', handleMessageEvent);
         setTimeout(() => {
             accordion.current?.refresh();
-        }, 300);
+        }, 500);
 
         return () => {
             window.removeEventListener('message', handleMessageEvent);

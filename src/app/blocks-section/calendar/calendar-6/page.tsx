@@ -248,7 +248,7 @@ export default function Calendar6() {
                                                             <div className="d-flex justify-content-between pb-1">
                                                                 <div className="text-body text-sm font-weight-medium">{item.title}</div>
                                                                 {uniqueMonthsDescription?.includes(item.description) && (
-                                                                    <ChipListComponent cssClass="e-info small" id="monthChip" text={getMonthAbbreviation(item.description).toUpperCase()}></ChipListComponent>
+                                                                    <ChipListComponent cssClass="e-info m-0 small" id="monthChip" text={getMonthAbbreviation(item.description).toUpperCase()}></ChipListComponent>
                                                                 )}
                                                             </div>
                                                             <span className="e-badge e-badge-pill border border-light-subtle e-badge-secondary px-2 lh-sm fw-normal">{item.description}</span>

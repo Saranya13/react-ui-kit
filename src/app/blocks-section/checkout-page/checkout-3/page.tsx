@@ -300,7 +300,7 @@ export default function Checkout3() {
                                         <h6 className="fs-5 fw-medium text-body mb-0">Delivery address</h6>
                                         <div className="e-bigger d-flex flex-column gap-3 pt-3">
                                             <RadioButtonComponent label="Delivery to the same address" name="deliveryType" value="same address" checked={true}></RadioButtonComponent>
-                                            <RadioButtonComponent label="Delivery to the another address" name="deliveryType" value="another address"></RadioButtonComponent>
+                                            <RadioButtonComponent label="Delivery to another address" name="deliveryType" value="another address"></RadioButtonComponent>
                                             <RadioButtonComponent label="Store pickup" name="deliveryType" value="store pickup"></RadioButtonComponent>
                                         </div>
                                     </div>

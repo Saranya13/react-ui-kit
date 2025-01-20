@@ -30,7 +30,7 @@ export default function Checkout2() {
         window.addEventListener('message', handleMessageEvent);
         setTimeout(() => {
             accordion.current?.refresh();
-        }, 200);
+        }, 300);
 
         return () => {
             window.removeEventListener('message', handleMessageEvent);

@@ -101,7 +101,7 @@ export default function Sidebar12() {
                                                 <span className="e-avatar e-avatar-xsmall e-avatar-circle">
                                                     <Image src={`/assets/images/side-panel/crypto-sidebar/${data.image}`} width={24} height={24} alt="profile picture" />
                                                 </span>
-                                                <span className="text-base ml-2 text-gray-500 dark:text-gray-400">{data.name}</span>
+                                                <span className="text-base ml-2 text-gray-700 dark:text-gray-300">{data.name}</span>
                                                 <span className="ml-1.5 text-xs text-gray-500 dark:text-gray-400" style={{ lineHeight: '18px' }}>BTC</span>
                                             </div>
                                             <div>
