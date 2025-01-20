@@ -94,7 +94,9 @@ export default function Search1() {
                 console.error('Error parsing message data: ', error);
             }
         }
-        search.current?.showPopup();
+        setTimeout(() => {
+            search.current?.showPopup();
+        },210)
     };
     /* SB Code - End */
 
