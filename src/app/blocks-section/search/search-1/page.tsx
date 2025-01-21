@@ -75,7 +75,7 @@ export default function Search1() {
 
     const handleResize = (): void => {
         setWidth(window.innerWidth > 767 ? { maxWidth: "520px" } : { width: "100%" })
-        search.current?.hidePopup();
+        search.current?.refresh();
         const searchInterval = setInterval(() => {
             search.current?.showPopup();
         }, 250);
