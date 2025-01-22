@@ -47,9 +47,9 @@ export default function Blocks({ blockName }) {
 
     const renderFigmaButton = () => (
         <a className={styles['figma-button']} href="https://www.figma.com/@Syncfusion" target="_blank" role="button" tabIndex={0}>
-            <Image className={styles['figma-icon']} src="/react/essential-ui-kit/blocks/assets/images/sample-browser/figma.svg" alt="Figma Logo" width={20} height={20} />
+            <img className={styles['figma-icon']} src="/react/essential-ui-kit/blocks/assets/images/sample-browser/figma.svg" alt="Figma Logo" />
             <span className={styles['figma-text']}>Get Figma</span>
-            <Image className={styles['right-arrow']} src="/react/essential-ui-kit/blocks/assets/images/sample-browser/arrow-right.svg" alt="Go to Figma" width={20} height={20} />
+            <img className={styles['right-arrow']} src="/react/essential-ui-kit/blocks/assets/images/sample-browser/arrow-right.svg" alt="Go to Figma" />
         </a>
     );
 
@@ -59,13 +59,13 @@ export default function Blocks({ blockName }) {
             <div className={styles['block-header-content']}>
                 {renderNavigateButton()}
                 <span className={styles['block-header-icon']}>
-                    <Image src="/react/essential-ui-kit/blocks/assets/images/sample-browser/chevron-right.svg" alt="Right Chevron" width={16} height={16} />
+                    <img src="/react/essential-ui-kit/blocks/assets/images/sample-browser/chevron-right.svg" alt="Right Chevron" />
                 </span>
                 <span className={styles['block-header-text']}>{name}</span>
             </div>
             <div className={styles['container']}>
                 <div className={styles['block-container']}>
-                    <Image className={styles['block-image']} src={`/react/essential-ui-kit/blocks/assets/images/sample-browser/${blockName}.png`} alt={`${name} - Image`} width={200} height={120} />
+                    <img className={styles['block-image']} src={`/react/essential-ui-kit/blocks/assets/images/sample-browser/${blockName}.png`} alt={`${name} - Image`} />
                     <div className={styles['block-section']}>
                         <div className={styles['block-title']}>{name}</div>
                         <div className={styles['block-description']}>{description}</div>
