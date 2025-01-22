@@ -199,7 +199,7 @@ export default function Grid10() {
                                         template={(data: any) => (
                                             <div className="flex items-center gap-3">
                                                 <div className="w-8">
-                                                    <Image className="rounded h-8" src={`/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
+                                                    <Image className="rounded h-8" src={`/react-ui-kit/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
                                                 </div>
                                                 <div className="text-sm">{data.product}</div>
                                             </div>
@@ -233,7 +233,7 @@ export default function Grid10() {
                                         template={(data: any) => (
                                             <div className="d-flex align-items-center gap-2">
                                                 <div style={{ width: "32px" }}>
-                                                    <Image className="rounded" src={`/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
+                                                    <Image className="rounded" src={`/react-ui-kit/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
                                                 </div>
                                                 <div>{data.product}</div>
                                             </div>

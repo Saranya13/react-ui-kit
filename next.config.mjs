@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    basePath: '/react-ui-kit',
     async rewrites() {
         return [
           {

@@ -40,13 +40,13 @@ export default function SignUp2() {
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="flex flex-col lg:flex-row" style={{ minHeight: '720px' }}>
                             <div className="w-full lg:w-7/12 p-0">
-                                <Image className="w-full h-full object-cover" src="/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
+                                <Image className="w-full h-full object-cover" src="/react-ui-kit/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
                             </div>
                             <div className="w-full lg:w-5/12">
                                 <div className="bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
                                     <div className="w-full max-w-md rounded-lg p-4 py-12">
                                         <div className="flex justify-center mb-6">
-                                            <Image className="mr-2" src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                            <Image className="mr-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                             <h2 className="text-center text-xl font-semibold text-gray-900 dark:text-white">Company Name</h2>
                                         </div>
                                         <h2 className="text-2xl font-semibold text-center mb-2 text-gray-900 dark:text-white">Sign up</h2>
@@ -84,10 +84,10 @@ export default function SignUp2() {
                                             </div>
                                             <div className="flex items-center justify-center pt-10 space-x-4">
                                                 <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit">
-                                                    <Image src="/assets/images/common/brand-logos/png/google.png" width={20} height={20} alt="google logo" />
+                                                    <Image src="/react-ui-kit/assets/images/common/brand-logos/png/google.png" width={20} height={20} alt="google logo" />
                                                 </ButtonComponent>
                                                 <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit">
-                                                    <Image src="/assets/images/common/brand-logos/png/facebook.png" width={20} height={20} alt="facebook logo" />
+                                                    <Image src="/react-ui-kit/assets/images/common/brand-logos/png/facebook.png" width={20} height={20} alt="facebook logo" />
                                                 </ButtonComponent>
                                                 <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit">
                                                     <svg className="svg-icon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,7 @@ export default function SignUp2() {
                                                     </svg>
                                                 </ButtonComponent>
                                                 <ButtonComponent cssClass="e-outline flex items-center justify-center px-4 py-2" type="submit">
-                                                    <Image src="/assets/images/common/brand-logos/png/microsoft.png" width={20} height={20} alt="microsoft logo" />
+                                                    <Image src="/react-ui-kit/assets/images/common/brand-logos/png/microsoft.png" width={20} height={20} alt="microsoft logo" />
                                                 </ButtonComponent>
                                             </div>
                                             <span className="flex items-center justify-center gap-2 mt-5">
@@ -114,13 +114,13 @@ export default function SignUp2() {
                     <section>
                         <div className="d-flex flex-column flex-lg-row h-100" style={{ minHeight: '720px' }}>
                             <div className="col-12 col-lg-7 p-0">
-                                <Image className="img-fluid w-100 h-100 object-fit-cover" src="/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
+                                <Image className="img-fluid w-100 h-100 object-fit-cover" src="/react-ui-kit/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
                             </div>
                             <div className="col-12 col-lg-5 p-0">
                                 <div className="d-flex justify-content-center align-items-center bg-body">
                                     <div className="bg-body rounded-lg p-4 py-5 w-100" style={{ maxWidth: '450px' }}>
                                         <div className="d-flex justify-content-center align-items-center mb-4">
-                                            <Image className="me-2" src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                            <Image className="me-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                             <h5 className="text-center text-body fw-bold mb-0 fs-5">Company Name</h5>
                                         </div>
                                         <h4 className="fw-bold text-body text-center mb-2 fs-4">Sign up</h4>
@@ -155,10 +155,10 @@ export default function SignUp2() {
                                         </div>
                                         <div className="d-flex justify-content-center mt-3 gap-3">
                                             <ButtonComponent cssClass="e-outline" type="submit">
-                                                <Image src="/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
+                                                <Image src="/react-ui-kit/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
                                             </ButtonComponent>
                                             <ButtonComponent cssClass="e-outline" type="submit">
-                                                <Image src="/assets/images/common/brand-logos/png/facebook.png" width={24} height={24} alt="facebook logo" />
+                                                <Image src="/react-ui-kit/assets/images/common/brand-logos/png/facebook.png" width={24} height={24} alt="facebook logo" />
                                             </ButtonComponent>
                                             <ButtonComponent cssClass="e-outline" type="submit">
                                                 <svg className="svg-icon" width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -166,7 +166,7 @@ export default function SignUp2() {
                                                 </svg>
                                             </ButtonComponent>
                                             <ButtonComponent cssClass="e-outline" type="submit">
-                                                <Image src="/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
+                                                <Image src="/react-ui-kit/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
                                             </ButtonComponent>
                                         </div>
                                         <span className="d-flex align-items-center justify-content-center gap-1 mt-3">

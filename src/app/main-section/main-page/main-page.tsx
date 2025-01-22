@@ -52,7 +52,7 @@ export default function MainPage() {
     }
 
     const navigateToDemo = (url: string) => {
-        router.push(`${url}`);
+        router.push(`/${url}`);
     }
 
     return (
@@ -70,7 +70,7 @@ export default function MainPage() {
                         </a>
                         <a href="https://www.figma.com/@Syncfusion" target="_blank" className={styles['figma-btn']} role="button" tabIndex={0} rel="noopener noreferrer" aria-label="Download Figma">
                             <span className={styles['figma-img']}>
-                                <Image src="/assets/images/sample-browser/figma.svg" alt="Figma Logo" width={20} height={20} />
+                                <Image src="/react-ui-kit/assets/images/sample-browser/figma.svg" alt="Figma Logo" width={20} height={20} />
                             </span>
                             Download Figma
                         </a>
@@ -128,7 +128,7 @@ export default function MainPage() {
                                                         <div className={styles['block-container']}>
                                                             <div className={styles['block-content']}>
                                                                 <Image
-                                                                    src={`/assets/images/sample-browser/${block.url}.png`}
+                                                                    src={`/react-ui-kit/assets/images/sample-browser/${block.url}.png`}
                                                                     alt={`${block.name} - Image`}
                                                                     style={{ height: '100%', width: '100%' }}
                                                                     width={320}

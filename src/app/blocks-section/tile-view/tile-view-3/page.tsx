@@ -96,7 +96,7 @@ export default function TileView3() {
                                     <div className="e-appbar-spacer"></div>
                                     <ButtonComponent cssClass="e-flat sf-icon-notification-bell-01 text-base ml-2" type="button"></ButtonComponent>
                                     <span className="e-avatar e-avatar-circle e-avatar-small shrink-0 ml-3">
-                                        <Image src="/assets/images/common/avatar/avatar-1.jpg" width={32} height={32} alt="profile picture" />
+                                        <Image src="/react-ui-kit/assets/images/common/avatar/avatar-1.jpg" width={32} height={32} alt="profile picture" />
                                     </span>
                                 </div>
                             </AppBarComponent>
@@ -171,7 +171,7 @@ export default function TileView3() {
                                     <div className="d-flex gap-2">
                                         <ButtonComponent cssClass="e-flat sf-icon-notification-bell-01 fs-6" type="button"></ButtonComponent>
                                         <span className="e-avatar e-avatar-circle e-avatar-small flex-shrink-0 ms-1">
-                                            <Image src="/assets/images/common/avatar/avatar-1.jpg" width={32} height={32} alt="profile picture" />
+                                            <Image src="/react-ui-kit/assets/images/common/avatar/avatar-1.jpg" width={32} height={32} alt="profile picture" />
                                         </span>
                                     </div>
                                 </div>

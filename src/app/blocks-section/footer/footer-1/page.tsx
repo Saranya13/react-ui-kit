@@ -38,7 +38,7 @@ export default function Footer1() {
                     <section className="bg-gray-50 dark:bg-gray-900">
                         <footer className="p-4 flex flex-col gap-6 sm:flex-row flex-wrap justify-between sm:items-center sm:px-6 xl:px-10">
                             <div className="flex items-center gap-2.5 pt-2 sm:pb-2 text-gray-900 dark:text-gray-50">
-                                <Image src="/assets/images/common/brand-logos/png/shopnezt.png" width={28} height={28} alt="company logo" />
+                                <Image src="/react-ui-kit/assets/images/common/brand-logos/png/shopnezt.png" width={28} height={28} alt="company logo" />
                                 <span className="text-xl font-semibold">ShopNezt</span>
                             </div>
                             <div className="flex flex-col items-start gap-4 sm:flex-row sm:gap-3">
@@ -57,7 +57,7 @@ export default function Footer1() {
                     <section className="bg-body">
                         <footer className="p-3 px-sm-4 px-lg-5 d-flex flex-column gap-3 gap-sm-4 flex-sm-row flex-wrap justify-content-between align-items-sm-center">
                             <div className="d-flex align-items-center gap-2">
-                                <Image src="/assets/images/common/brand-logos/png/shopnezt.png" width={30} height={30} alt="company logo" />
+                                <Image src="/react-ui-kit/assets/images/common/brand-logos/png/shopnezt.png" width={30} height={30} alt="company logo" />
                                 <h5 className="mb-0 text-body">ShopNezt</h5>
                             </div>
                             <div className="d-flex flex-column align-items-start justify-content-center gap-3 gap-sm-2 flex-sm-row">

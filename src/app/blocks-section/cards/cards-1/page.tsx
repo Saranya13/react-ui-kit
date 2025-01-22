@@ -41,7 +41,7 @@ export default function Card1() {
                             <div className="grid gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:gap-10">
                                 <div className="e-card rounded-lg gap-6 e-bigger">
                                     <div className="e-card-image h-56">
-                                        <Image src="/assets/images/card/image-button-card/adventure-awaits.jpg" layout="fill" objectFit="cover" alt="adventure awaits" />
+                                        <Image src="/react-ui-kit/assets/images/card/image-button-card/adventure-awaits.jpg" layout="fill" objectFit="cover" alt="adventure awaits" />
                                     </div>
                                     <div className="e-card-stacked grow">
                                         <div className="e-card-content text-center grow">
@@ -55,7 +55,7 @@ export default function Card1() {
                                 </div>
                                 <div className="e-card rounded-lg gap-6 e-bigger">
                                     <div className="e-card-image h-56">
-                                        <Image src="/assets/images/card/image-button-card/gourmet-delights.jpg" layout="fill" objectFit="cover" alt="gourmet delights" />
+                                        <Image src="/react-ui-kit/assets/images/card/image-button-card/gourmet-delights.jpg" layout="fill" objectFit="cover" alt="gourmet delights" />
                                     </div>
                                     <div className="e-card-stacked grow">
                                         <div className="e-card-content text-center grow">
@@ -69,7 +69,7 @@ export default function Card1() {
                                 </div>
                                 <div className="e-card rounded-lg gap-6 e-bigger">
                                     <div className="e-card-image h-56">
-                                        <Image src="/assets/images/card/image-button-card/productivity-boost.jpg" layout="fill" objectFit="cover" alt="productivity boost" />
+                                        <Image src="/react-ui-kit/assets/images/card/image-button-card/productivity-boost.jpg" layout="fill" objectFit="cover" alt="productivity boost" />
                                     </div>
                                     <div className="e-card-stacked grow">
                                         <div className="e-card-content text-center grow">
@@ -93,7 +93,7 @@ export default function Card1() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3">
                                         <div className="e-card-image" style={{ height: "232px" }}>
-                                            <Image src="/assets/images/card/image-button-card/adventure-awaits.jpg" layout="fill" objectFit="cover" alt="adventure awaits" />
+                                            <Image src="/react-ui-kit/assets/images/card/image-button-card/adventure-awaits.jpg" layout="fill" objectFit="cover" alt="adventure awaits" />
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-content text-center flex-grow-1 py-4 text-body">
@@ -109,7 +109,7 @@ export default function Card1() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3">
                                         <div className="e-card-image" style={{ height: "232px" }}>
-                                            <Image src="/assets/images/card/image-button-card/gourmet-delights.jpg" layout="fill" objectFit="cover" alt="gourmet delights" />
+                                            <Image src="/react-ui-kit/assets/images/card/image-button-card/gourmet-delights.jpg" layout="fill" objectFit="cover" alt="gourmet delights" />
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-content text-center flex-grow-1 py-4 text-body">
@@ -125,7 +125,7 @@ export default function Card1() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3">
                                         <div className="e-card-image" style={{ height: "232px" }}>
-                                            <Image src="/assets/images/card/image-button-card/productivity-boost.jpg" layout="fill" objectFit="cover" alt="productivity boost" />
+                                            <Image src="/react-ui-kit/assets/images/card/image-button-card/productivity-boost.jpg" layout="fill" objectFit="cover" alt="productivity boost" />
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-content text-center flex-grow-1 py-4 text-body">

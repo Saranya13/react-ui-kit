@@ -115,7 +115,7 @@ export default function Sidebar9() {
                                 <div className="flex h-screen">
                                     <div className="py-4" style={{ width: '72px' }}>
                                         <div className="flex justify-center items-center px-3 mb-2">
-                                            <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                            <Image src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         </div>
                                         <ListViewComponent className="border-0 e-bigger" dataSource={data1} template={(data: any) => (
                                             <div className="e-list-wrapper flex justify-center items-center">
@@ -170,7 +170,7 @@ export default function Sidebar9() {
                                 <div className="d-flex vh-100">
                                     <div className="py-4 d-flex flex-column align-items-center" style={{ width: '72px' }}>
                                         <div className="d-flex justify-content-center align-items-center px-3 mb-2">
-                                            <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                            <Image src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         </div>
                                         <ListViewComponent className="border-0 e-bigger" dataSource={data1} template={(data: any) => (
                                             <div className="e-list-wrapper d-flex justify-content-center align-items-center">

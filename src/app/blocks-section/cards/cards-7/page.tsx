@@ -40,7 +40,7 @@ export default function Card7() {
                             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-10 sm:gap-8">
                                 <div className="e-card rounded-lg gap-6 e-bigger">
                                     <div className="e-card-image h-56">
-                                        <Image src="/assets/images/card/image-tags-card/gem-cities.jpg" layout="fill" objectFit="cover" alt="gem cities" />
+                                        <Image src="/react-ui-kit/assets/images/card/image-tags-card/gem-cities.jpg" layout="fill" objectFit="cover" alt="gem cities" />
                                     </div>
                                     <div className="e-card-stacked grow">
                                         <div className="e-card-content grow">
@@ -54,7 +54,7 @@ export default function Card7() {
                                 </div>
                                 <div className="e-card rounded-lg gap-6 e-bigger">
                                     <div className="e-card-image h-56">
-                                        <Image src="/assets/images/card/image-tags-card/natural-wonders.jpg" layout="fill" objectFit="cover" alt="natural wonders" />
+                                        <Image src="/react-ui-kit/assets/images/card/image-tags-card/natural-wonders.jpg" layout="fill" objectFit="cover" alt="natural wonders" />
                                     </div>
                                     <div className="e-card-stacked grow">
                                         <div className="e-card-content grow">
@@ -68,7 +68,7 @@ export default function Card7() {
                                 </div>
                                 <div className="e-card rounded-lg gap-6 e-bigger">
                                     <div className="e-card-image h-56">
-                                        <Image src="/assets/images/card/image-tags-card/historic-landmarks.jpg" layout="fill" objectFit="cover" alt="historic landmarks" />
+                                        <Image src="/react-ui-kit/assets/images/card/image-tags-card/historic-landmarks.jpg" layout="fill" objectFit="cover" alt="historic landmarks" />
                                     </div>
                                     <div className="e-card-stacked grow">
                                         <div className="e-card-content grow">
@@ -92,7 +92,7 @@ export default function Card7() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3">
                                         <div className="e-card-image" style={{ height: "232px" }}>
-                                            <Image src="/assets/images/card/image-tags-card/gem-cities.jpg" layout="fill" objectFit="cover" alt="gem cities" />
+                                            <Image src="/react-ui-kit/assets/images/card/image-tags-card/gem-cities.jpg" layout="fill" objectFit="cover" alt="gem cities" />
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-content flex-grow-1 py-4 text-body">
@@ -108,7 +108,7 @@ export default function Card7() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3">
                                         <div className="e-card-image" style={{ height: "232px" }}>
-                                            <Image src="/assets/images/card/image-tags-card/natural-wonders.jpg" layout="fill" objectFit="cover" alt="natural wonders" />
+                                            <Image src="/react-ui-kit/assets/images/card/image-tags-card/natural-wonders.jpg" layout="fill" objectFit="cover" alt="natural wonders" />
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-content flex-grow-1 py-4 text-body">
@@ -124,7 +124,7 @@ export default function Card7() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3">
                                         <div className="e-card-image" style={{ height: "232px" }}>
-                                            <Image src="/assets/images/card/image-tags-card/historic-landmarks.jpg" layout="fill" objectFit="cover" alt="historic landmarks" />
+                                            <Image src="/react-ui-kit/assets/images/card/image-tags-card/historic-landmarks.jpg" layout="fill" objectFit="cover" alt="historic landmarks" />
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-content flex-grow-1 py-4 text-body">

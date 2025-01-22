@@ -39,7 +39,7 @@ export default function Signin3() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="flex flex-col lg:flex-row mx-auto p-0" style={{ minHeight: '770px' }}>
-                            <div className="w-full lg:w-7/12 px-6 py-14 bg-green-600 text-white flex items-center" style={{ backgroundImage: "url('/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+                            <div className="w-full lg:w-7/12 px-6 py-14 bg-green-600 text-white flex items-center" style={{ backgroundImage: "url('/react-ui-kit/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                                 <div className="flex flex-wrap mx-0 w-full sm:p-6 xl:p-0 md:p-8 lg:px-6">
                                     <div className="hidden xl:block xl:w-1/6"></div>
                                     <div className="w-full xl:w-2/3">
@@ -74,7 +74,7 @@ export default function Signin3() {
                                     <div className="flex items-center justify-center">
                                         <div className="w-full max-w-md rounded-lg px-4 py-14 md:px-6 md:py-20">
                                             <div className="flex justify-center mb-6">
-                                                <Image className="mr-2" src="/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
+                                                <Image className="mr-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
                                                 <h2 className="text-center text-gray-900 dark:text-white text-xl font-semibold">Company Name</h2>
                                             </div>
                                             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white text-center mb-2">Sign in</h2>
@@ -107,11 +107,11 @@ export default function Signin3() {
                                                 </div>
                                                 <div className="flex items-center justify-center pt-10 gap-4 flex-col">
                                                     <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit">
-                                                        <Image src="/assets/images/common/brand-logos/png/google.png" alt="google logo" width={16} height={16} />
+                                                        <Image src="/react-ui-kit/assets/images/common/brand-logos/png/google.png" alt="google logo" width={16} height={16} />
                                                         <span className="text-base pl-2.5">Sign in with Google</span>
                                                     </ButtonComponent>
                                                     <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit">
-                                                        <Image src="/assets/images/common/brand-logos/png/microsoft.png" alt="microsoft logo" width={16} height={16} />
+                                                        <Image src="/react-ui-kit/assets/images/common/brand-logos/png/microsoft.png" alt="microsoft logo" width={16} height={16} />
                                                         <span className="text-base pl-2.5">Sign in with Microsoft</span>
                                                     </ButtonComponent>
                                                 </div>
@@ -126,7 +126,7 @@ export default function Signin3() {
             case 'bootstrap5':
                 return (
                     <section className="container-fluid d-md-flex d-block flex-wrap mx-auto p-0" style={{ minHeight: '770px' }}>
-                        <div className="col-12 col-lg-7 d-flex align-items-center bg-success p-4 p-lg-4" style={{ backgroundImage: "url('/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+                        <div className="col-12 col-lg-7 d-flex align-items-center bg-success p-4 p-lg-4" style={{ backgroundImage: "url('/react-ui-kit/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                             <div className="row mx-0 w-100 py-5">
                                 <div className="col-xl-2 d-lg-block"></div>
                                 <div className="col-xl-8">
@@ -161,7 +161,7 @@ export default function Signin3() {
                             <div className="d-flex justify-content-center align-items-center bg-body">
                                 <div className="max-w-lg bg-body rounded-lg p-4 p-md-5 w-100" style={{ maxWidth: '508px' }}>
                                     <div className="d-flex justify-content-center align-items-center mb-4">
-                                        <Image className="me-2" src="/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
+                                        <Image className="me-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
                                         <h5 className="text-center fw-bold mb-0 fs-5 text-body">Company Name</h5>
                                     </div>
                                     <div className="mb-4 text-center">
@@ -196,11 +196,11 @@ export default function Signin3() {
                                         </div>
                                         <div className="d-flex flex-column mt-3 align-items-center justify-content-center gap-3">
                                             <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit">
-                                                <Image src="/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
+                                                <Image src="/react-ui-kit/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
                                                 <span className="fs-6 fw-medium" style={{ paddingLeft: '8px' }}>Sign in with Google</span>
                                             </ButtonComponent>
                                             <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit">
-                                                <Image src="/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
+                                                <Image src="/react-ui-kit/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
                                                 <span className="fs-6 fw-medium" style={{ paddingLeft: '8px' }}>Sign in with Microsoft</span>
                                             </ButtonComponent>
                                         </div>

@@ -111,7 +111,7 @@ export default function TileView5() {
                                     <ListViewComponent className="!border-0 mb-2" cssClass="e-list-template" dataSource={jobDetails} template={(data: any) => (
                                         <div className="e-card flex-col gap-4 p-4 rounded-2xl sm:pr-5 sm:p-6 sm:flex-row">
                                             <span className="e-avatar e-avatar-xlarge e-avatar-circle shrink-0">
-                                                <Image src={"/assets/images/tile-view/job-site/" + data.logo} width={56} height={56} alt="company logo" />
+                                                <Image src={"/react-ui-kit/assets/images/tile-view/job-site/" + data.logo} width={56} height={56} alt="company logo" />
                                             </span>
                                             <div className="e-card-stacked grow space-y-3 px-1">
                                                 <div className="e-card-header !flex-col gap-2 !p-0">
@@ -180,7 +180,7 @@ export default function TileView5() {
                                     <ListViewComponent className="border-0 mb-1" cssClass="e-list-template" dataSource={jobDetails} template={(data: any) => (
                                         <div className="e-card d-flex flex-column gap-3 flex-md-row rounded-4 p-3 ps-4">
                                             <span className="e-avatar e-avatar-xlarge e-avatar-circle flex-shrink-0">
-                                                <Image src={"/assets/images/tile-view/job-site/" + data.logo} width={56} height={56} alt="company logo" />
+                                                <Image src={"/react-ui-kit/assets/images/tile-view/job-site/" + data.logo} width={56} height={56} alt="company logo" />
                                             </span>
                                             <div className="e-card-stacked flex-grow-1 pe-1 py-1">
                                                 <div className="e-card-header flex-column mb-2 p-0">

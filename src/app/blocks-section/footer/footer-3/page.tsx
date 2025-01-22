@@ -51,7 +51,7 @@ export default function Footer3() {
                             </div>
                             <div className="flex sm:flex-row flex-col gap-3 justify-between items-center pt-4 sm:py-7 border-t border-gray-200 dark:border-gray-600">
                                 <div className="flex items-center gap-2.5">
-                                    <Image src="/assets/images/common/brand-logos/png/shopnezt.png" width={28} height={28} alt="company logo" />
+                                    <Image src="/react-ui-kit/assets/images/common/brand-logos/png/shopnezt.png" width={28} height={28} alt="company logo" />
                                     <p className="font-semibold text-lg text-gray-900 dark:text-gray-50">ShopNezt</p>
                                 </div>
                                 <p className="text-gray-500 dark:text-gray-400">© 2024 ShopNezt. All rights reserved.</p>
@@ -75,7 +75,7 @@ export default function Footer3() {
                             </div>
                             <div className="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 border-top border-light-subtle pt-3 mt-2 mt-sm-0 pb-sm-3">
                                 <div className="d-flex align-items-center gap-2 mb-1 mb-sm-0">
-                                    <Image src="/assets/images/common/brand-logos/png/shopnezt.png" width={30} height={30} alt="company logo" />
+                                    <Image src="/react-ui-kit/assets/images/common/brand-logos/png/shopnezt.png" width={30} height={30} alt="company logo" />
                                     <h5 className="mb-0 text-body">ShopNezt</h5>
                                 </div>
                                 <p className="mb-0 text-body-secondary">© 2024 ShopNezt. All rights reserved.</p>

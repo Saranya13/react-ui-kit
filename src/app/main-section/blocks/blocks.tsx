@@ -47,9 +47,9 @@ export default function Blocks({ blockName }) {
 
     const renderFigmaButton = () => (
         <a className={styles['figma-button']} href="https://www.figma.com/@Syncfusion" target="_blank" role="button" tabIndex={0}>
-            <Image className={styles['figma-icon']} src="/assets/images/sample-browser/figma.svg" alt="Figma Logo" width={20} height={20} />
+            <Image className={styles['figma-icon']} src="/react-ui-kit/assets/images/sample-browser/figma.svg" alt="Figma Logo" width={20} height={20} />
             <span className={styles['figma-text']}>Get Figma</span>
-            <Image className={styles['right-arrow']} src="/assets/images/sample-browser/arrow-right.svg" alt="Go to Figma" width={20} height={20} />
+            <Image className={styles['right-arrow']} src="/react-ui-kit/assets/images/sample-browser/arrow-right.svg" alt="Go to Figma" width={20} height={20} />
         </a>
     );
 
@@ -59,13 +59,13 @@ export default function Blocks({ blockName }) {
             <div className={styles['block-header-content']}>
                 {renderNavigateButton()}
                 <span className={styles['block-header-icon']}>
-                    <Image src="/assets/images/sample-browser/chevron-right.svg" alt="Right Chevron" width={16} height={16} />
+                    <Image src="/react-ui-kit/assets/images/sample-browser/chevron-right.svg" alt="Right Chevron" width={16} height={16} />
                 </span>
                 <span className={styles['block-header-text']}>{name}</span>
             </div>
             <div className={styles['container']}>
                 <div className={styles['block-container']}>
-                    <Image className={styles['block-image']} src={`/assets/images/sample-browser/${blockName}.png`} alt={`${name} - Image`} width={200} height={120} />
+                    <Image className={styles['block-image']} src={`/react-ui-kit/assets/images/sample-browser/${blockName}.png`} alt={`${name} - Image`} width={200} height={120} />
                     <div className={styles['block-section']}>
                         <div className={styles['block-title']}>{name}</div>
                         <div className={styles['block-description']}>{description}</div>

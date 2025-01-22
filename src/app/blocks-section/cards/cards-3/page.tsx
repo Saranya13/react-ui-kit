@@ -42,7 +42,7 @@ export default function Card3() {
                                 <div className="e-card gap-2 rounded-lg e-bigger">
                                     <div className="e-card-header">
                                         <div className="e-card-image overflow-hidden rounded-lg h-56">
-                                            <Image src="/assets/images/card/image-title-description-card-button/adventure-trails.jpg" layout="fill" objectFit="cover" alt="adventure trails" />
+                                            <Image src="/react-ui-kit/assets/images/card/image-title-description-card-button/adventure-trails.jpg" layout="fill" objectFit="cover" alt="adventure trails" />
                                         </div>
                                     </div>
                                     <div className="e-card-content flex-1">
@@ -56,7 +56,7 @@ export default function Card3() {
                                 <div className="e-card gap-2 rounded-lg e-bigger">
                                     <div className="e-card-header">
                                         <div className="e-card-image overflow-hidden rounded-lg h-56">
-                                            <Image src="/assets/images/card/image-title-description-card-button/historic-landmarks.jpg" layout="fill" objectFit="cover" alt="historic landmarks" />
+                                            <Image src="/react-ui-kit/assets/images/card/image-title-description-card-button/historic-landmarks.jpg" layout="fill" objectFit="cover" alt="historic landmarks" />
                                         </div>
                                     </div>
                                     <div className="e-card-content flex-1">
@@ -70,7 +70,7 @@ export default function Card3() {
                                 <div className="e-card gap-2 rounded-lg e-bigger">
                                     <div className="e-card-header">
                                         <div className="e-card-image overflow-hidden rounded-lg h-56">
-                                            <Image src="/assets/images/card/image-title-description-card-button/vibrant-street-markets.jpg" layout="fill" objectFit="cover" alt="vibrant street markets" />
+                                            <Image src="/react-ui-kit/assets/images/card/image-title-description-card-button/vibrant-street-markets.jpg" layout="fill" objectFit="cover" alt="vibrant street markets" />
                                         </div>
                                     </div>
                                     <div className="e-card-content flex-1">
@@ -94,7 +94,7 @@ export default function Card3() {
                                     <div className="e-card e-bigger rounded-3 p-2">
                                         <div className="e-card-header">
                                             <div className="e-card-image rounded-3 overflow-hidden mb-2" style={{ height: "232px" }}>
-                                                <Image src="/assets/images/card/image-title-description-card-button/adventure-trails.jpg" layout="fill" objectFit="cover" alt="adventure trails" />
+                                                <Image src="/react-ui-kit/assets/images/card/image-title-description-card-button/adventure-trails.jpg" layout="fill" objectFit="cover" alt="adventure trails" />
                                             </div>
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
@@ -112,7 +112,7 @@ export default function Card3() {
                                     <div className="e-card e-bigger rounded-3 p-2">
                                         <div className="e-card-header">
                                             <div className="e-card-image rounded-3 overflow-hidden mb-2" style={{ height: "232px" }}>
-                                                <Image src="/assets/images/card/image-title-description-card-button/historic-landmarks.jpg" layout="fill" objectFit="cover" alt="historic landmarks" />
+                                                <Image src="/react-ui-kit/assets/images/card/image-title-description-card-button/historic-landmarks.jpg" layout="fill" objectFit="cover" alt="historic landmarks" />
                                             </div>
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
@@ -130,7 +130,7 @@ export default function Card3() {
                                     <div className="e-card e-bigger rounded-3 p-2">
                                         <div className="e-card-header">
                                             <div className="e-card-image rounded-3 overflow-hidden mb-2" style={{ height: "232px" }}>
-                                                <Image src="/assets/images/card/image-title-description-card-button/vibrant-street-markets.jpg" layout="fill" objectFit="cover" alt="vibrant street markets" />
+                                                <Image src="/react-ui-kit/assets/images/card/image-title-description-card-button/vibrant-street-markets.jpg" layout="fill" objectFit="cover" alt="vibrant street markets" />
                                             </div>
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">

@@ -77,7 +77,7 @@ export default function Sidebar13() {
                                 <div className="flex h-screen">
                                     <div className="py-6" style={{ width: '72px' }}>
                                         <div className="flex justify-center items-center px-3 mb-2">
-                                            <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                            <Image src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         </div>
                                         <ListViewComponent cssClass="border-0 e-bigger" dataSource={data} template={(data: any) => (
                                             <div className="e-list-wrapper flex justify-center items-center">
@@ -90,7 +90,7 @@ export default function Sidebar13() {
                                         <div className="flex items-center justify-between">
                                             <div className="flex items-center">
                                                 <span className="e-avatar e-avatar-circle e-avatar-small">
-                                                    <Image src="/assets/images/common/avatar/avatar-2.jpg" width={32} height={32} alt="profile picture" />
+                                                    <Image src="/react-ui-kit/assets/images/common/avatar/avatar-2.jpg" width={32} height={32} alt="profile picture" />
                                                 </span>
                                                 <div className="ml-3">
                                                     <div className="text-base font-medium leading-normal text-gray-900 dark:text-white">John Wick</div>
@@ -155,7 +155,7 @@ export default function Sidebar13() {
                                 <div className="d-flex vh-100">
                                     <div className="py-4 d-flex flex-column align-items-center" style={{ width: '72px' }}>
                                         <div className="d-flex justify-content-center align-items-center px-3 mb-2">
-                                            <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                            <Image src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         </div>
                                         <ListViewComponent cssClass="border-0 e-bigger" dataSource={data} template={(data: any) => (
                                             <div className="e-list-wrapper d-flex justify-content-center align-items-center">
@@ -168,7 +168,7 @@ export default function Sidebar13() {
                                         <div className="d-flex justify-content-between align-items-center">
                                             <div className="d-flex align-items-center">
                                                 <span className="e-avatar e-avatar-circle e-avatar-small">
-                                                    <Image src="/assets/images/common/avatar/avatar-2.jpg" width={32} height={32} alt="profile picture" />
+                                                    <Image src="/react-ui-kit/assets/images/common/avatar/avatar-2.jpg" width={32} height={32} alt="profile picture" />
                                                 </span>
                                                 <div className="ms-3">
                                                     <div className="text-body fs-6 fw-medium">John Wick</div>

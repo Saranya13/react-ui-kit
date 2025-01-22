@@ -96,7 +96,7 @@ export default function List11() {
                                         <div className="flex justify-between">
                                             <div className="flex items-center">
                                                 <span className="shrink-0">
-                                                    <Image src={`/assets/images/listview/my-files/${data.image}`} width={40} height={40} alt="document image" />
+                                                    <Image src={`/react-ui-kit/assets/images/listview/my-files/${data.image}`} width={40} height={40} alt="document image" />
                                                 </span>
                                                 <span>
                                                     <div className="flex mb-1">
@@ -131,7 +131,7 @@ export default function List11() {
                                         <div className="d-flex justify-content-between">
                                             <div className="d-flex align-items-center">
                                                 <span className="flex-shrink-0">
-                                                    <Image src={`/assets/images/listview/my-files/${data.image}`} width={40} height={40} alt="document image" />
+                                                    <Image src={`/react-ui-kit/assets/images/listview/my-files/${data.image}`} width={40} height={40} alt="document image" />
                                                 </span>
                                                 <span>
                                                     <div className="d-flex">

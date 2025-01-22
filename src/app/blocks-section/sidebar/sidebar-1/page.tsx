@@ -69,7 +69,7 @@ export default function Sidebar1() {
                             <SidebarComponent key={"sidebar-1-tw"} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="h-screen">
                                     <div className="flex items-center py-4 px-3">
-                                        <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                        <Image src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         <span className="text-lg font-bold text-gray-900 dark:text-white ml-3">Company Name</span>
                                     </div>
                                     <div className="mt-1">
@@ -119,7 +119,7 @@ export default function Sidebar1() {
                             <SidebarComponent key={"sidebar-1-bs"} width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
                                 <div className="min-vh-100">
                                     <div className="d-flex align-items-center p-3">
-                                        <Image src="/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                        <Image src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                         <span className="fs-5 ms-2 fw-bold text-body lh-sm">Company Name</span>
                                     </div>
                                     <div className="mt-1">

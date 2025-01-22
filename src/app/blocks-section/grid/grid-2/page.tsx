@@ -302,7 +302,7 @@ export default function Grid2() {
                                         template={(data: any) => (
                                             <div className="flex gap-3 items-center py-1.5">
                                                 <div className="w-8 h-8">{data.assignee.avatar ? (
-                                                        <span className="e-avatar e-avatar-circle e-avatar-small" style={{backgroundImage: `url('/assets/images/common/avatar/${data.assignee.avatar}')` }}></span>
+                                                        <span className="e-avatar e-avatar-circle e-avatar-small" style={{backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.assignee.avatar}')` }}></span>
                                                     ) : (
                                                         <span className={`e-avatar e-avatar-circle e-avatar-small ${data.assignee.colorTheme === "Red" ? "!bg-red-100 !text-red-700 dark:!text-red-400" : data.assignee.colorTheme === "Green" ? "!bg-green-100 !text-green-700 dark:!text-green-500" : data.assignee.colorTheme === "Blue" ? "!bg-cyan-100 !text-cyan-700 dark:!text-cyan-600" : data.assignee.colorTheme === "Orange" ? "!bg-orange-100 !text-orange-700 dark:!text-orange-500" : ""}`}>{data.assignee.initial}</span>
                                                     )}
@@ -318,7 +318,7 @@ export default function Grid2() {
                                         template={(data: any) => (
                                             <div className="flex items-center gap-3">
                                                 <div className="w-8 h-8">{data.createdBy.avatar ? (
-                                                        <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/assets/images/common/avatar/${data.createdBy.avatar}')` }}></span>
+                                                        <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.createdBy.avatar}')` }}></span>
                                                     ) : (
                                                         <span className={`e-avatar e-avatar-circle e-avatar-small ${data.createdBy.colorTheme === "Red" ? "!bg-red-100 !text-red-700 dark:!text-red-400" : data.createdBy.colorTheme === "Green" ? "!bg-green-100 !text-green-700 dark:!text-green-500" : data.createdBy.colorTheme === "Blue" ? "!bg-cyan-100 !text-cyan-700 dark:!text-cyan-600" : data.createdBy.colorTheme === "Orange" ? "!bg-orange-100 !text-orange-700 dark:!text-orange-500" : ""}`}>{data.createdBy.initial}</span>
                                                     )}
@@ -381,7 +381,7 @@ export default function Grid2() {
                                             <div className="d-flex gap-3 align-items-center py-1">
                                                 <div className="rounded-circle overflow-hidden" style={{ width: "32px", height: "32px" }}>
                                                     {data.assignee.avatar ? (
-                                                        <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/assets/images/common/avatar/${data.assignee.avatar}')` }}></span>
+                                                        <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.assignee.avatar}')` }}></span>
                                                     ) : (
                                                         <span className={`e-avatar e-avatar-circle e-avatar-small ${data.assignee.colorTheme === "Red" ? "bg-danger-subtle text-danger" : data.assignee.colorTheme === "Green" ? "bg-success-subtle text-success" : data.assignee.colorTheme === "Blue" ? "bg-info-subtle text-info" : data.assignee.colorTheme === "Orange" ? "bg-warning-subtle text-warning" : ""}`}>{data.assignee.initial}</span>
                                                     )}
@@ -398,7 +398,7 @@ export default function Grid2() {
                                             <div className="d-flex gap-3 align-items-center">
                                                 <div className="rounded-circle overflow-hidden" style={{ width: "32px", height: "32px" }}>
                                                     {data.createdBy.avatar ? (
-                                                        <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/assets/images/common/avatar/${data.createdBy.avatar}')` }}></span>
+                                                        <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.createdBy.avatar}')` }}></span>
                                                     ) : (
                                                         <span className={`e-avatar e-avatar-circle e-avatar-small ${data.createdBy.colorTheme === "Red" ? "bg-danger-subtle text-danger" : data.createdBy.colorTheme === "Green" ? "bg-success-subtle text-success" : data.createdBy.colorTheme === "Blue" ? "bg-info-subtle text-info" : data.createdBy.colorTheme === "Orange" ? "bg-warning-subtle text-warning" : ""}`}>{data.createdBy.initial}</span>
                                                     )}
