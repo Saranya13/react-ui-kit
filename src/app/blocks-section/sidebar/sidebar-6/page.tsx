@@ -104,7 +104,7 @@ export default function Sidebar6() {
                                     <div>
                                         <div className="flex items-center justify-between py-4 px-3">
                                             <div className="flex items-center">
-                                                <Image src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                                <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                                 <div className="ml-3">
                                                     <div className="text-base font-medium leading-normal text-gray-900 dark:text-white">John Wick</div>
                                                     <p className="mb-0 text-gray-900 dark:text-white">johnwick&#64;123.com</p>
@@ -163,7 +163,7 @@ export default function Sidebar6() {
                                     <div>
                                         <div className="d-flex align-items-center justify-content-between p-3">
                                             <div className="d-flex align-items-center">
-                                                <Image src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                                <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                                 <div className="ms-2">
                                                     <div className="fs-6 fw-medium text-body">John Wick</div>
                                                     <p className="mb-0 text-body-secondary">johnwick&#64;123.com</p>

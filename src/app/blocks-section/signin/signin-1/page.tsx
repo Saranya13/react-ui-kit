@@ -41,7 +41,7 @@ export default function Signin1() {
                         <div className="flex items-center justify-center md:min-h-screen">
                             <div className="w-full max-w-md rounded-lg px-4 py-14 md:px-6 md:py-20">
                                 <div className="flex justify-center mb-6">
-                                    <Image className="mr-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                    <Image className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                     <h2 className="text-center text-gray-900 dark:text-white text-xl font-semibold">Company Name</h2>
                                 </div>
                                 <h2 className="text-2xl font-semibold text-gray-900 dark:text-white text-center mb-2">Sign in</h2>
@@ -74,11 +74,11 @@ export default function Signin1() {
                                     </div>
                                     <div className="flex items-center justify-center pt-10 gap-4 flex-col">
                                         <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit">
-                                            <Image src="/react-ui-kit/assets/images/common/brand-logos/png/google.png" width={16} height={16} alt="google image" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/google.png" width={16} height={16} alt="google image" />
                                             <span className="text-base pl-2.5">Sign in with Google</span>
                                         </ButtonComponent>
                                         <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit">
-                                            <Image src="/react-ui-kit/assets/images/common/brand-logos/png/microsoft.png" width={16} height={16} alt="microsoft image" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/microsoft.png" width={16} height={16} alt="microsoft image" />
                                             <span className="text-base pl-2.5">Sign in with Microsoft</span>
                                         </ButtonComponent>
                                     </div>
@@ -92,7 +92,7 @@ export default function Signin1() {
                     <section className="d-flex justify-content-center min-vh-100 bg-body">
                         <div className="max-w-lg bg-body rounded-lg p-4 py-5 w-100" style={{ maxWidth: '508px' }}>
                             <div className="d-flex justify-content-center align-items-center mb-4">
-                                <Image className="me-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="logo" />
+                                <Image className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="logo" />
                                 <h5 className="text-center fw-bold mb-0 fs-5 text-body">Company name</h5>
                             </div>
                             <div className="mb-4 text-center">
@@ -127,11 +127,11 @@ export default function Signin1() {
                                 </div>
                                 <div className="d-flex flex-column mt-3 align-items-center justify-content-center gap-3">
                                     <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit">
-                                        <Image src="/react-ui-kit/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
+                                        <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
                                         <span className="fs-6 fw-medium" style={{ paddingLeft: '8px' }}>Sign in with Google</span>
                                     </ButtonComponent>
                                     <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit">
-                                        <Image src="/react-ui-kit/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
+                                        <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
                                         <span className="fs-6 fw-medium" style={{ paddingLeft: '8px' }}>Sign in with Microsoft</span>
                                     </ButtonComponent>
                                 </div>

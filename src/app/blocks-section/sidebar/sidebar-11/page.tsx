@@ -96,7 +96,7 @@ export default function Sidebar11() {
                                         <div className="e-list-wrapper flex items-center">
                                             <span className="flex items-center">
                                                 <span className="e-avatar e-avatar-xsmall e-avatar-circle">
-                                                    <Image src={`/react-ui-kit/assets/images/common/avatar/${data.profileImage}`} width={24} height={24} alt="profile" />
+                                                    <Image src={`/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.profileImage}`} width={24} height={24} alt="profile" />
                                                 </span>
                                                 <span className="text-base text-gray-700 dark:text-gray-300 ml-3">{data.name}</span>
                                             </span>
@@ -135,7 +135,7 @@ export default function Sidebar11() {
                                         <div className="e-list-wrapper d-flex justify-content-between align-items-center">
                                             <span className="d-flex align-items-center">
                                                 <span className="e-avatar e-avatar-xsmall e-avatar-circle">
-                                                    <Image src={`/react-ui-kit/assets/images/common/avatar/${data.profileImage}`} width={24} height={24} alt="profile" />
+                                                    <Image src={`/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.profileImage}`} width={24} height={24} alt="profile" />
                                                 </span>
                                                 <span className="fs-6 fw-normal ps-2 ms-1">{data.name}</span>
                                             </span>

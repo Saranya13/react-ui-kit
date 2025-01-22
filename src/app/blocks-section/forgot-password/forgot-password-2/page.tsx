@@ -40,7 +40,7 @@ export default function ForgetPassword2() {
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="flex flex-col lg:flex-row" style={{ minHeight: '580px' }}>
                             <div className="w-full lg:w-7/12 p-0">
-                                <Image className="w-full h-full object-cover" src="/react-ui-kit/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
+                                <Image className="w-full h-full object-cover" src="/react/essential-ui-kit/blocks/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
                             </div>
                             <div className="w-full lg:w-5/12 p-0">
                                 <div className="bg-gray-50 dark:bg-gray-950">
@@ -48,7 +48,7 @@ export default function ForgetPassword2() {
                                         <div className="w-full max-w-md rounded-lg p-4 py-12">
                                             <div className="flex justify-center mb-6">
                                                 <div className="flex items-center justify-center">
-                                                    <Image className="mr-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                                    <Image className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                                     <h2 className="text-center text-xl font-semibold text-gray-900 dark:text-white">Company Name</h2>
                                                 </div>
                                             </div>
@@ -79,14 +79,14 @@ export default function ForgetPassword2() {
                     <section>
                         <div className="d-flex flex-column flex-lg-row" style={{ minHeight: '580px' }}>
                             <div className="col-12 col-lg-7 p-0">
-                                <Image className="img-fluid w-100 h-100 object-fit-cover" src="/react-ui-kit/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
+                                <Image className="img-fluid w-100 h-100 object-fit-cover" src="/react/essential-ui-kit/blocks/assets/images/authentication/split-screen/split-screen.png" alt="image" width={32} height={32} sizes="100vw" />
                             </div>
                             <div className="col-12 col-lg-5 p-0">
                                 <div className="d-flex justify-content-center bg-body">
                                     <div className="max-w-md bg-body rounded-lg p-4 py-5 w-100" style={{ maxWidth: '450px' }}>
                                         <div className="d-flex justify-content-center mb-4">
                                             <div className="d-flex align-items-center">
-                                                <Image className="me-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                                <Image className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                                 <h2 className="text-center fs-5 fw-bold mb-0 text-body">Company Name</h2>
                                             </div>
                                         </div>

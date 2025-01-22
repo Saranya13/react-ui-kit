@@ -11,7 +11,7 @@
 .main-container-header {
     padding: 32px 35px;
     justify-content: space-between;
-    background: url("/react-ui-kit/assets/images/sample-browser/main-banner.png") no-repeat 45% 100% / cover;
+    background: url("/react/essential-ui-kit/blocks/assets/images/sample-browser/main-banner.png") no-repeat 45% 100% / cover;
 }
 
 .main-title {

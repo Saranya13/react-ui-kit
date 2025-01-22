@@ -41,7 +41,7 @@ export default function SigninOTP1() {
                         <div className="flex justify-center min-h-screen">
                             <div className="w-full max-w-md rounded-lg p-4 py-12">
                                 <div className="flex justify-center mb-6">
-                                    <Image className="mr-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                    <Image className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                     <h2 className="text-center text-gray-900 dark:text-white text-xl font-semibold">Company Name</h2>
                                 </div>
                                 <h2 className="text-2xl font-semibold text-center text-gray-900 dark:text-white mb-2">Enter OTP</h2>
@@ -67,7 +67,7 @@ export default function SigninOTP1() {
                     <section className="d-flex justify-content-center bg-body min-vh-100">
                         <div className="bg-body rounded-lg p-4 py-5 w-100" style={{ maxWidth: "450px" }}>
                             <div className="d-flex justify-content-center align-items-center mb-4">
-                                <Image className="me-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                <Image className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                 <h2 className="text-center text-body fs-5 fw-bold mb-0">Company Name</h2>
                             </div>
                             <h2 className="text-center fs-4 text-body fw-bold mb-2">Enter OTP</h2>

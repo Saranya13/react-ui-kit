@@ -65,7 +65,7 @@ export default function Navbar3() {
                             <div className="border border-r-0 border-l-0 border-gray-200 dark:border-gray-600 bg-gray-100 dark:bg-gray-700">
                                 <div className="flex items-center justify-between ms-6 me-2 lg:me-3 py-1">
                                     <div className="flex items-center">
-                                        <Image className="mr-3 h-7" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={28} height={28} alt="company logo" />
+                                        <Image className="mr-3 h-7" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={28} height={28} alt="company logo" />
                                         <span className="text-lg font-semibold text-gray-900 dark:text-white">Company Name</span>
                                     </div>
                                     <div className="flex items-center">
@@ -101,7 +101,7 @@ export default function Navbar3() {
                         <div className="border border-start-0 border-end-0 border-light-subtle bg-body-tertiary">
                             <div className="d-flex align-items-center justify-content-between py-1 ps-4 pe-2 pe-lg-4">
                                 <div className="d-flex align-items-center">
-                                    <Image className="me-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                    <Image className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                     <h5 className="fw-bold text-body fs-5 mb-0">Company Name</h5>
                                 </div>
                                 <div className="d-flex align-items-center">

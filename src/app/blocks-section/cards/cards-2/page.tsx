@@ -41,7 +41,7 @@ export default function Card2() {
                                 <div className="e-card rounded-lg gap-2 pb-2 e-bigger justify-start">
                                     <div className="e-card-header">
                                         <div className="e-card-image overflow-hidden rounded-lg h-52">
-                                            <Image src="/react-ui-kit/assets/images/card/image-title-description-card/fashion-trends.jpg" layout="fill" objectFit="cover" alt="fashion trends" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-title-description-card/fashion-trends.jpg" layout="fill" objectFit="cover" alt="fashion trends" />
                                         </div>
                                     </div>
                                     <div className="e-card-content flex-1">
@@ -52,7 +52,7 @@ export default function Card2() {
                                 <div className="e-card rounded-lg gap-2 pb-2 e-bigger justify-start">
                                     <div className="e-card-header">
                                         <div className="e-card-image overflow-hidden rounded-lg h-52">
-                                            <Image src="/react-ui-kit/assets/images/card/image-title-description-card/ultimate-workouts.jpg" layout="fill" objectFit="cover" alt="ultimate workouts" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-title-description-card/ultimate-workouts.jpg" layout="fill" objectFit="cover" alt="ultimate workouts" />
                                         </div>
                                     </div>
                                     <div className="e-card-content flex-1">
@@ -63,7 +63,7 @@ export default function Card2() {
                                 <div className="e-card rounded-lg gap-2 pb-2 e-bigger justify-start">
                                     <div className="e-card-header">
                                         <div className="e-card-image overflow-hidden rounded-lg h-52">
-                                            <Image src="/react-ui-kit/assets/images/card/image-title-description-card/tech-innovations.jpg" layout="fill" objectFit="cover" alt="tech innovations" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-title-description-card/tech-innovations.jpg" layout="fill" objectFit="cover" alt="tech innovations" />
                                         </div>
                                     </div>
                                     <div className="e-card-content flex-1">
@@ -84,7 +84,7 @@ export default function Card2() {
                                     <div className="e-card e-bigger rounded-3 justify-content-start">
                                         <div className="e-card-header">
                                             <div className="e-card-image rounded-3 overflow-hidden justify-content-start" style={{ height: "198px" }}>
-                                                <Image src="/react-ui-kit/assets/images/card/image-title-description-card/fashion-trends.jpg" layout="fill" objectFit="cover" alt="fashion trends" />
+                                                <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-title-description-card/fashion-trends.jpg" layout="fill" objectFit="cover" alt="fashion trends" />
                                             </div>
                                         </div>
                                         <div className="e-card-stacked flex-grow-1 p-2">
@@ -99,7 +99,7 @@ export default function Card2() {
                                     <div className="e-card e-bigger rounded-3 justify-content-start">
                                         <div className="e-card-header">
                                             <div className="e-card-image rounded-3 overflow-hidden justify-content-start" style={{ height: "198px" }}>
-                                                <Image src="/react-ui-kit/assets/images/card/image-title-description-card/ultimate-workouts.jpg" layout="fill" objectFit="cover" alt="ultimate workouts" />
+                                                <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-title-description-card/ultimate-workouts.jpg" layout="fill" objectFit="cover" alt="ultimate workouts" />
                                             </div>
                                         </div>
                                         <div className="e-card-stacked flex-grow-1 p-2">
@@ -114,7 +114,7 @@ export default function Card2() {
                                     <div className="e-card e-bigger rounded-3 justify-content-start">
                                         <div className="e-card-header">
                                             <div className="e-card-image rounded-3 overflow-hidden justify-content-start" style={{ height: "198px" }}>
-                                                <Image src="/react-ui-kit/assets/images/card/image-title-description-card/tech-innovations.jpg" layout="fill" objectFit="cover" alt="tech innovations" />
+                                                <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-title-description-card/tech-innovations.jpg" layout="fill" objectFit="cover" alt="tech innovations" />
                                             </div>
                                         </div>
                                         <div className="e-card-stacked flex-grow-1 p-2">

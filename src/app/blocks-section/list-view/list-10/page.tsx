@@ -98,7 +98,7 @@ export default function List10() {
                                         <div className="flex justify-between">
                                             <div className="flex w-full">
                                                 <span className="shrink-0">
-                                                    <Image className="rounded-md" src={`/react-ui-kit/assets/images/listview/task-management/${data.logo}`} width={48} height={48} alt="brand logo" />
+                                                    <Image className="rounded-md" src={`/react/essential-ui-kit/blocks/assets/images/listview/task-management/${data.logo}`} width={48} height={48} alt="brand logo" />
                                                 </span>
                                                 <span className="ml-4 w-11/12">
                                                     <div className="flex justify-between">
@@ -111,7 +111,7 @@ export default function List10() {
                                                             </span>
                                                         </div>
                                                         <span className="e-avatar e-avatar-circle shrink-0 ml-4">
-                                                            <Image src={`/react-ui-kit/assets/images/common/avatar/${data.image}`} width={40} height={40} alt="brand logo" />
+                                                            <Image src={`/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.image}`} width={40} height={40} alt="brand logo" />
                                                         </span>
                                                     </div>
                                                 </span>
@@ -132,7 +132,7 @@ export default function List10() {
                                     <div className="e-list-wrapper e-list-multi-line py-3 px-2 px-sm-3">
                                         <div className="d-flex justify-content-between">
                                             <span className="flex-shrink-0">
-                                                <Image className="rounded-2" src={`/react-ui-kit/assets/images/listview/task-management/${data.logo}`} width={48} height={48} alt="brand logo" />
+                                                <Image className="rounded-2" src={`/react/essential-ui-kit/blocks/assets/images/listview/task-management/${data.logo}`} width={48} height={48} alt="brand logo" />
                                             </span>
                                             <div className="flex-grow-1">
                                                 <div className="d-flex justify-content-between">
@@ -145,7 +145,7 @@ export default function List10() {
                                                         </span>
                                                     </div>
                                                     <span className="e-avatar e-avatar-circle flex-shrink-0">
-                                                        <Image src={`/react-ui-kit/assets/images/common/avatar/${data.image}`} width={40} height={40} alt="profile" />
+                                                        <Image src={`/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.image}`} width={40} height={40} alt="profile" />
                                                     </span>
                                                 </div>
                                             </div>

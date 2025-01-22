@@ -255,7 +255,7 @@ export default function Grid3() {
                                         template={(data: any) => (
                                             <div className="flex gap-3 items-center py-1.5">
                                                 <div className="w-8 h-8">
-                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.customerDetails.avatar}')` }}></span>
+                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.customerDetails.avatar}')` }}></span>
                                                 </div>
                                                 <div className="flex flex-col text-sm">
                                                     <p className="text-gray-900 dark:text-gray-50">{data.customerDetails.name}</p>
@@ -338,7 +338,7 @@ export default function Grid3() {
                                         template={(data: any) => (
                                             <div className="d-flex gap-3 align-items-center py-1">
                                                 <div className="rounded-circle overflow-hidden" style={{ width: "32px", height: "32px" }}>
-                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.customerDetails.avatar}')` }}></span>
+                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.customerDetails.avatar}')` }}></span>
                                                 </div>
                                                 <div className="d-flex flex-column">
                                                     <p className="text-body mb-0">{data.customerDetails.name}</p>

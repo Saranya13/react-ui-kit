@@ -39,7 +39,7 @@ export default function ForgetPassword3() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="flex flex-col lg:flex-row mx-auto p-0" style={{ minHeight: '580px' }}>
-                            <div className="w-full lg:w-7/12 px-6 py-14 bg-green-600 text-white flex items-center" style={{ backgroundImage: "url('/react-ui-kit/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+                            <div className="w-full lg:w-7/12 px-6 py-14 bg-green-600 text-white flex items-center" style={{ backgroundImage: "url('/react/essential-ui-kit/blocks/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                                 <div className="flex flex-wrap mx-0 w-full sm:p-6 xl:p-0 md:p-8 lg:px-6">
                                     <div className="hidden xl:block xl:w-1/6"></div>
                                     <div className="w-full xl:w-2/3">
@@ -75,7 +75,7 @@ export default function ForgetPassword3() {
                                     <div className="w-full max-w-md rounded-lg p-4 py-12">
                                         <div className="flex justify-center mb-6">
                                             <div className="flex items-center justify-center">
-                                                <Image className="mr-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                                <Image className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                                 <h2 className="text-center text-xl font-semibold text-gray-900 dark:text-white">Company Name</h2>
                                             </div>
                                         </div>
@@ -103,7 +103,7 @@ export default function ForgetPassword3() {
             case 'bootstrap5':
                 return (
                     <section className="container-fluid d-md-flex d-block flex-wrap mx-auto p-0" style={{ minHeight: '580px' }}>
-                        <div className="col-12 col-lg-7 d-flex align-items-center bg-success p-4 p-lg-4" style={{ backgroundImage: "url('/react-ui-kit/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+                        <div className="col-12 col-lg-7 d-flex align-items-center bg-success p-4 p-lg-4" style={{ backgroundImage: "url('/react/essential-ui-kit/blocks/assets/images/authentication/feature-list/feature-list.png')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                             <div className="row mx-0 w-100 py-5">
                                 <div className="col-xl-2 d-lg-block"></div>
                                 <div className="col-xl-8">
@@ -139,7 +139,7 @@ export default function ForgetPassword3() {
                                 <div className="max-w-md bg-body rounded-lg p-4 py-5 w-100" style={{ maxWidth: '450px' }}>
                                     <div className="d-flex justify-content-center mb-4">
                                         <div className="d-flex align-items-center">
-                                            <Image className="me-2" src="/react-ui-kit/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                            <Image className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                             <h2 className="text-center fs-5 fw-bold mb-0 text-body">Company Name</h2>
                                         </div>
                                     </div>

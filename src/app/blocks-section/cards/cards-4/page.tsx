@@ -40,7 +40,7 @@ export default function Card4() {
                             <div className="grid gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:gap-10">
                                 <div className="e-card e-bigger rounded-lg pb-2 justify-start">
                                     <div className="e-card-header items-center">
-                                        <span className="e-avatar e-avatar-circle e-avatar-large" style={{ backgroundImage: "url(/react-ui-kit/assets/images/common/avatar/avatar-5.jpg)" }}></span>
+                                        <span className="e-avatar e-avatar-circle e-avatar-large" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-5.jpg)" }}></span>
                                         <div className="e-card-header-caption !pl-3">
                                             <div className="e-card-header-title">
                                                 <p className="text-lg font-semibold text-gray-950 dark:text-gray-50 truncate">John Wick</p>
@@ -52,7 +52,7 @@ export default function Card4() {
                                     </div>
                                     <div className="e-card-content flex-1">
                                         <div className="e-card-image mb-6 overflow-hidden rounded-lg h-52">
-                                            <Image src="/react-ui-kit/assets/images/card/author-highlight-card/local-gems.jpg" layout="fill" objectFit="cover" alt="local gems" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/local-gems.jpg" layout="fill" objectFit="cover" alt="local gems" />
                                         </div>
                                         <h1 className="mb-3 text-xl font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Local Gems</h1>
                                         <p className="text-base dark:text-gray-200">Uncover the best-kept secrets in your area with our guide to local hotspots. Whether it's a cozy cafe, a charming bookstore, or a hidden park, find new places to explore and enjoy.</p>
@@ -60,7 +60,7 @@ export default function Card4() {
                                 </div>
                                 <div className="e-card e-bigger rounded-lg pb-2 justify-start">
                                     <div className="e-card-header items-center">
-                                        <span className="e-avatar e-avatar-circle e-avatar-large" style={{ backgroundImage: "url(/react-ui-kit/assets/images/common/avatar/avatar-3.jpg)" }}></span>
+                                        <span className="e-avatar e-avatar-circle e-avatar-large" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-3.jpg)" }}></span>
                                         <div className="e-card-header-caption !pl-3">
                                             <div className="e-card-header-title">
                                                 <p className="text-lg font-semibold text-gray-950 dark:text-gray-50 truncate">Anthony Star</p>
@@ -72,7 +72,7 @@ export default function Card4() {
                                     </div>
                                     <div className="e-card-content flex-1">
                                         <div className="e-card-image mb-6 overflow-hidden rounded-lg h-52">
-                                            <Image src="/react-ui-kit/assets/images/card/author-highlight-card/quick-recipes.jpg" layout="fill" objectFit="cover" alt="quick recipes" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/quick-recipes.jpg" layout="fill" objectFit="cover" alt="quick recipes" />
                                         </div>
                                         <h1 className="mb-3 text-xl font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Quick Recipes</h1>
                                         <p className="text-base dark:text-gray-200">Whip up tasty meals with minimal effort using our quick and easy recipes. Ideal for busy weeknights or last-minute dinners, these recipes feature simple ingredients.</p>
@@ -80,7 +80,7 @@ export default function Card4() {
                                 </div>
                                 <div className="e-card e-bigger rounded-lg pb-2 justify-start">
                                     <div className="e-card-header items-center">
-                                        <span className="e-avatar e-avatar-circle e-avatar-large" style={{ backgroundImage: "url(/react-ui-kit/assets/images/common/avatar/avatar-4.jpg)" }}></span>
+                                        <span className="e-avatar e-avatar-circle e-avatar-large" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-4.jpg)" }}></span>
                                         <div className="e-card-header-caption !pl-3">
                                             <div className="e-card-header-title">
                                                 <p className="text-lg font-semibold text-gray-950 dark:text-gray-50 truncate">Patrick Mullan</p>
@@ -92,7 +92,7 @@ export default function Card4() {
                                     </div>
                                     <div className="e-card-content flex-1">
                                         <div className="e-card-image mb-6 overflow-hidden rounded-lg h-52">
-                                            <Image src="/react-ui-kit/assets/images/card/author-highlight-card/effective-study.jpg" layout="fill" objectFit="cover" alt="effective study" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/effective-study.jpg" layout="fill" objectFit="cover" alt="effective study" />
                                         </div>
                                         <h1 className="mb-3 text-xl font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Effective Study</h1>
                                         <p className="text-base dark:text-gray-200">Enhance your study sessions with proven strategies to improve focus and retention. Learn time management techniques and active learning methods.</p>
@@ -110,7 +110,7 @@ export default function Card4() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3">
                                         <div className="e-card-header align-items-center mb-2">
-                                            <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/react-ui-kit/assets/images/common/avatar/avatar-5.jpg)" }}></span>
+                                            <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-5.jpg)" }}></span>
                                             <div className="e-card-header-caption">
                                                 <div className="e-card-header-title text-body">
                                                     <p className="h6 fw-bold mb-0 text-truncate">John Wick</p>
@@ -122,7 +122,7 @@ export default function Card4() {
                                         </div>
                                         <div className="e-card-content flex-grow-1 text-body">
                                             <div className="e-card-image mb-4 rounded-3 overflow-hidden" style={{ height: "198px" }}>
-                                                <Image src="/react-ui-kit/assets/images/card/author-highlight-card/local-gems.jpg" layout="fill" objectFit="cover" alt="local gems" />
+                                                <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/local-gems.jpg" layout="fill" objectFit="cover" alt="local gems" />
                                             </div>
                                             <h4 className="fw-bold mb-2 px-2 lh-sm text-truncate">Local Gems</h4>
                                             <p className="fs-6 mb-2 px-2">Uncover the best-kept secrets in your area with our guide to local hotspots. Whether it's a cozy cafe, a charming bookstore, or a hidden park, find new places to explore and enjoy.</p>
@@ -132,7 +132,7 @@ export default function Card4() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3">
                                         <div className="e-card-header align-items-center mb-2">
-                                            <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/react-ui-kit/assets/images/common/avatar/avatar-3.jpg)" }}></span>
+                                            <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-3.jpg)" }}></span>
                                             <div className="e-card-header-caption">
                                                 <div className="e-card-header-title text-body">
                                                     <p className="h6 fw-bold mb-0 text-truncate">Anthony Star</p>
@@ -144,7 +144,7 @@ export default function Card4() {
                                         </div>
                                         <div className="e-card-content flex-grow-1 text-body">
                                             <div className="e-card-image mb-4 rounded-3 overflow-hidden" style={{ height: "198px" }}>
-                                                <Image src="/react-ui-kit/assets/images/card/author-highlight-card/quick-recipes.jpg" layout="fill" objectFit="cover" alt="quick recipes" />
+                                                <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/quick-recipes.jpg" layout="fill" objectFit="cover" alt="quick recipes" />
                                             </div>
                                             <h4 className="fw-bold mb-2 px-2 lh-sm text-truncate">Quick Recipes</h4>
                                             <p className="fs-6 mb-2 px-2">Whip up tasty meals with minimal effort using our quick and easy recipes. Ideal for busy weeknights or last-minute dinners, these recipes feature simple ingredients.</p>
@@ -154,7 +154,7 @@ export default function Card4() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3">
                                         <div className="e-card-header align-items-center mb-2">
-                                            <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/react-ui-kit/assets/images/common/avatar/avatar-4.jpg)" }}></span>
+                                            <span className="e-avatar e-avatar-large e-avatar-circle" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-4.jpg)" }}></span>
                                             <div className="e-card-header-caption">
                                                 <div className="e-card-header-title text-body">
                                                     <p className="h6 fw-bold mb-0 text-truncate">Patrick Mullan</p>
@@ -166,7 +166,7 @@ export default function Card4() {
                                         </div>
                                         <div className="e-card-content flex-grow-1 text-body">
                                             <div className="e-card-image mb-4 rounded-3 overflow-hidden" style={{ height: "198px" }}>
-                                                <Image src="/react-ui-kit/assets/images/card/author-highlight-card/effective-study.jpg" layout="fill" objectFit="cover" alt="effective study" />
+                                                <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/effective-study.jpg" layout="fill" objectFit="cover" alt="effective study" />
                                             </div>
                                             <h4 className="fw-bold mb-2 px-2 lh-sm text-truncate">Effective Study</h4>
                                             <p className="fs-6 mb-2 px-2">Enhance your study sessions with proven strategies to improve focus and retention. Learn time management techniques and active learning methods.</p>

@@ -286,7 +286,7 @@ export default function Grid1() {
                                         template={(data: any) => (
                                             <div className="flex items-center gap-3">
                                                 <div className="w-8 h-8">
-                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.assignee.avatar}')` }}></span>
+                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.assignee.avatar}')` }}></span>
                                                 </div>
                                                 <div className="text-sm text-gray-900 dark:text-gray-50">{data.assignee.name}</div>
                                             </div>
@@ -357,7 +357,7 @@ export default function Grid1() {
                                         template={(data: any) => (
                                             <div className="d-flex align-items-center gap-3">
                                                 <div className="rounded-circle overflow-hidden" style={{ width: "32px", height: "32px" }}>
-                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.assignee.avatar}')` }}></span>
+                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.assignee.avatar}')` }}></span>
                                                 </div>
                                                 <div className="text-body">{data.assignee.name}</div>
                                             </div>

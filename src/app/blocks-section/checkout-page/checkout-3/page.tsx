@@ -89,7 +89,7 @@ export default function Checkout3() {
                                     <ColumnsDirective>
                                         <ColumnDirective field="Items" width="56" textAlign="Center" template={({ image })=> (
                                             <div className="flex items-center justify-center">
-                                                <Image className="rounded-lg" src={`/react-ui-kit/assets/images/checkout/checkout-product-list/${image}`} width={32} height={32} alt="product image" />
+                                                <Image className="rounded-lg" src={`/react/essential-ui-kit/blocks/assets/images/checkout/checkout-product-list/${image}`} width={32} height={32} alt="product image" />
                                             </div>
                                             )}
                                         />
@@ -230,7 +230,7 @@ export default function Checkout3() {
                                         <ColumnsDirective>
                                             <ColumnDirective field="Items" width="56" textAlign="Center" template={({ image })=> (
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <Image className="rounded-3 ms-1" src={`/react-ui-kit/assets/images/checkout/checkout-product-list/${image}`} width={32} height={32} alt="product image" />
+                                                    <Image className="rounded-3 ms-1" src={`/react/essential-ui-kit/blocks/assets/images/checkout/checkout-product-list/${image}`} width={32} height={32} alt="product image" />
                                                 </div>
                                                 )}
                                             />

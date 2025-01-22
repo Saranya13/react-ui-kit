@@ -308,7 +308,7 @@ export default function Grid7() {
                                         template={(data: any) => (
                                             <div className="flex items-center gap-3">
                                                 <div className="w-10 h-10">
-                                                    <Image className="rounded" src={`/react-ui-kit/assets/images/advance-grid/sales-transactions-table/${data.product.image}`} width={40} height={40} alt="product image" />
+                                                    <Image className="rounded" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/sales-transactions-table/${data.product.image}`} width={40} height={40} alt="product image" />
                                                 </div>
                                                 <p>{data.product.name}</p>
                                             </div>
@@ -321,7 +321,7 @@ export default function Grid7() {
                                         template={(data: any) => (
                                             <div className="flex items-center gap-3">
                                                 <div className="w-8 h-8">
-                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.salesRep.avatar}')` }}></span>
+                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.salesRep.avatar}')` }}></span>
                                                 </div>
                                                 <p>{data.salesRep.name}</p>
                                             </div>
@@ -381,7 +381,7 @@ export default function Grid7() {
                                         template={(data: any) => (
                                             <div className="d-flex align-items-center gap-3">
                                                 <div style={{ width: "40px", height: "40px" }}>
-                                                    <Image className="rounded" src={`/react-ui-kit/assets/images/advance-grid/sales-transactions-table/${data.product.image}`} width={40} height={40} alt="product image" />
+                                                    <Image className="rounded" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/sales-transactions-table/${data.product.image}`} width={40} height={40} alt="product image" />
                                                 </div>
                                                 <p className="mb-0">{data.product.name}</p>
                                             </div>
@@ -394,7 +394,7 @@ export default function Grid7() {
                                         template={(data: any) => (
                                             <div className="d-flex align-items-center gap-3">
                                                 <div style={{ width: "32px", height: "32px" }}>
-                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react-ui-kit/assets/images/common/avatar/${data.salesRep.avatar}')` }}></span>
+                                                    <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.salesRep.avatar}')` }}></span>
                                                 </div>
                                                 <p className="mb-0">{data.salesRep.name}</p>
                                             </div>

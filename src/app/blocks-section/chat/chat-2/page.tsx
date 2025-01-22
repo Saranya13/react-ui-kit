@@ -153,7 +153,7 @@ export default function Chat2() {
                                     <div className="flex items-center">
                                         <span className="flex items-center gap-3">
                                             <div className="relative h-8">
-                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: "url(/react-ui-kit/assets/images/common/avatar/avatar-3.jpg)" }}></span>
+                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-3.jpg)" }}></span>
                                                 <div className="w-3 h-3 rounded-full bg-green-700 dark:bg-green-500 absolute border border-white dark:border-black" style={{ bottom: "-2px", right: "-2px" }}></div>
                                             </div>
                                             <span className="text-base font-semibold text-gray-900 dark:text-white">Mark Davis</span>
@@ -193,7 +193,7 @@ export default function Chat2() {
                                                     <div className="flex justify-start gap-3 items-start sm:w-11/12">
                                                         {data.avatar && (
                                                             <div>
-                                                                <span className="e-avatar e-avatar-circle e-avatar-small shrink-0" style={{ backgroundImage: `url(/react-ui-kit/assets/images/common/avatar/${data.avatar})` }}></span>
+                                                                <span className="e-avatar e-avatar-circle e-avatar-small shrink-0" style={{ backgroundImage: `url(/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar})` }}></span>
                                                             </div>
                                                         )}
                                                         <div className="flex flex-col gap-1">
@@ -224,7 +224,7 @@ export default function Chat2() {
                                                 <div className="flex justify-start gap-2 items-start">
                                                     {data.avatar && (
                                                         <div>
-                                                            <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react-ui-kit/assets/images/common/avatar/${data.avatar})` }}></span>
+                                                            <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar})` }}></span>
                                                         </div>
                                                     )}
                                                     <div className="flex flex-col gap-1">
@@ -240,7 +240,7 @@ export default function Chat2() {
                                                 <div className="flex justify-start gap-2 items-start">
                                                     {data.avatar && (
                                                         <div>
-                                                            <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react-ui-kit/assets/images/common/avatar/${data.avatar})` }}></span>
+                                                            <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar})` }}></span>
                                                         </div>
                                                     )}
                                                     <div className="flex flex-col gap-1">
@@ -269,7 +269,7 @@ export default function Chat2() {
                                     <div className="d-flex align-items-center">
                                         <span className="d-flex align-items-center gap-3">
                                             <div className="position-relative" style={{ height: "32px" }}>
-                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: "url(/react-ui-kit/assets/images/common/avatar/avatar-3.jpg)" }}></span>
+                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-3.jpg)" }}></span>
                                                 <div className="position-absolute bg-success border border-light rounded-circle p-1" style={{ bottom: "-1px", right: "-1px" }}></div>
                                             </div>
                                             <span className="h6 mb-0 text-body">Mark Davis</span>
@@ -308,7 +308,7 @@ export default function Chat2() {
                                                     <div className="d-flex justify-content-start gap-2 align-items-start me-sm-3">
                                                         {data.avatar && (
                                                             <div>
-                                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react-ui-kit/assets/images/common/avatar/${data.avatar})` }}></span>
+                                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar})` }}></span>
                                                             </div>
                                                         )}
                                                         <div className="d-flex flex-column gap-1">
@@ -341,7 +341,7 @@ export default function Chat2() {
                                                     <div className="d-flex justify-content-start gap-2 align-items-start">
                                                         {data.avatar && (
                                                             <div>
-                                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react-ui-kit/assets/images/common/avatar/${data.avatar})` }}></span>
+                                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar})` }}></span>
                                                             </div>
                                                         )}
                                                         <div className="d-flex flex-column gap-1">
@@ -357,7 +357,7 @@ export default function Chat2() {
                                                     <div className="d-flex justify-content-start gap-2 align-items-start">
                                                         {data.avatar && (
                                                             <div>
-                                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react-ui-kit/assets/images/common/avatar/${data.avatar})` }}></span>
+                                                                <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url(/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar})` }}></span>
                                                             </div>
                                                         )}
                                                         <div className="d-flex flex-column gap-1">

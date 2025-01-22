@@ -40,7 +40,7 @@ export default function Card13() {
                             <div className="grid gap-8 lg:grid-cols-2 xl:gap-10">
                                 <div className="e-card rounded-lg sm:flex-row-reverse e-bigger">
                                     <div className="relative sm:w-52 h-52 sm:h-auto shrink-0">
-                                        <Image src="/react-ui-kit/assets/images/card/highlighted-feature-card/urban-oasis.jpg" layout="fill" objectFit="cover" alt="urban oasis" />
+                                        <Image src="/react/essential-ui-kit/blocks/assets/images/card/highlighted-feature-card/urban-oasis.jpg" layout="fill" objectFit="cover" alt="urban oasis" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
                                         <div className="e-card-header">
@@ -56,7 +56,7 @@ export default function Card13() {
                                 </div>
                                 <div className="e-card rounded-lg sm:flex-row-reverse e-bigger">
                                     <div className="relative sm:w-52 h-52 sm:h-auto shrink-0">
-                                        <Image src="/react-ui-kit/assets/images/card/highlighted-feature-card/exotic-wildlife.jpg" layout="fill" objectFit="cover" alt="exotic wildlife safaris" />
+                                        <Image src="/react/essential-ui-kit/blocks/assets/images/card/highlighted-feature-card/exotic-wildlife.jpg" layout="fill" objectFit="cover" alt="exotic wildlife safaris" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
                                         <div className="e-card-header">
@@ -72,7 +72,7 @@ export default function Card13() {
                                 </div>
                                 <div className="e-card rounded-lg sm:flex-row-reverse e-bigger">
                                     <div className="relative sm:w-52 h-52 sm:h-auto shrink-0">
-                                        <Image src="/react-ui-kit/assets/images/card/highlighted-feature-card/island-getaways.jpg" layout="fill" objectFit="cover" alt="island getaways" />
+                                        <Image src="/react/essential-ui-kit/blocks/assets/images/card/highlighted-feature-card/island-getaways.jpg" layout="fill" objectFit="cover" alt="island getaways" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
                                         <div className="e-card-header">
@@ -88,7 +88,7 @@ export default function Card13() {
                                 </div>
                                 <div className="e-card rounded-lg sm:flex-row-reverse e-bigger">
                                     <div className="relative sm:w-52 h-52 sm:h-auto shrink-0">
-                                        <Image src="/react-ui-kit/assets/images/card/highlighted-feature-card/boutique-hotels.jpg" layout="fill" objectFit="cover" alt="boutique hotels" />
+                                        <Image src="/react/essential-ui-kit/blocks/assets/images/card/highlighted-feature-card/boutique-hotels.jpg" layout="fill" objectFit="cover" alt="boutique hotels" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
                                         <div className="e-card-header">
@@ -114,7 +114,7 @@ export default function Card13() {
                                 <div className="col-lg-6 d-flex">
                                     <div className="e-card e-bigger rounded-3 d-flex flex-sm-row-reverse flex-col">
                                         <div className="position-relative" style={{ minWidth: "266px", minHeight: "266px" }}>
-                                            <Image src="/react-ui-kit/assets/images/card/highlighted-feature-card/urban-oasis.jpg" layout="fill" objectFit="cover" alt="urban oasis" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/highlighted-feature-card/urban-oasis.jpg" layout="fill" objectFit="cover" alt="urban oasis" />
                                         </div>
                                         <div className="e-card-stacked p-2">
                                             <div className="e-card-header">
@@ -132,7 +132,7 @@ export default function Card13() {
                                 <div className="col-lg-6 d-flex">
                                     <div className="e-card e-bigger rounded-3 d-flex flex-sm-row-reverse flex-col">
                                         <div className="position-relative" style={{ minWidth: "266px", minHeight: "266px" }}>
-                                            <Image src="/react-ui-kit/assets/images/card/highlighted-feature-card/exotic-wildlife.jpg" layout="fill" objectFit="cover" alt="exotic wildlife safaris" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/highlighted-feature-card/exotic-wildlife.jpg" layout="fill" objectFit="cover" alt="exotic wildlife safaris" />
                                         </div>
                                         <div className="e-card-stacked p-2">
                                             <div className="e-card-header">
@@ -150,7 +150,7 @@ export default function Card13() {
                                 <div className="col-lg-6 d-flex">
                                     <div className="e-card e-bigger rounded-3 d-flex flex-sm-row-reverse flex-col">
                                         <div className="position-relative" style={{ minWidth: "266px", minHeight: "266px" }}>
-                                            <Image src="/react-ui-kit/assets/images/card/highlighted-feature-card/island-getaways.jpg" layout="fill" objectFit="cover" alt="island getaways" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/highlighted-feature-card/island-getaways.jpg" layout="fill" objectFit="cover" alt="island getaways" />
                                         </div>
                                         <div className="e-card-stacked p-2">
                                             <div className="e-card-header">
@@ -168,7 +168,7 @@ export default function Card13() {
                                 <div className="col-lg-6 d-flex">
                                     <div className="e-card e-bigger rounded-3 d-flex flex-sm-row-reverse flex-col">
                                         <div className="position-relative" style={{ minWidth: "266px", minHeight: "266px" }}>
-                                            <Image src="/react-ui-kit/assets/images/card/highlighted-feature-card/boutique-hotels.jpg" layout="fill" objectFit="cover" alt="boutique hotels" />
+                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/highlighted-feature-card/boutique-hotels.jpg" layout="fill" objectFit="cover" alt="boutique hotels" />
                                         </div>
                                         <div className="e-card-stacked p-2">
                                             <div className="e-card-header">
