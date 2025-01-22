@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { DataService, BlockList } from '../../data';
@@ -70,7 +69,7 @@ export default function MainPage() {
                         </a>
                         <a href="https://www.figma.com/@Syncfusion" target="_blank" className={styles['figma-btn']} role="button" tabIndex={0} rel="noopener noreferrer" aria-label="Download Figma">
                             <span className={styles['figma-img']}>
-                                <Image src="/react/essential-ui-kit/blocks/assets/images/sample-browser/figma.svg" alt="Figma Logo" width={20} height={20} />
+                                <img src="/react/essential-ui-kit/blocks/assets/images/sample-browser/figma.svg" alt="Figma Logo" width={20} height={20} />
                             </span>
                             Download Figma
                         </a>
@@ -127,7 +126,7 @@ export default function MainPage() {
                                                         onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && navigateToDemo(block.url)}>
                                                         <div className={styles['block-container']}>
                                                             <div className={styles['block-content']}>
-                                                                <Image
+                                                                <img
                                                                     src={`/react/essential-ui-kit/blocks/assets/images/sample-browser/${block.url}.png`}
                                                                     alt={`${block.name} - Image`}
                                                                     style={{ height: '100%', width: '100%' }}
