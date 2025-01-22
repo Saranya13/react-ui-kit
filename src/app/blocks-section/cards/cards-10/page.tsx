@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function Card10() {
     /* SB Code - Start */
@@ -40,7 +39,7 @@ export default function Card10() {
                             <div className="grid gap-6 sm:gap-8 lg:grid-cols-2 xl:gap-10">
                                 <div className="e-card rounded-lg sm:flex-row e-bigger">
                                     <div className="relative sm:w-72 h-60 sm:h-auto shrink-0">
-                                        <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/ai-innovations.jpg" layout="fill" objectFit="cover" alt="AI innovations" />
+                                        <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/ai-innovations.jpg" alt="AI innovations" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
                                         <div className="e-card-header mb-1 items-center">
@@ -62,7 +61,7 @@ export default function Card10() {
                                 </div>
                                 <div className="e-card rounded-lg sm:flex-row e-bigger">
                                     <div className="relative sm:w-72 h-60 sm:h-auto shrink-0">
-                                        <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/cybersecurity-solutions.jpg" layout="fill" objectFit="cover" alt="cybersecurity solutions" />
+                                        <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/cybersecurity-solutions.jpg" alt="cybersecurity solutions" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
                                         <div className="e-card-header mb-1 items-center">
@@ -84,7 +83,7 @@ export default function Card10() {
                                 </div>
                                 <div className="e-card rounded-lg sm:flex-row e-bigger">
                                     <div className="relative sm:w-72 h-60 sm:h-auto shrink-0">
-                                        <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/virtual-reality.jpg" layout="fill" objectFit="cover" alt="virtual reality" />
+                                        <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/virtual-reality.jpg" alt="virtual reality" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
                                         <div className="e-card-header mb-1 items-center">
@@ -106,7 +105,7 @@ export default function Card10() {
                                 </div>
                                 <div className="e-card rounded-lg sm:flex-row e-bigger">
                                     <div className="relative sm:w-72 h-60 sm:h-auto shrink-0">
-                                        <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/smart-home-tech.jpg" layout="fill" objectFit="cover" alt="smart home tech" />
+                                        <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/smart-home-tech.jpg" alt="smart home tech" />
                                     </div>
                                     <div className="e-card-stacked pb-2">
                                         <div className="e-card-header mb-1 items-center">
@@ -138,7 +137,7 @@ export default function Card10() {
                                 <div className="col-lg-6 d-flex">
                                     <div className="e-card e-bigger rounded-3 d-flex flex-sm-row flex-col">
                                         <div className="position-relative" style={{ minWidth: "266px", minHeight: "266px" }}>
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/ai-innovations.jpg" layout="fill" objectFit="cover" alt="AI innovations" />
+                                            <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/ai-innovations.jpg" alt="AI innovations" />
                                         </div>
                                         <div className="e-card-stacked p-2">
                                             <div className="e-card-header align-items-center">
@@ -162,7 +161,7 @@ export default function Card10() {
                                 <div className="col-lg-6 d-flex">
                                     <div className="e-card e-bigger rounded-3 d-flex flex-sm-row flex-col">
                                         <div className="position-relative" style={{ minWidth: "266px", minHeight: "266px" }}>
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/cybersecurity-solutions.jpg" layout="fill" objectFit="cover" alt="cybersecurity solutions" />
+                                            <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/cybersecurity-solutions.jpg" alt="cybersecurity solutions" />
                                         </div>
                                         <div className="e-card-stacked p-2">
                                             <div className="e-card-header align-items-center">
@@ -186,7 +185,7 @@ export default function Card10() {
                                 <div className="col-lg-6 d-flex">
                                     <div className="e-card e-bigger rounded-3 d-flex flex-sm-row flex-col">
                                         <div className="position-relative" style={{ minWidth: "266px", minHeight: "266px" }}>
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/virtual-reality.jpg" layout="fill" objectFit="cover" alt="virtual reality" />
+                                            <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/virtual-reality.jpg" alt="virtual reality" />
                                         </div>
                                         <div className="e-card-stacked p-2">
                                             <div className="e-card-header align-items-center">
@@ -210,7 +209,7 @@ export default function Card10() {
                                 <div className="col-lg-6 d-flex">
                                     <div className="e-card e-bigger rounded-3 d-flex flex-sm-row flex-col">
                                         <div className="position-relative" style={{ minWidth: "266px", minHeight: "266px" }}>
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/smart-home-tech.jpg" layout="fill" objectFit="cover" alt="smart home tech" />
+                                            <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/image-author-info-card/smart-home-tech.jpg" alt="smart home tech" />
                                         </div>
                                         <div className="e-card-stacked p-2">
                                             <div className="e-card-header align-items-center">

@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { GridComponent, ColumnDirective, ColumnsDirective } from "@syncfusion/ej2-react-grids";
-import Image from "next/image";
 
 export default function Grid10() {
     /* SB Code - Start */
@@ -199,7 +198,7 @@ export default function Grid10() {
                                         template={(data: any) => (
                                             <div className="flex items-center gap-3">
                                                 <div className="w-8">
-                                                    <Image className="rounded h-8" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
+                                                    <img className="rounded h-8" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
                                                 </div>
                                                 <div className="text-sm">{data.product}</div>
                                             </div>
@@ -233,7 +232,7 @@ export default function Grid10() {
                                         template={(data: any) => (
                                             <div className="d-flex align-items-center gap-2">
                                                 <div style={{ width: "32px" }}>
-                                                    <Image className="rounded" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
+                                                    <img className="rounded" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
                                                 </div>
                                                 <div>{data.product}</div>
                                             </div>

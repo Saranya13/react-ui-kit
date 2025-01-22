@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function Card11() {
     /* SB Code - Start */
@@ -41,7 +40,7 @@ export default function Card11() {
                                 <div className="e-card rounded-lg pb-2 pt-6 e-bigger">
                                     <div className="e-card-content flex-1">
                                         <div className="e-card-image mb-6 overflow-hidden rounded-lg h-52">
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/mountain-cabins.jpg" layout="fill" objectFit="cover" alt="mountain cabins" />
+                                            <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/mountain-cabins.jpg" alt="mountain cabins" />
                                         </div>
                                         <h1 className="text-xl mb-3 font-semibold text-gray-950 dark:text-white line-clamp-2">Mountain Cabins</h1>
                                         <p className="text-base mb-1 dark:text-gray-200">Experience the warmth and charm of rustic mountain cabins. Nestled in scenic landscapes, these cozy retreats offer a perfect getaway with stunning views, comfortable amenities.</p>
@@ -65,7 +64,7 @@ export default function Card11() {
                                 <div className="e-card rounded-lg pb-2 pt-6 e-bigger">
                                     <div className="e-card-content flex-1">
                                         <div className="e-card-image mb-6 overflow-hidden rounded-lg h-52">
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/bustling-city-streets.jpg" layout="fill" objectFit="cover" alt="bustling city streets" />
+                                            <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/bustling-city-streets.jpg" alt="bustling city streets" />
                                         </div>
                                         <h1 className="text-xl mb-3 font-semibold text-gray-950 dark:text-white line-clamp-2">Bustling City Streets</h1>
                                         <p className="text-base mb-1 dark:text-gray-200">Dive into the vibrant life of city streets filled with shops, cafes, and entertainment. Discover the dynamic pulse of urban environments full of culture, cuisine.</p>
@@ -89,7 +88,7 @@ export default function Card11() {
                                 <div className="e-card rounded-lg pb-2 pt-6 e-bigger">
                                     <div className="e-card-content flex-1">
                                         <div className="e-card-image mb-6 overflow-hidden rounded-lg h-52">
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/seaside-resorts.jpg" layout="fill" objectFit="cover" alt="seaside resorts" />
+                                            <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/seaside-resorts.jpg" alt="seaside resorts" />
                                         </div>
                                         <h1 className="text-xl mb-3 font-semibold text-gray-950 dark:text-white line-clamp-2">Seaside Resorts</h1>
                                         <p className="text-base mb-1 dark:text-gray-200">Enjoy luxury and relaxation at seaside resorts with stunning ocean views and top-notch amenities. Unwind with beachside activities, gourmet dining, and the soothing sounds of the waves.</p>
@@ -122,7 +121,7 @@ export default function Card11() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3 p-3">
                                         <div className="e-card-image rounded-3 overflow-hidden" style={{ height: "198px" }}>
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/mountain-cabins.jpg" layout="fill" objectFit="cover" alt="mountain cabins" />
+                                            <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/mountain-cabins.jpg" alt="mountain cabins" />
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-content flex-grow-1 text-body px-0">
@@ -150,7 +149,7 @@ export default function Card11() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3 p-3">
                                         <div className="e-card-image rounded-3 overflow-hidden" style={{ height: "198px" }}>
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/bustling-city-streets.jpg" layout="fill" objectFit="cover" alt="bustling city streets" />
+                                            <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/bustling-city-streets.jpg" alt="bustling city streets" />
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-content flex-grow-1 text-body px-0">
@@ -178,7 +177,7 @@ export default function Card11() {
                                 <div className="col-sm-6 col-lg-4 d-flex">
                                     <div className="e-card e-bigger rounded-3 p-3">
                                         <div className="e-card-image rounded-3 overflow-hidden" style={{ height: "198px" }}>
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/seaside-resorts.jpg" layout="fill" objectFit="cover" alt="seaside resorts" />
+                                            <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/featured-card/seaside-resorts.jpg" alt="seaside resorts" />
                                         </div>
                                         <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-content flex-grow-1 text-body px-0">

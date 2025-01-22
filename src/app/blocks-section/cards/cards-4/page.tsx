@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function Card4() {
     /* SB Code - Start */
@@ -52,7 +51,7 @@ export default function Card4() {
                                     </div>
                                     <div className="e-card-content flex-1">
                                         <div className="e-card-image mb-6 overflow-hidden rounded-lg h-52">
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/local-gems.jpg" layout="fill" objectFit="cover" alt="local gems" />
+                                            <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/local-gems.jpg" alt="local gems" />
                                         </div>
                                         <h1 className="mb-3 text-xl font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Local Gems</h1>
                                         <p className="text-base dark:text-gray-200">Uncover the best-kept secrets in your area with our guide to local hotspots. Whether it's a cozy cafe, a charming bookstore, or a hidden park, find new places to explore and enjoy.</p>
@@ -72,7 +71,7 @@ export default function Card4() {
                                     </div>
                                     <div className="e-card-content flex-1">
                                         <div className="e-card-image mb-6 overflow-hidden rounded-lg h-52">
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/quick-recipes.jpg" layout="fill" objectFit="cover" alt="quick recipes" />
+                                            <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/quick-recipes.jpg" alt="quick recipes" />
                                         </div>
                                         <h1 className="mb-3 text-xl font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Quick Recipes</h1>
                                         <p className="text-base dark:text-gray-200">Whip up tasty meals with minimal effort using our quick and easy recipes. Ideal for busy weeknights or last-minute dinners, these recipes feature simple ingredients.</p>
@@ -92,7 +91,7 @@ export default function Card4() {
                                     </div>
                                     <div className="e-card-content flex-1">
                                         <div className="e-card-image mb-6 overflow-hidden rounded-lg h-52">
-                                            <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/effective-study.jpg" layout="fill" objectFit="cover" alt="effective study" />
+                                            <img className="object-cover w-full h-full" src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/effective-study.jpg" alt="effective study" />
                                         </div>
                                         <h1 className="mb-3 text-xl font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Effective Study</h1>
                                         <p className="text-base dark:text-gray-200">Enhance your study sessions with proven strategies to improve focus and retention. Learn time management techniques and active learning methods.</p>
@@ -122,7 +121,7 @@ export default function Card4() {
                                         </div>
                                         <div className="e-card-content flex-grow-1 text-body">
                                             <div className="e-card-image mb-4 rounded-3 overflow-hidden" style={{ height: "198px" }}>
-                                                <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/local-gems.jpg" layout="fill" objectFit="cover" alt="local gems" />
+                                                <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/local-gems.jpg" alt="local gems" />
                                             </div>
                                             <h4 className="fw-bold mb-2 px-2 lh-sm text-truncate">Local Gems</h4>
                                             <p className="fs-6 mb-2 px-2">Uncover the best-kept secrets in your area with our guide to local hotspots. Whether it's a cozy cafe, a charming bookstore, or a hidden park, find new places to explore and enjoy.</p>
@@ -144,7 +143,7 @@ export default function Card4() {
                                         </div>
                                         <div className="e-card-content flex-grow-1 text-body">
                                             <div className="e-card-image mb-4 rounded-3 overflow-hidden" style={{ height: "198px" }}>
-                                                <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/quick-recipes.jpg" layout="fill" objectFit="cover" alt="quick recipes" />
+                                                <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/quick-recipes.jpg" alt="quick recipes" />
                                             </div>
                                             <h4 className="fw-bold mb-2 px-2 lh-sm text-truncate">Quick Recipes</h4>
                                             <p className="fs-6 mb-2 px-2">Whip up tasty meals with minimal effort using our quick and easy recipes. Ideal for busy weeknights or last-minute dinners, these recipes feature simple ingredients.</p>
@@ -166,7 +165,7 @@ export default function Card4() {
                                         </div>
                                         <div className="e-card-content flex-grow-1 text-body">
                                             <div className="e-card-image mb-4 rounded-3 overflow-hidden" style={{ height: "198px" }}>
-                                                <Image src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/effective-study.jpg" layout="fill" objectFit="cover" alt="effective study" />
+                                                <img className="object-fit-cover w-100 h-100" src="/react/essential-ui-kit/blocks/assets/images/card/author-highlight-card/effective-study.jpg" alt="effective study" />
                                             </div>
                                             <h4 className="fw-bold mb-2 px-2 lh-sm text-truncate">Effective Study</h4>
                                             <p className="fs-6 mb-2 px-2">Enhance your study sessions with proven strategies to improve focus and retention. Learn time management techniques and active learning methods.</p>

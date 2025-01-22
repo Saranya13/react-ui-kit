@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { TextBoxComponent } from '@syncfusion/ej2-react-inputs';
 import { CheckBoxComponent, ButtonComponent } from '@syncfusion/ej2-react-buttons';
-import Image from 'next/image';
 
 export default function Signin3() {
     /* SB Code - Start */
@@ -74,7 +73,7 @@ export default function Signin3() {
                                     <div className="flex items-center justify-center">
                                         <div className="w-full max-w-md rounded-lg px-4 py-14 md:px-6 md:py-20">
                                             <div className="flex justify-center mb-6">
-                                                <Image className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
+                                                <img className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
                                                 <h2 className="text-center text-gray-900 dark:text-white text-xl font-semibold">Company Name</h2>
                                             </div>
                                             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white text-center mb-2">Sign in</h2>
@@ -107,11 +106,11 @@ export default function Signin3() {
                                                 </div>
                                                 <div className="flex items-center justify-center pt-10 gap-4 flex-col">
                                                     <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit">
-                                                        <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/google.png" alt="google logo" width={16} height={16} />
+                                                        <img src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/google.png" alt="google logo" width={16} height={16} />
                                                         <span className="text-base pl-2.5">Sign in with Google</span>
                                                     </ButtonComponent>
                                                     <ButtonComponent className="w-full flex items-center justify-center px-4 py-2 e-outline" type="submit">
-                                                        <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/microsoft.png" alt="microsoft logo" width={16} height={16} />
+                                                        <img src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/microsoft.png" alt="microsoft logo" width={16} height={16} />
                                                         <span className="text-base pl-2.5">Sign in with Microsoft</span>
                                                     </ButtonComponent>
                                                 </div>
@@ -161,7 +160,7 @@ export default function Signin3() {
                             <div className="d-flex justify-content-center align-items-center bg-body">
                                 <div className="max-w-lg bg-body rounded-lg p-4 p-md-5 w-100" style={{ maxWidth: '508px' }}>
                                     <div className="d-flex justify-content-center align-items-center mb-4">
-                                        <Image className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
+                                        <img className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
                                         <h5 className="text-center fw-bold mb-0 fs-5 text-body">Company Name</h5>
                                     </div>
                                     <div className="mb-4 text-center">
@@ -196,11 +195,11 @@ export default function Signin3() {
                                         </div>
                                         <div className="d-flex flex-column mt-3 align-items-center justify-content-center gap-3">
                                             <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit">
-                                                <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
+                                                <img src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/google.png" width={24} height={24} alt="google logo" />
                                                 <span className="fs-6 fw-medium" style={{ paddingLeft: '8px' }}>Sign in with Google</span>
                                             </ButtonComponent>
                                             <ButtonComponent className="e-outline e-block d-flex align-items-center justify-content-center px-3 py-2" type="submit">
-                                                <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
+                                                <img src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/microsoft.png" width={24} height={24} alt="microsoft logo" />
                                                 <span className="fs-6 fw-medium" style={{ paddingLeft: '8px' }}>Sign in with Microsoft</span>
                                             </ButtonComponent>
                                         </div>

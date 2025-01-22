@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { GridComponent, ColumnsDirective, ColumnDirective, Inject, Page } from "@syncfusion/ej2-react-grids";
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
-import Image from "next/image";
 
 export default function Grid7() {
     /* SB Code - Start */
@@ -308,7 +307,7 @@ export default function Grid7() {
                                         template={(data: any) => (
                                             <div className="flex items-center gap-3">
                                                 <div className="w-10 h-10">
-                                                    <Image className="rounded" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/sales-transactions-table/${data.product.image}`} width={40} height={40} alt="product image" />
+                                                    <img className="rounded" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/sales-transactions-table/${data.product.image}`} width={40} height={40} alt="product image" />
                                                 </div>
                                                 <p>{data.product.name}</p>
                                             </div>
@@ -381,7 +380,7 @@ export default function Grid7() {
                                         template={(data: any) => (
                                             <div className="d-flex align-items-center gap-3">
                                                 <div style={{ width: "40px", height: "40px" }}>
-                                                    <Image className="rounded" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/sales-transactions-table/${data.product.image}`} width={40} height={40} alt="product image" />
+                                                    <img className="rounded" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/sales-transactions-table/${data.product.image}`} width={40} height={40} alt="product image" />
                                                 </div>
                                                 <p className="mb-0">{data.product.name}</p>
                                             </div>

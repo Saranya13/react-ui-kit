@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 
 export default function SignOut1() {
     /* SB Code - Start */
@@ -38,7 +37,7 @@ export default function SignOut1() {
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="min-h-screen py-12">
                             <div className="flex items-center justify-center">
-                                <Image className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                <img className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                 <h2 className="text-center text-xl font-semibold text-gray-900 dark:text-white">Company Name</h2>
                             </div>
                             <div className="flex items-center justify-center pt-20">
@@ -61,7 +60,7 @@ export default function SignOut1() {
                     <section className="d-flex justify-content-center bg-body min-vh-100">
                         <div className="max-w-md bg-body rounded-lg p-4 py-5">
                             <div className="d-flex justify-content-center align-items-center mb-5">
-                                <Image className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                <img className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                 <h2 className="text-center text-body fs-5 fw-bold mb-0">Company Name</h2>
                             </div>
                             <div className="d-flex flex-column justify-content-center align-items-center pt-5">

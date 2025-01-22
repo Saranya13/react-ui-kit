@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function Footer4() {
     /* SB Code - Start */
@@ -40,7 +39,7 @@ export default function Footer4() {
                             <div className="flex flex-col justify-between gap-8 sm:py-4 xl:flex-row">
                                 <div className="space-y-3 text-sm text-gray-900 dark:text-gray-50 xl:w-72">
                                     <div className="flex items-center gap-2.5 py-2">
-                                        <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/shopnezt.png" width={28} height={28} alt="company logo" />
+                                        <img src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/shopnezt.png" width={28} height={28} alt="company logo" />
                                         <h2 className="font-semibold text-xl">ShopNezt</h2>
                                     </div>
                                     <p>Our fashion portal offers styles that make you look good and feel great.</p>
@@ -132,7 +131,7 @@ export default function Footer4() {
                             <div className="d-flex flex-column gap-4 flex-xl-row mb-4">
                                 <div className="d-flex flex-column gap-2 col col-xl-3 pe-xl-4">
                                     <div className="d-flex align-items-center gap-2 mb-1">
-                                        <Image src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/shopnezt.png" width={30} height={30} alt="company logo" />
+                                        <img src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/png/shopnezt.png" width={30} height={30} alt="company logo" />
                                         <h5 className="mb-0 text-body">ShopNezt</h5>
                                     </div>
                                     <p className="mb-0 small text-body">Our fashion portal offers styles that make you look good and feel great.</p>

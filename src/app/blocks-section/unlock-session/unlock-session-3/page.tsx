@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { TextBoxComponent } from '@syncfusion/ej2-react-inputs';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
-import Image from 'next/image';
 
 export default function Unlocksession3() {
     /* SB Code - Start */
@@ -76,7 +75,7 @@ export default function Unlocksession3() {
                                         <div className="w-full max-w-md rounded-lg p-6 py-12">
                                             <div className="flex justify-center mb-6">
                                                 <div className="flex items-center justify-center">
-                                                    <Image className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
+                                                    <img className="mr-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                                     <h2 className="text-center text-xl font-semibold text-gray-900 dark:text-white">Company Name</h2>
                                                 </div>
                                             </div>
@@ -141,7 +140,7 @@ export default function Unlocksession3() {
                                 <div className="bg-body rounded-lg p-4 py-5 w-100" style={{ maxWidth: '450px' }}>
                                     <div className="d-flex justify-content-center mb-4">
                                         <div className="d-flex align-items-center justify-content-center">
-                                            <Image className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
+                                            <img className="me-2" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" alt="company logo" width={32} height={32} />
                                             <h2 className="text-center fs-5 text-body fw-bold mb-0">Company Name</h2>
                                         </div>
                                     </div>

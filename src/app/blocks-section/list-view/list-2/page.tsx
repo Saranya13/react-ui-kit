@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { ListViewComponent } from '@syncfusion/ej2-react-lists';
 import { CheckBoxComponent } from '@syncfusion/ej2-react-buttons';
-import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function List2() {
@@ -129,7 +128,7 @@ export default function List2() {
                                                 <a href="javascript:void(0);" className={`flex items-center sf-icon-star-filled-01 text-base e-medium ${selectedItem.includes(data.id) ? "!text-orange-400" : "text-gray-400"}`} onClick={() => toggleSelectedItem(data.id)}></a>
                                             </span>
                                             <span className="e-avatar e-avatar-small e-avatar-circle">
-                                                <Image src={`/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar}`} width={32} height={32} alt="profile picture" />
+                                                <img src={`/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar}`} width={32} height={32} alt="profile picture" />
                                             </span>
                                         </span>
                                         <div className="ml-3 flex flex-col w-11/12">
@@ -159,7 +158,7 @@ export default function List2() {
                                                 <a href="javascript:void(0);" className={`text-secondary text-decoration-none d-flex align-items-center sf-icon-star-filled-01 fs-6 ${selectedItem.includes(data.id) ? 'text-warning' : 'text-secondary'}`} onClick={() => toggleSelectedItem(data.id)}></a>
                                             </span>
                                             <span className="e-avatar e-avatar-small e-avatar-circle">
-                                                <Image src={`/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar}`} width={32} height={32} alt="profile picture" />
+                                                <img src={`/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar}`} width={32} height={32} alt="profile picture" />
                                             </span>
                                         </span>
                                         <span className="ms-2 ps-1 flex-grow-1 w-75">
