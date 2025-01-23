@@ -9,9 +9,9 @@ import styles from './page.module.css';
 export default function Sidebar1() {
     /* SB Code - Start */
     const [theme, setTheme] = useState('tailwind');
-    const accordion = useRef<AccordionComponent | null>(null);
     /* SB Code - End */ 
     const sidebar = useRef<SidebarComponent | null>(null);
+    const accordion = useRef<AccordionComponent | null>(null);
 
     const data: any[] = [
         {

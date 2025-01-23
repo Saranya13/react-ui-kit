@@ -10,10 +10,10 @@ import styles from './page.module.css';
 export default function Sidebar2() {
     /* SB Code - Start */ 
     const [theme, setTheme] = useState('tailwind');
-    const accordion = useRef<AccordionComponent | null>(null);
     /* SB Code - End */ 
     const sidebar = useRef<SidebarComponent | null>(null);
     const toast = useRef<ToastComponent | null>(null);
+    const accordion = useRef<AccordionComponent | null>(null);
 
     const data: any[] = [
         {

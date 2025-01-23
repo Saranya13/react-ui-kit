@@ -9,8 +9,10 @@ import { AccordionComponent, AccordionItemDirective, AccordionItemsDirective } f
 export default function Checkout2() {
     /* SB Code - Start */
     const [theme, setTheme] = useState('tailwind');
+    /* SB Code - End */
     const accordion = useRef<AccordionComponent | null>(null);
-
+    
+    /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
         if (event.origin === window.location.origin) {
             try {
