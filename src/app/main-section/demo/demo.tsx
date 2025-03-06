@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import styles from './demo.module.css';
+import IframeComponent from "./iframe";
 
 declare let hljs: any;
 
@@ -45,16 +46,14 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
     const iframeURL = blockName + '/' + componentUrl;
 
     useEffect(() => {
-        const iframe = iframeRef.current;
-        if (iframe) {
-            iframe.removeEventListener('load', handleLoad);
-            iframe.addEventListener('load', handleLoad);
-            iframe.src = iframeURL;
-            return () => {
-                iframe.removeEventListener('load', handleLoad);
-            };
+        const iframeDocument = iframeRef.current?.contentDocument || iframeRef.current?.contentWindow?.document;
+        if (theme === 'tailwind') {
+            iframeDocument?.documentElement?.classList.add(isDarkMode ? 'dark' : 'light');
+        } else {
+            iframeDocument?.documentElement?.setAttribute('data-bs-theme', isDarkMode ? 'dark' : 'light');
         }
-    }, []);
+
+    }, [theme, isDarkMode]);
 
     useEffect(() => {
         if (!document.querySelector('link[href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css"]')) {
@@ -73,10 +72,25 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
+            const iframeDoc = iframeRef.current?.contentDocument || iframeRef.current?.contentWindow?.document;
+            iframeDoc?.removeEventListener("click", handleLinkClick);
         };
     }, []);
 
-    const handleLoad = () => addStylesheetsToIframe(theme);
+    
+    const handleLinkClick = (event) => {
+        const target = event.target.closest("a");
+        if (target && target.getAttribute("href") === "#") {
+            event.preventDefault();
+        }
+    };
+
+    const handleLoad = () => {
+        const iframeDoc = iframeRef.current?.contentDocument || iframeRef.current?.contentWindow?.document;    
+        iframeDoc?.addEventListener("click", handleLinkClick);
+
+        addStylesheetsToIframe(theme);
+    }
 
     const handleResize = () => {
         if (currentView === Mode.Tablet && window.innerWidth <= 996 && iframeRef.current) {
@@ -93,7 +107,12 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         const targetElement = event.target as HTMLElement;
         const isPreview = targetElement.getAttribute('tab-text') === 'Preview';
         setIsPreviewMode(isPreview);
-        isPreview ? showPreview() : showSourceCode();
+        if (isPreview) {
+            showPreview();
+        }
+        else {
+            showSourceCode();
+        }
     };
 
     const showPreview = () => {
@@ -232,7 +251,12 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
         toggleDropdown('hide');
         if (theme !== selectedTheme) {
             onHandleOverlayVisibility('show');
-            selectedTheme === 'tailwind' ? setThemeIndex(0) : setThemeIndex(1);
+            if (selectedTheme === 'tailwind') {
+                setThemeIndex(0);
+            }
+            else {
+                setThemeIndex(1);
+            }
             setTheme(selectedTheme);
             const message = JSON.stringify({
                 name: componentUrl,
@@ -308,11 +332,6 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
             })
             .catch((error) => console.error('Error loading stylesheets:', error));
 
-        if (selectedTheme === 'tailwind') {
-            iframeDocument.documentElement.classList.add(mode ? 'dark' : 'light');
-        } else {
-            iframeDocument.documentElement.setAttribute('data-bs-theme', mode ? 'dark' : 'light');
-        }
     };
 
     const toggleLightDarkModes = () => {
@@ -477,12 +496,13 @@ export default function Demo({ blockName, componentUrl }: DemoProps) {
                     </div>
                 </div>
                 <div className={styles['iframe-container']}>
-                    <iframe
+                    <IframeComponent
                         ref={iframeRef}
                         src={iframeURL}
                         className={styles['preview-container']}
-                        title="Preview Content">
-                    </iframe>
+                        title="Preview Content"
+                        handleLoad={handleLoad}>
+                    </IframeComponent>
                     <div ref={overlayRef} className={styles['iframe-overlay']}>
                         <img src="https://placehold.co/100x50?text=Loading..." alt="Loading Indicator" className={styles['overlay-image']} />
                     </div>

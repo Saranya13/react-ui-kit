@@ -59,13 +59,13 @@ export default function MainPage() {
             <Header />
             <div className={styles['main-container']}>
                 <div className={styles['main-container-header']}>
-                    <h1 className={styles['main-title']}>Develop App Faster with Pre-Built Blocks</h1>
+                    <h1 className={styles['main-title']}>Develop Apps Faster with Pre-Built Blocks</h1>
                     <p className={styles['main-description']}>
-                        Accelerate your web app development with 120+ responsive blocks for React, fully compatible with Tailwind and Bootstrap 5.3.
+                        Accelerate your web app development with 160+ responsive blocks for React, fully compatible with Tailwind and Bootstrap 5.3.
                     </p>
                     <div className={styles['button-container']}>
                         <a href="https://www.syncfusion.com/feedback/react" target="_blank" className={styles['request-btn']} role="button" tabIndex={0} rel="noopener noreferrer" aria-label="Request a block">
-                            Request a block
+                            Request a Block
                         </a>
                         <a href="https://www.figma.com/@Syncfusion" target="_blank" className={styles['figma-btn']} role="button" tabIndex={0} rel="noopener noreferrer" aria-label="Download Figma">
                             <span className={styles['figma-img']}>
@@ -137,7 +137,9 @@ export default function MainPage() {
                                                                 <div className={styles['block-title']}>
                                                                     {block.name} {block.isNew && <span>New</span>}
                                                                 </div>
-                                                                <div className={styles['block-count']}>{`${block.subBlockList.length} Blocks`}</div>
+                                                                <div className={styles['block-count']}>
+                                                                    <div className={styles['block-count-radius']}>{`${block.subBlockList.length} Blocks`}</div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>

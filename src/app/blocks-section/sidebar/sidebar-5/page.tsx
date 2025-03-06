@@ -42,7 +42,7 @@ export default function Sidebar5() {
                     setTheme(blockData.theme);
                 }
             } catch (error) {
-                console.error('Error parsing message data: ', error);
+                console.log('Error parsing message data: ', error);
             }
         }
     };
@@ -74,7 +74,7 @@ export default function Sidebar5() {
                                         <ListViewComponent className="border-0" dataSource={data} template={(data: any) => (
                                             <div className="e-list-wrapper flex items-center justify-between pr-2">
                                                 <div className="text-base leading-6 flex items-center">
-                                                    <span className={`e-icons ${data.fontIcon}`}></span>
+                                                    <span className={`e-icons text-base ${data.fontIcon}`}></span>
                                                     <span className="font-normal pl-4">{data.field}</span>
                                                 </div>
                                                 {data.field === 'Notifications' && (
@@ -92,8 +92,8 @@ export default function Sidebar5() {
                                         </AccordionItemsDirective>
                                     </AccordionComponent>
                                     <div id="toastmsg" className="!absolute" style={{ bottom: '25%' }}></div>
-                                    <ToastComponent ref={toast1} target="#toastmsg" position={{ X: 'Left', Y: 'Bottom' }} cssClass="e-toast-info" width="224" title={() => <div className="pr-2">Adaptive Tiles Meeting</div>} content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast1.current?.show()}></ToastComponent>
-                                    <ToastComponent ref={toast2} target="#toastmsg" position={{ X: 'Left', Y: 'Top' }} cssClass="e-toast-warning" width="224" title={() => <div className="pr-2">Adaptive Tiles Meeting</div>} content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast2.current?.show()}></ToastComponent>
+                                    <ToastComponent ref={toast1} target="#toastmsg" position={{ X: 'Left', Y: 'Bottom' }} cssClass="e-toast-info" width="224" title="<div className='pr-2'>Adaptive Tiles Meeting</div>" content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast1.current?.show()}></ToastComponent>
+                                    <ToastComponent ref={toast2} target="#toastmsg" position={{ X: 'Left', Y: 'Top' }} cssClass="e-toast-warning" width="224" title="<div className='pr-2'>Adaptive Tiles Meeting</div>" content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast2.current?.show()}></ToastComponent>
                                 </div>
                             </SidebarComponent>
                         </div>
@@ -117,7 +117,7 @@ export default function Sidebar5() {
                                     <ListViewComponent className="border-0 e-bigger" dataSource={data} template={(data: any) => (
                                         <div className="e-list-wrapper px-1 d-flex justify-content-between align-items-center">
                                             <div className="fs-6 lh-base">
-                                                <span className={`e-icons ${data.fontIcon}`}></span>
+                                                <span className={`e-icons fs-6 ${data.fontIcon}`}></span>
                                                 <span className="fw-normal ps-2 ms-1">{data.field}</span>
                                             </div>
                                             {data.field === 'Notifications' && (
@@ -134,8 +134,8 @@ export default function Sidebar5() {
                                         </AccordionItemsDirective>
                                     </AccordionComponent>
                                     <div id="toastmsg" className="position-absolute" style={{ bottom: '25%' }}></div>
-                                    <ToastComponent ref={toast1} target="#toastmsg" position={{ X: 'Left', Y: 'Bottom' }} cssClass="e-toast-info" width="224" title={() => <div>Adaptive Tiles Meeting</div>} content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast1.current?.show()}></ToastComponent>
-                                    <ToastComponent ref={toast2} target="#toastmsg" position={{ X: 'Left', Y: 'Top' }} cssClass="e-toast-warning" width="224" title={() => <div>Adaptive Tiles Meeting</div>} content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast2.current?.show()}></ToastComponent>
+                                    <ToastComponent ref={toast1} target="#toastmsg" position={{ X: 'Left', Y: 'Bottom' }} cssClass="e-toast-info" width="224" title="<div>Adaptive Tiles Meeting</div>" content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast1.current?.show()}></ToastComponent>
+                                    <ToastComponent ref={toast2} target="#toastmsg" position={{ X: 'Left', Y: 'Top' }} cssClass="e-toast-warning" width="224" title="<div>Adaptive Tiles Meeting</div>" content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast2.current?.show()}></ToastComponent>
                                 </div>
                             </SidebarComponent>
                         </div>
