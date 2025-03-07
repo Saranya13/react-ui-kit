@@ -33,7 +33,7 @@ export default function FilterPanel8() {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'filter-panel-8' && blockData.theme) {
                     setTheme(blockData.theme);
-                    refreshDialog(500);
+                    refreshDialog(200);
                 }
             } catch (error) {
                 console.log('Error parsing message data: ', error);
@@ -45,7 +45,7 @@ export default function FilterPanel8() {
     useEffect(() => {
         /* SB Code - Start */
         window.addEventListener('message', handleMessageEvent);
-        refreshDialog(1400);
+        refreshDialog(1000);
         /* SB Code - End */
         window.addEventListener('resize', setSidebarWidth);
 
