@@ -1,0 +1,17 @@
+#notification :global(.e-list-item) {
+    border-bottom: 0px;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+#tab :global(.e-tab .e-tab-header .e-toolbar-items) {
+    width: 100% !important;
+}
+
+#tab :global(.e-tab .e-tab-header .e-toolbar-items .e-tab-wrap) {
+    padding: 0 12px !important;
+}
+
+#list-bs :global(.e-list-item.e-level-1.e-active a) {
+    color: #FFFF;
+}

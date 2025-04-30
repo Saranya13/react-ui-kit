@@ -13,13 +13,11 @@ export default function Modals8() {
     /* SB Code - Start */
     const [theme, setTheme] = useState('tailwind');
     /* SB Code - End */
-    const [containerHeight, setContainerHeight] = useState("750px");
     const dialog = useRef<DialogComponent>(null);
     const uploaders = useRef<UploaderComponent>(null);
 
     const checkWindowSize = () => {
         const isMobile = window.innerWidth <= 640;
-        setContainerHeight(isMobile ? "635px" : "790px");
         dialog.current?.show(isMobile);
     };
 
@@ -65,16 +63,16 @@ export default function Modals8() {
             case 'tailwind':
                 return (
                     <section>
-                        <div id="dialog-container" className="relative flex justify-center" style={{ minHeight: containerHeight }}>
+                        <div id="dialog-container" className="relative flex justify-center" style={{ minHeight: "750px" }}>
                             <ButtonComponent className="h-fit my-5" type="button" onClick={() => dialog.current?.show()}>My Settings</ButtonComponent>
-                            <DialogComponent id={styles["dialog"]} ref={dialog} className="rounded-none sm:rounded-lg sm:m-4" target="#dialog-container" height="100%" beforeOpen={(event) => { event.maxHeight = '645px'; }} open={(e) => { e.preventFocus = true; }} showCloseIcon={true} width="644px" isModal={true}
+                            <DialogComponent id={styles["dialog"]} ref={dialog} className="rounded-none sm:rounded-lg sm:m-4" target="#dialog-container" height="645px" beforeOpen={(event) => { event.maxHeight = '100%'; }} open={(e) => { e.preventFocus = true; }} showCloseIcon={true} width="644px" isModal={true}
                                 header={() => (
                                     <p className="font-semibold leading-normal">My Settings</p>
                                 )}
                                 footerTemplate={() =>
                                     <div className="flex justify-end gap-2 sm:gap-1 py-2">
-                                        <ButtonComponent cssClass="grow sm:grow-0 !ml-0" type="button">Discard</ButtonComponent>
-                                        <ButtonComponent cssClass="e-primary grow sm:grow-0" type="button">Save Changes</ButtonComponent>
+                                        <ButtonComponent cssClass="w-1/2 sm:w-fit !ml-0" type="button">Discard</ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary w-1/2 sm:w-fit" type="button">Save Changes</ButtonComponent>
                                     </div>
                                 }
                             >
@@ -322,16 +320,16 @@ export default function Modals8() {
             case 'bootstrap5':
                 return (
                     <section>
-                        <div id="dialog-container" className="position-relative d-flex align-items-start" style={{ minHeight: containerHeight }}>
+                        <div id="dialog-container" className="position-relative d-flex align-items-start" style={{ minHeight: "750px" }}>
                             <ButtonComponent className="mx-auto my-3 e-outline" type="button" onClick={() => dialog.current?.show()}>My Settings</ButtonComponent>
-                            <DialogComponent id={styles["dialog"]} ref={dialog} className="rounded-3 m-sm-2" target="#dialog-container" height="100%" beforeOpen={(event) => { event.maxHeight = '670px'; }} open={(e) => { e.preventFocus = true; }} showCloseIcon={true} width="644px" isModal={true}
+                            <DialogComponent id={styles["dialog"]} ref={dialog} className="rounded-3 m-sm-2" target="#dialog-container" height="650px" beforeOpen={(event) => { event.maxHeight = '100%'; }} open={(e) => { e.preventFocus = true; }} showCloseIcon={true} width="644px" isModal={true}
                                 header={() => (
                                     <p className="fw-bold text-body mb-0 lh-sm">My Settings</p>
                                 )}
                                 footerTemplate={() =>
                                     <div className="d-flex justify-content-end gap-2 gap-sm-1 py-1">
-                                        <ButtonComponent className="flex-grow-1 flex-sm-grow-0 ms-0" type="button">Discard</ButtonComponent>
-                                        <ButtonComponent className="flex-grow-1 flex-sm-grow-0 e-primary" type="button">Save Changes</ButtonComponent>
+                                        <ButtonComponent className="col col-sm-auto ms-0" type="button">Discard</ButtonComponent>
+                                        <ButtonComponent className="col col-sm-auto e-primary" type="button">Save Changes</ButtonComponent>
                                     </div>
                                 }
                             >

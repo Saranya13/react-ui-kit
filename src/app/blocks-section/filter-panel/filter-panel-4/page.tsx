@@ -168,7 +168,7 @@ export default function FilterPanel4() {
                                                     headerTemplate={() => ( 
                                                         <div className="d-flex align-items-center gap-2">
                                                             <span className="e-icons e-print-layout fs-6"></span>
-                                                            <span className="fw-medium fs-6 text-body">Details</span>
+                                                            <span className="fw-medium fs-6">Details</span>
                                                         </div>
                                                     )} 
                                                 />
@@ -176,7 +176,7 @@ export default function FilterPanel4() {
                                                     headerTemplate={() => (
                                                         <div className="d-flex align-items-center gap-2">
                                                             <span className="e-icons e-grid-view fs-6"></span>
-                                                            <span className="fw-medium fs-6 text-body">Apps</span>
+                                                            <span className="fw-medium fs-6">Apps</span>
                                                         </div>
                                                     )}
                                                 />

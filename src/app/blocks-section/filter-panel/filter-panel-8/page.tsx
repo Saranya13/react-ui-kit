@@ -86,7 +86,7 @@ export default function FilterPanel8() {
                                                                 <h6 className="text-sm font-medium text-gray-900 dark:text-white">Recently updated only</h6>
                                                                 <SwitchComponent cssClass="mr-2" checked={true}></SwitchComponent>
                                                             </div>
-                                                            <RadioButtonComponent label="Welcome guide" name="guidelines" value="welcome-guide"></RadioButtonComponent>
+                                                            <RadioButtonComponent label="Welcome guide" name="guidelines" value="welcome-guide" checked={true}></RadioButtonComponent>
                                                             <RadioButtonComponent label="Creating your first project" name="guidelines" value="creating-project"></RadioButtonComponent>
                                                             <RadioButtonComponent label="Understanding the dashboard" name="guidelines" value="understanding-dashboard"></RadioButtonComponent>
                                                             <RadioButtonComponent label="Basic configuration steps" name="guidelines" value="basic-configuration"></RadioButtonComponent>
