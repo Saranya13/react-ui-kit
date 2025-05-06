@@ -205,7 +205,7 @@ export default function Modals8() {
                                                         </div>
                                                         <div className="e-card-content !px-1 !pb-1 !pt-0">
                                                             <p className="text-xs text-gray-700 dark:text-gray-300 mb-3">Your main email address for receiving forwarded message</p>
-                                                            <TextBoxComponent type="email" value="james@123.com"></TextBoxComponent>
+                                                            <TextBoxComponent type="email" value="james@company.com"></TextBoxComponent>
                                                         </div>
                                                     </div>
                                                     <div className="e-card p-3 shadow-none">
@@ -221,11 +221,11 @@ export default function Modals8() {
                                                             </div>
                                                             <div className="border-t border-gray-200 dark:border-gray-600 mt-4 md:mt-3 pt-4 md:pt-3">
                                                                 <div className="flex gap-3 items-center py-1.5">
-                                                                    <div className="text-gray-900 dark:text-white grow">john.wick&#64;123.com</div>
+                                                                    <div className="text-gray-900 dark:text-white grow">john.wick&#64;company.com</div>
                                                                     <ButtonComponent cssClass="e-danger e-flat e-small" iconCss="e-icons e-trash" type="button"></ButtonComponent>
                                                                 </div>
                                                                 <div className="flex gap-3 items-center py-1.5">
-                                                                    <div className="text-gray-900 dark:text-white grow">charles.kri&#64;123.com</div>
+                                                                    <div className="text-gray-900 dark:text-white grow">charles.kri&#64;company.com</div>
                                                                     <ButtonComponent cssClass="e-danger e-flat e-small" iconCss="e-icons e-trash" type="button"></ButtonComponent>
                                                                 </div>
                                                             </div>
@@ -462,7 +462,7 @@ export default function Modals8() {
                                                         </div>
                                                         <div className="e-card-content p-1">
                                                             <p className="small text-secondary mb-2 pb-1">Your main email address for receiving forwarded message</p>
-                                                            <TextBoxComponent type="email" value="james@123.com"></TextBoxComponent>
+                                                            <TextBoxComponent type="email" value="james@company.com"></TextBoxComponent>
                                                         </div>
                                                     </div>
                                                     <div className="e-card rounded-2 p-3">
@@ -478,11 +478,11 @@ export default function Modals8() {
                                                             </div>
                                                             <div className="border-top mt-3 pt-3">
                                                                 <div className="d-flex gap-3 align-items-center py-1">
-                                                                    <div className="text-body fw-medium flex-grow-1">john.wick&#64;123.com</div>
+                                                                    <div className="text-body fw-medium flex-grow-1">john.wick&#64;company.com</div>
                                                                     <ButtonComponent cssClass="e-danger e-flat e-small" iconCss="e-icons e-trash" type="button"></ButtonComponent>
                                                                 </div>
                                                                 <div className="d-flex gap-3 align-items-center py-1">
-                                                                    <div className="text-body fw-medium flex-grow-1">charles.kri&#64;123.com</div>
+                                                                    <div className="text-body fw-medium flex-grow-1">charles.kri&#64;company.com</div>
                                                                     <ButtonComponent cssClass="e-danger e-flat e-small" iconCss="e-icons e-trash" type="button"></ButtonComponent>
                                                                 </div>
                                                             </div>

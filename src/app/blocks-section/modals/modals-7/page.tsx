@@ -34,14 +34,6 @@ export default function Modals7() {
         }
     };
 
-    const focusIn = (event: React.FocusEvent<HTMLInputElement>) => {
-        event.target.parentElement?.classList.add("e-input-focus");
-    };
-    
-    const focusOut = (event: React.FocusEvent<HTMLInputElement>) => {
-        event.target.parentElement?.classList.remove("e-input-focus");
-    };
-
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
         if (event.origin === window.location.origin) {
@@ -103,11 +95,11 @@ export default function Modals7() {
                                     <div className="flex flex-col gap-4 sm:gap-3">
                                         <div className="flex flex-col sm:flex-row sm:items-center gap-1">
                                             <label className="flex items-center gap-1 w-44 text-sm font-medium shrink-0">Source<span className="e-icons e-circle-info text-gray-500 dark:text-gray-300"></span></label>
-                                            <div className="e-input-group">
-                                                <span className="flex items-center border-r border-inherit pl-3 pr-1.5">
+                                            <div className="border rounded shadow-sm flex grow border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-800">
+                                                <span className="flex items-center border-r border-gray-300 dark:border-gray-500 pl-3 pr-1.5">
                                                     <CheckBoxComponent label="Event" labelPosition="Before" checked={true}></CheckBoxComponent>
                                                 </span>
-                                                <input className="e-input" type="text" onFocus={focusIn} onBlur={focusOut} placeholder="Company attributes" />
+                                                <TextBoxComponent className="grow" cssClass="!border-0" type="text" placeholder="Company attributes"></TextBoxComponent>
                                             </div>
                                         </div>
                                         <div className="flex flex-col sm:flex-row sm:items-center gap-1">
@@ -176,11 +168,11 @@ export default function Modals7() {
                                     <div className="row gap-3 gap-sm-2 gy-sm-1 mt-0">
                                         <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-1">
                                             <label className="d-flex align-items-center gap-1 fw-medium flex-shrink-0" style={{ width: "175px" }}>Source<span className="e-icons e-circle-info text-body-secondary"></span></label>
-                                            <div className="e-input-group">
+                                            <div className="d-flex border rounded-1 flex-grow-1">
                                                 <span className="d-flex align-items-center border-end px-2">
                                                     <CheckBoxComponent label="Event" labelPosition="Before" checked={true}></CheckBoxComponent>
                                                 </span>
-                                                <input className="e-input" type="text" placeholder="Company attributes" onFocus={focusIn} onBlur={focusOut} />
+                                                <TextBoxComponent className="flex-grow-1" cssClass="border-0" type="text" placeholder="Company attributes"></TextBoxComponent>
                                             </div>
                                         </div>
                                         <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-1">

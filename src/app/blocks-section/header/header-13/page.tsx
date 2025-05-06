@@ -76,16 +76,16 @@ export default function Header13() {
                                     <TextBoxComponent placeholder="Enter email ID"></TextBoxComponent>
                                 </span>
                                 <span className="w-44">
-                                    <DropDownListComponent dataSource={['Today', 'Yesterday', 'Last 7 Days', 'Last 30 Days', 'This Month', 'Last Month', 'Custom Range...']} placeholder="Period: Custom" aria-label="choose the period"></DropDownListComponent>
+                                    <DropDownListComponent dataSource={['Today', 'Yesterday', 'Last 7 Days', 'Last 30 Days', 'This Month', 'Last Month', 'Custom Range...']} placeholder="Period: Custom"></DropDownListComponent>
                                 </span>
                                 <span className="w-64">
                                     <DateRangePickerComponent placeholder="MM/DD/YYYY - MM/DD/YYYY"></DateRangePickerComponent>
                                 </span>
                                 <span className="w-44">
-                                    <DropDownListComponent dataSource={['All Products', 'Product A', 'Product B', 'Product C', 'Product D', 'Custom Selection...']} placeholder="Product: All" aria-label="choose the product"></DropDownListComponent>
+                                    <DropDownListComponent dataSource={['All Products', 'Product A', 'Product B', 'Product C', 'Product D', 'Custom Selection...']} placeholder="Product: All"></DropDownListComponent>
                                 </span>
                                 <span className="w-44">
-                                    <DropDownListComponent dataSource={['All Regions', 'North America', 'Europe', 'Asia-Pacific', 'South America', 'Middle East & Africa', 'Custom Region...']} placeholder="Region: All" aria-label="choose the region"></DropDownListComponent>
+                                    <DropDownListComponent dataSource={['All Regions', 'North America', 'Europe', 'Asia-Pacific', 'South America', 'Middle East & Africa', 'Custom Region...']} placeholder="Region: All"></DropDownListComponent>
                                 </span>
                                 <div className="h-5 border-l border-gray-200 dark:border-gray-600"></div>
                                 <ButtonComponent content="Reset" type="button"></ButtonComponent>
@@ -130,16 +130,16 @@ export default function Header13() {
                                     <TextBoxComponent type="text" placeholder="Enter email ID"></TextBoxComponent>
                                 </span>
                                 <span style={{ width: "182px" }}>
-                                    <DropDownListComponent dataSource={['Today', 'Yesterday', 'Last 7 Days', 'Last 30 Days', 'This Month', 'Last Month', 'Custom Range...']} placeholder="Period: Custom" aria-label="choose the period"></DropDownListComponent>
+                                    <DropDownListComponent dataSource={['Today', 'Yesterday', 'Last 7 Days', 'Last 30 Days', 'This Month', 'Last Month', 'Custom Range...']} placeholder="Period: Custom"></DropDownListComponent>
                                 </span>
                                 <span style={{ width: "242px" }}>
                                     <DateRangePickerComponent placeholder="MM/DD/YYYY - MM/DD/YYYY"></DateRangePickerComponent>
                                 </span>
                                 <span style={{ width: "182px" }}>
-                                    <DropDownListComponent dataSource={['All Products', 'Product A', 'Product B', 'Product C', 'Product D', 'Custom Selection...']} placeholder="Product: All" aria-label="choose the product"></DropDownListComponent>
+                                    <DropDownListComponent dataSource={['All Products', 'Product A', 'Product B', 'Product C', 'Product D', 'Custom Selection...']} placeholder="Product: All"></DropDownListComponent>
                                 </span>
                                 <span style={{ width: "182px" }}>
-                                    <DropDownListComponent dataSource={['All Regions', 'North America', 'Europe', 'Asia-Pacific', 'South America', 'Middle East & Africa', 'Custom Region...']} placeholder="Region: All" aria-label="choose the region"></DropDownListComponent>
+                                    <DropDownListComponent dataSource={['All Regions', 'North America', 'Europe', 'Asia-Pacific', 'South America', 'Middle East & Africa', 'Custom Region...']} placeholder="Region: All"></DropDownListComponent>
                                 </span>
                                 <div className="border-start border-secondary" style={{ height: "16px" }}></div>
                                 <ButtonComponent cssClass="e-outline" content="Reset" type="button"></ButtonComponent>

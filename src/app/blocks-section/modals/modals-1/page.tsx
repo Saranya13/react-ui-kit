@@ -132,7 +132,7 @@ export default function Modals1() {
                                                 <DatePickerComponent placeholder="MM/DD/YYYY"></DatePickerComponent >
                                             </div>
                                             <div className="flex flex-col gap-1">
-                                                <label>Tags/ Labels</label>
+                                                <label>Tags/Labels</label>
                                                 <DropDownListComponent placeholder="Select keywords or tags"></DropDownListComponent>
                                             </div>
                                             <div className="flex flex-col gap-1">
@@ -222,7 +222,7 @@ export default function Modals1() {
                                                 <DatePickerComponent placeholder="MM/DD/YYYY"></DatePickerComponent>
                                             </div>
                                             <div className="col-12 col-sm-6 d-flex flex-column gap-1">
-                                                <label>Tags/ Labels</label>
+                                                <label>Tags/Labels</label>
                                                 <DropDownListComponent placeholder="Select keywords or tags"></DropDownListComponent>
                                             </div>
                                             <div className="col-12 col-sm-6 d-flex flex-column gap-1">

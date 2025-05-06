@@ -96,7 +96,9 @@ export default function Notification6() {
             setOverflowMode('Extended');
             setWidth('540px');
         }
-        tab.current?.refresh();
+        setTimeout(() => {
+            tab.current?.refresh();
+        }, 200);
     };
 
     /* SB Code - Start */

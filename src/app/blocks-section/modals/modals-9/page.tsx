@@ -40,8 +40,8 @@ export default function Modals9() {
     const onDialogOpen = (args: OpenEventArgs) => {
         args.preventFocus = true;
         setTimeout(() => {
-            rte.current?.refreshUI();
-        }, 100);
+            rte.current?.refresh();
+        }, 150);
     };
 
     /* SB Code - Start */

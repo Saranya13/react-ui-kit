@@ -106,7 +106,7 @@ export default function FilterPanel4() {
                                                 <span className="e-avatar e-avatar-medium e-avatar-circle bg-primary-600 dark:bg-primary-400 text-sm text-white dark:text-black">MG</span>
                                                 <div>
                                                     <h2 className="text-sm font-medium text-gray-900 dark:text-white">Michael Green</h2>
-                                                    <a href="#" className="text-xs font-normal text-gray-500 dark:text-gray-400">michael.green@gmail.com</a>
+                                                    <a href="#" className="text-xs font-normal text-gray-500 dark:text-gray-400">michael.green@example.com</a>
                                                 </div>
                                             </div>
                                         )}>
@@ -199,7 +199,7 @@ export default function FilterPanel4() {
                                                         <span className="e-avatar e-avatar-medium e-avatar-circle bg-primary text-white">MG</span>
                                                         <div>
                                                             <h2 className="fs-6 mb-1 fw-medium text-body">Michael Green</h2>
-                                                            <a href="#" className="fs-6 fw-normal text-secondary">michael.green@gmail.com</a>
+                                                            <a href="#" className="fs-6 fw-normal text-secondary">michael.green@example.com</a>
                                                         </div>
                                                     </div>
                                                 )}>
