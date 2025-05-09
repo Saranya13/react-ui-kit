@@ -4,11 +4,7 @@
     padding: 0 !important;
 }
 
-#tab :global(.e-tab .e-tab-header .e-toolbar-items) {
-    width: 100% !important;
-}
-
-#tab :global(.e-tab .e-tab-header .e-toolbar-items .e-tab-wrap) {
+#notification #tab_container :global(.e-tab .e-tab-header .e-toolbar-items .e-tab-wrap) {
     padding: 0 12px !important;
 }
 

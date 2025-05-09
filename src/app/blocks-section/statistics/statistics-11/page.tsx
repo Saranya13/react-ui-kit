@@ -134,7 +134,7 @@ export default function Statistics11() {
                                             <div className="e-card-content pb-6">
                                                 <p className="leading-7 mt-2 text-xl font-semibold text-gray-900 dark:text-white">{data.currentValue}</p>
                                                 <p className="mt-1 text-gray-700 dark:text-gray-200">{data.currentPercentage > 0 ? "+" : ""}{data.currentPercentage}&#37; from last month</p>
-                                                <div>
+                                                <div style={{ width: '100%', height: '70px' }}>
                                                     <ChartComponent ref={(chartInstance) => {chartsRef.current[index] = chartInstance as ChartComponent | null;}} chartArea={{ border: { width: 0 } }} primaryXAxis={{ visible: false, lineStyle: { width: 0 }, majorGridLines: { width: 0 }, minorGridLines: { width: 0 } }} primaryYAxis={{ visible: false, lineStyle: { width: 0 }, minimum: 0, maximum: 4, interval: 1, majorGridLines: { width: 0 }, minorGridLines: { width: 0 } }} height="70" width="100%" margin={{ left: 0, right: 0, top: 0, bottom: 0 }} legendSettings={{ visible: false }} style={{ display: "block" }}>
                                                         <Inject services={[SplineAreaSeries]} />
                                                         <SeriesCollectionDirective>
@@ -166,7 +166,7 @@ export default function Statistics11() {
                                                 <div className="e-card-content pb-4 px-4 pt-3">
                                                     <p className="fs-5 lh-sm fw-bold text-body mb-2">{data.currentValue}</p>
                                                     <p className="text-body-secondary mb-0">{data.currentPercentage > 0 ? '+' : ''}{data.currentPercentage}&#37; from last month</p>
-                                                    <div>
+                                                    <div style={{ width: '100%', height: '70px' }}>
                                                         <ChartComponent ref={(chartInstance) => {chartsRef.current[index] = chartInstance as ChartComponent | null;}} chartArea={{ border: { width: 0 } }} primaryXAxis={{ visible: false, lineStyle: { width: 0 }, majorGridLines: { width: 0 }, minorGridLines: { width: 0 } }} primaryYAxis={{ visible: false, lineStyle: { width: 0 }, minimum: 0, maximum: 4, interval: 1, majorGridLines: { width: 0 }, minorGridLines: { width: 0 } }} height="70" width="100%" margin={{ left: 0, right: 0, top: 0, bottom: 0 }} legendSettings={{ visible: false }} style={{ display: "block" }}>
                                                             <Inject services={[SplineAreaSeries]} />
                                                             <SeriesCollectionDirective>

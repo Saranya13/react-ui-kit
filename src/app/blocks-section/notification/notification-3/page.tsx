@@ -173,7 +173,7 @@ export default function Notification3() {
                                                     </div>
                                                 )}
                                             ></TabItemDirective>
-                                            <TabItemDirective header={{ text: 'Calls' }} content={() => <div className="text-center py-2">No record found.</div>}></TabItemDirective>
+                                            <TabItemDirective header={{ text: 'Calls' }} content={() => <div className="text-center py-6" style={{minHeight: '340px'}}>No record found.</div>}></TabItemDirective>
                                         </TabItemsDirective>
                                     </TabComponent>
                                 </DialogComponent>
@@ -237,7 +237,7 @@ export default function Notification3() {
                                                     </div>
                                                 )}
                                             ></TabItemDirective>
-                                            <TabItemDirective header={{ text: 'Calls' }} content={() => <div className="text-center py-2">No record found.</div>}></TabItemDirective>
+                                            <TabItemDirective header={{ text: 'Calls' }} content={() => <div className="text-center py-4" style={{minHeight: '340px'}}>No record found.</div>}></TabItemDirective>
                                         </TabItemsDirective>
                                     </TabComponent>
                                 </DialogComponent>

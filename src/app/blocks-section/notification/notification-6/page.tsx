@@ -152,8 +152,8 @@ export default function Notification6() {
                                             <ButtonComponent cssClass="e-round e-flat" iconCss="e-icons e-close" content=" " onClick={() => sidebarRef.current?.toggle()} type="button"></ButtonComponent>
                                         </div>
                                     </div>
-                                    <div className="mt-3">
-                                        <TabComponent id={styles.tab} ref={tab} heightAdjustMode="Auto" overflowMode={overflowMode} created={onTabCreated} selected={onTabSelected}>
+                                    <div id={styles.tab_container} className="mt-3">
+                                        <TabComponent ref={tab} heightAdjustMode="Auto" overflowMode={overflowMode} created={onTabCreated} selected={onTabSelected}>
                                             <TabItemsDirective>
                                                 <TabItemDirective header={{ text: 'All (1)' }}></TabItemDirective>
                                                 <TabItemDirective header={{ text: 'Focused (1)' }}></TabItemDirective>
@@ -224,8 +224,8 @@ export default function Notification6() {
                                             <ButtonComponent cssClass="e-round e-flat" iconCss="e-icons e-close" content=" " onClick={() => sidebarRef.current?.toggle()} type="button"></ButtonComponent>
                                         </div>
                                     </div>
-                                    <div className="mt-2">
-                                        <TabComponent id={styles.tab} ref={tab} heightAdjustMode="Auto" overflowMode={overflowMode} created={onTabCreated} selected={onTabSelected}>
+                                    <div id={styles.tab_container} className="mt-2">
+                                        <TabComponent ref={tab} heightAdjustMode="Auto" overflowMode={overflowMode} created={onTabCreated} selected={onTabSelected}>
                                             <TabItemsDirective>
                                                 <TabItemDirective header={{ text: "All (1)" }}></TabItemDirective>
                                                 <TabItemDirective header={{ text: "Focused (1)" }}></TabItemDirective>

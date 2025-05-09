@@ -117,13 +117,13 @@ export default function Modals9() {
                                             <Inject services={[Toolbar, HtmlEditor, Link, Image, Table,Count]} />
                                         </RichTextEditorComponent>
                                     </div>
-                                    <div id={styles["upload-template"]} className="flex flex-col border border-dashed border-gray-300 dark:border-gray-500 rounded-md bg-gray-50 dark:bg-gray-700">
+                                    <div id={styles["upload-template"]} className="flex flex-col border border-dashed border-gray-300 dark:border-gray-500 rounded-md bg-gray-50 dark:bg-gray-700 drop-area">
                                         <p className="text-sm font-normal text-gray-500 dark:text-gray-400 mx-auto py-4 my-0.5">
                                             <span className="hidden sm:inline">Drag and drop (PDF, JPG, PNG) files here, or </span>
                                             <a href="#" className="font-medium underline text-primary-600 dark:text-primary-400" onClick={() => upload.current?.element.click()}>Browse <span className="sm:hidden">Files</span></a>
                                             <span className="sm:hidden"> (PDF, JPG, PNG)</span>
                                         </p>
-                                        <UploaderComponent ref={upload} dropArea="#upload-template"></UploaderComponent>
+                                        <UploaderComponent ref={upload} dropArea=".drop-area"></UploaderComponent>
                                     </div>
                                     <div className="flex flex-col gap-1">
                                         <label>Priority <span className="text-red-600 font-normal dark:text-red-400">*</span></label>
@@ -179,13 +179,13 @@ export default function Modals9() {
                                         </RichTextEditorComponent>
                                     </div>
                                     <div>
-                                        <div id={styles["upload-template"]} className="d-flex flex-column border-1 rounded bg-body-tertiary border-opacity-50 border-secondary" style={{ borderStyle: "dashed" }}>
+                                        <div id={styles["upload-template"]} className="d-flex flex-column border-1 rounded bg-body-tertiary border-opacity-50 border-secondary drop-area" style={{ borderStyle: "dashed" }}>
                                             <p className="fw-medium text-body text-opacity-50 mx-auto py-3 mb-0">
                                                 <span className="d-none d-sm-inline">Drag and drop (PDF, JPG, PNG) files here, or </span>
                                                 <a href="#" className="text-primary" onClick={() => upload.current?.element.click()}>Browse <span className="d-sm-none">Files</span></a>
                                                 <span className="d-sm-none"> (PDF, JPG, PNG)</span>
                                             </p>
-                                            <UploaderComponent ref={upload} dropArea="#upload-template"></UploaderComponent>
+                                            <UploaderComponent ref={upload} dropArea=".drop-area"></UploaderComponent>
                                         </div>
                                     </div>
                                     <div className="d-flex flex-column gap-1 small">

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { DialogComponent, OpenEventArgs } from '@syncfusion/ej2-react-popups';
-import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Link, Image, Table, Count } from '@syncfusion/ej2-react-richtexteditor';
+import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Link, Image, Table, Count, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 import styles from './page.module.css';
 
@@ -90,7 +90,7 @@ export default function Modals11() {
                                         <label>Comments <span className="text-red-600 font-normal dark:text-red-400">*</span></label>
                                         <RichTextEditorComponent id={styles["rteElement"]} ref={rte} toolbarSettings={{ items: ['Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName', 'FontColor', 'BackgroundColor', '|', 'CreateLink'] }} placeholder="Enter your comments" maxLength={500} showCharCount={true} height={rteHeight}>
                                             <p></p>
-                                            <Inject services={[Toolbar, HtmlEditor, Link, Image, Table, Count]} />
+                                            <Inject services={[Toolbar, HtmlEditor, Link, Image, Table, Count, QuickToolbar]} />
                                         </RichTextEditorComponent>
                                     </form>
                                 </div>
@@ -119,7 +119,7 @@ export default function Modals11() {
                                         <label>Comments <span className="text-danger">*</span></label>
                                         <RichTextEditorComponent id={styles["rteElement"]} ref={rte} toolbarSettings={{ items: ['Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName', 'FontColor', 'BackgroundColor', '|', 'CreateLink'] }} placeholder="Enter your comments" maxLength={500} showCharCount={true} height={rteHeight}>
                                             <p></p>
-                                            <Inject services={[Toolbar, HtmlEditor, Link, Image, Table, Count]} />
+                                            <Inject services={[Toolbar, HtmlEditor, Link, Image, Table, Count, QuickToolbar]} />
                                         </RichTextEditorComponent>
                                     </form>
                                 </div>

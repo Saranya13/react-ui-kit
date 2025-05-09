@@ -153,12 +153,12 @@ export default function Notification1() {
                                     )}
                                     footerTemplate={() => (
                                         <div className="py-3 sm:py-2.5 flex justify-center bg-gray-200 dark:bg-gray-700">
-                                            <ButtonComponent cssClass="e-outline w-max !ml-0 !bg-white dark:!bg-gray-800" content="View all notifications" type="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-flat w-max !ml-0" content="View all notifications" type="button"></ButtonComponent>
                                         </div>
                                     )}
                                 >
                                     <div id={styles.tab} className="relative">
-                                        <ButtonComponent cssClass="e-link absolute right-3 top-1 z-50 hidden sm:block" content="Mark all as read" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-link !text-gray-700 dark:!text-white absolute right-3 top-1 z-50 hidden sm:block" content="Mark all as read" type="button"></ButtonComponent>
                                         <TabComponent ref={tabRef} created={onTabCreated} selected={onTabSelected} overflowMode={"Scrollable"}>
                                             <TabItemsDirective>
                                                 <TabItemDirective
@@ -229,7 +229,7 @@ export default function Notification1() {
                                     )}
                                 >
                                     <div className="position-relative mt-1">
-                                        <ButtonComponent cssClass="e-link position-absolute top-0 end-0 z-1 d-none d-sm-block me-2" content="Mark all as read" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-link text-secondary position-absolute top-0 end-0 z-1 d-none d-sm-block me-2" content="Mark all as read" type="button"></ButtonComponent>
                                         <TabComponent ref={tabRef} created={onTabCreated} selected={onTabSelected} overflowMode={"Scrollable"}>
                                             <TabItemsDirective>
                                                 <TabItemDirective

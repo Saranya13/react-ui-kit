@@ -117,7 +117,7 @@ export default function Notification2() {
                                             <p className="font-semibold text-gray-900 dark:text-white leading-5">Uploading 'Image 123-Finalbatch.exe'</p>
                                             <p className="text-xs text-gray-900 dark:text-white">Please wait while we are uploading your file</p>
                                             <div className="pt-2.5 w-full">
-                                                <ProgressBarComponent ref={progressbarRef} type="Linear" width="100%" height="2px" value={50} progressColor="#4F46E5" animation={{ enable: true, duration: 2000, delay: 0 }}></ProgressBarComponent>
+                                                <ProgressBarComponent ref={progressbarRef} type="Linear" width="100%" height="2px" cornerRadius="Round" value={50} progressColor="#4F46E5" animation={{ enable: true, duration: 2000, delay: 0 }}></ProgressBarComponent>
                                                 <p className="text-xs text-gray-900 dark:text-white ml-auto mt-1 mr-3 w-max">50% uploaded..</p>
                                             </div>
                                             <div className="flex gap-3">
@@ -176,7 +176,7 @@ export default function Notification2() {
                                             <p className="fw-semibold text-body m-0">Uploading 'Image 123-Finalbatch.exe'</p>
                                             <p className="small text-body-secondary m-0">Please wait while we are uploading your file</p>
                                             <div className="pt-2 w-100">
-                                                <ProgressBarComponent ref={progressbarRef} type="Linear" width="100%" height="12px" trackThickness={12} progressThickness={12} value={50} progressColor="#0D6EFD" animation={{ enable: true, duration: 2000, delay: 0 }}></ProgressBarComponent>
+                                                <ProgressBarComponent ref={progressbarRef} type="Linear" width="100%" height="6px" cornerRadius="Round" trackThickness={6} progressThickness={6} value={50} progressColor="#0D6EFD" animation={{ enable: true, duration: 2000, delay: 0 }}></ProgressBarComponent>
                                                 <p className="small ms-auto mt-1 me-3 mb-0 text-body-secondary" style={{ width: 'fit-content' }}>50% uploaded..</p>
                                             </div>
                                             <div className="d-flex gap-3">
