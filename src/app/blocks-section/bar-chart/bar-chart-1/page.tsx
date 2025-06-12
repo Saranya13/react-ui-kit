@@ -37,7 +37,7 @@ export default function BarChart1() {
     };
 
     const primaryYAxis: object = {
-        labelFormat: '${value} K',
+        labelFormat: '${value}K',
         majorTickLines: { width: 0 },
         lineStyle: { width: 0 },
         minimum: 0,

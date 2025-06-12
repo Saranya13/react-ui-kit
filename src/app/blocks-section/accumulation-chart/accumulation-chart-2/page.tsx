@@ -120,7 +120,7 @@ export default function AccumulationChart2() {
                                         <label className="e-btn" htmlFor="custom">Custom</label>
                                     </div>
                                 </div>
-                                <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline sm:hidden my-4" content="Week" items={[{ text: 'Day' }, { text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
+                                <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline sm:hidden my-4" content="Week" items={[{ text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
                                 <div className="mt-2">
                                     <AccumulationChartComponent ref={chartRef} width="100%" height={isMobileview ? '360px' : '240px'} legendSettings={legendSettings} enableBorderOnMouseMove={false} load={(args) => chartLoad(args, 'Tailwind3', 'Tailwind3Dark')}>
                                         <Inject services={[AccumulationLegend, AccumulationDataLabel]} />
@@ -158,7 +158,7 @@ export default function AccumulationChart2() {
                                         <label className="e-btn" htmlFor="custom">Custom</label>
                                     </div>
                                 </div>
-                                <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline d-sm-none my-3" content="Week" items={[{ text: 'Day' }, { text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
+                                <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline d-sm-none my-3" content="Week" items={[{ text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
                                 <div className="mt-2">
                                     <AccumulationChartComponent ref={chartRef} width="100%" height={isMobileview ? '360px' : '240px'} legendSettings={legendSettings} enableBorderOnMouseMove={false} load={(args) => chartLoad(args, 'Bootstrap5', 'Bootstrap5Dark')}>
                                         <Inject services={[AccumulationLegend, AccumulationDataLabel]} />

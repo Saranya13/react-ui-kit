@@ -41,8 +41,8 @@ export default function Rating2() {
                         <div className="pt-4" style={{ minHeight: "36rem" }}>
                             <div className="mt-4 p-4 mx-auto max-w-sm border-0 sm:!rounded-lg sm:!border rounded-none border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-800 flex flex-col justify-center items-center">
                                 <img className="h-10 w-9" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" alt="logo" />
-                                <div className="flex justify-center items-center ml-2" style={{ minHeight: "60px" }}>
-                                    <RatingComponent value={4} showLabel={true}
+                                <div className="flex justify-center items-center ml-2" style={{ minHeight: "49px" }}>
+                                    <RatingComponent value={4} showLabel={true} enableAnimation={false}
                                         emptyTemplate={
                                             () => <span className="sf-icon-star-filled-01 text-2xl text-gray-300 dark:text-gray-500"></span>
                                         } 
@@ -50,7 +50,7 @@ export default function Rating2() {
                                             () => <span className="sf-icon-star-filled-01 text-2xl text-amber-300"></span>
                                         }
                                         labelTemplate={
-                                            (value: any)=><p className="!text-gray-900 dark:!text-white text-sm font-medium">{value?.value}.0 / 5.0</p>
+                                            (value: any)=><p className="!text-gray-900 dark:!text-white text-sm font-medium">{value?.value} / 5</p>
                                         }
                                     ></RatingComponent>
                                 </div>
@@ -63,10 +63,10 @@ export default function Rating2() {
                 return (
                     <section className="bg-body-tertiary">
                         <div className="pt-4" style={{ minHeight: "36rem" }}>
-                            <div className="mt-4 p-3 mx-auto rounded border d-flex flex-column justify-content-center align-items-center bg-body" style={{ width: '384px' }} >
+                            <div className="p-3 mx-auto rounded-3 border d-flex flex-column justify-content-center align-items-center bg-body" style={{maxWidth: '384px' }} >
                                 <img src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg"alt="logo" style={{ height: '40px', width: '36px' }} />
-                                <div className="d-flex justify-content-center align-items-center mt-2" style={{ minHeight: "60px" }}>
-                                    <RatingComponent value={4}
+                                <div className="mt-1" style={{ minHeight: "49px" }}>
+                                    <RatingComponent value={4} showLabel={true} enableAnimation={false}
                                         emptyTemplate={
                                             () => <span className="sf-icon-star-02 fs-4 text-body-secondary"></span>
                                         } 
@@ -74,7 +74,7 @@ export default function Rating2() {
                                             () => <span className="sf-icon-star-filled-01 fs-4 text-warning"></span>
                                         }
                                         labelTemplate={
-                                            (value: any)=><p className="text-body mb-1 fw-medium">{value?.value}.0 / 5.0</p>
+                                            (value: any)=><p className="text-body mb-1 fw-medium">{value?.value} / 5</p>
                                         }
                                     ></RatingComponent>
                                 </div>

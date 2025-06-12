@@ -41,7 +41,7 @@ export default function Rating1() {
                         <div className="pt-4" style={{ minHeight: "36rem" }}>
                             <div className="mx-auto max-w-sm p-4 sm:!rounded-lg sm:!border rounded-none border-0 border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-800 text-center">
                                 <h3 className="text-base font-semibold text-gray-900 dark:text-white">Customer reviews</h3>
-                                <div className="group hover:shadow-md" style={{ minHeight: "54px" }}>
+                                <div className="group hover:shadow-md" style={{ minHeight: "49px" }}>
                                     <RatingComponent value={4} showLabel={true}
                                         emptyTemplate={
                                             () => <span className="sf-icon-star-filled-01 text-2xl text-gray-300 dark:text-gray-500"></span>
@@ -50,11 +50,11 @@ export default function Rating1() {
                                             () => <span className="sf-icon-star-filled-01 text-2xl text-amber-300"></span>
                                         }
                                         labelTemplate={
-                                            (value: any)=><p className="!text-gray-900 dark:!text-white text-sm font-medium">{value?.value}.0 / 5.0</p>
+                                            (value: any)=><p className="!text-gray-900 dark:!text-white text-sm font-medium">{value?.value} / 5</p>
                                         }
                                     ></RatingComponent>
                                 </div>
-                                <p className="text-sm mb-0 text-gray-500 dark:text-gray-400">based on 135 ratings</p>
+                                <p className="text-sm text-gray-500 dark:text-gray-400">based on 135 ratings</p>
                             </div>
                         </div>
                     </section>
@@ -64,9 +64,9 @@ export default function Rating1() {
                     <section className="bg-body-tertiary">
                         <div className="pt-3" style={{ minHeight: "36rem" }}>
                             <div className="container">
-                                <div className="mx-auto p-3 rounded text-center border bg-body" style={{ maxWidth: "384px" }}>
+                                <div className="mx-auto py-3 rounded-3 text-center border bg-body" style={{ maxWidth: "384px" }}>
                                     <h3 className="fs-6 fw-semibold text-body">Customer reviews</h3>
-                                        <div style={{minHeight:"54px"}}>
+                                        <div style={{minHeight:"49px"}}>
                                             <RatingComponent value={4} showLabel={true}
                                                 emptyTemplate={
                                                     () => <span className="sf-icon-star-02 fs-4 text-body-secondary"></span>
@@ -75,7 +75,7 @@ export default function Rating1() {
                                                     () => <span className="sf-icon-star-filled-01 fs-4 text-warning"></span>
                                                 }
                                                 labelTemplate={
-                                                    (value: any)=><p className="text-body mb-1 fw-medium">{value?.value}.0 / 5.0</p>
+                                                    (value: any)=><p className="text-body mb-1 fw-medium">{value?.value} / 5</p>
                                                 }
                                             ></RatingComponent>
                                         </div>

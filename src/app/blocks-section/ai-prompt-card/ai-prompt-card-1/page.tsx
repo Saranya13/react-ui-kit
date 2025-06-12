@@ -91,7 +91,7 @@ export default function AIPromptCard1() {
             case 'bootstrap5':
                 return (
                     <section className="bg-body-tertiary">
-                        <div className="py-5 px-3 mx-auto" style={{ maxWidth: "572px" }}>
+                        <div className="py-5 px-3 mx-auto" style={{ maxWidth: "580px" }}>
                             <div className="row g-3">
                                 <div className="col-sm-6">
                                     <div className="e-card e-card-horizontal rounded-4 gap-3 shadow-none">

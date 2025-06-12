@@ -75,7 +75,7 @@ export default function AIChat1() {
                 return (
                     <section>
                         <div id={styles["chat-header"]} className="flex flex-col items-center max-w-4xl mx-auto pb-6 rounded-xl overflow-hidden bg-white dark:bg-gray-900" style={{ maxHeight: '850px', minHeight: '36rem', maxWidth: '850px' }}>
-                            <div className="flex items-center w-full flex-col px-1 py-2">
+                            <div className="flex items-center w-full flex-col px-1 sm:px-4 py-2">
                                 <ListViewComponent className="!border-0 py-4" dataSource={promptData} width="100%" height="100%"
                                     template={(data: any) =>
                                         data.category !== 'reply' ? (
@@ -137,7 +137,7 @@ export default function AIChat1() {
                 return (
                     <section>
                         <div id={styles["chat-header"]} className="d-flex flex-column align-items-center mx-auto pb-4 rounded overflow-hidden bg-body" style={{ maxHeight: '850px', minHeight: '36rem', maxWidth: '850px' }}>
-                            <div className="d-flex align-items-center w-100 flex-column px-1 py-2">
+                            <div className="d-flex align-items-center w-100 flex-column px-1 px-sm-3 py-2">
                                 <ListViewComponent className="border-0 py-4" dataSource={promptData} width="100%" height="100%" template={(data: any)=>
                                     data.category !== 'reply' ? (
                                     <div className="d-flex justify-content-end ms-auto me-sm-3 gap-3 align-items-start w-100 w-sm-75">

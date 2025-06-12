@@ -22,6 +22,9 @@ export default function AIPricingTable1() {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'ai-pricing-table-1' && blockData.theme) {
                     setTheme(blockData.theme);
+                    setTimeout(() => {
+                        handleResize();
+                    }, 100);
                 }
             } catch (error) {
                 console.log('Error parsing message data: ', error);
@@ -155,7 +158,7 @@ export default function AIPricingTable1() {
                 return (
                     <section>
                         <div id="dialog-container" className="position-relative d-flex align-items-center justify-content-center" style={{ minHeight: "580px" }}>
-                            <DialogComponent key={"pricing-table-bs"} ref={pricing} className="position-absolute py-3" target="#dialog-container" visible={true} showCloseIcon={true} width="537px" height="470px" closeOnEscape={true} open={(event) => (event.preventFocus = true)}
+                            <DialogComponent key={"pricing-table-bs"} ref={pricing} className="position-absolute py-3" target="#dialog-container" visible={true} showCloseIcon={true} width="537px" height="480px" closeOnEscape={true} open={(event) => (event.preventFocus = true)}
                                 header={() => {
                                     return (<span className="text-base">Select plan</span>)
                                 }}

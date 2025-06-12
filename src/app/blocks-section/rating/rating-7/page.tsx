@@ -38,9 +38,9 @@ export default function Rating7() {
         switch (theme) {
             case 'tailwind':
                 return (
-                       <section className="bg-gray-50 dark:bg-gray-800">
+                    <section className="bg-gray-50 dark:bg-gray-800">
                             <div className="pt-4" style={{ minHeight: "36rem" }}>
-                                <div className="flex flex-col gap-8 lg:flex-row mt-4 items-center justify-center">
+                                <div className="flex flex-col gap-5 lg:flex-row items-center justify-center">
                                     <div className="p-6 border-0 sm:!rounded-lg sm:!border rounded-none bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-500">
                                         <h3 className="font-semibold mb-6 text-base text-center text-gray-900 dark:text-white">Were you satisfied with our platform</h3>
                                         <div className="flex gap-10 justify-center">
@@ -64,7 +64,7 @@ export default function Rating7() {
                                             <div className="flex gap-4 justify-center">
                                                 <p className="text-sm text-gray-700 dark:text-gray-100">Was this page helpful?</p>
                                                 <div className="flex justify-center gap-3">
-                                                <ButtonComponent cssClass="e-small" iconCss="e-icons e-thumbs-up"  type="button">Yes</ButtonComponent>
+                                                <ButtonComponent cssClass="e-small" iconCss="e-icons e-thumbs-up" type="button">Yes</ButtonComponent>
                                                 <ButtonComponent cssClass="e-small" iconCss="e-icons e-thumbs-down" type="button">No</ButtonComponent>
                                                 </div>
                                             </div>
@@ -72,32 +72,32 @@ export default function Rating7() {
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                    </section>
 
                 );
             case 'bootstrap5':
                 return (
                     <section className="bg-body-tertiary">
                         <div className="pt-4" style={{ minHeight: "36rem" }}>
-                            <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 mt-4">
-                                <div className="p-4 bg-white border rounded text-center flex-grow-1 bg-body" style={{ maxWidth: "330px" }}>
+                            <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5">
+                                <div className="p-4 bg-white border rounded-3 text-center flex-grow-1 bg-body" style={{ maxWidth: "330px" }}>
                                     <h3 className="fw-semibold mb-4 fs-6 text-center text-body">Were you satisfied with our platform</h3>
                                     <div className="d-flex justify-content-center gap-5">
                                         <div className="d-flex flex-column align-items-center" onClick={() => setSatisfactoryLevel(true)}>
-                                            <div className="e-avatar e-avatar-circle d-flex align-items-center justify-content-center" style={{ width: "4rem", height: "4rem", backgroundColor: satisfactoryLevel === true ? "#d1e7dd" : "#e9ecef", color: satisfactoryLevel === true ? "#0f5132" : "#6c757d",}}>
+                                            <div className={`e-avatar e-avatar-circle d-flex align-items-center justify-content-center ${ satisfactoryLevel === true ? "bg-success-subtle text-success" : "bg-secondary-subtle text-body-secondary"}`} style={{ width: "64px", height: "64px" }}>
                                                 <span className="e-icons e-thumbs-up fs-2"></span>
                                             </div>
-                                            <span className={`mt-2 small fw-medium ${satisfactoryLevel === true ? "text-success" : "text-body"}`}> YES</span>
+                                            <span className={`mt-2 small fw-medium ${ satisfactoryLevel === true ? "text-success" : "text-body"}`}>YES</span>
                                         </div>
                                         <div className="d-flex flex-column align-items-center" onClick={() => setSatisfactoryLevel(false)}>
-                                            <div className="e-avatar e-avatar-circle d-flex align-items-center justify-content-center" style={{ width: "4rem", height: "4rem", backgroundColor: satisfactoryLevel === false ? "#f8d7da" : "#e9ecef", color: satisfactoryLevel === false ? "#842029" : "#6c757d" }}>
+                                            <div className={`e-avatar e-avatar-circle d-flex align-items-center justify-content-center ${ satisfactoryLevel === false ? "bg-danger-subtle text-danger" : "bg-secondary-subtle text-body-secondary"}`} style={{ width: "64px", height: "64px" }}>
                                                 <span className="e-icons e-thumbs-down fs-2"></span>
                                             </div>
-                                           <span className={`mt-2 small fw-medium ${satisfactoryLevel === false ? "text-danger" : "text-body"}`}>NO</span>
+                                            <span className={`mt-2 small fw-medium ${ satisfactoryLevel === false ? "text-danger" : "text-body"}`}>No</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="p-4 bg-white border rounded w-100 bg-body" style={{ maxWidth: "360px" }}>
+                                <div className="p-4 bg-white border rounded-3 w-100 bg-body" style={{ maxWidth: "360px" }}>
                                     <h3 className="fw-semibold fs-6 text-center text-body">Share your feedback</h3>
                                     <div className="mt-3 d-flex flex-row justify-content-center align-item-center gap-3">
                                         <p className="small text-body-secondary mb-1">Was this page helpful?</p>

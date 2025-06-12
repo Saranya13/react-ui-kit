@@ -98,6 +98,13 @@ export default function AISearch2() {
             }
         }, 250);
     };
+
+    const updatePopup = () => {
+        search.current?.showPopup();
+        setTimeout(() => {
+            tab.current?.refresh();
+        }, 100);
+    };
       
     const handleResize = (): void => {
         setWidth(window.innerWidth > 767 ? { maxWidth: "520px" } : { width: "100%" });
@@ -146,7 +153,7 @@ export default function AISearch2() {
                 return (
                     <section className="bg-white dark:bg-gray-900 h-full">
                         <div className="w-full pt-5 pb-4" style={{ height: "750px" }}>
-                            <div id={styles.search_list} className="px-4 mx-auto lg:px-0" style={width}>
+                            <div id={styles.search_list} className="px-4 mx-auto sm:px-0" style={width}>
                                 <AutoCompleteComponent
                                     key={"search-2-tw"}
                                     ref={search}
@@ -156,7 +163,7 @@ export default function AISearch2() {
                                     popupHeight="650px"
                                     placeholder="Search"
                                     close={close}
-                                    focus={() => search.current?.showPopup()}
+                                    focus={updatePopup}
                                     created={openPopup}
                                     headerTemplate={() => (
                                         <div id={styles.search_tab}>
@@ -233,7 +240,7 @@ export default function AISearch2() {
                                     popupHeight="650px"
                                     placeholder="Search"
                                     close={close}
-                                    focus={() => search.current?.showPopup()}
+                                    focus={updatePopup}
                                     created={openPopup}
                                     headerTemplate={() => (
                                         <div id={styles.search_tab}>

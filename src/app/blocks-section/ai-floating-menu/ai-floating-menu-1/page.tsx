@@ -93,13 +93,13 @@ export default function AIFloatingMenu1() {
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div id="target" className="w-full" style={{ height: isMobileView ? "580px" : "690px" }}>
                             <div className="flex items-center justify-center pt-4 block sm:hidden">
-                                <ButtonComponent cssClass="e-primary e-round e-bigger" iconCss="sf-icon-help-circle" type="button" onClick={toggleDialog}></ButtonComponent>
+                                <ButtonComponent cssClass="e-primary e-round e-bigger" iconCss="sf-icon-help-circle !text-xl" type="button" onClick={toggleDialog}></ButtonComponent>
                             </div>
                             <DialogComponent ref={dialogRef} id={styles["floating-chat"]} className="sm:!rounded-2xl !rounded-none overflow-hidden !border-0" width={isMobileView ? "400px" : "350px"} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => (
                                     <div className="pt-4 pb-5 bg-primary-600 dark:bg-primary-400">
                                         <div className="flex justify-end block sm:hidden px-4 absolute right-0">
-                                            <ButtonComponent cssClass="e-primary e-round" iconCss="e-icons e-close text-white dark:text-black" type="button" onClick={toggleDialog}></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-round" iconCss="e-icons e-close text-white dark:text-black !leading-5" type="button" onClick={toggleDialog}></ButtonComponent>
                                         </div>
                                         <div className="flex flex-col items-center pt-2">
                                             <h2 className="text-white dark:text-black font-semibold text-sm">Chat with our AI</h2>
@@ -127,7 +127,7 @@ export default function AIFloatingMenu1() {
                     <section className="bg-body">
                         <div id="target" className="w-100" style={{ height: isMobileView ? '580px' : '690px' }}>
                             <div className="d-flex align-items-center justify-content-center pt-4 d-block d-sm-none">
-                                <ButtonComponent cssClass="e-primary e-round e-bigger" iconCss="sf-icon-help-circle" type="button" onClick={toggleDialog}></ButtonComponent>
+                                <ButtonComponent cssClass="e-primary e-round e-bigger" iconCss="sf-icon-help-circle fs-5 lh-base" type="button" onClick={toggleDialog}></ButtonComponent>
                             </div>
                             <DialogComponent ref={dialogRef} id={styles["floating-chat"]} className="rounded-4 overflow-hidden border-0" width={isMobileView ? '400px' : '350px'} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => (
@@ -154,7 +154,7 @@ export default function AIFloatingMenu1() {
                                     </div>
                                 </div>
                             </DialogComponent>
-                            <FabComponent ref={fabRef} className="d-none d-sm-block" cssClass="e-primary e-round e-bigger" iconCss={!toggleState ? 'sf-icon-help-circle fs-5' : 'e-icons e-close fs-5'} type="button" position="BottomRight" target="#target" onClick={toggleDialog}></FabComponent>
+                            <FabComponent ref={fabRef} className="d-none d-sm-block" cssClass="e-primary e-round e-bigger" iconCss={!toggleState ? 'sf-icon-help-circle fs-5 lh-base' : 'e-icons e-close fs-5 lh-base'} type="button" position="BottomRight" target="#target" onClick={toggleDialog}></FabComponent>
                         </div>
                     </section>
                 );

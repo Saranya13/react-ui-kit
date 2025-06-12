@@ -43,16 +43,16 @@ export default function Rating6() {
                             <div className="mx-auto w-full sm:max-w-xs border-0 mt-3 pt-6 sm:!rounded-lg sm:!border rounded-none border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-800 text-center">
                                 <h3 className="font-semibold text-base text-gray-900 dark:text-white">Rate your experience</h3>
                                 <p className="text-sm mt-3 px-8 sm:px-6 text-gray-700 dark:text-gray-100 mb-0">We'd love to hear from you! How is your experience with our platform?</p>
-                                <div className="flex mt-1 mb-3 items-center justify-center pb-3 sm:pb-0" style={{minHeight:'72px'}}>
+                                <div className="flex mt-1 mb-3 items-center justify-center pb-3 sm:pb-0" style={{minHeight:'84px'}}>
                                     <RatingComponent itemsCount={3} enableAnimation={false} enableSingleSelection={true}
                                         emptyTemplate={(props: any) => (
-                                            <div className='flex'>
+                                            <div className='flex mt-1 mb-2'>
                                                 {props.index === 0 && ( <span className={`rounded-xl p-2 ${experienceLevel === "unhappy" ? "bg-green-50 dark:bg-green-900 shadow-lg" : ""}`} onClick={() => setExperienceLevel("unhappy")}>
                                                         <img className="h-10 w-10" src="/react/essential-ui-kit/blocks/assets/images/rating/experience-rating/unhappy.png" alt="unhappy" />
                                                     </span>
                                                 )}
                                                 {props.index === 1 && (
-                                                    <span className={`rounded-xl p-2 ${experienceLevel === "neutral" ? "!bg-cyan-50 dark:!bg-cyan-900 shadow-lg" : ""}`} onClick={() => setExperienceLevel("neutral")}>
+                                                    <span className={`rounded-xl p-2 text-xl ${experienceLevel === "neutral" ? "!bg-cyan-50 dark:!bg-cyan-900 shadow-lg" : ""}`} onClick={() => setExperienceLevel("neutral")}>
                                                         <img className="h-10 w-10" src="/react/essential-ui-kit/blocks/assets/images/rating/experience-rating/neutral.png" alt="neutral" />
                                                     </span>
                                                 )}
@@ -67,9 +67,9 @@ export default function Rating6() {
                                         tooltipTemplate={(props: { value: number }) => (
                                             <>
                                                 {
-                                                    props.value === 1 ? <p>UnHappy</p> :
-                                                        props.value === 2 ? <p>Neutral</p> :
-                                                            props.value === 3 ? <p>Happy</p> :
+                                                    props.value === 1 ? <p className="m-0">UnHappy</p> :
+                                                        props.value === 2 ? <p className="m-0">Neutral</p> :
+                                                            props.value === 3 ? <p className="m-0">Happy</p> :
                                                                 null
                                                 }
                                             </>
@@ -84,11 +84,11 @@ export default function Rating6() {
                 return (
                     <section className="bg-body-tertiary">
                         <div className="pt-4" style={{ minHeight: "36rem" }}>
-                            <div className="mx-auto w-100 mt-3 border rounded text-center bg-body" style={{ maxWidth: "320px" }}>
+                            <div className="mx-auto w-100 mt-3 border rounded-3 text-center bg-body" style={{ maxWidth: "320px" }}>
                                 <h3 className="fw-semibold fs-6 text-body mt-4">Rate your experience</h3>
                                 <p className="small mt-3 mb-0 text-body-secondary" style={{ width: "316px" }}>We'd love to hear from you! How is your experience with our platform?</p>
-                                <div className="d-flex justify-content-center align-items-center mb-3 mt-1" style={{minHeight:'72px'}}>
-                                     <RatingComponent enableAnimation={false} enableSingleSelection={true}
+                                <div className="d-flex justify-content-center align-items-center mb-3 mt-1" style={{minHeight:'84px'}}>
+                                     <RatingComponent itemsCount={3} enableAnimation={false} enableSingleSelection={true}
                                         emptyTemplate={(props:any) => (
                                             <div className="d-flex">
                                                 {props.index === 0 && (
@@ -111,9 +111,9 @@ export default function Rating6() {
                                         tooltipTemplate={(props: { value: number }) => (
                                             <>
                                                {
-                                                    props.value === 1 ? <p>UnHappy</p> :
-                                                        props.value === 2 ? <p>Neutral</p> :
-                                                            props.value === 3 ? <p>Happy</p> :
+                                                    props.value === 1 ? <p className="m-0">UnHappy</p> :
+                                                        props.value === 2 ? <p className="m-0">Neutral</p> :
+                                                            props.value === 3 ? <p className="m-0">Happy</p> :
                                                                 null
                                                 }
                                             </>

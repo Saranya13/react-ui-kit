@@ -40,15 +40,14 @@ export default function Rating5() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-800">
                         <div className="pt-4" style={{ minHeight: "36rem" }}>
-                            <div className="w-full sm:max-w-sm mx-auto p-6 mt-4 border-0 sm:!rounded-lg sm:!border rounded-none bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-500">
+                            <div className="w-full sm:max-w-sm mx-auto p-6 border-0 sm:!rounded-lg sm:!border rounded-none bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-500">
                                 <div className="flex items-center gap-3">
                                     <div className="bg-indigo-100 dark:bg-sky-600 h-8 w-8 rounded-full flex items-center justify-center"><span className="e-icons e-star-filled text-primary-600 dark:text-primary-400"></span></div>
                                     <div className="text-lg font-semibold text-gray-900 dark:text-white">How was your experience?</div>
                                 </div>
-                                <div className="">
                                     <p className="text-sm mt-4 text-gray-700 dark:text-gray-100">Let us know how our platform is working for you.Your feedback helps us enhance features, improve performance and provide a better experience!</p>
                                     <div className="flex justify-center mt-2" style={{minHeight:'58px'}}>
-                                        <RatingComponent
+                                        <RatingComponent enableAnimation={false} showTooltip={true}
                                             emptyTemplate={(props: { index: any; }) => (
                                                 <div className="mx-2">
                                                 {(() => {
@@ -85,7 +84,6 @@ export default function Rating5() {
                                     <div className="mt-4">
                                         <ButtonComponent cssClass="e-primary e-block" type="submit">Submit</ButtonComponent>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </section>
@@ -94,18 +92,18 @@ export default function Rating5() {
                 return (
                     <section className="bg-body-tertiary">
                         <div className="pt-4" style={{minHeight: "36rem"}}>
-                            <div className="mx-auto border p-4 rounded bg-body" style={{ maxWidth: "384px" }}>
+                            <div className="mx-auto border p-4 rounded-3 bg-body" style={{ maxWidth: "384px" }}>
                                 <div className="d-flex align-items-center">
                                     <div className="bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center" style={{width: '32px', height: '32px'}}>
                                         <span className="e-icons e-star-filled text-primary"></span>
                                     </div>
-                                    <div className="fs-5 fw-semibold text-body ms-2">How was your experience?</div>
+                                    <div className="fs-5 fw-semibold text-body ms-3">How was your experience?</div>
                                 </div>
                                 <p className="small text-body-secondary mt-3 mb-1">Let us know how our platform is working for you. Your feedback helps us enhance features, improve performance and provide a better experience!</p>
-                                <div className="d-flex justify-content-center" style={{minHeight:'58px'}}>
-                                    <RatingComponent itemsCount={5}
+                                <div className="d-flex justify-content-center mt-2" style={{minHeight:'58px'}}>
+                                    <RatingComponent enableAnimation={false} showTooltip={true}
                                         emptyTemplate={(props: { index: any }) => (
-                                            <div className="m-2">
+                                            <div className="mx-2">
                                                 {(() => {
                                                     const index = props.index;
                                                     switch (index) {
@@ -137,7 +135,7 @@ export default function Rating5() {
                                         )}
                                     ></RatingComponent>
                                 </div>
-                                <div className="mt-2">
+                                <div className="mt-3">
                                     <ButtonComponent cssClass="e-primary e-block" type="submit">Submit</ButtonComponent>
                                 </div>
                             </div>

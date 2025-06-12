@@ -116,7 +116,7 @@ export default function AIFAQ1() {
                                 </AccordionItemsDirective>
                             </AccordionComponent>
                         </div>
-                    </section >
+                    </section>
                 );
             case 'bootstrap5':
                 return (
@@ -136,7 +136,7 @@ export default function AIFAQ1() {
                                 </AccordionItemsDirective>
                             </AccordionComponent>
                         </div>
-                    </section >
+                    </section>
                 );
         }
     };

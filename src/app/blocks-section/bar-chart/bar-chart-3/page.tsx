@@ -120,7 +120,7 @@ export default function BarChart3() {
                                         <p className="text-xs text-gray-500 dark:text-gray-400">Location: <span className="font-medium">Charlotte, North Carolina</span></p>
                                     </div>
                                     <ButtonComponent cssClass="e-outline hidden sm:block" content="Download Report" type="button"></ButtonComponent>
-                                    <ButtonComponent cssClass="e-outline sm:hidden" iconCss="e-icons e-description" type="button"></ButtonComponent>
+                                    <ButtonComponent cssClass="e-outline sm:hidden" iconCss="e-icons e-download" type="button"></ButtonComponent>
                                 </div>
                                 <div className="mt-5 sm:mt-4 text-gray-900 dark:text-white">
                                     <p className="text-xs hidden sm:block mb-1.5">December</p>
@@ -183,7 +183,7 @@ export default function BarChart3() {
                                         <p className="small text-body-secondary m-0">Location: <span className="fw-medium">Charlotte, North Carolina</span></p>
                                     </div>
                                     <ButtonComponent cssClass="e-outline d-none d-sm-block" content="Download Report" type="button"></ButtonComponent>
-                                    <ButtonComponent cssClass="e-outline d-sm-none" iconCss="e-icons e-description" type="button"></ButtonComponent>
+                                    <ButtonComponent cssClass="e-outline d-sm-none" iconCss="e-icons e-download" type="button"></ButtonComponent>
                                 </div>
                                 <div className="mt-3 text-body">
                                     <p className="small d-none d-sm-block mb-2">December</p>

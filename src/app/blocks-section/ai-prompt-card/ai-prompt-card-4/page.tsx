@@ -37,7 +37,7 @@ export default function AIPromptCard4() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-900">
-                        <div className="py-20 w-full px-4 lg:max-w-4xl mx-auto sm:px-6" style={{ minHeight:"38rem" }}>
+                        <div className="py-20 w-full px-4 lg:max-w-4xl mx-auto sm:px-6" style={{ minHeight:"48rem" }}>
                             <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:gap-10">
                                 <div className="flex flex-col items-center">
                                     <div>
@@ -72,7 +72,7 @@ export default function AIPromptCard4() {
             case 'bootstrap5':
                 return (
                     <section className="bg-body-tertiary">
-                        <div className="py-5 w-100 px-3 mx-auto" style={{ minHeight:"39rem", maxWidth: "826px" }}>
+                        <div className="py-5 w-100 px-3 mx-auto" style={{ minHeight:"49rem", maxWidth: "826px" }}>
                             <div className="row g-3 g-lg-5">
                                 <div className="col-sm-6 d-flex flex-column align-items-center">
                                     <div>

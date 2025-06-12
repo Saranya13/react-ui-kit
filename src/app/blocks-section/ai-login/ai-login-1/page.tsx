@@ -88,7 +88,7 @@ export default function AILogin1() {
                                                 <div>
                                                     <p className="w-80 sm:w-96 text-xs font-normal text-center text-gray-700 dark:text-gray-300">
                                                         By creating an account, you agree to our <span className="font-medium text-gray-900 dark:text-white">terms of service</span> and
-                                                        <span className="font-medium text-gray-900 dark:text-white">privacy & cookie statement</span>.
+                                                        <span className="font-medium text-gray-900 dark:text-white"> privacy & cookie statement</span>.
                                                     </p>
                                                 </div>
                                             </div>
@@ -149,7 +149,7 @@ export default function AILogin1() {
                                                 <div>
                                                     <p className="w-100 small fw-normal text-center text-body-secondary">
                                                         By creating an account, you agree to our <span className="fw-medium text-body">terms of service</span> and
-                                                        <span className="fw-medium text-body">privacy & cookie statement</span>.
+                                                        <span className="fw-medium text-body"> privacy & cookie statement</span>.
                                                     </p>
                                                 </div>
                                             </div>

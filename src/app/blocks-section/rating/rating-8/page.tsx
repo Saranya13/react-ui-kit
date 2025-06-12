@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
-import { RatingComponent } from '@syncfusion/ej2-react-inputs';
+import { RatingComponent, PrecisionType } from '@syncfusion/ej2-react-inputs';
 
 export default function Rating8() {
     /* SB Code - Start */
@@ -55,16 +55,16 @@ export default function Rating8() {
                                             <p className="text-gray-900 dark:text-white font-medium pl-2">Olivia Adams
                                                 <span className="font-medium text-base text-gray-500 dark:text-gray-400 ml-1"><span>&#64;</span>oliviaadams</span>
                                             </p>
-                                            <div className="flex items-center text-sm font-medium mt-1" style={{minHeight:'50px'}}>
-                                                <RatingComponent value={4} showLabel={true} 
+                                            <div className="flex items-center text-sm font-medium mt-1" style={{ minHeight:'50px',width:'238px' }}>
+                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} precision={PrecisionType.Exact} 
                                                     emptyTemplate={
-                                                        () =>  <span className="sf-icon-star-filled-01 text-2xl text-gray-300 dark:text-gray-500"></span>
+                                                        () => <span className="sf-icon-star-filled-01 text-2xl text-gray-300 dark:text-gray-500"></span>
                                                     } 
                                                     fullTemplate={
-                                                        () =>  <span className="sf-icon-star-filled-01 text-2xl text-amber-300"></span>
+                                                        () => <span className="sf-icon-star-filled-01 text-2xl text-amber-300"></span>
                                                     }
                                                     labelTemplate={
-                                                        (value: any)=><p className="!text-gray-900 dark:!text-white text-sm font-medium">{value?.value}.0 / 5.0</p>
+                                                        (value: any)=><p className="!text-gray-900 dark:!text-white text-sm font-medium">{value?.value} / 5</p>
                                                     }
                                                 ></RatingComponent>
                                             </div>
@@ -80,7 +80,7 @@ export default function Rating8() {
                 return (
                     <section className="bg-body-tertiary">
                         <div className="pt-4" style={{ minHeight: "36rem" }}>
-                            <div className="mx-auto mt-4 p-3 border rounded bg-body" style={{ maxWidth: "364px" }}>
+                            <div className="mx-auto mt-4 p-3 border rounded-3 bg-body" style={{ maxWidth: "364px" }}>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="d-flex align-items-center gap-2">
                                         <div className="position-relative" style={{ width: "48px", height: "48px" }}>
@@ -97,8 +97,8 @@ export default function Rating8() {
                                                     <span>&#64;</span>oliviaadams
                                                 </span>
                                             </p>
-                                            <div className="d-flex align-items-center small fw-medium" style={{minHeight:'50px'}}>
-                                                <RatingComponent value={4} showLabel={true} 
+                                            <div className="d-flex align-items-center small fw-medium" style={{minHeight:'50px',width:'238px'}}>
+                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} precision={PrecisionType.Exact} 
                                                     emptyTemplate={
                                                         () => <span className="sf-icon-star-02 fs-5 text-body-secondary"></span>
                                                     } 

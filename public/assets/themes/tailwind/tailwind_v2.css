@@ -680,9 +680,6 @@ video {
 .m-1\.5 {
   margin: 0.375rem;
 }
-.m-2 {
-  margin: 0.5rem;
-}
 .m-3 {
   margin: 0.75rem;
 }
@@ -3339,6 +3336,10 @@ video {
 
   .sm\:gap-1 {
     gap: 0.25rem;
+  }
+
+  .sm\:gap-10 {
+    gap: 2.5rem;
   }
 
   .sm\:gap-2 {

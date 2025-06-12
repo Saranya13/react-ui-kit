@@ -13,10 +13,14 @@ export default function AIDialog1() {
     /* SB Code - End */
     const dialog = useRef<DialogComponent | null>(null);
     const uploader = useRef<UploaderComponent | null>(null);
+    const stepper = useRef<StepperComponent | null>(null);
 
     const checkWindowSize = (): void => {
-        if (dialog) {
+        if (dialog && stepper) {
             dialog.current?.show(window.innerWidth <= 640);
+            setTimeout(()=>{
+                stepper.current?.refresh();
+            }, 300);
         }
     };
 
@@ -59,7 +63,7 @@ export default function AIDialog1() {
                             <DialogComponent id={styles["dialog"]} ref={dialog} className="rounded-none sm:rounded-lg overflow-hidden" target="#dialog-container" isModal={true} width="357px" beforeOpen={(event) => (event.maxHeight = '100%')} open={(event) => (event.preventFocus = true)}>
                                 <div className="flex flex-col h-full">
                                     <div className="border-b py-6 dark:border-gray-600">
-                                        <StepperComponent cssClass="e-small mx-auto" labelPosition="End" activeStep={1} style={{ maxWidth: "256px" }}>
+                                        <StepperComponent ref={stepper} cssClass="e-small mx-auto" labelPosition="End" activeStep={1} style={{ maxWidth: "256px" }}>
                                             <StepsDirective>
                                                 <StepDirective iconCss="e-icons e-check-small" label="Basic info"></StepDirective>
                                                 <StepDirective text="2" label="AI prompt"></StepDirective>
@@ -94,7 +98,7 @@ export default function AIDialog1() {
                             <DialogComponent id={styles["dialog"]} ref={dialog} className="rounded-2" target="#dialog-container" isModal={true} width="357px" beforeOpen={(event) => (event.maxHeight = '100%')} open={(event) => (event.preventFocus = true)}>
                                 <div className="d-flex flex-column h-100">
                                     <div className="border-bottom py-4 border-light-subtle">
-                                        <StepperComponent cssClass="e-small mx-auto" labelPosition="End" activeStep={1} style={{ maxWidth: "256px" }}>
+                                        <StepperComponent ref={stepper} cssClass="e-small mx-auto" labelPosition="End" activeStep={1} style={{ maxWidth: "256px" }}>
                                             <StepsDirective>
                                                 <StepDirective iconCss="e-icons e-check-small" label="Basic info"></StepDirective>
                                                 <StepDirective text="2" label="AI prompt"></StepDirective>

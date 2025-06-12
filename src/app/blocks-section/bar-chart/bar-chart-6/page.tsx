@@ -107,7 +107,7 @@ export default function BarChart6() {
                                     <ChartComponent ref={chartRef} chartArea={{ border: { width: 0 } }} width="100%" height="300px" primaryXAxis={primaryXAxis} primaryYAxis={primaryYAxis} legendSettings={{ visible: true }} load={(args) => chartLoad(args, 'Tailwind3', 'Tailwind3Dark')}>
                                         <Inject services={[ColumnSeries, Category, Legend]} />
                                         <SeriesCollectionDirective>
-                                            <SeriesDirective dataSource={chartData} type="Column" xName="date" yName="x" fill="#1F2937" name="Draft Tickets" width={2} legendShape="Rectangle" columnSpacing={0.2}></SeriesDirective>
+                                            <SeriesDirective dataSource={chartData} type="Column" xName="date" yName="x" fill="#9CA3AF" name="Draft Tickets" width={2} legendShape="Rectangle" columnSpacing={0.2}></SeriesDirective>
                                             <SeriesDirective dataSource={chartData} type="Column" xName="date" yName="y" fill="#267DDA" name="Tickets Processed" width={2} legendShape="Rectangle" columnSpacing={0.2}></SeriesDirective>
                                         </SeriesCollectionDirective>
                                     </ChartComponent>
@@ -132,7 +132,7 @@ export default function BarChart6() {
                                     <ChartComponent ref={chartRef} chartArea={{ border: { width: 0 } }} width="100%" height="300px" primaryXAxis={primaryXAxis} primaryYAxis={primaryYAxis} legendSettings={{ visible: true }} load={(args) => chartLoad(args, 'Bootstrap5', 'Bootstrap5Dark')}>
                                         <Inject services={[ColumnSeries, Category, Legend]} />
                                         <SeriesCollectionDirective>
-                                            <SeriesDirective dataSource={chartData} type="Column" xName="date" yName="x" fill="#343A40" name="Draft Tickets" width={2} legendShape="Rectangle" columnSpacing={0.2}></SeriesDirective>
+                                            <SeriesDirective dataSource={chartData} type="Column" xName="date" yName="x" fill="#9CA3AF" name="Draft Tickets" width={2} legendShape="Rectangle" columnSpacing={0.2}></SeriesDirective>
                                             <SeriesDirective dataSource={chartData} type="Column" xName="date" yName="y" fill="#006EEF" name="Tickets Processed" width={2} legendShape="Rectangle" columnSpacing={0.2}></SeriesDirective>
                                         </SeriesCollectionDirective>
                                     </ChartComponent>

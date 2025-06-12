@@ -77,13 +77,13 @@ export default function AIFloatingMenu2() {
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div id="target" key={"floating-2-tw"} className="w-full px-4" style={{ height: isMobileView ? '580px' : '690px' }}>
                             <div className="flex items-center justify-center pt-4">
-                                <ButtonComponent className="block sm:hidden" cssClass="e-primary e-round e-bigger" iconCss="sf-icon-message-chat-circle" type="button" onClick={toggleDialog}></ButtonComponent>
+                                <ButtonComponent className="block sm:hidden" cssClass="e-primary e-round e-bigger" iconCss="sf-icon-message-chat-circle !text-xl" type="button" onClick={toggleDialog}></ButtonComponent>
                             </div>
                             <DialogComponent ref={dialogRef} id={styles["floating-contact"]} className="sm:rounded-lg rounded-none overflow-hidden !border-0" width="400px" height={isMobileView ? '580px' : '510px'} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => (
                                     <div className="flex flex-col bg-primary-100 dark:bg-primary-800 pb-5 px-6 pt-4">
                                         <div className="flex justify-end block sm:hidden px-4 absolute right-0">
-                                            <ButtonComponent className="e-flat e-round" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
+                                            <ButtonComponent className="e-flat e-round" iconCss="e-icons e-close !leading-5" type="button" onClick={toggleDialog}></ButtonComponent>
                                         </div>
                                         <span className="e-icons e-comment-show pt-3 text-xl text-gray-500 dark:text-gray-200 flex justify-center"></span>
                                         <div className="text-center mt-3">
@@ -121,18 +121,18 @@ export default function AIFloatingMenu2() {
                     <section className="bg-body">
                         <div id="target" key={"floating-2-bs"} className="w-100 px-3" style={{ height: isMobileView ? '580px' : '690px' }}>
                             <div className="d-flex align-items-center justify-content-center pt-3">
-                                <ButtonComponent className="d-block d-sm-none" cssClass="e-primary e-round e-bigger" iconCss="sf-icon-message-chat-circle fs-6" type="button" onClick={toggleDialog}></ButtonComponent>
+                                <ButtonComponent className="d-block d-sm-none" cssClass="e-primary e-round e-bigger" iconCss="sf-icon-message-chat-circle fs-5 lh-base" type="button" onClick={toggleDialog}></ButtonComponent>
                             </div>
                             <DialogComponent ref={dialogRef} id={styles["floating-contact"]} className="rounded-3 overflow-hidden" width="400px" height={isMobileView ? '580px' : '510px'} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                 header={() => (
                                     <div className="d-flex flex-column justify-content-between align-items-center bg-primary-subtle p-4">
                                         <div className="d-flex justify-content-end d-block d-sm-none px-3 top-0 pt-3 position-absolute end-0">
-                                            <ButtonComponent cssClass="e-flat e-round e-small" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
+                                            <ButtonComponent cssClass="e-flat e-round e-small e-inherit" iconCss="e-icons e-close lh-base" type="button" onClick={toggleDialog}></ButtonComponent>
                                         </div>
                                         <span className="e-icons e-comment-show fs-5 text-body-secondary"></span>
                                         <div className="text-center mt-2 pt-1">
                                             <p className="small fw-medium lh-sm text-body m-0">Contact Us</p>
-                                            <p className="small mt-1 mb-0 text-body-tertiary">Reach out to us for any inquiry</p>
+                                            <p className="small mt-1 mb-0 text-body-tertiary fw-normal">Reach out to us for any inquiry</p>
                                         </div>
                                     </div>
                                 )}
@@ -152,7 +152,7 @@ export default function AIFloatingMenu2() {
                                     </div>
                                 </div>
                             </DialogComponent>
-                            <FabComponent ref={fabRef} cssClass="e-primary e-bigger e-round d-none d-sm-block" iconCss={!toggleState ? "sf-icon-message-chat-circle fs-5" : "e-icons e-close fs-5"} position="BottomRight" type="button" target="#target" onClick={toggleDialog}></FabComponent>
+                            <FabComponent ref={fabRef} cssClass="e-primary e-bigger e-round d-none d-sm-block" iconCss={!toggleState ? "sf-icon-message-chat-circle fs-5 lh-base" : "e-icons e-close fs-5 lh-base"} position="BottomRight" type="button" target="#target" onClick={toggleDialog}></FabComponent>
                         </div>
                     </section>
                 );

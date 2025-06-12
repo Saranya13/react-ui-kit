@@ -129,7 +129,7 @@ export default function AISidebar5() {
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}
-                        <div className="p-3 position-absolute top-0 start-0">
+                        <div className="p-3 position-absolute top-0 end-0">
                             <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}

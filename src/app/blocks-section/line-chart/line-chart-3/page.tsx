@@ -57,9 +57,6 @@ export default function LineChart3() {
         { Date: new Date('2023-02-26'), EUR: 0.82789, JPY: 149.79, SGD: 1.3316, INR: 82.348 },
         { Date: new Date('2023-02-27'), EUR: 0.82601, JPY: 149.48, SGD: 1.3312, INR: 82.240 },
         { Date: new Date('2023-02-28'), EUR: 0.82242, JPY: 149.85, SGD: 1.3277, INR: 82.164 },
-        { Date: new Date('2023-02-29'), EUR: 0.82205, JPY: 149.66, SGD: 1.3292, INR: 82.246 },
-        { Date: new Date('2023-02-30'), EUR: 0.81709, JPY: 149.81, SGD: 1.3276, INR: 82.103 },
-        { Date: new Date('2023-02-31'), EUR: 0.82020, JPY: 149.78, SGD: 1.3308, INR: 82.181 },
         { Date: new Date('2023-03-01'), EUR: 0.82021, JPY: 149.77, SGD: 1.3308, INR: 82.181 },
         { Date: new Date('2023-03-02'), EUR: 0.82422, JPY: 149.26, SGD: 1.3328, INR: 82.201 },
         { Date: new Date('2023-03-03'), EUR: 0.81706, JPY: 149.34, SGD: 1.3269, INR: 82.147 },
@@ -120,7 +117,6 @@ export default function LineChart3() {
         { Date: new Date('2023-04-28'), EUR: 0.83286, JPY: 150.78, SGD: 1.3530, INR: 82.569 },
         { Date: new Date('2023-04-29'), EUR: 0.83372, JPY: 150.49, SGD: 1.3538, INR: 82.580 },
         { Date: new Date('2023-04-30'), EUR: 0.83174, JPY: 149.76, SGD: 1.3506, INR: 82.682 },
-        { Date: new Date('2023-04-31'), EUR: 0.83515, JPY: 149.18, SGD: 1.3514, INR: 82.669 },
         { Date: new Date('2023-05-01'), EUR: 0.82911, JPY: 148.77, SGD: 1.3473, INR: 82.280 },
         { Date: new Date('2023-05-02'), EUR: 0.83342, JPY: 149.95, SGD: 1.3505, INR: 82.402 },
         { Date: new Date('2023-05-03'), EUR: 0.83341, JPY: 149.96, SGD: 1.3504, INR: 82.402 },
@@ -151,6 +147,7 @@ export default function LineChart3() {
         { Date: new Date('2023-05-28'), EUR: 0.81607, JPY: 154.35, SGD: 1.3528, INR: 82.025 },
         { Date: new Date('2023-05-29'), EUR: 0.82032, JPY: 154.77, SGD: 1.3561, INR: 82.073 },
         { Date: new Date('2023-05-30'), EUR: 0.81610, JPY: 154.31, SGD: 1.3523, INR: 82.099 },
+        { Date: new Date('2023-05-31'), EUR: 0.81515, JPY: 154.18, SGD: 1.3514, INR: 82.069 },
         { Date: new Date('2023-06-01'), EUR: 0.81610, JPY: 154.34, SGD: 1.3523, INR: 82.099 },
         { Date: new Date('2023-06-02'), EUR: 0.81660, JPY: 154.33, SGD: 1.3521, INR: 82.097 },
         { Date: new Date('2023-06-03'), EUR: 0.81631, JPY: 154.67, SGD: 1.3511, INR: 81.967 },
@@ -180,8 +177,7 @@ export default function LineChart3() {
         { Date: new Date('2023-06-27'), EUR: 0.81046, JPY: 149.18, SGD: 1.3305, INR: 82.373 },
         { Date: new Date('2023-06-28'), EUR: 0.80651, JPY: 151.15, SGD: 1.3309, INR: 82.260 },
         { Date: new Date('2023-06-29'), EUR: 0.80651, JPY: 151.15, SGD: 1.3309, INR: 82.266 },
-        { Date: new Date('2023-06-30'), EUR: 0.80709, JPY: 150.93, SGD: 1.3319, INR: 82.263 },
-        { Date: new Date('2023-06-31'), EUR: 0.80896, JPY: 152.27, SGD: 1.3295, INR: 82.241 }
+        { Date: new Date('2023-06-30'), EUR: 0.80709, JPY: 150.93, SGD: 1.3319, INR: 82.263 }
     ];
 
     const primaryXAxis: object = {

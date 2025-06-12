@@ -95,8 +95,8 @@ export default function AccumulationChart3() {
                                         <label className="e-btn" htmlFor="custom">Custom</label>
                                     </div>
                                 </div>
-                                <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline sm:hidden my-4" content="Week" items={[{ text: 'Day' }, { text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                                <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline sm:hidden my-4" content="Week" items={[{ text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-10">
                                     <div className="relative">
                                         <AccumulationChartComponent width="100%" height="250px" legendSettings={{ visible: false }} enableBorderOnMouseMove={false} load={(args) => chartLoad(args, 'Tailwind3', 'Tailwind3Dark')}>
                                             <AccumulationSeriesCollectionDirective>
@@ -148,8 +148,8 @@ export default function AccumulationChart3() {
                                         <label className="e-btn" htmlFor="custom">Custom</label>
                                     </div>
                                 </div>
-                                <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline d-sm-none mb-3" content="Week" items={[{ text: 'Day' }, { text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
-                                <div className="row g-4">
+                                <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline d-sm-none mb-3" content="Week" items={[{ text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
+                                <div className="row g-sm-4">
                                     <div className="col-12 col-sm-6 position-relative">
                                         <AccumulationChartComponent width="100%" height="250px" legendSettings={{ visible: false }} enableBorderOnMouseMove={false} load={(args) => chartLoad(args, 'Bootstrap5', 'Bootstrap5Dark')}>
                                             <AccumulationSeriesCollectionDirective>
