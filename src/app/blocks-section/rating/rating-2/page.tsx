@@ -41,7 +41,7 @@ export default function Rating2() {
                         <div className="pt-4" style={{ minHeight: "36rem" }}>
                             <div className="mt-4 p-4 mx-auto max-w-sm border-0 sm:!rounded-lg sm:!border rounded-none border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-800 flex flex-col justify-center items-center">
                                 <img className="h-10 w-9" src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" alt="logo" />
-                                <div className="flex justify-center items-center ml-2" style={{ minHeight: "49px" }}>
+                                <div className="flex justify-center items-center ml-2" style={{ minHeight: "54px" }}>
                                     <RatingComponent value={4} showLabel={true} enableAnimation={false}
                                         emptyTemplate={
                                             () => <span className="sf-icon-star-filled-01 text-2xl text-gray-300 dark:text-gray-500"></span>

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
-import { RatingComponent, PrecisionType } from '@syncfusion/ej2-react-inputs';
+import { RatingComponent } from '@syncfusion/ej2-react-inputs';
 
 export default function Rating8() {
     /* SB Code - Start */
@@ -56,7 +56,7 @@ export default function Rating8() {
                                                 <span className="font-medium text-base text-gray-500 dark:text-gray-400 ml-1"><span>&#64;</span>oliviaadams</span>
                                             </p>
                                             <div className="flex items-center text-sm font-medium mt-1" style={{ minHeight:'50px',width:'238px' }}>
-                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} precision={PrecisionType.Exact} 
+                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} 
                                                     emptyTemplate={
                                                         () => <span className="sf-icon-star-filled-01 text-2xl text-gray-300 dark:text-gray-500"></span>
                                                     } 
@@ -98,7 +98,7 @@ export default function Rating8() {
                                                 </span>
                                             </p>
                                             <div className="d-flex align-items-center small fw-medium" style={{minHeight:'50px',width:'238px'}}>
-                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} precision={PrecisionType.Exact} 
+                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} 
                                                     emptyTemplate={
                                                         () => <span className="sf-icon-star-02 fs-5 text-body-secondary"></span>
                                                     } 

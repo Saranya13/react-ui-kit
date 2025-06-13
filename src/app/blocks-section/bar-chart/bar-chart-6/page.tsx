@@ -99,7 +99,7 @@ export default function BarChart6() {
                                 <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-3">
                                     <h1 className="text-base font-medium text-gray-900 dark:text-white">Ticket Activity Overview</h1>
                                     <div className="flex flex-col sm:flex-row gap-4 items-start">
-                                        <DropDownButtonComponent className="e-outline" content="01/12/2024 - 07/12/2024" beforeOpen={(e) => (e.cancel = true)} type="button"></DropDownButtonComponent>
+                                        <DropDownButtonComponent className="e-outline" iconCss="e-icons e-day" content="01/12/2024 - 07/12/2024" beforeOpen={(e) => (e.cancel = true)} type="button"></DropDownButtonComponent>
                                         <DropDownButtonComponent ref={ticketDropdownRef} className="e-outline" content="All Tickets" items={[{ text: 'All tickets' }, { text: 'Draft' }, { text: 'Processed' }]} type="button"></DropDownButtonComponent>
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@ export default function BarChart6() {
                                 <div className="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
                                     <h1 className="fs-6 fw-medium text-body mb-0">Ticket Activity Overview</h1>
                                     <div className="d-flex flex-column flex-sm-row gap-3 align-items-start">
-                                        <DropDownButtonComponent className="e-outline" content="01/12/2024 - 07/12/2024" beforeOpen={(e) => (e.cancel = true)} type="button"></DropDownButtonComponent>
+                                        <DropDownButtonComponent className="e-outline" iconCss="e-icons e-day" content="01/12/2024 - 07/12/2024" beforeOpen={(e) => (e.cancel = true)} type="button"></DropDownButtonComponent>
                                         <DropDownButtonComponent ref={ticketDropdownRef} className="e-outline" content="All Tickets" items={[{ text: 'All tickets' }, { text: 'Draft' }, { text: 'Processed' }]} type="button"></DropDownButtonComponent>
                                     </div>
                                 </div>

@@ -10,7 +10,7 @@ export default function AISearch1() {
     const [theme, setTheme] = useState('tailwind');
     /* SB Code - End */
     const [width, setWidth] = useState<{ maxWidth: string } | { width: string }>({ maxWidth: '400px'});
-    const searchKeyword = useRef("documentation");
+    const searchKeyword = useRef("Documentation");
     const search = useRef<AutoCompleteComponent | null>(null);
 
     const openPopup = (): void => {
@@ -84,7 +84,7 @@ export default function AISearch1() {
                                     filtering={searchResult}
                                     created={openPopup}
                                     noRecordsTemplate={() => (
-                                        <div className="text-center py-6 w-3/4 m-auto">
+                                        <div className="text-center p-6 m-auto">
                                             <div className="mb-3">
                                                 <span className="border border-gray-200 p-2 rounded text-xl e-icons e-folder-open dark:border-gray-600 dark:text-gray-100"></span>
                                             </div>

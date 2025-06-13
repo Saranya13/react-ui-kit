@@ -41,7 +41,7 @@ export default function Rating1() {
                         <div className="pt-4" style={{ minHeight: "36rem" }}>
                             <div className="mx-auto max-w-sm p-4 sm:!rounded-lg sm:!border rounded-none border-0 border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-800 text-center">
                                 <h3 className="text-base font-semibold text-gray-900 dark:text-white">Customer reviews</h3>
-                                <div className="group hover:shadow-md" style={{ minHeight: "49px" }}>
+                                <div className="group hover:shadow-md" style={{ minHeight: "54px" }}>
                                     <RatingComponent value={4} showLabel={true}
                                         emptyTemplate={
                                             () => <span className="sf-icon-star-filled-01 text-2xl text-gray-300 dark:text-gray-500"></span>
