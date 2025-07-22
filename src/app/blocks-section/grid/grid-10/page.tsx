@@ -197,7 +197,7 @@ export default function Grid10() {
                                     <ColumnDirective field="product" headerText="Product" width="206"
                                         template={(data: any) => (
                                             <div className="flex items-center gap-3">
-                                                <div className="w-8">
+                                                <div className="w-8 shrink-0 bg-gray-50 dark:bg-gray-700 rounded">
                                                     <img className="rounded h-8" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
                                                 </div>
                                                 <div className="text-sm">{data.product}</div>
@@ -231,7 +231,7 @@ export default function Grid10() {
                                     <ColumnDirective field="product" headerText="Product" width="212"
                                         template={(data: any) => (
                                             <div className="d-flex align-items-center gap-2">
-                                                <div style={{ width: "32px" }}>
+                                                <div className="flex-shrink-0 bg-body-tertiary rounded-1" style={{ width: "32px" }}>
                                                     <img className="rounded" src={`/react/essential-ui-kit/blocks/assets/images/advance-grid/product-sales-table/${data.productImage}`} width={32} height={32} alt="product image" />
                                                 </div>
                                                 <div>{data.product}</div>

@@ -42,33 +42,33 @@ export default function Card15() {
                                     <div className="e-card-header !pb-3">
                                         <h1 className="text-xl font-semibold text-gray-950 dark:text-gray-50 w-full truncate">Effective Study</h1>
                                     </div>
-                                    <div className="e-card-content">
+                                    <div className="e-card-content grow">
                                         <p className="text-base">Enhance your study sessions with proven strategies to improve focus and retention. Learn time management techniques to active learning methods.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-fill mt-1" content="View More" type="button" iconCss="e-icons e-chevron-right-double" iconPosition="Right"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-fill mt-1" iconCss="e-icons e-chevron-right-double" iconPosition="Right" content="View More" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="e-card e-bigger rounded-lg justify-start">
                                     <div className="e-card-header !pb-3">
                                         <h1 className="text-xl font-semibold text-gray-950 dark:text-gray-50 w-full truncate">Quick Recipes</h1>
                                     </div>
-                                    <div className="e-card-content">
+                                    <div className="e-card-content grow">
                                         <p className="text-base">Whip up tasty meals with minimal effort using our quick and easy recipes. Ideal for busy weeknights or last-minute dinners, these recipes feature simple ingredients.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-fill mt-1" content="View More" type="button" iconCss="e-icons e-chevron-right-double" iconPosition="Right"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-fill mt-1" iconCss="e-icons e-chevron-right-double" iconPosition="Right" content="View More" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="e-card e-bigger rounded-lg justify-start">
                                     <div className="e-card-header !pb-3">
                                         <h1 className="text-xl font-semibold text-gray-950 dark:text-gray-50 w-full truncate">Local Gems</h1>
                                     </div>
-                                    <div className="e-card-content">
+                                    <div className="e-card-content grow">
                                         <p className="text-base">Uncover the best-kept secrets in your area with our guide to local hotspots. Whether it's a cozy cafe, a charming bookstore, or a hidden park, find new places to explore.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-fill mt-1" content="View More" type="button" iconCss="e-icons e-chevron-right-double" iconPosition="Right"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-fill mt-1" iconCss="e-icons e-chevron-right-double" iconPosition="Right" content="View More" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
@@ -82,46 +82,46 @@ export default function Card15() {
                             <div className="row g-xl-5 g-4">
                                 <div className="col-sm-6 col-lg-4">
                                     <div className="e-card shadow e-bigger p-2 h-100 justify-content-start">
-                                        <div className="e-card-stacked">
+                                        <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-header">
                                                 <h1 className="fs-5 fw-bolder text-truncate m-0 w-100 lh-base">Effective Study</h1>
                                             </div>
-                                            <div className="e-card-content pt-2">
+                                            <div className="e-card-content pt-2 flex-grow-1">
                                                 <p className="fs-6 m-0">Enhance your study sessions with proven strategies to improve focus and retention. Learn time management techniques to active learning methods.</p>
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-fill" content="View More" type="button" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-fill" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right" content="View More" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 col-lg-4">
                                     <div className="e-card shadow e-bigger p-2 h-100 justify-content-start">
-                                        <div className="e-card-stacked">
+                                        <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-header">
                                                 <h1 className="fs-5 fw-bolder text-truncate m-0 w-100 lh-base">Quick Recipes</h1>
                                             </div>
-                                            <div className="e-card-content pt-2">
+                                            <div className="e-card-content pt-2 flex-grow-1">
                                                 <p className="fs-6 m-0">Whip up tasty meals with minimal effort using our quick and easy recipes. Ideal for busy weeknights or last-minute dinners, these recipes feature simple ingredients.</p>
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-fill" content="View More" type="button" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-fill" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right" content="View More" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 col-lg-4">
                                     <div className="e-card shadow e-bigger p-2 h-100 justify-content-start">
-                                        <div className="e-card-stacked">
+                                        <div className="e-card-stacked flex-grow-1">
                                             <div className="e-card-header">
                                                 <h1 className="fs-5 fw-bolder text-truncate m-0 w-100 lh-base">Local Gems</h1>
                                             </div>
-                                            <div className="e-card-content pt-2">
+                                            <div className="e-card-content pt-2 flex-grow-1">
                                                 <p className="fs-6 m-0">Uncover the best-kept secrets in your area with our guide to local hotspots. Whether it's a cozy cafe, a charming bookstore, or a hidden park, find new places to explore.</p>
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-fill" content="View More" type="button" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-fill" iconCss="e-icons e-chevron-right-double fs-6 ms-1" iconPosition="Right" content="View More" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>

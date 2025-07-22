@@ -15,6 +15,7 @@ export default function Sidebar13() {
     const [checkbox2, setCheckbox2] = useState(false);
     const [checkbox3, setCheckbox3] = useState(false);
     const [checkbox4, setCheckbox4] = useState(true);
+    const [backDrop, setBackDrop] = useState(false);
     const toast = useRef<ToastComponent | null>(null);
     const sidebar = useRef<SidebarComponent | null>(null);
     
@@ -41,6 +42,10 @@ export default function Sidebar13() {
         }
     ];
     
+    const handleResize = (): void => {
+        setBackDrop(window.innerWidth <= 640);
+    };
+    
     /* SB Code - Start */ 
     const handleMessageEvent = (event: MessageEvent) => {
         if (event.origin === window.location.origin) {
@@ -59,11 +64,16 @@ export default function Sidebar13() {
     useEffect(() => {
         /* SB Code - Start */
         window.addEventListener('message', handleMessageEvent);
+        /* SB Code - End */
+        handleResize();
+        window.addEventListener('resize', handleResize);
 
         return () => {
+            /* SB Code - Start */
             window.removeEventListener('message', handleMessageEvent);
+            /* SB Code - End */
+            window.removeEventListener('resize', handleResize);
         };
-        /* SB Code - End */
     }, []);
 
     const getContent = () => {
@@ -72,7 +82,7 @@ export default function Sidebar13() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["tasked-overview-sidebar"]} style={{ height: '600px' }}>
-                            <SidebarComponent key={"sidebar-13-tw"} className="bg-gray-50 dark:bg-gray-900 !border-l !border-gray-200 dark:!border-gray-700" width="328px" ref={sidebar} isOpen={true} position="Right" showBackdrop={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-13-tw"} ref={sidebar} className="bg-gray-50 dark:bg-gray-900 !border-l !border-gray-200 dark:!border-gray-700" width="328px" isOpen={true} showBackdrop={backDrop} position="Right" style={{ display: 'block' }}>
                                 <div className="flex h-screen">
                                     <div className="py-6" style={{ width: '72px' }}>
                                         <div className="flex justify-center items-center px-3 mb-2">
@@ -141,7 +151,7 @@ export default function Sidebar13() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 right-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-round e-large e-icons e-chevron-left" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -150,7 +160,7 @@ export default function Sidebar13() {
                 return (
                     <section className="bg-body">
                         <div id={styles["tasked-overview-sidebar"]} style={{ height: '600px' }}>
-                            <SidebarComponent key={"sidebar-13-bs"} width="328px" ref={sidebar} position="Right" showBackdrop={true} isOpen={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-13-bs"} ref={sidebar} width="328px" position="Right" showBackdrop={backDrop} isOpen={true} style={{ display: 'block' }}>
                                 <div className="d-flex vh-100">
                                     <div className="py-4 d-flex flex-column align-items-center" style={{ width: '72px' }}>
                                         <div className="d-flex justify-content-center align-items-center px-3 mb-2">
@@ -220,7 +230,7 @@ export default function Sidebar13() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 end-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-left e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-round e-large e-icons e-chevron-left" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

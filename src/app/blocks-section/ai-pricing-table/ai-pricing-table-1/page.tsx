@@ -149,7 +149,7 @@ export default function AIPricingTable1() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="top-0 flex w-full absolute">
-                            <ButtonComponent className="h-fit mx-auto my-5" type="button" onClick={() => pricing.current?.show()}>Pricing Table</ButtonComponent>
+                            <ButtonComponent className="h-fit mx-auto my-5" content="Pricing Table" type="button" onClick={() => pricing.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -263,7 +263,7 @@ export default function AIPricingTable1() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="position-absolute top-0 d-flex w-100">
-                            <ButtonComponent className="mx-auto my-3 e-outline" type="button" onClick={() => pricing.current?.show()}>Pricing Table</ButtonComponent>
+                            <ButtonComponent className="mx-auto my-3 e-outline" content="Pricing Table" type="button" onClick={() => pricing.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

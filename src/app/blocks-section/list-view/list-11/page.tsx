@@ -90,7 +90,7 @@ export default function List11() {
                     <section className="bg-white dark:bg-gray-900">
                         <div id="my-file-list" className="flex items-center justify-center min-h-screen">
                             <div className="max-w-none lg:max-w-2xl w-full m-auto p-2 md:py-8 lg:px-14">
-                                <ListViewComponent id={styles["my-file-list"]} ref={listview} className="!border-0" cssClass="e-list-template" dataSource={files} actionComplete={actionComplete} template={(data: any) => (
+                                <ListViewComponent ref={listview} id={styles["my-file-list"]} className="!border-0" cssClass="e-list-template" dataSource={files} actionComplete={actionComplete} template={(data: any) => (
                                     <div className="e-list-wrapper e-list-multi-line border-b border-gray-200 dark:border-gray-600 !py-4 !px-1 sm:!px-3">
                                         <div className="flex justify-between">
                                             <div className="flex items-center">
@@ -134,9 +134,7 @@ export default function List11() {
                                                 </span>
                                                 <span>
                                                     <div className="d-flex">
-                                                        <span className="e-list-item-header small fw-medium d-flex align-items-center ms-3">
-                                                            {data.fileName}
-                                                        </span>
+                                                        <span className="e-list-item-header small fw-medium d-flex align-items-center ms-3">{data.fileName}</span>
                                                     </div>
                                                     <div className="ms-3 mt-1 col-6 col-sm-12" style={{ minWidth: "250px", maxWidth: "500px" }}>
                                                         <BreadcrumbComponent className="w-100" enableNavigation={false} separatorTemplate={() => (<span className="text-base e-icons e-chevron-right"></span>)} itemTemplate={(props: any) => (<a className="text-body">{props.text}</a>)} overflowMode={overflowMode} maxItems={maxItems}>

@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { AutoCompleteComponent } from '@syncfusion/ej2-react-dropdowns';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
+import styles from './page.module.css';
 
 export default function Search2() {
     /* SB Code - Start */
@@ -46,7 +47,6 @@ export default function Search2() {
                 const inputContainer = search.current['inputWrapper'].container;
                 const searchIcon = document.createElement('span');
                 searchIcon.className = 'e-icons e-search';
-                searchIcon.style.cssText = 'display: flex; align-items: center; margin-left: 10px;';
                 inputContainer?.insertAdjacentElement('afterbegin', searchIcon);
             }
         }, 250);
@@ -54,7 +54,7 @@ export default function Search2() {
 
     const handleResize = (): void => {
         setWidth(window.innerWidth > 767 ? { maxWidth: "400px" } : { width: "100%" })
-        search.current?.refresh();
+        search.current?.hidePopup();
         const searchInterval = setInterval(() => {
             search.current?.showPopup();
         }, 250);
@@ -96,23 +96,23 @@ export default function Search2() {
                 return (
                     <section className="bg-white dark:bg-gray-900 h-full">
                         <div className="w-full pt-5 pb-4 h-screen">
-                            <div className="px-4 mx-auto lg:px-0" style={width}>
+                            <div id={styles["search-list"]} className="px-4 mx-auto lg:px-0" style={width}>
                                 <AutoCompleteComponent
-                                    cssClass="e-bigger"
                                     ref={search}
+                                    cssClass="e-bigger"
                                     dataSource={data}
                                     placeholder="Search"
                                     popupHeight="530px"
                                     focus={() => search.current?.showPopup()}
                                     created={openPopup}
                                     itemTemplate={(data: any) => (
-                                        <div slot="itemTemplate" className="text-sm font-medium text-wrap flex justify-between">
+                                        <div className="text-sm font-medium text-wrap flex justify-between">
                                             <div className="text-gray-900 dark:text-white indent-0 px-4 py-2">{data.text}</div>
                                             <span className="text-gray-600 dark:text-gray-300 flex items-center">{data.status}</span>
                                         </div>
                                     )}
                                     noRecordsTemplate={() => (
-                                        <div slot="noRecordsTemplate" className="text-center py-6 w-2/3 m-auto">
+                                        <div className="text-center py-6 w-2/3 m-auto">
                                             <div className="mb-3">
                                                 <span className="border border-gray-200 p-2 rounded text-xl e-icons e-search dark:border-gray-600 dark:text-gray-100"></span>
                                             </div>
@@ -122,7 +122,7 @@ export default function Search2() {
                                                     <div className="text-sm text-gray-600 font-medium dark:text-gray-300">"Webflow" did not match any projects or commands. Please try again.</div>
                                                 </div>
                                                 <div>
-                                                    <ButtonComponent cssClass="e-btn e-outline px-4 text-gray-700 !text-base !dark:text-white" content="Clear Search" type="button"></ButtonComponent>
+                                                    <ButtonComponent cssClass="e-outline px-4 text-gray-700 !text-base !dark:text-white" content="Clear Search" type="button"></ButtonComponent>
                                                 </div>
                                             </div>
                                         </div>
@@ -137,11 +137,11 @@ export default function Search2() {
                     <section className="bg-body h-100">
                         <div className="container-fluid pt-4 pb-3">
                             <div className="row justify-content-center">
-                                <div className="px-3 px-lg-0 mx-auto" style={width}>
+                                <div id={styles["search-list"]} className="px-3 px-lg-0 mx-auto" style={width}>
                                     <AutoCompleteComponent
+                                        ref={search}
                                         cssClass="e-bigger"
                                         dataSource={data}
-                                        ref={search}
                                         popupHeight="530px"
                                         placeholder="Search"
                                         focus={() => search.current?.showPopup()}
@@ -163,7 +163,7 @@ export default function Search2() {
                                                         <div className="fw-medium text-body-tertiary">"Webflow" did not match any projects or commands. Please try again.</div>
                                                     </div>
                                                     <div>
-                                                        <ButtonComponent cssClass="e-outline px-4 fw-medium" content="Clear Search"></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-outline px-4 fw-medium" content="Clear Search" type="button"></ButtonComponent>
                                                     </div>
                                                 </div>
                                             </div>

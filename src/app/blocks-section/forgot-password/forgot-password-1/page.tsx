@@ -54,7 +54,7 @@ export default function ForgetPassword1() {
                                     </div>
                                 </form>
                                 <div className="e-bigger">
-                                    <ButtonComponent className="w-full e-primary" type="submit">Send Reset Link</ButtonComponent>
+                                    <ButtonComponent className="w-full e-primary" content="Send Reset Link" type="submit"></ButtonComponent>
                                 </div>
                                 <span className="flex items-center justify-center gap-2 mt-6">
                                     <p className="text-center text-gray-900 dark:text-white">Return to</p>
@@ -83,7 +83,7 @@ export default function ForgetPassword1() {
                                 </div>
                             </form>
                             <div className="e-bigger">
-                                <ButtonComponent className="e-block e-primary" type="submit">Send Reset Link</ButtonComponent>
+                                <ButtonComponent className="e-block e-primary" content="Send Reset Link" type="submit"></ButtonComponent>
                             </div>
                             <div className="d-flex align-items-center justify-content-center gap-1 mt-4">
                                 <p className="text-center text-body mb-0">Return to</p>

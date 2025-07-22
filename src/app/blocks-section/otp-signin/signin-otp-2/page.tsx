@@ -56,7 +56,7 @@ export default function SigninOTP2() {
                                                     <OtpInputComponent></OtpInputComponent>
                                                 </div>
                                                 <div className="e-bigger mt-6">
-                                                    <ButtonComponent className="e-primary w-full" type="submit">Verify</ButtonComponent>
+                                                    <ButtonComponent className="e-primary w-full" content="Verify" type="submit"></ButtonComponent>
                                                 </div>
                                             </form>
                                             <span className="flex items-center justify-center gap-2 mt-7">
@@ -91,7 +91,7 @@ export default function SigninOTP2() {
                                                 <OtpInputComponent></OtpInputComponent>
                                             </div>
                                             <div className="mt-4 e-bigger">
-                                                <ButtonComponent className="e-block e-primary" type="submit">Verify</ButtonComponent>
+                                                <ButtonComponent className="e-block e-primary" content="Verify" type="submit"></ButtonComponent>
                                             </div>
                                         </form>
                                         <div className="d-flex align-items-center justify-content-center gap-2 mt-4">

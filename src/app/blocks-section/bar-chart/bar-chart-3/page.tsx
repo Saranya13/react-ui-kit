@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
 import { DropDownButtonComponent } from "@syncfusion/ej2-react-splitbuttons";
-import { Category, ChartComponent, Crosshair, Inject, RangeColumnSeries, SeriesCollectionDirective, SeriesDirective } from "@syncfusion/ej2-react-charts";
+import { Inject, ChartComponent, RangeColumnSeries, SeriesCollectionDirective, SeriesDirective, Crosshair, Category } from "@syncfusion/ej2-react-charts";
 
 export default function BarChart3() {
     /* SB Code - Start */
@@ -35,6 +35,7 @@ export default function BarChart3() {
         majorGridLines: { width: 0 },
         minorTickLines: { width: 0 },
         labelStyle: { fontWeight: '500' },
+        labelIntersectAction: 'None',
         labelRotation: labelRotation,
         interval: 1
     };
@@ -59,6 +60,7 @@ export default function BarChart3() {
 
     const chartLoad = (args: any, lightTheme: string, darkTheme: string): void => {
         args.chart.theme = isDarkMode ? darkTheme : lightTheme;
+        handleResize();
     };
 
     const handleResize = (): void => {
@@ -112,7 +114,7 @@ export default function BarChart3() {
             case 'tailwind':
                 return (
                     <section className="bg-white dark:bg-gray-950">
-                        <div key={'barchart-3-tw'} className="h-screen flex justify-center items-center p-4 sm:p-6">
+                        <div key={"barchart-3-tw"} className="h-screen flex justify-center items-center p-4 sm:p-6">
                             <div className="w-full" style={{ maxWidth: '730px' }}>
                                 <div className="flex justify-between items-start">
                                     <div>
@@ -134,15 +136,15 @@ export default function BarChart3() {
                                         </div>
                                         <div className="flex items-center justify-between gap-3">
                                             <div className="e-btn-group hidden sm:block">
-                                                <input type="radio" id="day" name="align" value="D" aria-label="day" role="button" />
+                                                <input type="radio" id="day" name="align" value="D" />
                                                 <label className="e-btn" htmlFor="day">D</label>
-                                                <input type="radio" id="week" name="align" value="W" aria-label="week" role="button" />
+                                                <input type="radio" id="week" name="align" value="W" />
                                                 <label className="e-btn" htmlFor="week">W</label>
-                                                <input type="radio" id="month" name="align" value="M" aria-label="month" role="button" />
+                                                <input type="radio" id="month" name="align" value="M" />
                                                 <label className="e-btn" htmlFor="month">M</label>
-                                                <input type="radio" id="year" name="align" value="Y" defaultChecked aria-label="year" role="button" />
+                                                <input type="radio" id="year" name="align" value="Y" defaultChecked />
                                                 <label className="e-btn" htmlFor="year">Y</label>
-                                                <input type="radio" id="custom" name="align" value="Custom" aria-label="custom" role="button" />
+                                                <input type="radio" id="custom" name="align" value="Custom" />
                                                 <label className="e-btn" htmlFor="custom">Custom</label>
                                             </div>
                                             <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline sm:hidden" content="Year" items={[{ text: 'Day' }, { text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
@@ -175,7 +177,7 @@ export default function BarChart3() {
             case 'bootstrap5':
                 return (
                     <section className="bg-body">
-                        <div key={'barchart-3-bs'} className="vh-100 d-flex justify-content-center align-items-center p-3 p-sm-4">
+                        <div key={"barchart-3-bs"} className="vh-100 d-flex justify-content-center align-items-center p-3 p-sm-4">
                             <div className="w-100" style={{ maxWidth: '730px' }}>
                                 <div className="d-flex justify-content-between align-items-start">
                                     <div>
@@ -197,15 +199,15 @@ export default function BarChart3() {
                                         </div>
                                         <div className="d-flex align-items-center justify-content-between align-items-center gap-2">
                                             <div className="e-btn-group d-none d-sm-block">
-                                                <input type="radio" id="day" name="align" value="D" aria-label="day" role="button" />
+                                                <input type="radio" id="day" name="align" value="D" />
                                                 <label className="e-btn" htmlFor="day">D</label>
-                                                <input type="radio" id="week" name="align" value="W" aria-label="week" role="button" />
+                                                <input type="radio" id="week" name="align" value="W" />
                                                 <label className="e-btn" htmlFor="week">W</label>
-                                                <input type="radio" id="month" name="align" value="M" aria-label="month" role="button" />
+                                                <input type="radio" id="month" name="align" value="M" />
                                                 <label className="e-btn" htmlFor="month">M</label>
-                                                <input type="radio" id="year" name="align" value="Y" defaultChecked aria-label="year" role="button" />
+                                                <input type="radio" id="year" name="align" value="Y" defaultChecked />
                                                 <label className="e-btn" htmlFor="year">Y</label>
-                                                <input type="radio" id="custom" name="align" value="Custom" aria-label="custom" role="button" />
+                                                <input type="radio" id="custom" name="align" value="Custom" />
                                                 <label className="e-btn" htmlFor="custom">Custom</label>
                                             </div>
                                             <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline d-sm-none" content="Year" items={[{ text: 'Day' }, { text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>

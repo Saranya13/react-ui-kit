@@ -11,6 +11,7 @@ export default function Sidebar7() {
     /* SB Code - Start */ 
     const [theme, setTheme] = useState('tailwind');
     /* SB Code - End */ 
+    const [backDrop, setBackDrop] = useState(false);
     const sidebar = useRef<SidebarComponent | null>(null);
 
     const navigationMenu: any[] = [  
@@ -53,6 +54,10 @@ export default function Sidebar7() {
             fontIcon: 'e-circle-info'
         }
     ];
+
+    const handleResize = (): void => {
+        setBackDrop(window.innerWidth <= 640);
+    };
     
     /* SB Code - Start */ 
     const handleMessageEvent = (event: MessageEvent) => {
@@ -72,11 +77,16 @@ export default function Sidebar7() {
     useEffect(() => {
         /* SB Code - Start */
         window.addEventListener('message', handleMessageEvent);
+        /* SB Code - End */
+        handleResize();
+        window.addEventListener('resize', handleResize);
 
         return () => {
+            /* SB Code - Start */
             window.removeEventListener('message', handleMessageEvent);
+            /* SB Code - End */
+            window.removeEventListener('resize', handleResize);
         };
-        /* SB Code - End */
     }, []);
 
     const getContent = () => {
@@ -85,7 +95,7 @@ export default function Sidebar7() {
                 return (
                     <section className="bg-white dark:bg-gray-950">
                         <div id={styles["profile-sidebar"]} style={{ height: '605px' }}>
-                            <SidebarComponent key={"sidebar-7-tw"} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-7-tw"} ref={sidebar} className="bg-gray-50 dark:bg-gray-900 !border-r !border-gray-200 dark:!border-gray-700" width="256px" isOpen={true} showBackdrop={backDrop} style={{ display: 'block' }}>
                                 <div className="flex flex-col h-screen justify-between">
                                     <div>
                                         <div className="flex items-center p-4">
@@ -138,7 +148,7 @@ export default function Sidebar7() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="p-3 absolute top-0 left-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-right e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-round e-large e-icons e-chevron-right" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>
@@ -147,7 +157,7 @@ export default function Sidebar7() {
                 return (
                     <section className="bg-body">
                         <div id={styles["profile-sidebar"]} style={{ height: '630px' }}>
-                            <SidebarComponent key={"sidebar-7-bs"} width="256px" ref={sidebar} isOpen={true} style={{ display: 'block' }}>
+                            <SidebarComponent key={"sidebar-7-bs"} ref={sidebar} width="256px" isOpen={true} showBackdrop={backDrop} style={{ display: 'block' }}>
                                 <div className="d-flex flex-column vh-100 justify-content-between">
                                     <div>
                                         <div className="d-flex align-items-center px-3 pb-3 mt-4">
@@ -173,7 +183,7 @@ export default function Sidebar7() {
                                                 </div>)}
                                             ></ListViewComponent>
                                         </div>
-                                        <p className="m-3 fs-6 text-body-secondary">Others</p>
+                                        <hr className="mx-3 border-light-subtle opacity-100" />
                                         <div>
                                             <ListViewComponent className="border-0 e-bigger" dataSource={supportMenu} template={(data: any) => (
                                                 <div className="e-list-wrapper d-flex align-items-center px-1">
@@ -200,7 +210,7 @@ export default function Sidebar7() {
                         </div>
                         {/* SB Code - Start */}
                         <div className="py-3 px-1 position-absolute top-0 start-0">
-                            <ButtonComponent cssClass="e-large e-icons e-chevron-right e-round" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                            <ButtonComponent cssClass="e-round e-large e-icons e-chevron-right" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                         </div>
                         {/* SB Code - End */}
                     </section>

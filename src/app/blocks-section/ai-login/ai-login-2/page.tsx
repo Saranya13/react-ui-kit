@@ -59,7 +59,7 @@ export default function AILogin2() {
                                         <a href="#" className="font-normal text-xs text-primary-600 dark:text-primary-400">Forgot password?</a>
                                     </div>
                                     <div className="mt-6">
-                                        <ButtonComponent cssClass="w-full e-primary e-btn" type="submit">Login</ButtonComponent>
+                                        <ButtonComponent cssClass="w-full e-primary" content="Login" type="submit"></ButtonComponent>
                                     </div>
                                 </form>
                                 <div className="flex items-center justify-center gap-4 flex-col">
@@ -84,23 +84,23 @@ export default function AILogin2() {
                     <section className="bg-body">
                         <div className="position-relative d-flex justify-content-center align-items-center min-vh-100">
                             <div className="position-absolute top-0 start-0" style={{ backgroundImage: "url('/react/essential-ui-kit/blocks/assets/images/ai/login/ai-login/top-curve.svg')", backgroundSize: "contain", backgroundRepeat: "no-repeat", width: "100%", height: "28%" }}></div>
-                            <div className="w-100 rounded-lg px-3 py-5 py-md-5" style={{ maxWidth: "448px" }}>
+                            <div key={"ailogin-2-bs"} className="w-100 rounded-lg px-3 py-5 py-md-5" style={{ maxWidth: "448px" }}>
                                 <div className="d-flex justify-content-center mb-3">
                                     <h2 className="text-center text-body fs-4 fw-bold">Login</h2>
                                 </div>
                                 <p className="fs-6 text-center fw-normal text-body">Please enter your login Id and password</p>
                                 <form action="#" className="mt-3 mb-3" onSubmit={(event) => event.preventDefault()}>
                                     <div className="mb-3">
-                                        <TextBoxComponent ref={userName} cssClass="e-normal small text-secondary !border-0 shadow-sm bg-body-tertiary" placeholder="Username or email" created={() => userName.current?.addIcon("prepend", "e-icons e-user e-small")} floatLabelType="Never" type="email"></TextBoxComponent>
+                                        <TextBoxComponent ref={userName} cssClass="e-normal small text-secondary border-0 shadow-sm bg-body-tertiary" placeholder="Username or email" created={() => userName.current?.addIcon("prepend", "e-icons e-user e-small border-0")} floatLabelType="Never" type="email"></TextBoxComponent>
                                     </div>
                                     <div className="mb-2 position-relative">
-                                            <TextBoxComponent ref={password} cssClass="e-normal small text-secondary !border-0 shadow-sm bg-body-tertiary" placeholder="Password" created={() => password.current?.addIcon("prepend", "e-icons e-lock e-small")} floatLabelType="Never" type="password"></TextBoxComponent>
+                                        <TextBoxComponent ref={password} cssClass="e-normal small text-secondary border-0 shadow-sm bg-body-tertiary" placeholder="Password" created={() => password.current?.addIcon("prepend", "e-icons e-lock e-small border-0")} floatLabelType="Never" type="password"></TextBoxComponent>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-end mb-3">
                                         <a href="#" className="fw-normal small text-primary text-decoration-none">Forgot password?</a>
                                     </div>
                                     <div className="mt-3">
-                                        <ButtonComponent cssClass="w-100 e-primary e-btn" type="submit">Login</ButtonComponent>
+                                        <ButtonComponent cssClass="w-100 e-primary" content="Login" type="submit"></ButtonComponent>
                                     </div>
                                 </form>
                                 <div className="d-flex align-items-center justify-content-center gap-3 flex-column">

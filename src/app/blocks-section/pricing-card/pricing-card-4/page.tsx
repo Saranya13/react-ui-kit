@@ -39,10 +39,10 @@ export default function PricingCard4() {
                         <div className="max-w-screen-xl mx-auto py-20">
                             <div className="text-center">
                                 <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Pricing Plans</h1>
-                                <p className="mt-4 px-4 text-lg font-normal mb-8 sm:max-w-xl lg:max-w-full w-full mx-auto text-center text-gray-700 dark:text-gray-200">Get started in complete confidence. Our 30-day money-back guarantee means it’s risk-free.</p>
+                                <p className="mt-4 px-4 text-lg font-normal mb-8 sm:max-w-xl lg:max-w-full w-full mx-auto text-center text-gray-700 dark:text-gray-200">Get started in complete confidence. Our 30-day money-back guarantee means it's risk-free.</p>
                                 <div className="flex items-center justify-center gap-3 mb-12 text-base font-medium text-gray-700 dark:text-gray-200">
                                     <p>Monthly</p>
-                                    <SwitchComponent cssClass="e-bigger" checked={true} style={{ width: "44px !important" }}></SwitchComponent>
+                                    <SwitchComponent cssClass="e-bigger" checked={true}></SwitchComponent>
                                     <p>Yearly</p>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ export default function PricingCard4() {
                                         <p className="mb-2 text-base text-gray-700 dark:text-gray-200">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent className="w-full text-lg" content="Choose a plan" cssClass="e-outline e-primary" type="button"></ButtonComponent>
+                                        <ButtonComponent className="w-full text-lg" cssClass="e-outline e-primary" content="Choose a plan" type="button"></ButtonComponent>
                                     </div>
                                     <ul className="flex flex-col gap-4 px-6 text-gray-700 dark:text-gray-200 text-base">
                                         <li className="flex items-center gap-3">
@@ -119,7 +119,7 @@ export default function PricingCard4() {
                                         <p className="mb-2 text-base text-gray-700 dark:text-gray-200">Create one end product for a client, transfer that end product to your client, charge them for your services.</p>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent className="w-full text-lg" content="Choose a plan" cssClass="e-primary" type="button"></ButtonComponent>
+                                        <ButtonComponent className="w-full text-lg" cssClass="e-primary" content="Choose a plan" type="button"></ButtonComponent>
                                     </div>
                                     <ul className="flex flex-col gap-4 px-6 text-gray-700 dark:text-gray-200 text-base">
                                         <li className="flex items-center gap-3">
@@ -162,10 +162,10 @@ export default function PricingCard4() {
                         <div className="container px-3 py-5">
                             <div className="text-center">
                                 <h1 className="fw-bold fs-1 mb-3 text-body">Pricing Plans</h1>
-                                <p className="mb-4 mx-3 px-1 px-md-5 px-lg-0 text-light-emphasis">Get started in complete confidence. Our 30-day money-back guarantee means it’s risk-free.</p>
+                                <p className="mb-4 mx-3 px-1 px-md-5 px-lg-0 text-light-emphasis">Get started in complete confidence. Our 30-day money-back guarantee means it's risk-free.</p>
                                 <div className="d-flex justify-content-center align-items-center gap-2 mb-5 pt-2">
                                     <p className="m-0 small text-light-emphasis">Monthly</p>
-                                    <SwitchComponent cssClass="e-bigger" checked={true} style={{ width: "37px" }}></SwitchComponent>
+                                    <SwitchComponent cssClass="e-bigger" checked={true}></SwitchComponent>
                                     <p className="m-0 small text-light-emphasis">Yearly</p>
                                 </div>
                             </div>

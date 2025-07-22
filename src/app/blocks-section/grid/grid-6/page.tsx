@@ -196,7 +196,7 @@ export default function Grid6() {
                                 <ColumnsDirective>
                                     <ColumnDirective type="checkbox" isPrimaryKey={true} textAlign="Center" width="40" />
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="143" />
-                                    <ColumnDirective field="customerDetails" headerText="Customer Name" width="270" textAlign="Left" allowFiltering={false}
+                                    <ColumnDirective field="customerDetails.name" headerText="Customer Name" width="270" textAlign="Left"
                                         template={(data: any) => (
                                             <div className="flex gap-3 items-center py-1.5">
                                                 <div className="w-8 h-8">
@@ -250,7 +250,7 @@ export default function Grid6() {
                                 <ColumnsDirective>
                                     <ColumnDirective type="checkbox" isPrimaryKey={true} textAlign="Center" width="40" />
                                     <ColumnDirective field="transactionId" headerText="Transaction ID" width="155" />
-                                    <ColumnDirective field="customerDetails" headerText="Customer Name" width="270" textAlign="Left" allowFiltering={false}
+                                    <ColumnDirective field="customerDetails.name" headerText="Customer Name" width="270" textAlign="Left"
                                         template={(data: any) => (
                                             <div className="d-flex gap-3 align-items-center py-1">
                                                 <div style={{ width: "32px", height: "32px" }}>

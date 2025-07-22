@@ -96,7 +96,7 @@ export default function Statistics4() {
                                             </div>
                                             <div className="e-card-separator"></div>
                                             <div className="e-card-actions !px-4 !py-2">
-                                                <ButtonComponent cssClass="e-flat e-primary" iconCss="e-icons e-chevron-right" iconPosition="Right" type="button" content="View Details"></ButtonComponent>
+                                                <ButtonComponent cssClass="e-flat e-primary" iconCss="e-icons e-chevron-right" iconPosition="Right" content="View Details" type="button"></ButtonComponent>
                                             </div>
                                         </div>
                                     </div>

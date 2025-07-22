@@ -44,15 +44,15 @@ export default function Pagination2() {
                                     <ButtonComponent className="e-flat lg:hidden" iconCss="e-icons e-chevron-left" type="button" disabled={true}></ButtonComponent>
                                     <ButtonComponent className="e-flat hidden lg:inline-block" iconCss="e-icons e-chevron-left" content="Previous" type="button" disabled={true}></ButtonComponent>
                                     <span>
-                                        <ButtonComponent className="e-primary" type="button">1</ButtonComponent>
-                                        <ButtonComponent className="e-flat" type="button">2</ButtonComponent>
-                                        <ButtonComponent className="e-flat" type="button">3</ButtonComponent>
-                                        <ButtonComponent className="e-flat hidden xl:inline-block" type="button">4</ButtonComponent>
-                                        <ButtonComponent className="e-flat hidden xl:inline-block" type="button">5</ButtonComponent>
-                                        <ButtonComponent className="e-flat hidden xl:inline-block" type="button">6</ButtonComponent>
-                                        <ButtonComponent className="e-flat hidden xl:inline-block" type="button">7</ButtonComponent>
-                                        <ButtonComponent className="e-flat hidden xl:inline-block" type="button">8</ButtonComponent>
-                                        <ButtonComponent className="e-flat" type="button">...</ButtonComponent>
+                                        <ButtonComponent className="e-primary" content="1" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat" content="2" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat" content="3" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat hidden xl:inline-block" content="4" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat hidden xl:inline-block" content="5" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat hidden xl:inline-block" content="6" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat hidden xl:inline-block" content="7" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat hidden xl:inline-block" content="8" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat" content="..." type="button"></ButtonComponent>
                                     </span>
                                     <ButtonComponent className="e-flat hidden lg:inline-block" iconCss="e-icons e-chevron-right" iconPosition="Right" content="Next" type="button"></ButtonComponent>
                                     <ButtonComponent className="e-flat lg:hidden" iconCss="e-icons e-chevron-right" iconPosition="Right" type="button"></ButtonComponent>
@@ -75,15 +75,15 @@ export default function Pagination2() {
                                     <ButtonComponent className="e-flat d-lg-none" iconCss="e-icons e-chevron-left" type="button" disabled={true}></ButtonComponent>
                                     <ButtonComponent className="e-flat d-none d-lg-inline-block" iconCss="e-icons e-chevron-left" content="Previous" type="button" disabled={true}></ButtonComponent>
                                     <span className="mx-1">
-                                        <ButtonComponent className="rounded e-primary" type="button">1</ButtonComponent>
-                                        <ButtonComponent className="e-flat rounded" type="button">2</ButtonComponent>
-                                        <ButtonComponent className="e-flat rounded" type="button">3</ButtonComponent>
-                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" type="button">4</ButtonComponent>
-                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" type="button">5</ButtonComponent>
-                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" type="button">6</ButtonComponent>
-                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" type="button">7</ButtonComponent>
-                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" type="button">8</ButtonComponent>
-                                        <ButtonComponent className="e-flat rounded" type="button">...</ButtonComponent>
+                                        <ButtonComponent className="rounded e-primary" content="1" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat rounded" content="2" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat rounded" content="3" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" content="4" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" content="5" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" content="6" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" content="7" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat rounded d-none d-xl-inline-block" content="8" type="button"></ButtonComponent>
+                                        <ButtonComponent className="e-flat rounded" content="..." type="button"></ButtonComponent>
                                     </span>
                                     <ButtonComponent className="e-flat d-none d-lg-inline-block" iconCss="e-icons e-chevron-right" iconPosition="Right" content="Next" type="button"></ButtonComponent>
                                     <ButtonComponent className="e-flat d-lg-none" iconCss="e-icons e-chevron-right" iconPosition="Right" type="button"></ButtonComponent>

@@ -49,10 +49,10 @@ export default function Card8() {
                                             </div>
                                         </div>
                                         <div className="e-card-content">
-                                            <p className="text-base mb-1 dark:text-gray-200">Experience the awe of towering peaks and rugged terrains. Whether you’re hiking through lush valleys or conquering challenging summits, the majestic mountains offer breathtaking views.</p>
+                                            <p className="text-base mb-1 dark:text-gray-200">Experience the awe of towering peaks and rugged terrains. Whether you're hiking through lush valleys or conquering challenging summits, the majestic mountains offer breathtaking views.</p>
                                         </div>
                                         <div className="e-card-actions leading-9 w-full">
-                                            <ButtonComponent cssClass="e-outline e-primary w-full md:w-fit xl:w-full" type="button">View Details</ButtonComponent>
+                                            <ButtonComponent cssClass="e-outline e-primary w-full md:w-fit xl:w-full" content="View Details" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@ export default function Card8() {
                                             <p className="text-base mb-1 dark:text-gray-200">Unwind on sun-kissed shores with pristine sands and crystal-clear waters. Enjoy swimming, sunbathing, and beachside strolls while savoring the calming rhythm of the ocean.</p>
                                         </div>
                                         <div className="e-card-actions leading-9 w-full">
-                                            <ButtonComponent cssClass="e-outline e-primary w-full md:w-fit xl:w-full" type="button">View Details</ButtonComponent>
+                                            <ButtonComponent cssClass="e-outline e-primary w-full md:w-fit xl:w-full" content="View Details" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@ export default function Card8() {
                                             <p className="text-base mb-1 dark:text-gray-200">Immerse yourself in the cozy atmosphere of picturesque villages. Explore cobblestone streets, quaint shops, and friendly local cafes, where each village offers a unique blend of heritage.</p>
                                         </div>
                                         <div className="e-card-actions leading-9 w-full">
-                                            <ButtonComponent cssClass="e-outline e-primary w-full md:w-fit xl:w-full" type="button">View Details</ButtonComponent>
+                                            <ButtonComponent cssClass="e-outline e-primary w-full md:w-fit xl:w-full" content="View Details" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@ export default function Card8() {
                                             <p className="text-base mb-1 dark:text-gray-200">Engage with the dynamic energy of major cities where iconic landmarks, diverse cuisines, and vibrant nightlife await. From skyscrapers and shopping districts to cultural attractions, the entertainment is endless.</p>
                                         </div>
                                         <div className="e-card-actions leading-9 w-full">
-                                            <ButtonComponent cssClass="e-outline e-primary w-full md:w-fit xl:w-full" type="button">View Details</ButtonComponent>
+                                            <ButtonComponent cssClass="e-outline e-primary w-full md:w-fit xl:w-full" content="View Details" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
@@ -131,10 +131,10 @@ export default function Card8() {
                                                 </div>
                                             </div>
                                             <div className="e-card-content pt-0 text-body">
-                                                <p className="fs-6 mb-2">Experience the awe of towering peaks and rugged terrains. Whether you’re hiking through lush valleys or conquering challenging summits, the majestic mountains offer breathtaking views.</p>
+                                                <p className="fs-6 mb-2">Experience the awe of towering peaks and rugged terrains. Whether you're hiking through lush valleys or conquering challenging summits, the majestic mountains offer breathtaking views.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger d-flex lh-lg">
-                                                <ButtonComponent cssClass="e-outline e-primary flex-grow-1 flex-md-grow-0 flex-xl-grow-1" type="button">View Details</ButtonComponent>
+                                                <ButtonComponent cssClass="e-outline e-primary flex-grow-1 flex-md-grow-0 flex-xl-grow-1" content="View Details" type="button"></ButtonComponent>
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@ export default function Card8() {
                                                 <p className="fs-6 mb-2">Unwind on sun-kissed shores with pristine sands and crystal-clear waters. Enjoy swimming, sunbathing, and beachside strolls while savoring the calming rhythm of the ocean.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger d-flex lh-lg">
-                                                <ButtonComponent cssClass="e-outline e-primary flex-grow-1 flex-md-grow-0 flex-xl-grow-1" type="button">View Details</ButtonComponent>
+                                                <ButtonComponent cssClass="e-outline e-primary flex-grow-1 flex-md-grow-0 flex-xl-grow-1" content="View Details" type="button"></ButtonComponent>
                                             </div>
                                         </div>
                                     </div>
@@ -174,7 +174,7 @@ export default function Card8() {
                                                 <p className="fs-6 mb-2">Immerse yourself in the cozy atmosphere of picturesque villages. Explore cobblestone streets, quaint shops, and friendly local cafes, where each village offers a unique blend of heritage.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger d-flex lh-lg">
-                                                <ButtonComponent cssClass="e-outline e-primary flex-grow-1 flex-md-grow-0 flex-xl-grow-1" type="button">View Details</ButtonComponent>
+                                                <ButtonComponent cssClass="e-outline e-primary flex-grow-1 flex-md-grow-0 flex-xl-grow-1" content="View Details" type="button"></ButtonComponent>
                                             </div>
                                         </div>
                                     </div>
@@ -194,7 +194,7 @@ export default function Card8() {
                                                 <p className="fs-6 mb-2">Engage with the dynamic energy of major cities where iconic landmarks, diverse cuisines, and vibrant nightlife await. From skyscrapers and shopping districts to cultural attractions, the entertainment is endless.</p>
                                             </div>
                                             <div className="e-card-actions e-bigger d-flex lh-lg">
-                                                <ButtonComponent cssClass="e-outline e-primary flex-grow-1 flex-md-grow-0 flex-xl-grow-1" type="button">View Details</ButtonComponent>
+                                                <ButtonComponent cssClass="e-outline e-primary flex-grow-1 flex-md-grow-0 flex-xl-grow-1" content="View Details" type="button"></ButtonComponent>
                                             </div>
                                         </div>
                                     </div>

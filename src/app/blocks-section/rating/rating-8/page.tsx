@@ -56,7 +56,7 @@ export default function Rating8() {
                                                 <span className="font-medium text-base text-gray-500 dark:text-gray-400 ml-1"><span>&#64;</span>oliviaadams</span>
                                             </p>
                                             <div className="flex items-center text-sm font-medium mt-1" style={{ minHeight:'50px',width:'238px' }}>
-                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} 
+                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} precision="Exact"
                                                     emptyTemplate={
                                                         () => <span className="sf-icon-star-filled-01 text-2xl text-gray-300 dark:text-gray-500"></span>
                                                     } 
@@ -64,7 +64,7 @@ export default function Rating8() {
                                                         () => <span className="sf-icon-star-filled-01 text-2xl text-amber-300"></span>
                                                     }
                                                     labelTemplate={
-                                                        (value: any)=><p className="!text-gray-900 dark:!text-white text-sm font-medium">{value?.value} / 5</p>
+                                                        (value: any)=><p className="!text-gray-900 dark:!text-white text-sm font-medium">{value?.value.toFixed(1)} / 5.0</p>
                                                     }
                                                 ></RatingComponent>
                                             </div>
@@ -87,7 +87,7 @@ export default function Rating8() {
                                             <span className="e-avatar e-avatar-circle e-avatar-large">
                                                 <img src="/react/essential-ui-kit/blocks//assets/images/common/avatar/avatar-11.jpg" alt="olivia adams" />
                                             </span>
-                                            <span className="position-absolute bottom-0 end-0 border border-white bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style={{ width: '16px', height: '16px', fontSize: '10px' }}>
+                                            <span className="position-absolute bottom-0 end-0 border border-2 border-white bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style={{ width: '16px', height: '16px', fontSize: '10px' }}>
                                                 <span className="e-icons e-check"></span>
                                             </span>
                                         </div>
@@ -97,16 +97,16 @@ export default function Rating8() {
                                                     <span>&#64;</span>oliviaadams
                                                 </span>
                                             </p>
-                                            <div className="d-flex align-items-center small fw-medium" style={{minHeight:'50px',width:'238px'}}>
-                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} 
+                                            <div className="d-flex align-items-center small fw-medium" style={{ minHeight: '50px' , width: '238px' }}>
+                                                <RatingComponent value={4.5} showLabel={true} enableAnimation={false} precision="Exact"
                                                     emptyTemplate={
-                                                        () => <span className="sf-icon-star-02 fs-5 text-body-secondary"></span>
+                                                        () => <span className="sf-icon-star-02 fs-4 text-body-secondary"></span>
                                                     } 
                                                     fullTemplate={
-                                                        () => <span className="sf-icon-star-filled-01 fs-5 text-warning"></span>
+                                                        () => <span className="sf-icon-star-filled-01 fs-4 text-warning"></span>
                                                     }
                                                     labelTemplate={
-                                                        (value: any)=><p className="text-body mb-1 fw-medium">{value?.value} / 5</p>
+                                                        (value: any)=><span className="fs-6"><p className="text-body mb-0 small">{value?.value.toFixed(1)} / 5.0</p></span>
                                                     }
                                                 ></RatingComponent>
                                             </div>

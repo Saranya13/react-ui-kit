@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 import { MessageComponent } from '@syncfusion/ej2-react-notifications';
 

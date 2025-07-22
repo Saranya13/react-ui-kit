@@ -38,7 +38,7 @@ export default function Notification5() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
-                        <div key={'notification-5-tw'} id="toast" className="mx-4 sm:mx-auto h-screen" style={{ maxWidth: '379px' }}>
+                        <div key={"notification-5-tw"} id="toast" className="mx-4 sm:mx-auto h-screen" style={{ maxWidth: '379px' }}>
                             <ToastComponent ref={toastRef} cssClass="!w-full sm:!m-0 !p-0" position={{ X: 'Center' }} width="100%" timeOut={0} target="#toast" newestOnTop={true} created={() => toastRef.current?.show()}
                                 content={() => (
                                     <div className="flex flex-col justify-between items-center p-4">
@@ -47,7 +47,7 @@ export default function Notification5() {
                                                 <span className="sf-icon-clock-02 text-2xl !leading-6 !text-gray-500 dark:!text-gray-300"></span>
                                                 <h1 className="text-sm text-gray-900 dark:text-white font-bold">Trial Ending Soon</h1>
                                             </div>
-                                            <ButtonComponent cssClass="e-flat e-small e-round" iconCss="e-icons e-close" type="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-flat e-round" iconCss="e-icons e-close !text-base" type="button"></ButtonComponent>
                                         </div>
                                         <div className="e-bigger flex flex-col gap-2">
                                             <p className="text-gray-700 dark:text-gray-300 leading-5 mb-1">Your free trial will end in two days. Upgrade now to keep your premium features!</p>
@@ -58,15 +58,14 @@ export default function Notification5() {
                                         </div>
                                     </div>
                                 )}
-                            >
-                            </ToastComponent>
+                            ></ToastComponent>
                         </div>
                     </section>
                 );
             case 'bootstrap5':
                 return (
                     <section className="bg-body">
-                        <div key={'notification-5-bs'} id="toast" className="mx-3 mx-sm-auto vh-100" style={{ maxWidth: '379px' }}>
+                        <div key={"notification-5-bs"} id="toast" className="mx-3 mx-sm-auto vh-100" style={{ maxWidth: '379px' }}>
                             <ToastComponent ref={toastRef} cssClass="w-100 m-0 p-0" position={{ X: 'Center' }} width="100%" timeOut={0} target="#toast" newestOnTop={true} created={() => toastRef.current?.show()}
                                 content={() => (
                                     <div className="d-flex flex-column gap-2 p-1">
@@ -75,7 +74,7 @@ export default function Notification5() {
                                                 <span className="sf-icon-clock-02 fs-4 text-secondary"></span>
                                                 <h1 className="fs-6 text-body fw-bold m-0">Trial Ending Soon</h1>
                                             </div>
-                                            <ButtonComponent cssClass="e-flat e-small e-round" iconCss="e-icons e-close" type="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-flat e-round" iconCss="e-icons e-close" type="button"></ButtonComponent>
                                         </div>
                                         <div className="e-bigger d-flex flex-column gap-2 p-1 pt-0">
                                             <p className="text-body m-0">Your free trial will end in two days. Upgrade now to keep your premium features!</p>
@@ -86,8 +85,7 @@ export default function Notification5() {
                                         </div>
                                     </div>
                                 )}
-                            >
-                            </ToastComponent>
+                            ></ToastComponent>
                         </div>
                     </section>
                 );

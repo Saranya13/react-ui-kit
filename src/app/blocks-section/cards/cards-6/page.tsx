@@ -63,7 +63,7 @@ export default function Card6() {
                                         </div>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-outline w-full" content="Get Started Now" iconCss="e-icons e-chevron-right-double" iconPosition="Right" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-outline w-full" iconCss="e-icons e-chevron-right-double" iconPosition="Right" content="Get Started Now" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                                 <div className="e-card e-bigger rounded-lg w-full sm:w-3/6 justify-start">
@@ -91,7 +91,7 @@ export default function Card6() {
                                         </div>
                                     </div>
                                     <div className="e-card-actions leading-9">
-                                        <ButtonComponent cssClass="e-primary e-outline w-full" content="Get Started Now" iconCss="e-icons e-chevron-right-double" iconPosition="Right" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary e-outline w-full" iconCss="e-icons e-chevron-right-double" iconPosition="Right" content="Get Started Now" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </div>
@@ -106,12 +106,12 @@ export default function Card6() {
                                 <div className="col-sm-6 col-lg-5 col-xl-4">
                                     <div className="e-card e-bigger shadow p-2 h-100 justify-content-start">
                                         <div className="e-card-header align-items-center mb-2">
-                                            <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-emphasis bg-body-tertiary"></span>
+                                            <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary bg-body-tertiary"></span>
                                             <div className="e-card-header-caption">
                                                 <div className="e-card-header-title text-body">
                                                     <p className="h6 fw-bold mb-0 text-truncate">Amazing Destinations</p>
                                                 </div>
-                                                <div className="e-card-sub-title text-secondary text-wrap">
+                                                <div className="e-card-sub-title text-body-secondary text-wrap">
                                                     <p className="small mb-0">Stunning locations for your next adventure</p>
                                                 </div>
                                             </div>
@@ -129,19 +129,19 @@ export default function Card6() {
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-outline e-block" content="Get Started Now" iconCss="e-icons e-chevron-right-double fs-6" iconPosition="Right" type="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-outline e-block" iconCss="e-icons e-chevron-right-double fs-6" iconPosition="Right" content="Get Started Now" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 col-lg-5 col-xl-4">
                                     <div className="e-card shadow p-0 p-2 h-100 justify-content-start">
                                         <div className="e-card-header align-items-center mb-2">
-                                            <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary-emphasis bg-body-tertiary"></span>
+                                            <span className="e-avatar e-avatar-large e-icons e-group-icon e-avatar-circle text-primary bg-body-tertiary"></span>
                                             <div className="e-card-header-caption">
                                                 <div className="e-card-header-title text-body">
                                                     <p className="h6 fw-bold mb-0 text-truncate">Smart Home</p>
                                                 </div>
-                                                <div className="e-card-sub-title text-secondary text-wrap">
+                                                <div className="e-card-sub-title text-body-secondary text-wrap">
                                                     <p className="small mb-0">Deliver personalised experiences at scale.</p>
                                                 </div>
                                             </div>
@@ -159,7 +159,7 @@ export default function Card6() {
                                             </div>
                                         </div>
                                         <div className="e-card-actions lh-lg">
-                                            <ButtonComponent cssClass="e-primary e-outline e-block" content="Get Started Now" iconCss="e-icons e-chevron-right-double fs-6" iconPosition="Right" type="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary e-outline e-block" iconCss="e-icons e-chevron-right-double fs-6" iconPosition="Right" content="Get Started Now" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 </div>

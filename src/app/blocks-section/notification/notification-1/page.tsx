@@ -15,7 +15,7 @@ export default function Notification1() {
     const buttonRef = useRef<ButtonComponent>(null);
     const tabRef = useRef<TabComponent>(null);
     const listviewRef = useRef<ListViewComponent>(null);
-    const toggleRef = useRef(false);
+    const isToggleRef = useRef(false);
 
     const messageData: any = [
         {
@@ -58,7 +58,7 @@ export default function Notification1() {
         }
     ];
 
-    const setDialogPosition = (event: any) => {
+    const setDialogPosition = (event: any): void => {
         if (!buttonRef.current || !dialogRef.current) return;
 
         const position = buttonRef.current.element.getBoundingClientRect();
@@ -69,7 +69,7 @@ export default function Notification1() {
         event.preventFocus = true;
     };
 
-    const onTabSelected = (args: SelectEventArgs): void => {
+    const tabSelected = (args: SelectEventArgs): void => {
         args.previousItem?.querySelector(".e-badge")?.classList.remove("e-badge-primary");
         args.selectedItem?.querySelector(".e-badge")?.classList.add("e-badge-primary");
 
@@ -81,7 +81,7 @@ export default function Notification1() {
         }
     };
 
-    const onTabCreated = (): void => {
+    const tabCreated = (): void => {
         setTimeout(() => {
             const badge = tabRef.current?.element.querySelector(".e-toolbar-item.e-active")?.querySelector(".e-badge");
             if (badge) {
@@ -92,8 +92,8 @@ export default function Notification1() {
 
     const toggleDialog = (): void => {
         if (dialogRef.current) {
-            toggleRef.current = !toggleRef.current;
-            if (toggleRef.current) {
+            isToggleRef.current = !isToggleRef.current;
+            if (isToggleRef.current) {
                 dialogRef.current.hide();
             } else {
                 dialogRef.current.show();
@@ -136,19 +136,16 @@ export default function Notification1() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="relative h-screen mx-auto" style={{ maxWidth: '480px' }}>
-                            <div key={'notification-1-tw'} className="w-full flex justify-end p-4" style={{ minHeight: '680px' }}>
+                            <div key={"notification-1-tw"} className="w-full flex justify-end p-4" style={{ minHeight: '680px' }}>
                                 <div className="relative w-8 h-8">
                                     <ButtonComponent ref={buttonRef} cssClass="e-outline e-round" iconCss="sf-icon-notification-bell-02" type="button" onClick={toggleDialog}></ButtonComponent>
                                     <span className="e-badge e-badge-danger e-badge-notification e-badge-overlap e-badge-circle mt-1 mr-2">4</span>
                                 </div>
-                                <DialogComponent ref={dialogRef} id={styles.notification} cssClass="!bg-white dark:!bg-gray-800 rounded-lg overflow-hidden !border" open={setDialogPosition} created={() => dialogRef.current?.show()}
+                                <DialogComponent ref={dialogRef} id={styles["notification"]} cssClass="!bg-white dark:!bg-gray-800 rounded-lg overflow-hidden !border" open={setDialogPosition} created={() => dialogRef.current?.show()}
                                     header={() => (
                                         <div className="flex justify-between items-center p-4 md:px-3 md:py-2">
                                             <h1 className="text-base md:text-lg text-gray-900 dark:text-white font-medium">Notifications</h1>
-                                            <div className="flex items-center gap-3">
-                                                <ButtonComponent cssClass="e-flat e-small block sm:hidden" iconCss="e-icons e-more-vertical-1" type="button"></ButtonComponent>
-                                                <ButtonComponent cssClass="e-flat e-small e-round" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
-                                            </div>
+                                            <ButtonComponent cssClass="e-flat e-small" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
                                         </div>
                                     )}
                                     footerTemplate={() => (
@@ -157,9 +154,9 @@ export default function Notification1() {
                                         </div>
                                     )}
                                 >
-                                    <div id={styles.tab} className="relative">
+                                    <div id={styles["tab"]} className="relative">
                                         <ButtonComponent cssClass="e-link !text-gray-700 dark:!text-white absolute right-3 top-1 z-50 hidden sm:block" content="Mark all as read" type="button"></ButtonComponent>
-                                        <TabComponent ref={tabRef} created={onTabCreated} selected={onTabSelected} overflowMode={"Scrollable"}>
+                                        <TabComponent ref={tabRef} created={tabCreated} selected={tabSelected} overflowMode={"Scrollable"}>
                                             <TabItemsDirective>
                                                 <TabItemDirective
                                                     headerTemplate={() => (
@@ -180,7 +177,7 @@ export default function Notification1() {
                                                         {data.avatar ? (
                                                             <span className="e-avatar e-avatar-circle" style={{ backgroundImage: `url(/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar})` }}></span>
                                                         ) : (
-                                                            <span className={`e-avatar e-avatar-circle ${data.colorTheme === 'Green' ? '!bg-green-100 !text-green-700 dark:!text-green-500' : '!bg-orange-100 !text-orange-700 dark:!text-orange-500'}`}>{data.initial}</span>
+                                                            <span className={`e-avatar e-avatar-circle ${data.colorTheme === 'Green' ? '!bg-green-100 dark:!bg-green-800 !text-green-700 dark:!text-green-500' : '!bg-orange-100 dark:!bg-orange-800 !text-orange-700 dark:!text-orange-500'}`}>{data.initial}</span>
                                                         )}
                                                     </div>
                                                     <div className="flex flex-col gap-1">
@@ -195,8 +192,7 @@ export default function Notification1() {
                                                     </div>
                                                 </div>
                                             )}
-                                            >
-                                            </ListViewComponent>
+                                        ></ListViewComponent>
                                     </div>
                                 </DialogComponent>
                             </div>
@@ -207,19 +203,16 @@ export default function Notification1() {
                 return (
                     <section className="bg-body">
                         <div className="position-relative vh-100 mx-auto" style={{ maxWidth: '480px' }}>
-                            <div key={'notification-1-bs'} className="w-100 d-flex justify-content-end p-3" style={{ minHeight: '680px' }}>
+                            <div key={"notification-1-bs"} className="w-100 d-flex justify-content-end p-3" style={{ minHeight: '680px' }}>
                                 <div className="position-relative" style={{width: '32px',height: '32px'}}>
                                     <ButtonComponent ref={buttonRef} cssClass="e-outline e-round" iconCss="sf-icon-notification-bell-02" type="button" onClick={toggleDialog}></ButtonComponent>
                                     <span className="e-badge e-badge-danger e-badge-notification e-badge-overlap e-badge-circle mt-1 me-2">4</span>
                                 </div>
-                                <DialogComponent ref={dialogRef} id={styles.notification} cssClass="bg-body rounded overflow-hidden border" open={setDialogPosition} created={() => dialogRef.current?.show()}
+                                <DialogComponent ref={dialogRef} id={styles["notification"]} cssClass="bg-body rounded overflow-hidden border" open={setDialogPosition} created={() => dialogRef.current?.show()}
                                     header={() => (
                                         <div className="d-flex justify-content-between align-items-center p-3">
                                             <h1 className="fs-5 text-body fw-medium m-0">Notifications</h1>
-                                            <div className="d-flex align-items-center gap-3">
-                                                <ButtonComponent cssClass="e-flat e-small d-block d-sm-none e-inherit" iconCss="e-icons e-more-vertical-1" type="button"></ButtonComponent>
-                                                <ButtonComponent cssClass="e-flat e-small e-round e-inherit" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
-                                            </div>
+                                            <ButtonComponent cssClass="e-flat e-small e-inherit" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
                                         </div>
                                     )}
                                     footerTemplate={() => (
@@ -230,7 +223,7 @@ export default function Notification1() {
                                 >
                                     <div className="position-relative mt-1">
                                         <ButtonComponent cssClass="e-link text-secondary position-absolute top-0 end-0 z-1 d-none d-sm-block me-2" content="Mark all as read" type="button"></ButtonComponent>
-                                        <TabComponent ref={tabRef} created={onTabCreated} selected={onTabSelected} overflowMode={"Scrollable"}>
+                                        <TabComponent ref={tabRef} created={tabCreated} selected={tabSelected} overflowMode={"Scrollable"}>
                                             <TabItemsDirective>
                                                 <TabItemDirective
                                                     headerTemplate={() => (
@@ -266,8 +259,7 @@ export default function Notification1() {
                                                     </div>
                                                 </div>
                                             )}
-                                        >
-                                        </ListViewComponent>
+                                        ></ListViewComponent>
                                     </div>
                                 </DialogComponent>
                             </div>

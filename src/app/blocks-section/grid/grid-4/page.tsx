@@ -339,7 +339,7 @@ export default function Grid4() {
                                                     {data.profile.avatar ? (
                                                         <span className="e-avatar e-avatar-circle e-avatar-small" style={{ backgroundImage: `url('/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.profile.avatar}')` }}></span>
                                                     ) : (
-                                                        <span className={`e-avatar e-avatar-circle e-avatar-small ${ data.profile.colorTheme === "Red"? "bg-danger-subtle text-danger": data.profile.colorTheme === "Green" ? "bg-success-subtle text-success" : data.profile.colorTheme === "Blue" ? "bg-info-subtle text-info" : data.profile.colorTheme === "Orange" ? "bg-warning-subtle text-warning" : ""}`}>{data.profile.initial}</span>
+                                                        <span className={`e-avatar e-avatar-circle e-avatar-small ${ data.profile.colorTheme === "Red"? "bg-danger-subtle text-danger-emphasis": data.profile.colorTheme === "Green" ? "bg-success-subtle text-success-emphasis" : data.profile.colorTheme === "Blue" ? "bg-info-subtle text-info-emphasis" : data.profile.colorTheme === "Orange" ? "bg-warning-subtle text-warning-emphasis" : ""}`}>{data.profile.initial}</span>
                                                     )}
                                                 </div>
                                                 <div className="d-flex flex-column">

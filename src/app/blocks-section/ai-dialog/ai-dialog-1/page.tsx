@@ -60,7 +60,7 @@ export default function AIDialog1() {
                 return (
                     <section>
                         <div id="dialog-container" style={{ minHeight: "580px" }}>
-                            <DialogComponent id={styles["dialog"]} ref={dialog} className="rounded-none sm:rounded-lg overflow-hidden" target="#dialog-container" isModal={true} width="357px" beforeOpen={(event) => (event.maxHeight = '100%')} open={(event) => (event.preventFocus = true)}>
+                            <DialogComponent ref={dialog} id={styles["dialog"]} className="rounded-none sm:rounded-lg overflow-hidden" target="#dialog-container" isModal={true} width="357px" beforeOpen={(event) => (event.maxHeight = '100%')} open={(event) => (event.preventFocus = true)}>
                                 <div className="flex flex-col h-full">
                                     <div className="border-b py-6 dark:border-gray-600">
                                         <StepperComponent ref={stepper} cssClass="e-small mx-auto" labelPosition="End" activeStep={1} style={{ maxWidth: "256px" }}>
@@ -84,7 +84,7 @@ export default function AIDialog1() {
                                             <label className="font-medium">Describe to AI</label>
                                             <TextAreaComponent value="I want to have modern and clean looking workspace with minimal and bright accent colors. Completed with natural wood color and beige furniture." resizeMode="None" rows={5} style={{ height: "112px" }}></TextAreaComponent>
                                         </div>
-                                        <ButtonComponent cssClass="e-primary sm:self-center" iconCss="e-icons e-ai-chat" type="button">Generate design</ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary sm:self-center" iconCss="e-icons e-ai-chat" content="Generate design" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </DialogComponent>
@@ -95,7 +95,7 @@ export default function AIDialog1() {
                 return (
                     <section>
                         <div id="dialog-container" style={{ minHeight: "580px" }}>
-                            <DialogComponent id={styles["dialog"]} ref={dialog} className="rounded-2" target="#dialog-container" isModal={true} width="357px" beforeOpen={(event) => (event.maxHeight = '100%')} open={(event) => (event.preventFocus = true)}>
+                            <DialogComponent ref={dialog} id={styles["dialog"]} className="rounded-2" target="#dialog-container" isModal={true} width="357px" beforeOpen={(event) => (event.maxHeight = '100%')} open={(event) => (event.preventFocus = true)}>
                                 <div className="d-flex flex-column h-100">
                                     <div className="border-bottom py-4 border-light-subtle">
                                         <StepperComponent ref={stepper} cssClass="e-small mx-auto" labelPosition="End" activeStep={1} style={{ maxWidth: "256px" }}>
@@ -119,7 +119,7 @@ export default function AIDialog1() {
                                             <label className="fw-medium small">Describe to AI</label>
                                             <TextAreaComponent value="I want to have modern and clean looking workspace with minimal and bright accent colors. Completed with natural wood color and beige furniture." resizeMode="None" rows={5} style={{ height: "112px" }}></TextAreaComponent>
                                         </div>
-                                        <ButtonComponent cssClass="e-primary align-self-sm-center" iconCss="e-icons e-ai-chat" type="button">Generate design</ButtonComponent>
+                                        <ButtonComponent cssClass="e-primary align-self-sm-center" iconCss="e-icons e-ai-chat" content="Generate design" type="button"></ButtonComponent>
                                     </div>
                                 </div>
                             </DialogComponent>

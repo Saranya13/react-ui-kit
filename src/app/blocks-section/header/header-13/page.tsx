@@ -52,8 +52,8 @@ export default function Header13() {
                                                 <ButtonComponent cssClass="e-flat" iconCss="e-icons e-chevron-right !text-base" type="button"></ButtonComponent>
                                             </span>
                                         </div>
-                                    )}>
-                                    </PagerComponent>
+                                    )}
+                                ></PagerComponent>
                                 </div>
                                 <div className="flex justify-between py-3 px-4 sm:px-6">
                                     <div className="flex items-center">
@@ -106,8 +106,8 @@ export default function Header13() {
                                                 <ButtonComponent className="e-icons e-chevron-right fs-6" cssClass="e-flat" type="button"></ButtonComponent>
                                             </span>
                                         </div>
-                                    )}>
-                                    </PagerComponent>
+                                    )}
+                                ></PagerComponent>
                                 </div>
                                 <div className="d-flex justify-content-between py-2 my-1 px-3 px-sm-4">
                                     <div className="d-flex align-items-center">

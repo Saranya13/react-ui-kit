@@ -104,7 +104,7 @@ export default function Statistics6() {
                             <div className="row g-4 g-lg-3">
                                 {metricsData.map((data, index) => (
                                     <div key={index} className="col-12 col-sm-6 col-xl-3">
-                                        <div className="e-card rounded-3 e-bigger shadow-lg">
+                                        <div className="e-card rounded-3 e-bigger shadow">
                                             <div className="e-card-stacked">
                                                 <div className="e-card-header d-flex justify-content-between align-items-center py-3 px-4 bg-body-tertiary">
                                                     <div className="e-card-header-title">

@@ -53,7 +53,7 @@ export default function Unlocksession1() {
                                 </div>
                             </form>
                             <div className="e-bigger">
-                                <ButtonComponent cssClass="e-primary w-full text-lg" type="submit">Unlock your session</ButtonComponent>
+                                <ButtonComponent cssClass="e-primary w-full text-lg" content="Unlock your session" type="submit"></ButtonComponent>
                             </div>
                             <span className="flex items-center justify-center gap-2 mt-7">
                                 <p className="text-center text-gray-900 dark:text-white">Return to</p>
@@ -81,7 +81,7 @@ export default function Unlocksession1() {
                                 </div>
                             </form>
                             <div className="e-bigger">
-                                <ButtonComponent className="e-block e-primary" type="submit">Unlock your session</ButtonComponent>
+                                <ButtonComponent className="e-block e-primary" content="Unlock your session" type="submit"></ButtonComponent>
                             </div>
                             <div className="d-flex align-items-center justify-content-center gap-1 mt-4">
                                 <p className="text-center mb-0 text-body">Return to</p>

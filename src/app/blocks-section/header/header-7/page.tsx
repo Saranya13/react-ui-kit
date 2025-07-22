@@ -69,7 +69,7 @@ export default function Header7() {
                     <section className="bg-white dark:bg-gray-800">
                         <div key={"header-7-tw"} style={{ minHeight: "36rem" }}>
                             <div className="flex justify-between items-center px-4 sm:px-6 py-3 border-b border-gray-200 dark:border-gray-600">
-                                <div id={styles.breadcrumb}>
+                                <div id={styles["breadcrumb"]}>
                                     <BreadcrumbComponent ref={breadcrumb} enableNavigation={false} overflowMode={overflowMode} maxItems={maxItems} items={[{ iconCss: "e-icons e-folder", text: "Reports" }, { text: "Business Metrics" }]}></BreadcrumbComponent>
                                 </div>
                                 <div className="flex gap-2">
@@ -92,7 +92,7 @@ export default function Header7() {
                                                 <span className="ml-1 hidden lg:block">Share</span>
                                             </div>
                                         </ButtonComponent>
-                                        <ButtonComponent cssClass="e-flat mx-2 hidden sm:block" iconCss="e-icons e-comment-show" type="button" ></ButtonComponent>
+                                        <ButtonComponent cssClass="e-flat mx-2 hidden sm:block" iconCss="e-icons e-comment-show" type="button"></ButtonComponent>
                                         <ButtonComponent cssClass="e-flat" iconCss=" e-icons e-more-vertical-1" type="button"></ButtonComponent>
                                     </div>
                                 </div>
