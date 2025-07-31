@@ -65,7 +65,7 @@ export default function TileView1() {
     
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'tile-view-1' && blockData.theme) {
@@ -93,7 +93,7 @@ export default function TileView1() {
             case 'tailwind':
                 return (
                     <section className="bg-white dark:bg-gray-900">
-                        <div id={styles["ticket-details"]} key={"tile-1-tw"}>
+                        <div id={styles["ticket-details"]} key={"tile-1-tw"} className="h-screen sm:h-full">
                             <AppBarComponent className="shadow-none px-0" style={{ height: "54px" }}>
                                 <div className="w-full px-4 md:px-6 xl:px-10">
                                     <span className="text-xl font-semibold text-gray-900 dark:text-gray-50">All Tickets</span>

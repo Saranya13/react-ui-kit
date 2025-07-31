@@ -9,7 +9,7 @@ export default function SigninOTP3() {
     const [theme, setTheme] = useState('tailwind');
 
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'signin-otp-3' && blockData.theme) {
@@ -80,7 +80,7 @@ export default function SigninOTP3() {
                                             <h2 className="text-2xl font-semibold text-center text-gray-900 dark:text-white mb-2">Enter OTP</h2>
                                             <p className="text-md text-center text-gray-700 dark:text-gray-300">We have sent an OTP to your mobile number</p>
                                             <form action="#" className="mt-6" onSubmit={(event) => event.preventDefault()}>
-                                                <div className="flex justify-evenly">
+                                                <div className="flex justify-evenly e-bigger">
                                                     <OtpInputComponent></OtpInputComponent>
                                                 </div>
                                                 <div className="e-bigger mt-6">
@@ -142,7 +142,7 @@ export default function SigninOTP3() {
                                     <h2 className="text-center fs-4 text-body fw-bold mb-2">Enter OTP</h2>
                                     <p className="text-center text-light-emphasis mb-0">We have sent an OTP to your mobile number</p>
                                     <form action="#" className="mt-4" onSubmit={(event) => event.preventDefault()}>
-                                        <div className="d-flex justify-content-evenly">
+                                        <div className="d-flex justify-content-evenly e-bigger">
                                             <OtpInputComponent></OtpInputComponent>
                                         </div>
                                         <div className="mt-4 e-bigger">

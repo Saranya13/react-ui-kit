@@ -3,3 +3,7 @@
     align-items: center;
     margin-left: 10px;
 }
+
+#chip-filter :global(.e-chip::before) {
+  display: none !important;
+}

@@ -85,7 +85,7 @@ export default function Sidebar4() {
     
     /* SB Code - Start */ 
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'sidebar-4' && blockData.theme) {
@@ -126,12 +126,12 @@ export default function Sidebar4() {
                                             <span className="e-avatar e-avatar-circle e-avatar-small">
                                                 <img src="/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-2.jpg" width={32} height={32} alt="profile picture" />
                                             </span>
-                                            <div className="ml-3">
+                                            <div className="ml-2">
                                                 <div className="text-base font-medium leading-normal text-gray-900 dark:text-white">John Wick</div>
-                                                <p className="mb-0 text-gray-900 dark:text-white">johnwick&#64;123.com</p>
+                                                <a className="text-gray-900 dark:text-white" href="mailto:johnwick@company.com">johnwick&#64;company.com</a>
                                             </div>
                                         </div>
-                                        <ButtonComponent cssClass="e-large e-flat px-1" iconCss="e-icons e-chevron-down-double" type="button"></ButtonComponent>
+                                        <ButtonComponent cssClass="e-large e-flat px-1 e-icons e-chevron-down-double" type="button"></ButtonComponent>
                                     </div>
                                     <div className="px-4 py-3">
                                         <div className="e-input-group">
@@ -188,7 +188,7 @@ export default function Sidebar4() {
                                             </span>
                                             <div className="ms-3">
                                                 <div className="fs-6 fw-medium text-body">John Wick</div>
-                                                <p className="mb-0 text-body-secondary">johnwick&#64;123.com</p>
+                                                <a className="text-body-secondary text-decoration-none" href="mailto:johnwick@company.com">johnwick&#64;company.com</a>
                                             </div>
                                         </div>
                                         <ButtonComponent cssClass="e-flat" iconCss="e-icons e-chevron-down-double" type="button"></ButtonComponent>

@@ -76,25 +76,25 @@ export default function Search1() {
         search.current?.hidePopup();
         const searchInterval = setInterval(() => {
             search.current?.showPopup();
-        }, 250);
+        }, 350);
         setTimeout(() => clearInterval(searchInterval), 1000);
     }
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'search-1' && blockData.theme) {
                     setTheme(blockData.theme);
+                    setTimeout(() => {
+                        search.current?.showPopup();
+                    },310)
                 }
             } catch (error) {
                 console.log('Error parsing message data: ', error);
             }
         }
-        setTimeout(() => {
-            search.current?.showPopup();
-        },210)
     };
     /* SB Code - End */
 

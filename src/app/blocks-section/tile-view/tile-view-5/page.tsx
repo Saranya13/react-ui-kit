@@ -56,7 +56,7 @@ export default function TileView5() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'tile-view-5' && blockData.theme) {
@@ -85,7 +85,7 @@ export default function TileView5() {
                 return (
                     <section className="bg-white dark:bg-gray-900">
                         <div id={styles["job-details"]}>
-                            <AppBarComponent className="shadow-none px-0 h-auto" style={{ minHeight: "78px" }}>
+                            <AppBarComponent className="shadow-none px-0 py-3 h-auto" style={{ minHeight: "78px" }}>
                                 <div className="flex flex-wrap gap-x-4 gap-y-3 px-6 xl:px-10">
                                     <DropDownButtonComponent cssClass="e-primary" content="All jobs" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
                                     <DropDownButtonComponent content="Any time" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
@@ -154,7 +154,7 @@ export default function TileView5() {
                 return (
                     <section className="bg-body-tertiary">
                         <div id={styles["job-details"]}>
-                            <AppBarComponent className="px-0 h-auto" style={{ minHeight: "78px" }}>
+                            <AppBarComponent className="px-0 py-3 h-auto" style={{ minHeight: "78px" }}>
                                 <div className="d-flex flex-wrap gap-3 px-3 px-sm-4 px-xl-5">
                                     <DropDownButtonComponent cssClass="e-primary" content="All jobs" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>
                                     <DropDownButtonComponent cssClass="e-outline" content="Any time" type="button" beforeOpen={(event) => (event.cancel = true)}></DropDownButtonComponent>

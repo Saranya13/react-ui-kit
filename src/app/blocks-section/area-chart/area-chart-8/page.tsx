@@ -121,7 +121,7 @@ export default function AreaChart8() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'area-chart-8' && blockData.theme) {
@@ -206,7 +206,7 @@ export default function AreaChart8() {
                                         <ButtonComponent className="e-outline d-block d-sm-none" iconCss="e-icons e-description" type="button"></ButtonComponent>
                                     </div>
                                     <div className="d-flex justify-content-between gap-3 mt-1 mt-sm-0">
-                                        <DropDownButtonComponent ref={countryDropdownRef} className="e-outline" iconCss="e-icons e-location" content={isMobileView ? '' : 'Texas, USA'} items={[{ text: 'Los Angeles, California' }, { text: 'Phoenix, Arizona' }, { text: 'San Jose, California' }, { text: 'Santa Fe, New Mexico' }, { text: 'Texas, USA' }]} type="button"></DropDownButtonComponent>
+                                        <DropDownButtonComponent ref={countryDropdownRef} className="e-outline" iconCss="e-icons e-location fs-6" content={isMobileView ? '' : 'Texas, USA'} items={[{ text: 'Los Angeles, California' }, { text: 'Phoenix, Arizona' }, { text: 'San Jose, California' }, { text: 'Santa Fe, New Mexico' }, { text: 'Texas, USA' }]} type="button"></DropDownButtonComponent>
                                         <div className="d-flex gap-2">
                                             <ButtonComponent className="e-outline" iconCss="e-icons e-refresh" type="button"></ButtonComponent>
                                             <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline mx-1" content="2024" items={[{ text: '2024' }, { text: '2023' }, { text: '2022' }, { text: '2021' }, { text: '2020' }]} type="button"></DropDownButtonComponent>

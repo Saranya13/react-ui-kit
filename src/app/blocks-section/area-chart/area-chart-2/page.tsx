@@ -39,6 +39,7 @@ export default function AreaChart2() {
 
     const primaryYAxis: object = {
         labelStyle: { size: '0' },
+        lineStyle: { width: 0 },
         majorGridLines: { width: 1 },
         majorTickLines: { width: 0 },
         minorGridLines: { width: 1 },
@@ -70,7 +71,7 @@ export default function AreaChart2() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'area-chart-2' && blockData.theme) {
@@ -131,7 +132,7 @@ export default function AreaChart2() {
                                     </div>
                                 </div>
                                 <div className="mt-6">
-                                    <ChartComponent ref={chartRef} width="100%" height="300px" primaryXAxis={primaryXAxis} primaryYAxis={primaryYAxis} tooltip={tooltip} margin={{ left: 0, right: 0, top: 0, bottom: 0 }} load={(args) => chartLoad(args, 'Tailwind3', 'Tailwind3Dark')}>
+                                    <ChartComponent ref={chartRef} width="100%" height="300px" chartArea={{ border: { width: 0 } }} primaryXAxis={primaryXAxis} primaryYAxis={primaryYAxis} tooltip={tooltip} margin={{ left: 0, right: 0, top: 0, bottom: 0 }} load={(args) => chartLoad(args, 'Tailwind3', 'Tailwind3Dark')}>
                                         <Inject services={[StepAreaSeries, Category, Tooltip]} />
                                         <SeriesCollectionDirective>
                                             <SeriesDirective dataSource={metricData} type="StepArea" xName="month" yName="value" fill="#5A61F6" width={2} border={{ width: 2.5 }} noRisers={true} step={"Center"} opacity={isDarkMode ? 0.3 : 0.1}></SeriesDirective>
@@ -167,7 +168,7 @@ export default function AreaChart2() {
                                     </div>
                                 </div>
                                 <div className="mt-4">
-                                    <ChartComponent ref={chartRef} width="100%" height="300px" primaryXAxis={primaryXAxis} primaryYAxis={primaryYAxis} tooltip={tooltip} margin={{ left: 0, right: 0, top: 0, bottom: 0 }} load={(args) => chartLoad(args, 'Bootstrap5', 'Bootstrap5Dark')}>
+                                    <ChartComponent ref={chartRef} width="100%" height="300px" chartArea={{ border: { width: 0 } }} primaryXAxis={primaryXAxis} primaryYAxis={primaryYAxis} tooltip={tooltip} margin={{ left: 0, right: 0, top: 0, bottom: 0 }} load={(args) => chartLoad(args, 'Bootstrap5', 'Bootstrap5Dark')}>
                                         <Inject services={[StepAreaSeries, Category, Tooltip]} />
                                         <SeriesCollectionDirective>
                                             <SeriesDirective dataSource={metricData} type="StepArea" xName="month" yName="value" fill="#006EEF" width={2} border={{ width: 2.5 }} noRisers={true} step={"Center"} opacity={isDarkMode ? 0.3 : 0.1}></SeriesDirective>

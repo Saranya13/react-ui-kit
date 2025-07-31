@@ -58,7 +58,7 @@ export default function BarChart4() {
 
     const tooltipRender = (args: any): void => {
         const index = (args.data as any).pointIndex;
-        args.text = `Income : $${chartData[index].x}<br>Expense : $${chartData[index].y}`;
+        args.text = `Income : $${chartData[index].xAxis}<br>Expense : $${chartData[index].yAxis}`;
     };
 
     const chartLoad = (args: any, lightTheme: string, darkTheme: string): void => {
@@ -72,7 +72,7 @@ export default function BarChart4() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'bar-chart-4' && blockData.theme) {
@@ -124,7 +124,7 @@ export default function BarChart4() {
                                     <h1 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">$1,278.45</h1>
                                     <div className="flex items-center justify-between text-xs">
                                         <div className="flex items-center gap-2">
-                                            <p className="text-green-700 dark:text-green-500">
+                                            <p className="text-green-700 dark:text-green-500 flex items-center">
                                                 <span className="e-icons e-arrow-up mr-1"></span>2.1%
                                             </p>
                                             <p className="text-gray-500 dark:text-gray-400">vs last week</p>

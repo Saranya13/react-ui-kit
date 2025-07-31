@@ -244,7 +244,7 @@ export default function Grid7() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'grid-7' && blockData.theme) {
@@ -277,7 +277,7 @@ export default function Grid7() {
                                 <div className="w-full sm:w-56">
                                     <div className="e-input-group">
                                         <span className="e-input-group-icon e-icons e-search"></span>
-                                        <input className="e-input" type="text" placeholder="Search transactions" />
+                                        <input className="e-input !pl-0" type="text" placeholder="Search transactions" />
                                     </div>
                                 </div>
                                 <ButtonComponent cssClass="e-primary self-end" iconCss="e-icons e-export" iconPosition="Left" content="Export to CSV" type="button"></ButtonComponent>

@@ -22,7 +22,7 @@ export default function Rating14() {
     ];
 
     const handleResize = (): void => {
-        setProgressWidth(window.innerWidth < 640 ? '100%' : '246px');
+        setProgressWidth(window.innerWidth < 640 ? '100%' : '262px');
         /* SB Code - Start */
         refreshProgressBar(300);
         /* SB Code - End */
@@ -40,12 +40,12 @@ export default function Rating14() {
     };
 
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'rating-14' && blockData.theme) {
                     setTheme(blockData.theme);
-                    refreshProgressBar(300);
+                    refreshProgressBar(600);
                 }
             } catch (error) {
                 console.log('Error parsing message data: ', error);
@@ -75,7 +75,7 @@ export default function Rating14() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-800">
                         <div key={"rating-14-tw"} className="pt-4" style={{ minHeight: "36rem" }}>
-                            <div className="py-6 justify-between mx-auto w-full bg-white dark:bg-gray-800 border-0 sm:!rounded-lg sm:!border border-gray-300 dark:border-gray-500" style={{ maxWidth: "342px" }}>
+                            <div className="py-6 justify-between mx-auto w-full bg-white dark:bg-gray-800 border-0 sm:!rounded-lg sm:!border border-gray-300 dark:border-gray-500" style={{ maxWidth: "360px" }}>
                                 <div className="px-6">
                                     <div className="flex gap-3">
                                         <div className="rounded-full flex items-center justify-center shrink-0 bg-transparent border border-gray-300 dark:border-gray-500" style={{ height: "38px", width: "38px" }}>
@@ -93,7 +93,7 @@ export default function Rating14() {
                                     <hr className="border border-gray-300 dark:border-gray-600 h-12 ms-3 me-2" />
                                     <div>
                                         <div style={{ minHeight: "60px" }}>
-                                            <RatingComponent value={4.2} enableAnimation={false} precision="exact" onItemHover={(event) => setHoveredRating(event.value)}
+                                            <RatingComponent value={4.2} enableAnimation={false} precision="exact" valueChanged={(event) => setHoveredRating(event.value)}
                                                 emptyTemplate={() => (
                                                     <span className="sf-icon-star-filled-01 !text-2xl text-gray-300 dark:text-gray-500"></span>
                                                 )}
@@ -132,7 +132,7 @@ export default function Rating14() {
                 return (
                     <section className="bg-body-tertiary">
                         <div key={"rating-14-bs"} className="pt-4" style={{ minHeight: "36rem" }}>
-                            <div className="pt-4 pb-3 d-flex flex-column justify-content-center mx-auto w-100 bg-body rounded-3 border" style={{ maxWidth: "342px" }}>
+                            <div className="pt-4 pb-3 d-flex flex-column justify-content-center mx-auto w-100 bg-body rounded-3 border" style={{ maxWidth: "360px" }}>
                                 <div className="px-4">
                                     <div className="d-flex gap-3">
                                         <div className="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 bg-transparent border" style={{ height: "38px", width: "38px" }}>
@@ -150,7 +150,7 @@ export default function Rating14() {
                                     <hr className="mx-3 border-end border-light-subtle opacity-100" style={{ height: "3rem" }} />
                                     <div>
                                         <div style={{ minHeight: "50px" }}>
-                                            <RatingComponent value={4.2} enableAnimation={false} precision="exact" onItemHover={(event) => setHoveredRating(event.value)}
+                                            <RatingComponent value={4.2} enableAnimation={false} precision="exact" valueChanged={(event) => setHoveredRating(event.value)}
                                                 emptyTemplate={() => (
                                                     <span className="sf-icon-star-02 fs-4 text-body-secondary"></span>
                                                 )}

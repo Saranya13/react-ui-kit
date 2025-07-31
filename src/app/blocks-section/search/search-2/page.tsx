@@ -10,6 +10,7 @@ export default function Search2() {
     const [theme, setTheme] = useState('tailwind');
     /* SB Code - End */
     const search = useRef<AutoCompleteComponent | null>(null);
+    const searchKeyword = useRef("Webflow");
     const [width, setWidth] = useState<{ maxWidth: string } | { width: string }>({ maxWidth: '400px'});
 
     const data: any[] = [
@@ -52,6 +53,10 @@ export default function Search2() {
         }, 250);
     };
 
+    const searchResult = (event: any): void => {
+        searchKeyword.current = event.text?.trim() ? event.text : "Webflow";
+    };
+
     const handleResize = (): void => {
         setWidth(window.innerWidth > 767 ? { maxWidth: "400px" } : { width: "100%" })
         search.current?.hidePopup();
@@ -63,7 +68,7 @@ export default function Search2() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'search-2' && blockData.theme) {
@@ -103,6 +108,7 @@ export default function Search2() {
                                     dataSource={data}
                                     placeholder="Search"
                                     popupHeight="530px"
+                                    filtering={searchResult}
                                     focus={() => search.current?.showPopup()}
                                     created={openPopup}
                                     itemTemplate={(data: any) => (
@@ -119,7 +125,7 @@ export default function Search2() {
                                             <div>
                                                 <div className="mb-4">
                                                     <div className="mb-1 text-lg text-gray-900 font-medium dark:text-white">No results found</div>
-                                                    <div className="text-sm text-gray-600 font-medium dark:text-gray-300">"Webflow" did not match any projects or commands. Please try again.</div>
+                                                    <div className="text-sm text-gray-600 font-medium dark:text-gray-300">"{searchKeyword.current}" did not match any projects or commands. Please try again.</div>
                                                 </div>
                                                 <div>
                                                     <ButtonComponent cssClass="e-outline px-4 text-gray-700 !text-base !dark:text-white" content="Clear Search" type="button"></ButtonComponent>
@@ -144,6 +150,7 @@ export default function Search2() {
                                         dataSource={data}
                                         popupHeight="530px"
                                         placeholder="Search"
+                                        filtering={searchResult}
                                         focus={() => search.current?.showPopup()}
                                         created={openPopup}
                                         itemTemplate={(data: any) => (
@@ -160,7 +167,7 @@ export default function Search2() {
                                                 <div>
                                                     <div className="mb-3">
                                                         <div className="mb-1 fw-medium lh-lg h6 text-body">No results found</div>
-                                                        <div className="fw-medium text-body-tertiary">"Webflow" did not match any projects or commands. Please try again.</div>
+                                                        <div className="fw-medium text-body-tertiary">"{searchKeyword.current}" did not match any projects or commands. Please try again.</div>
                                                     </div>
                                                     <div>
                                                         <ButtonComponent cssClass="e-outline px-4 fw-medium" content="Clear Search" type="button"></ButtonComponent>

@@ -8,7 +8,7 @@ export default function Card1() {
     const [theme, setTheme] = useState('tailwind');
     
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'cards-1' && blockData.theme) {

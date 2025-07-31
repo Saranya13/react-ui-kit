@@ -39,7 +39,7 @@ export default function AIFloatingWidget2() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'ai-floating-widget-2' && blockData.theme) {
@@ -129,7 +129,7 @@ export default function AIFloatingWidget2() {
                                 <div className="d-flex align-items-center justify-content-center pt-3">
                                     <ButtonComponent className="d-block d-sm-none" cssClass="e-primary e-round e-bigger" iconCss="sf-icon-message-chat-circle fs-5 lh-base" type="button" onClick={toggleDialog}></ButtonComponent>
                                 </div>
-                                <DialogComponent ref={dialogRef} id={styles["floating-contact"]} className="rounded-3 overflow-hidden" width="400px" height={"510px"} open={setDialogPosition} created={() => dialogRef.current?.show()}
+                                <DialogComponent ref={dialogRef} id={styles["floating-contact"]} className="rounded-3 shadow overflow-hidden" width="400px" height={"510px"} open={setDialogPosition} created={() => dialogRef.current?.show()}
                                     header={() => (
                                         <div className="d-flex flex-column justify-content-between align-items-center bg-primary-subtle p-4">
                                             <div className="d-flex justify-content-end d-block d-sm-none px-3 top-0 pt-3 position-absolute end-0">

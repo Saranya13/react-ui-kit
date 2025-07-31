@@ -68,7 +68,7 @@ export default function Chat1() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'chat-1' && blockData.theme) {
@@ -118,10 +118,10 @@ export default function Chat1() {
                             </div>
                             <div className="flex items-center flex-col pt-7 pb-2 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
                                 <span className="e-badge e-badge-pill e-badge-secondary border border-gray-200 dark:border-gray-600 e-small">Wednesday, Sep 18th</span>
-                                <ListViewComponent cssClass="!border-0 px-2 sm:px-4 sm:pr-7 lg:pr-12 py-4" dataSource={data} width="100%" height="100%"
+                                <ListViewComponent cssClass="!border-0 px-2 sm:px-4 py-4" dataSource={data} width="100%" height="100%"
                                     template={(data: any) => {
                                         const senderTemplate = (
-                                            <div className="flex justify-end ml-auto sm:mr-3 gap-3 items-start w-4/5">
+                                            <div className="flex justify-end ml-auto gap-3 items-start w-4/5">
                                                 <div className="flex flex-col gap-1 items-end">
                                                     <div className="py-2 px-3 rounded-lg rounded-se-none bg-gray-100 dark:bg-gray-700">
                                                         <div className="text-gray-900 dark:text-gray-50">{data.text}</div>
@@ -152,7 +152,7 @@ export default function Chat1() {
                                     }}
                                 ></ListViewComponent>
                             </div>
-                            <div className="e-bigger w-full text-base px-4 sm:pl-6 sm:pr-12 lg:pr-16 lg:mr-1">
+                            <div className="e-bigger w-full text-base px-4 sm:px-6">
                                 <TextBoxComponent ref={textboxRef} type="text" placeholder="Enter a message" created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")}></TextBoxComponent>
                             </div>
                         </div>
@@ -185,10 +185,10 @@ export default function Chat1() {
                 
                             <div className="d-flex flex-column align-items-center pt-4 border-top bg-body">
                                 <span className="e-badge e-badge-pill border px-2">Wednesday, Sep 18th</span>
-                                <ListViewComponent cssClass="border-0 px-2 px-sm-3 pe-md-4 pe-sm-3 pb-4 pt-3" dataSource={data} width="100%" height="100%"
+                                <ListViewComponent cssClass="border-0 px-2 px-sm-3 pb-4 pt-3" dataSource={data} width="100%" height="100%"
                                     template={(data: any) => {
                                         const senderTemplate = (
-                                            <div className="d-flex justify-content-end pe-sm-3 ms-auto align-items-start w-75">
+                                            <div className="d-flex justify-content-end ms-auto align-items-start w-75">
                                                 <div className="d-flex flex-column gap-1 align-items-end">
                                                     <div className="py-2 px-3 bg-body-secondary" style={{ borderRadius: "6px 0px 6px 6px" }}>
                                                         <div className="text-body">{data.text}</div>
@@ -219,7 +219,7 @@ export default function Chat1() {
                                     }}
                                 ></ListViewComponent>
                             </div>
-                            <div className="e-bigger ms-sm-4 ms-3 me-md-5 me-3">
+                            <div className="e-bigger mx-3 mx-sm-4">
                                 <TextBoxComponent ref={textboxRef} type="text" placeholder="Enter a message" created={() => textboxRef.current?.addIcon("append", "sf-icon-navigation-right-up border-0")}></TextBoxComponent>
                             </div>
                         </div>

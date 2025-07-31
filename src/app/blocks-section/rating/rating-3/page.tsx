@@ -12,7 +12,7 @@ export default function Rating3() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'rating-3' && blockData.theme) {
@@ -54,7 +54,7 @@ export default function Rating3() {
                                     </div>
                                     <ChipListComponent key={"rating-3-tw"}>
                                         <ChipsDirective>
-                                            <ChipDirective text="Best for small teams" cssClass='e-info !rounded-xl !text-[10px]'></ChipDirective>
+                                            <ChipDirective text="Best for small teams" cssClass='e-info !rounded-xl !text-xs'></ChipDirective>
                                         </ChipsDirective>
                                     </ChipListComponent>
                                 </div>

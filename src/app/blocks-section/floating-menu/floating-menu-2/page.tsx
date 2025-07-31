@@ -67,7 +67,7 @@ export default function FloatingMenu2() {
        
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'floating-menu-2' && blockData.theme) {
@@ -122,7 +122,7 @@ export default function FloatingMenu2() {
                                                 <p className="text-white font-semibold dark:text-gray-900">ChatBot</p>
                                             </div>
                                             <div className="flex justify-end block sm:hidden">
-                                                <ButtonComponent className="e-primary e-round" iconCss="e-icons e-close text-white" type="button" onClick={toggleDialog}></ButtonComponent>
+                                                <ButtonComponent className="e-primary e-round" iconCss="e-icons e-close text-white dark:text-black !text-base" type="button" onClick={toggleDialog}></ButtonComponent>
                                             </div>
                                         </div>
                                     );

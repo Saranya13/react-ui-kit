@@ -13,12 +13,12 @@ export default function Checkout5() {
     const checkout = useRef<DialogComponent>(null);
 
     const handleResize = (): void => {
-        checkout.current?.refresh();
+        checkout.current?.show(window.innerWidth <= 640);
     };
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'checkout-5' && blockData.theme) {

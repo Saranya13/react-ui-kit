@@ -80,7 +80,7 @@ export default function Search5() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'search-5' && blockData.theme) {
@@ -127,7 +127,7 @@ export default function Search5() {
                                     headerTemplate={() => (
                                         <div>
                                             <div className="p-5 border-b border-gray-200 dark:border-gray-600 mb-2">
-                                                <ChipListComponent id="chip-filter" cssClass="!border-gray-200 !dark:border-gray-600">
+                                                <ChipListComponent id={styles["chip-filter"]} cssClass="!border-gray-200 !dark:border-gray-600" selection="Multiple">
                                                     <ChipsDirective>
                                                         <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Ticket ID"></ChipDirective>
                                                         <ChipDirective cssClass="e-outline !text-sm !font-medium !px-3 !py-1 !rounded-2xl !h-8 !ml-0" text="Status"></ChipDirective>
@@ -176,7 +176,7 @@ export default function Search5() {
                                     headerTemplate={() => (
                                         <div>
                                             <div className="p-3 border-bottom border-light-subtle mb-2">
-                                                <ChipListComponent id="chip-filter" cssClass="p-3">
+                                                <ChipListComponent id={styles["chip-filter"]} cssClass="p-3" selection="Multiple">
                                                     <ChipsDirective>
                                                         <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Ticket ID"></ChipDirective>
                                                         <ChipDirective cssClass="fs-6 lh-base fw-medium px-3 py-1 e-outline border border-light-subtle" text="Status"></ChipDirective>

@@ -35,7 +35,7 @@ export default function AIFloatingWidget3() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'ai-floating-widget-3' && blockData.theme) {
@@ -161,7 +161,7 @@ export default function AIFloatingWidget3() {
                 return (
                     <section className="bg-body pe-3">
                         <div id="dialog-container" style={{ minHeight: '940px' }}>
-                            <DialogComponent ref={dialogRef} key={"floating-3-bs"} id={styles["setting-panel"]} className="rounded-3" target="#dialog-container" visible={true} position={{ X: 'right', Y: '12' }} width="380px" height="920px" open={(e) => (e.preventFocus = true)} beforeOpen={(e) => (e.maxHeight = '100%')}
+                            <DialogComponent ref={dialogRef} key={"floating-3-bs"} id={styles["setting-panel"]} className="rounded-3 shadow" target="#dialog-container" visible={true} position={{ X: 'right', Y: '12' }} width="380px" height="920px" open={(e) => (e.preventFocus = true)} beforeOpen={(e) => (e.maxHeight = '100%')}
                                 header={() => (
                                     <div className="d-flex justify-content-between align-items-center pt-1 ms-1">
                                         <div className="d-flex align-items-center gap-2">

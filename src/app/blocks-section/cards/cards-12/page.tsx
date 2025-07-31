@@ -8,7 +8,7 @@ export default function Card12() {
     const [theme, setTheme] = useState('tailwind');
     
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'cards-12' && blockData.theme) {
@@ -36,62 +36,64 @@ export default function Card12() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
-                        <div className="px-4 py-20 sm:px-6" style={{ minHeight: "36rem" }}>
-                            <div className="grid gap-6 sm:gap-8 lg:grid-cols-3 sm:grid-cols-2 xl:gap-10">
-                                <div className="e-card rounded-lg gap-1 e-bigger justify-start">
-                                    <div className="e-card-content flex-1">
-                                        <span className="e-avatar e-avatar-large e-avatar-circle text-primary-600 bg-primary-100 mt-6 mb-5">
-                                            <span className="e-icons e-group-icon text-2xl"></span>
-                                        </span>
-                                        <h2 className="text-xl mb-3 font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Adventure Parks</h2>
-                                        <p className="text-base dark:text-gray-200">Dive into exhilarating experiences at adventure parks with thrilling rides, obstacle courses, and outdoor challenges. Perfect for families and adrenaline seekers.</p>
-                                    </div>
-                                    <div className="e-card-actions leading-9">
-                                        <div className="flex justify-between h-10">
-                                            <div className="relative">
-                                                <span className="e-avatar e-avatar-circle absolute" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-5.jpg)" }}></span>
-                                                <span className="e-avatar e-avatar-circle absolute left-7" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-13.jpg)" }}></span>
-                                                <span className="e-avatar e-avatar-circle bg-primary-600 text-white absolute left-14">2+</span>
+                        <div className="h-screen sm:h-full">
+                            <div className="px-4 py-10 sm:px-6" style={{ minHeight: "36rem" }}>
+                                <div className="grid gap-6 sm:gap-8 lg:grid-cols-3 sm:grid-cols-2 xl:gap-10">
+                                    <div className="e-card rounded-lg gap-1 e-bigger justify-start">
+                                        <div className="e-card-content flex-1">
+                                            <span className="e-avatar e-avatar-large e-avatar-circle text-primary-600 bg-primary-100 mt-6 mb-5">
+                                                <span className="e-icons e-group-icon text-2xl"></span>
+                                            </span>
+                                            <h2 className="text-xl mb-3 font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Adventure Parks</h2>
+                                            <p className="text-base dark:text-gray-200">Dive into exhilarating experiences at adventure parks with thrilling rides, obstacle courses, and outdoor challenges. Perfect for families and adrenaline seekers.</p>
+                                        </div>
+                                        <div className="e-card-actions leading-9">
+                                            <div className="flex justify-between h-10">
+                                                <div className="relative">
+                                                    <span className="e-avatar e-avatar-circle absolute" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-5.jpg)" }}></span>
+                                                    <span className="e-avatar e-avatar-circle absolute left-7" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-13.jpg)" }}></span>
+                                                    <span className="e-avatar e-avatar-circle bg-primary-600 text-white absolute left-14">2+</span>
+                                                </div>
+                                                <RatingComponent cssClass="e-small" precision="Exact" value={3.5} readOnly={true}></RatingComponent>
                                             </div>
-                                            <RatingComponent cssClass="e-small" precision="Exact" value={3.5} readOnly={true}></RatingComponent>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="e-card rounded-lg gap-1 e-bigger justify-start">
-                                    <div className="e-card-content flex-1">
-                                        <span className="e-avatar e-avatar-large e-avatar-circle text-primary-600 bg-primary-100 mt-6 mb-5">
-                                            <span className="e-icons e-group-icon text-2xl"></span>
-                                        </span>
-                                        <h2 className="text-xl mb-3 font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Urban Hotels</h2>
-                                        <p className="text-base dark:text-gray-200">Stay in style at sophisticated urban hotels offering top-notch amenities and exceptional service. Enjoy chic accommodations, fine dining, and convenient city access.</p>
-                                    </div>
-                                    <div className="e-card-actions leading-9">
-                                        <div className="flex justify-between h-10">
-                                            <div className="relative">
-                                                <span className="e-avatar e-avatar-circle absolute" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-5.jpg)" }}></span>
-                                                <span className="e-avatar e-avatar-circle absolute left-7" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-13.jpg)" }}></span>
-                                                <span className="e-avatar e-avatar-circle bg-primary-600 text-white absolute left-14">2+</span>
+                                    <div className="e-card rounded-lg gap-1 e-bigger justify-start">
+                                        <div className="e-card-content flex-1">
+                                            <span className="e-avatar e-avatar-large e-avatar-circle text-primary-600 bg-primary-100 mt-6 mb-5">
+                                                <span className="e-icons e-group-icon text-2xl"></span>
+                                            </span>
+                                            <h2 className="text-xl mb-3 font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Urban Hotels</h2>
+                                            <p className="text-base dark:text-gray-200">Stay in style at sophisticated urban hotels offering top-notch amenities and exceptional service. Enjoy chic accommodations, fine dining, and convenient city access.</p>
+                                        </div>
+                                        <div className="e-card-actions leading-9">
+                                            <div className="flex justify-between h-10">
+                                                <div className="relative">
+                                                    <span className="e-avatar e-avatar-circle absolute" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-5.jpg)" }}></span>
+                                                    <span className="e-avatar e-avatar-circle absolute left-7" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-13.jpg)" }}></span>
+                                                    <span className="e-avatar e-avatar-circle bg-primary-600 text-white absolute left-14">2+</span>
+                                                </div>
+                                                <RatingComponent cssClass="e-small" precision="Exact" value={3.5} readOnly={true}></RatingComponent>
                                             </div>
-                                            <RatingComponent cssClass="e-small" precision="Exact" value={3.5} readOnly={true}></RatingComponent>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="e-card rounded-lg gap-1 e-bigger justify-start">
-                                    <div className="e-card-content flex-1">
-                                        <span className="e-avatar e-avatar-large e-avatar-circle text-primary-600 bg-primary-100 mt-6 mb-5">
-                                            <span className="e-icons e-group-icon text-2xl"></span>
-                                        </span>
-                                        <h2 className="text-xl mb-3 font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Coastal Towns</h2>
-                                        <p className="text-base dark:text-gray-200">Explore picturesque coastal towns with charming streets, beautiful beaches, and vibrant local culture. Relax by the shore, enjoy fresh seafood, and take in the ocean views.</p>
-                                    </div>
-                                    <div className="e-card-actions leading-9">
-                                        <div className="flex justify-between h-10">
-                                            <div className="relative">
-                                                <span className="e-avatar e-avatar-circle absolute" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-5.jpg)" }}></span>
-                                                <span className="e-avatar e-avatar-circle absolute left-7" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-13.jpg)" }}></span>
-                                                <span className="e-avatar e-avatar-circle bg-primary-600 text-white absolute left-14">2+</span>
+                                    <div className="e-card rounded-lg gap-1 e-bigger justify-start">
+                                        <div className="e-card-content flex-1">
+                                            <span className="e-avatar e-avatar-large e-avatar-circle text-primary-600 bg-primary-100 mt-6 mb-5">
+                                                <span className="e-icons e-group-icon text-2xl"></span>
+                                            </span>
+                                            <h2 className="text-xl mb-3 font-semibold text-gray-950 dark:text-gray-50 line-clamp-2">Coastal Towns</h2>
+                                            <p className="text-base dark:text-gray-200">Explore picturesque coastal towns with charming streets, beautiful beaches, and vibrant local culture. Relax by the shore, enjoy fresh seafood, and take in the ocean views.</p>
+                                        </div>
+                                        <div className="e-card-actions leading-9">
+                                            <div className="flex justify-between h-10">
+                                                <div className="relative">
+                                                    <span className="e-avatar e-avatar-circle absolute" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-5.jpg)" }}></span>
+                                                    <span className="e-avatar e-avatar-circle absolute left-7" style={{ backgroundImage: "url(/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-13.jpg)" }}></span>
+                                                    <span className="e-avatar e-avatar-circle bg-primary-600 text-white absolute left-14">2+</span>
+                                                </div>
+                                                <RatingComponent cssClass="e-small" precision="Exact" value={3.5} readOnly={true}></RatingComponent>
                                             </div>
-                                            <RatingComponent cssClass="e-small" precision="Exact" value={3.5} readOnly={true}></RatingComponent>
                                         </div>
                                     </div>
                                 </div>

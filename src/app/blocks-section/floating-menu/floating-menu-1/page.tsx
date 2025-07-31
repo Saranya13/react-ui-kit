@@ -59,7 +59,7 @@ export default function FloatingMenu1() {
         
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'floating-menu-1' && blockData.theme) {
@@ -114,7 +114,7 @@ export default function FloatingMenu1() {
                                                 </div>
                                             </div>
                                             <div className="flex justify-end block sm:hidden px-4 absolute right-0">
-                                                <ButtonComponent cssClass="e-primary e-round" iconCss="e-icons e-close text-white dark:text-black !leading-5" type="button" onClick={toggleDialog}></ButtonComponent>
+                                                <ButtonComponent cssClass="e-primary e-round" iconCss="e-icons e-close text-white dark:text-black !leading-5 !text-base" type="button" onClick={toggleDialog}></ButtonComponent>
                                             </div>
                                         </div>
                                     );

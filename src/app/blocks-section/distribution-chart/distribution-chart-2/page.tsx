@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
 import { DropDownButtonComponent } from "@syncfusion/ej2-react-splitbuttons";
-import { AccumulationChartComponent, AccumulationDataLabel, AccumulationLegend, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, Inject } from "@syncfusion/ej2-react-charts";
+import { Inject, AccumulationChartComponent, AccumulationDataLabel, AccumulationLegend, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, PieSeries } from "@syncfusion/ej2-react-charts";
 
 export default function DistributionChart2() {
     /* SB Code - Start */
@@ -45,6 +45,10 @@ export default function DistributionChart2() {
         };
     };
 
+    const textRender = (args: any): void => {
+        args.font.color = ['#FFFFFF', '#000000', '#000000', '#FFFFFF', '#000000'][args.point.index];
+    };
+
     const chartLoad = (args: any, lightTheme: string, darkTheme: string): void => {
         args.chart.theme = isDarkMode ? darkTheme : lightTheme;
     };
@@ -61,7 +65,7 @@ export default function DistributionChart2() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'distribution-chart-2' && blockData.theme) {
@@ -76,7 +80,7 @@ export default function DistributionChart2() {
         }
     };
     /* SB Code - End */
-    
+
     useEffect(() => {
         /* SB Code - Start */
         window.addEventListener('message', handleMessageEvent);
@@ -123,8 +127,8 @@ export default function DistributionChart2() {
                                 </div>
                                 <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline sm:hidden my-4" content="Week" items={[{ text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
                                 <div className="mt-2">
-                                    <AccumulationChartComponent ref={chartRef} width="100%" height={isMobileview ? '360px' : '240px'} legendSettings={legendSettings} enableBorderOnMouseMove={false} load={(args) => chartLoad(args, 'Tailwind3', 'Tailwind3Dark')}>
-                                        <Inject services={[AccumulationLegend, AccumulationDataLabel]} />
+                                    <AccumulationChartComponent ref={chartRef} width="100%" height={isMobileview ? '360px' : '240px'} legendSettings={legendSettings} enableBorderOnMouseMove={false} textRender={textRender} load={(args) => chartLoad(args, 'Tailwind3', 'Tailwind3Dark')}>
+                                        <Inject services={[AccumulationLegend, AccumulationDataLabel, PieSeries]} />
                                         <AccumulationSeriesCollectionDirective>
                                             <AccumulationSeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" innerRadius="55%" radius="100%" dataLabel={dataLabel} palettes={["#5A61F6", "#91BD34", "#FFB900", "#DE4383", "#01A8B5"]} legendShape="Circle" border={getBorder('#000000')} borderRadius={6}></AccumulationSeriesDirective>
                                         </AccumulationSeriesCollectionDirective>
@@ -161,8 +165,8 @@ export default function DistributionChart2() {
                                 </div>
                                 <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline d-sm-none my-3" content="Week" items={[{ text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]} type="button"></DropDownButtonComponent>
                                 <div className="mt-2">
-                                    <AccumulationChartComponent ref={chartRef} width="100%" height={isMobileview ? '360px' : '240px'} legendSettings={legendSettings} enableBorderOnMouseMove={false} load={(args) => chartLoad(args, 'Bootstrap5', 'Bootstrap5Dark')}>
-                                        <Inject services={[AccumulationLegend, AccumulationDataLabel]} />
+                                    <AccumulationChartComponent ref={chartRef} width="100%" height={isMobileview ? '360px' : '240px'} legendSettings={legendSettings} enableBorderOnMouseMove={false} textRender={textRender} load={(args) => chartLoad(args, 'Bootstrap5', 'Bootstrap5Dark')}>
+                                        <Inject services={[AccumulationLegend, AccumulationDataLabel, PieSeries]} />
                                         <AccumulationSeriesCollectionDirective>
                                             <AccumulationSeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" innerRadius="55%" radius="100%" dataLabel={dataLabel} palettes={["#006EEF", "#0EAB44", "#FF9900", "#EF00AC", "#00EFA7"]} legendShape="Circle" border={getBorder('#212529')} borderRadius={6}></AccumulationSeriesDirective>
                                         </AccumulationSeriesCollectionDirective>

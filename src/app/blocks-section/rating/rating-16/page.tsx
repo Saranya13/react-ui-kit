@@ -11,7 +11,7 @@ export default function Rating16() {
     const [theme, setTheme] = useState('tailwind');
     const [isMobile, setIsMobile] = useState(false);
     /* SB Code - End */
-    const [experienceLevel, setExperienceLevel] = useState('');
+    const [experienceLevel, setExperienceLevel] = useState('smile');
     const dialog = useRef<DialogComponent | null>(null);
 
     const handleResize = (): void => {
@@ -28,7 +28,7 @@ export default function Rating16() {
     };
 
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'rating-16' && blockData.theme) {

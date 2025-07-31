@@ -32,7 +32,7 @@ export default function FilterPanel4() {
     }
    
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'filter-panel-4' && blockData.theme) {
@@ -184,7 +184,7 @@ export default function FilterPanel4() {
                                         </TabComponent>
                                     </div>
                                     <div className="w-10 px-2 border-bottom border-subtle d-flex justify-content-center align-items-center">
-                                        <a href="#" className="e-icons e-chevron-right-double fs-6 text-decoration-none text-secondary"></a>
+                                        <a href="#" className="e-icons e-chevron-right-double small text-decoration-none text-secondary"></a>
                                     </div>
                                 </div>
                                 <div>

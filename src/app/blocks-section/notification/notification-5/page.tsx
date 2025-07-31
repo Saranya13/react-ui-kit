@@ -10,7 +10,7 @@ export default function Notification5() {
     const [theme, setTheme] = useState('tailwind');
     
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'notification-5' && blockData.theme) {
@@ -54,7 +54,7 @@ export default function Notification5() {
                                             <div className="h-32">
                                                 <img className="w-full h-full object-cover rounded" src="/react/essential-ui-kit/blocks/assets/images/notification/feature.jpg" alt="feature image"/>
                                             </div>
-                                            <ButtonComponent cssClass="e-primary w-max ml-auto" content="Upgrade Now" type="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-primary w-max ml-auto mt-2" content="Upgrade Now" type="button"></ButtonComponent>
                                         </div>
                                     </div>
                                 )}

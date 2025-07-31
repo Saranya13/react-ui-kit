@@ -51,7 +51,7 @@ export default function DistributionChart4() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'distribution-chart-4' && blockData.theme) {
@@ -102,7 +102,7 @@ export default function DistributionChart4() {
                                     <AccumulationChartComponent ref={chartRef} width="100%" height="360px" enableSmartLabels={true} enableBorderOnMouseMove={false} tooltip={tooltip} legendSettings={{ visible: false }} load={(args) => chartLoad(args, "Tailwind3", "Tailwind3Dark")}>
                                         <Inject services={[AccumulationDataLabel, AccumulationTooltip, AccumulationLegend, PieSeries]} />
                                         <AccumulationSeriesCollectionDirective>
-                                            <AccumulationSeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" type="Pie" dataLabel={dataLabel} border={{ width: 0 }} pointColorMapping="fill"></AccumulationSeriesDirective>
+                                            <AccumulationSeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" type="Pie" radius="85%" dataLabel={dataLabel} border={{ width: 0 }} pointColorMapping="fill"></AccumulationSeriesDirective>
                                         </AccumulationSeriesCollectionDirective>
                                     </AccumulationChartComponent>
                                 </div>
@@ -113,16 +113,16 @@ export default function DistributionChart4() {
                                         <rect width="1" height="4" fill="#01A8B5" />
                                     </pattern>
                                     <pattern id="Grid" patternUnits="userSpaceOnUse" width="5" height="5">
-                                        <path d="M0 0 L0 5 M0 0 L5 0" stroke="#5A61F6" stroke-width="1" />
+                                        <path d="M0 0 L0 5 M0 0 L5 0" stroke="#5A61F6" strokeWidth="1" />
                                     </pattern>
                                     <pattern id="VerticalStripe" patternUnits="userSpaceOnUse" width="4" height="4">
-                                        <path d="M2,0 L2,4" stroke="#9CA3AF" stroke-width="1" />
+                                        <path d="M2,0 L2,4" stroke="#9CA3AF" strokeWidth="1" />
                                     </pattern>
                                     <pattern id="VerticalDash" patternUnits="userSpaceOnUse" width="6" height="6">
-                                        <path d="M3,0 L3,6" stroke="#D83B01" stroke-width="1" stroke-dasharray="4,1" />
+                                        <path d="M3,0 L3,6" stroke="#D83B01" strokeWidth="1" strokeDasharray="4,1" />
                                     </pattern>
                                     <pattern id="HorizontalStripe" patternUnits="userSpaceOnUse" width="4" height="4">
-                                        <path d="M0,2 L4,2" stroke="#DE4383" stroke-width="1" />
+                                        <path d="M0,2 L4,2" stroke="#DE4383" strokeWidth="1" />
                                     </pattern>
                                     <pattern id="Dots" patternUnits="userSpaceOnUse" width="6" height="6">
                                         <circle cx="3" cy="3" r="1.5" fill="#FFB900" />
@@ -149,7 +149,7 @@ export default function DistributionChart4() {
                                     <AccumulationChartComponent ref={chartRef} width="100%" height="360px" enableSmartLabels={true} enableBorderOnMouseMove={false} tooltip={tooltip} legendSettings={{ visible: false }} load={(args) => chartLoad(args, "Bootstrap5", "Bootstrap5Dark")}>
                                         <Inject services={[AccumulationDataLabel, AccumulationTooltip, AccumulationLegend, PieSeries]} />
                                         <AccumulationSeriesCollectionDirective>
-                                            <AccumulationSeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" type="Pie" dataLabel={dataLabel} border={{ width: 0 }} pointColorMapping="fill"></AccumulationSeriesDirective>
+                                            <AccumulationSeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" type="Pie" radius="85%" dataLabel={dataLabel} border={{ width: 0 }} pointColorMapping="fill"></AccumulationSeriesDirective>
                                         </AccumulationSeriesCollectionDirective>
                                     </AccumulationChartComponent>
                                 </div>
@@ -160,16 +160,16 @@ export default function DistributionChart4() {
                                         <rect width="1" height="4" fill="#00EFA7" />
                                     </pattern>
                                     <pattern id="Grid" patternUnits="userSpaceOnUse" width="5" height="5">
-                                        <path d="M0 0 L0 5 M0 0 L5 0" stroke="#006EEF" stroke-width="1" />
+                                        <path d="M0 0 L0 5 M0 0 L5 0" stroke="#006EEF" strokeWidth="1" />
                                     </pattern>
                                     <pattern id="VerticalStripe" patternUnits="userSpaceOnUse" width="4" height="4">
-                                        <path d="M2,0 L2,4" stroke="#9CA3AF" stroke-width="1" />
+                                        <path d="M2,0 L2,4" stroke="#9CA3AF" strokeWidth="1" />
                                     </pattern>
                                     <pattern id="VerticalDash" patternUnits="userSpaceOnUse" width="6" height="6">
-                                        <path d="M3,0 L3,6" stroke="#F42929" stroke-width="1" stroke-dasharray="4,1" />
+                                        <path d="M3,0 L3,6" stroke="#F42929" strokeWidth="1" strokeDasharray="4,1" />
                                     </pattern>
                                     <pattern id="HorizontalStripe" patternUnits="userSpaceOnUse" width="4" height="4">
-                                        <path d="M0,2 L4,2" stroke="#EF00AC" stroke-width="1" />
+                                        <path d="M0,2 L4,2" stroke="#EF00AC" strokeWidth="1" />
                                     </pattern>
                                     <pattern id="Dots" patternUnits="userSpaceOnUse" width="6" height="6">
                                         <circle cx="3" cy="3" r="1.5" fill="#FFB900" />

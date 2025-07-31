@@ -204,7 +204,7 @@ export default function Grid4() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'grid-4' && blockData.theme) {
@@ -237,11 +237,11 @@ export default function Grid4() {
                                 <div className="w-full sm:w-72">
                                     <div className="e-input-group w-full">
                                         <span className="e-input-group-icon e-icons e-search"></span>
-                                        <input className="e-input" type="text" placeholder="Search" />
+                                        <input className="e-input !pl-0" type="text" placeholder="Search" />
                                     </div>
                                 </div>
                             </div>
-                            <GridComponent dataSource={gridData} key={"grid-4-tw"} width="100%" height={668} clipMode="EllipsisWithTooltip">
+                            <GridComponent dataSource={gridData} key={"grid-4-tw"} width="100%" height={668}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="contactId" headerText="Contact ID" width="90"
                                         template={(data: any) => (
@@ -325,7 +325,7 @@ export default function Grid4() {
                                     </div>
                                 </div>
                             </div>
-                            <GridComponent dataSource={gridData} key={"grid-4-bs"} width="100%" height={668} clipMode="EllipsisWithTooltip">
+                            <GridComponent dataSource={gridData} key={"grid-4-bs"} width="100%" height={668}>
                                 <ColumnsDirective>
                                     <ColumnDirective field="contactId" headerText="Contact ID" width="100"
                                         template={(data: any) => (

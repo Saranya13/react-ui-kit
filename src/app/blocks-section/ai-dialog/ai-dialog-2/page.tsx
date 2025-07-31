@@ -20,7 +20,7 @@ export default function AIDialog2() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'ai-dialog-2' && blockData.theme) {
@@ -69,7 +69,7 @@ export default function AIDialog2() {
                                 }
                             >
                                 <div className="flex flex-col gap-6 px-4 py-3 sm:px-6 h-full">
-                                    <div className="flex flex-col gap-3">
+                                    <div className="flex flex-col gap-3" style={{ maxWidth: "fit-content" }}>
                                         <CheckBoxComponent label="Factually incorrect" checked={true}></CheckBoxComponent>
                                         <CheckBoxComponent label="Missing key information"></CheckBoxComponent>
                                         <CheckBoxComponent label="Ignored or refused instructions"></CheckBoxComponent>
@@ -107,7 +107,7 @@ export default function AIDialog2() {
                                 }
                             >
                                 <div className="d-flex flex-column p-3 pb-2 px-sm-4 h-100">
-                                    <div className="d-flex flex-column gap-3 mb-4 mb-md-3">
+                                    <div className="d-flex flex-column gap-3 mb-4 mb-md-3" style={{ maxWidth: "fit-content" }}>
                                         <CheckBoxComponent label="Factually incorrect" checked={true}></CheckBoxComponent>
                                         <CheckBoxComponent label="Missing key information"></CheckBoxComponent>
                                         <CheckBoxComponent label="Ignored or refused instructions"></CheckBoxComponent>

@@ -26,7 +26,7 @@ export default function Rating17() {
     };
 
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'rating-17' && blockData.theme) {
@@ -152,12 +152,12 @@ export default function Rating17() {
                                     <div className="mt-2 d-flex gap-2" style={{ height: "60px" }}>
                                         <RatingComponent value={4}
                                             emptyTemplate={() => (
-                                                <div className="border border-light-subtle rounded px-3 mx-0 mx-sm-1">
+                                                <div className="border border-light-subtle rounded px-3 me-1 ms-sm-1">
                                                     <span className="sf-icon-star-02 fs-5 text-body-secondary"></span>
                                                 </div>
                                             )}
                                             fullTemplate={() => (
-                                                <div className="border border-light-subtle rounded px-3 mx-0 mx-sm-1">
+                                                <div className="border border-light-subtle rounded px-3 me-1 ms-sm-1">
                                                     <span className="sf-icon-star-filled-01 fs-5 text-warning"></span>
                                                 </div>
                                             )}

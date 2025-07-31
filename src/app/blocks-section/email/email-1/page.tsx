@@ -19,7 +19,7 @@ export default function Email1() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'email-1' && blockData.theme) {
@@ -58,7 +58,7 @@ export default function Email1() {
         switch (theme) {
             case 'tailwind':
                 return (
-                    <section className="bg-gray-50 dark:bg-gray-900">
+                    <section className="bg-white dark:bg-gray-900">
                         <div className="lg:flex lg:justify-center lg:items-center">
                             <div className="py-10 px-4 md:px-6 md:py-14 xl:px-11 xl:py-6 w-full">
                                 <form action="#" onSubmit={(event) => event.preventDefault()}>

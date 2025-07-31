@@ -1886,9 +1886,6 @@ video {
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
 }
-.bg-none {
-  background-image: none;
-}
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1970,6 +1967,10 @@ video {
 .\!py-1 {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
+}
+.\!py-1\.5 {
+  padding-top: 0.375rem !important;
+  padding-bottom: 0.375rem !important;
 }
 .\!py-2 {
   padding-top: 0.5rem !important;
@@ -2066,6 +2067,10 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -2350,9 +2355,6 @@ video {
 .\!text-2xl {
   font-size: 1.5rem !important;
   line-height: 2rem !important;
-}
-.\!text-\[10px\] {
-  font-size: 10px !important;
 }
 .\!text-base {
   font-size: 1rem !important;
@@ -2645,6 +2647,9 @@ video {
 .opacity-100 {
   opacity: 1;
 }
+.opacity-70 {
+  opacity: 0.7;
+}
 .opacity-75 {
   opacity: 0.75;
 }
@@ -2770,10 +2775,6 @@ video {
 .dark\:bg-gray-100:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-.dark\:bg-gray-200:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 .dark\:bg-gray-600:is(.dark *) {
   --tw-bg-opacity: 1;
@@ -3072,6 +3073,10 @@ video {
     margin-top: 0px !important;
   }
 
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .sm\:mb-2 {
     margin-bottom: 0.5rem;
   }
@@ -3144,10 +3149,6 @@ video {
     margin-right: 1rem;
   }
 
-  .sm\:mr-8 {
-    margin-right: 2rem;
-  }
-
   .sm\:ms-6 {
     margin-inline-start: 1.5rem;
   }
@@ -3213,6 +3214,10 @@ video {
 
   .sm\:h-auto {
     height: auto;
+  }
+
+  .sm\:h-full {
+    height: 100%;
   }
 
   .sm\:w-1\/2 {
@@ -4034,10 +4039,6 @@ video {
     margin-right: 0px;
   }
 
-  .lg\:mr-1 {
-    margin-right: 0.25rem;
-  }
-
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -4280,6 +4281,16 @@ video {
     padding-right: 1.5rem;
   }
 
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -4309,16 +4320,16 @@ video {
     padding-right: 0px;
   }
 
-  .lg\:pr-12 {
-    padding-right: 3rem;
-  }
-
   .lg\:pr-16 {
     padding-right: 4rem;
   }
 
   .lg\:pr-3 {
     padding-right: 0.75rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 3rem;
   }
 
   .lg\:pt-14 {

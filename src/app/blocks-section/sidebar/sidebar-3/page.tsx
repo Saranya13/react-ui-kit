@@ -67,7 +67,7 @@ export default function Sidebar3() {
     
     /* SB Code - Start */ 
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'sidebar-3' && blockData.theme) {
@@ -109,7 +109,7 @@ export default function Sidebar3() {
                                                 <img src="/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-2.jpg" width={56} height={56} alt="profile picture" />
                                             </span>
                                             <div className="text-xl font-medium leading-normal text-gray-900 dark:text-white mt-4">John Wick</div>
-                                            <p className="mb-0 text-base text-gray-900 dark:text-white mt-2">johnwick&#64;123.com</p>
+                                            <a className="text-base text-gray-900 dark:text-white mt-2" href="mailto:johnwick@company.com">johnwick&#64;company.com</a>
                                         </div>
                                         <hr className="m-4 border-gray-200 dark:border-gray-700" />
                                         <div>
@@ -146,7 +146,7 @@ export default function Sidebar3() {
                                                 <img src="/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-2.jpg" width={56} height={56} alt="profile picture" />
                                             </span>
                                             <div className="fs-5 fw-medium text-body mt-3">John Wick</div>
-                                            <p className="mb-0 fs-6 text-body-secondary mt-2">johnwick&#64;123.com</p>
+                                            <a className="fs-6 text-body-secondary mt-2 text-decoration-none" href="mailto:johnwick@company.com">johnwick&#64;company.com</a>
                                         </div>
                                         <hr className="mx-3 border-light-subtle opacity-100" />
                                         <div>

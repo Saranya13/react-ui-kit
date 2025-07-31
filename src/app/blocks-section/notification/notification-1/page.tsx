@@ -5,6 +5,7 @@ import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
 import { DialogComponent } from "@syncfusion/ej2-react-popups";
 import { TabComponent, TabItemDirective, TabItemsDirective, SelectEventArgs } from "@syncfusion/ej2-react-navigations";
 import { ListViewComponent } from "@syncfusion/ej2-react-lists";
+import { DropDownButtonComponent } from "@syncfusion/ej2-react-splitbuttons";
 import styles from "./page.module.css";
 
 export default function Notification1() {
@@ -15,6 +16,7 @@ export default function Notification1() {
     const buttonRef = useRef<ButtonComponent>(null);
     const tabRef = useRef<TabComponent>(null);
     const listviewRef = useRef<ListViewComponent>(null);
+    const dropdownRef = useRef<DropDownButtonComponent>(null);
     const isToggleRef = useRef(false);
 
     const messageData: any = [
@@ -65,6 +67,9 @@ export default function Notification1() {
         const isMobileView = window.innerWidth < 400;
         dialogRef.current.width = isMobileView ? 328 : 448;
         dialogRef.current.position = { X: position.x - (dialogRef.current.width - 32), Y: position.y + 37 };
+        if (dropdownRef.current && dropdownRef.current.element?.classList.contains('e-active')) {
+            dropdownRef.current.toggle();
+        };
         tabRef.current?.refreshActiveTabBorder();
         event.preventFocus = true;
     };
@@ -103,7 +108,7 @@ export default function Notification1() {
     
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'notification-1' && blockData.theme) {
@@ -145,7 +150,10 @@ export default function Notification1() {
                                     header={() => (
                                         <div className="flex justify-between items-center p-4 md:px-3 md:py-2">
                                             <h1 className="text-base md:text-lg text-gray-900 dark:text-white font-medium">Notifications</h1>
-                                            <ButtonComponent cssClass="e-flat e-small" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
+                                            <div className="flex items-center gap-3">
+                                                <DropDownButtonComponent ref={dropdownRef} cssClass="e-flat e-small e-caret-hide block sm:hidden" iconCss="e-icons e-more-vertical-1" items={[{ text: 'Mark all as read' }]} type="button"></DropDownButtonComponent>
+                                                <ButtonComponent cssClass="e-flat e-small" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
+                                            </div>
                                         </div>
                                     )}
                                     footerTemplate={() => (
@@ -212,7 +220,10 @@ export default function Notification1() {
                                     header={() => (
                                         <div className="d-flex justify-content-between align-items-center p-3">
                                             <h1 className="fs-5 text-body fw-medium m-0">Notifications</h1>
-                                            <ButtonComponent cssClass="e-flat e-small e-inherit" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
+                                            <div className="d-flex align-items-center gap-2">
+                                                <DropDownButtonComponent ref={dropdownRef} cssClass="e-flat e-small e-caret-hide e-inherit d-block d-sm-none" iconCss="e-icons e-more-vertical-1" items={[{ text: 'Mark all as read' }]} type="button"></DropDownButtonComponent>
+                                                <ButtonComponent cssClass="e-flat e-small e-inherit" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
+                                            </div>
                                         </div>
                                     )}
                                     footerTemplate={() => (
@@ -244,7 +255,7 @@ export default function Notification1() {
                                                         {data.avatar ? (
                                                             <span className="e-avatar e-avatar-circle" style={{ backgroundImage: `url(/react/essential-ui-kit/blocks/assets/images/common/avatar/${data.avatar})` }}></span>
                                                         ) : (
-                                                            <span className={`e-avatar e-avatar-circle ${data.colorTheme === 'Green' ? 'bg-success-subtle text-success' : 'bg-warning-subtle text-warning'}`}>{data.initial}</span>
+                                                            <span className={`e-avatar e-avatar-circle ${data.colorTheme === 'Green' ? 'bg-success-subtle text-success' : 'bg-warning-subtle text-warning-emphasis'}`}>{data.initial}</span>
                                                         )}
                                                     </div>
                                                     <div className="d-flex flex-column gap-1">

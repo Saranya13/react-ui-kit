@@ -32,7 +32,7 @@ export default function FilterPanel2() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'filter-panel-2' && blockData.theme) {
@@ -72,7 +72,7 @@ export default function FilterPanel2() {
                                     <>
                                         <hr className="border-gray-200 dark:border-gray-700" />
                                         <div className="flex flex-col-reverse sm:flex-row justify-between items-center w-full sm:pt-4 sm:pb-2">
-                                            <a href="#" className="text-primary-600 dark:text-primary-400 pt-4 mb-3 sm:pt-0 text-sm hover:underline">Learn more</a>
+                                            <a href="#" className="text-primary-600 dark:text-primary-400 pt-4 mb-3 sm:mb-0 sm:pt-0 text-sm hover:underline">Learn more</a>
                                             <div className="flex flex-col sm:flex-row w-full sm:w-auto !ml-0 sm:ml-auto gap-3 mt-4 sm:mt-0">
                                                 <ButtonComponent cssClass="e-outline e-primary border-0 w-full !ml-0 sm:!ml-auto sm:w-auto" content="Save filter" type="button"></ButtonComponent>
                                                 <ButtonComponent cssClass="e-primary w-full sm:w-auto !ml-0 sm:!ml-auto mt-1 sm:mt-0" content="Apply" type="button"></ButtonComponent>

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
 import { ListViewComponent } from "@syncfusion/ej2-react-lists";
-import { AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective } from "@syncfusion/ej2-react-charts";
+import { Inject, AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, PieSeries } from "@syncfusion/ej2-react-charts";
 import styles from "./page.module.css";
 
 export default function DistributionChart1() {
@@ -34,7 +34,7 @@ export default function DistributionChart1() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'distribution-chart-1' && blockData.theme) {
@@ -84,6 +84,7 @@ export default function DistributionChart1() {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-2">
                                     <div className="relative">
                                         <AccumulationChartComponent ref={chartRef} width="100%" height="200px" centerLabel={centerLabel} legendSettings={{ visible: false }} enableBorderOnMouseMove={false} load={(args) => chartLoad(args, 'Tailwind3', 'Tailwind3Dark')}>
+                                            <Inject services={[PieSeries]} />
                                             <AccumulationSeriesCollectionDirective>
                                                 <AccumulationSeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" name="Expense" startAngle={210} innerRadius="65%" radius="100%" palettes={["#5A61F6", "#03B4B4", "#78B008", "#F39C12"]}></AccumulationSeriesDirective>
                                             </AccumulationSeriesCollectionDirective>
@@ -130,6 +131,7 @@ export default function DistributionChart1() {
                                 <div className="row row-cols-1 row-cols-sm-2 g-4 mt-2">
                                     <div className="position-relative">
                                         <AccumulationChartComponent ref={chartRef} width="100%" height="200px" centerLabel={centerLabel} legendSettings={{ visible: false }} enableBorderOnMouseMove={false} load={(args) => chartLoad(args, 'Bootstrap5', 'Bootstrap5Dark')}>
+                                            <Inject services={[PieSeries]} />
                                             <AccumulationSeriesCollectionDirective>
                                                 <AccumulationSeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" name="Expense" startAngle={210} innerRadius="65%" radius="100%" palettes={["#006EEF", "#00EFA7", "#0EAB44", "#FF9900"]}></AccumulationSeriesDirective>
                                             </AccumulationSeriesCollectionDirective>

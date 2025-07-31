@@ -20,7 +20,7 @@ export default function Calendar2() {
 
     const handleResize = (): void => {
         setWidth(window.innerWidth < 540 ? '100%' : '310px');
-        setSliderWidth(window.innerWidth < 767 ? '97%' : '260px');
+        setSliderWidth(window.innerWidth < 767 ? '100%' : '260px');
         setTimeout(()=>{
             slider.current?.refresh();
         }, 1000)
@@ -28,7 +28,7 @@ export default function Calendar2() {
  
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'calendar-2' && blockData.theme) {

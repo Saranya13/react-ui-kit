@@ -17,7 +17,7 @@ export default function AIPricingTable1() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'ai-pricing-table-1' && blockData.theme) {
@@ -53,7 +53,7 @@ export default function AIPricingTable1() {
                 return (
                     <section>
                         <div id="dialog-container" className="relative flex justify-center items-center" style={{ minHeight: "580px" }}>
-                            <DialogComponent ref={pricing} className="absolute sm:rounded-lg py-3" target="#dialog-container" visible={true} beforeOpen={(event) => { event.maxHeight = '100%'; }} showCloseIcon={true} width="537px" height="460px" closeOnEscape={true} open={(event) => (event.preventFocus = true)}
+                            <DialogComponent ref={pricing} className="absolute sm:rounded-lg py-3" target="#dialog-container" isModal={true} visible={true} beforeOpen={(event) => { event.maxHeight = '100%'; }} showCloseIcon={true} width="537px" height="460px" closeOnEscape={true} open={(event) => (event.preventFocus = true)}
                                 header={() => {
                                     return (<span className="text-base">Select plan</span>)
                                 }}
@@ -95,8 +95,7 @@ export default function AIPricingTable1() {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <hr className="my-6" />
-                                        <div className="grid gap-3 lg:grid-cols-3 sm:grid-cols-2 box-border">
+                                        <div className="grid gap-3 lg:grid-cols-3 sm:grid-cols-2 box-border border-0 border-t mt-6 pt-6 border-gray-200 dark:border-gray-600">
                                             <div className="e-card rounded-none bg-gray-50 dark:bg-gray-900 border-none shadow-none">
                                                 <div className="e-card-header !pt-3 !px-3">
                                                     <div className="e-card-header-caption">
@@ -158,7 +157,7 @@ export default function AIPricingTable1() {
                 return (
                     <section>
                         <div id="dialog-container" className="position-relative d-flex align-items-center justify-content-center" style={{ minHeight: "580px" }}>
-                            <DialogComponent key={"pricing-table-bs"} ref={pricing} className="position-absolute py-3" target="#dialog-container" visible={true} showCloseIcon={true} width="537px" height="480px" closeOnEscape={true} open={(event) => (event.preventFocus = true)}
+                            <DialogComponent key={"pricing-table-bs"} ref={pricing} isModal={true} className="py-2" target="#dialog-container" visible={true} showCloseIcon={true} width="537px" height="480px" closeOnEscape={true} open={(event) => (event.preventFocus = true)}
                                 header={() => {
                                     return (<span className="text-base">Select plan</span>)
                                 }}
@@ -200,8 +199,7 @@ export default function AIPricingTable1() {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <hr className="my-4" />
-                                        <div className="row g-3">
+                                        <div className="row g-3 border-top border-light-subtle mt-4 pt-2">
                                             <div className="col-md-6 col-lg-4">
                                                 <div className="e-card rounded-0 bg-body-tertiary border-0 shadow-none">
                                                     <div className="e-card-header pt-3 px-3">

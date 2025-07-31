@@ -38,7 +38,7 @@ export default function FloatingMenu3() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'floating-menu-3' && blockData.theme) {
@@ -90,7 +90,7 @@ export default function FloatingMenu3() {
                                             <p className="text-sm text-gray-500 dark:text-gray-200 mt-2">Reach out to us for any inquiry</p>
                                         </div>
                                         <div className="flex justify-end block sm:hidden p-4 absolute right-0 top-0">
-                                            <ButtonComponent className="e-flat e-round" iconCss="e-icons e-close" type="button" onClick={toggleDialog}></ButtonComponent>
+                                            <ButtonComponent className="e-flat e-round" iconCss="e-icons e-close !text-base" type="button" onClick={toggleDialog}></ButtonComponent>
                                         </div>
                                     </div>
                                 )}
@@ -105,7 +105,7 @@ export default function FloatingMenu3() {
                                     <TextBoxComponent cssClass="e-bigger w-full" type="text" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                     <TextAreaComponent cssClass="e-bigger" placeholder="Your message" rows={5} cols={100} resizeMode="None"></TextAreaComponent>
                                     <div className="w-full flex flex-col gap-1.5">
-                                        <UploaderComponent key={`uploader-1-${isToggleState}`}></UploaderComponent>
+                                        <UploaderComponent key={`uploader-1-${isToggleState}`} allowedExtensions=".pdf,.doc,.docx"></UploaderComponent>
                                         <p className="text-xs text-gray-900 dark:text-gray-50">Supported formats: Docs / PDF</p>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@ export default function FloatingMenu3() {
                                     <TextBoxComponent cssClass="e-bigger w-100" type="text" placeholder="Email" floatLabelType="Never"></TextBoxComponent>
                                     <TextAreaComponent cssClass="e-bigger w-100" placeholder="Your message" rows={5} cols={100} resizeMode="None"></TextAreaComponent>
                                     <div>
-                                        <UploaderComponent key={`uploader-2-${isToggleState}`}></UploaderComponent>
+                                        <UploaderComponent key={`uploader-2-${isToggleState}`} allowedExtensions=".pdf,.doc,.docx"></UploaderComponent>
                                         <p className="small m-0 mt-1 text-body-secondary">Supported formats: Docs / PDF</p>
                                     </div>
                                 </div>

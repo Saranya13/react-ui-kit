@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
+import styles from "./page.module.css";
 
 export default function Card6() {
     /* SB Code - Start */
     const [theme, setTheme] = useState('tailwind');
     
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'cards-6' && blockData.theme) {
@@ -36,7 +37,7 @@ export default function Card6() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
-                        <div className="w-full lg:max-w-4xl px-4 sm:px-6 lg:px-0 lg:w-11/12 mx-auto py-20" style={{ minHeight: "36rem" }}>
+                        <div id={styles["card-icon"]} className="w-full lg:max-w-4xl px-4 sm:px-6 lg:px-0 lg:w-11/12 mx-auto py-20" style={{ minHeight: "36rem" }}>
                             <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-6">
                                 <div className="e-card e-bigger rounded-lg w-full sm:w-3/6 justify-start">
                                     <div className="e-card-header items-center !w-full">
@@ -101,7 +102,7 @@ export default function Card6() {
             case 'bootstrap5':
                 return (
                     <section className="bg-dark-subtle">
-                        <div className="container-xxl px-3 px-sm-4 mx-auto py-5" style={{ minHeight: "36rem" }}>
+                        <div id={styles["card-icon"]} className="container-xxl px-3 px-sm-4 mx-auto py-5" style={{ minHeight: "36rem" }}>
                             <div className="row justify-content-center g-xl-5 g-4 e-bigger w-full">
                                 <div className="col-sm-6 col-lg-5 col-xl-4">
                                     <div className="e-card e-bigger shadow p-2 h-100 justify-content-start">

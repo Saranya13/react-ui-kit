@@ -68,7 +68,7 @@ export default function LineChart1() {
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'line-chart-1' && blockData.theme) {
@@ -123,7 +123,7 @@ export default function LineChart1() {
                                     <ChartComponent ref={chartRef} chartArea={{ border: { width: 0 } }} width="100%" height="360px" primaryXAxis={primaryXAxis} primaryYAxis={primaryYAxis} tooltip={tooltip} useGroupingSeparator={true} load={(args) => chartLoad(args, 'Tailwind3', 'Tailwind3Dark')}>
                                         <Inject services={[SplineSeries, Tooltip, Category]} />
                                         <SeriesCollectionDirective>
-                                            <SeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" type="Spline" width={3} fill="#267DDA" marker={{ visible: true, width: 8, height: 8, isFilled: true, border: { color: '#e2e8f0' } }}></SeriesDirective>
+                                            <SeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" type="Spline" width={3} fill="#267DDA" marker={{ visible: true, width: 8, height: 8, isFilled: true, border: { color: isDarkMode?'#1F2937':'#FFFFFF' } }}></SeriesDirective>
                                         </SeriesCollectionDirective>
                                     </ChartComponent>
                                 </div>
@@ -151,7 +151,7 @@ export default function LineChart1() {
                                     <ChartComponent ref={chartRef} chartArea={{ border: { width: 0 } }} width="100%" height="360px" primaryXAxis={primaryXAxis} primaryYAxis={primaryYAxis} tooltip={tooltip} useGroupingSeparator={true} load={(args) => chartLoad(args, 'Bootstrap5', 'Bootstrap5Dark')}>
                                         <Inject services={[SplineSeries, Tooltip, Category]} />
                                         <SeriesCollectionDirective>
-                                            <SeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" type="Spline" width={3} fill="#006EEF" marker={{ visible: true, width: 8, height: 8, isFilled: true, border: { color: '#e2e8f0' } }}></SeriesDirective>
+                                            <SeriesDirective dataSource={chartData} xName="xAxis" yName="yAxis" type="Spline" width={3} fill="#006EEF" marker={{ visible: true, width: 8, height: 8, isFilled: true, border: { color: isDarkMode?'#212529':'#FFFFFF' } }}></SeriesDirective>
                                         </SeriesCollectionDirective>
                                     </ChartComponent>
                                 </div>

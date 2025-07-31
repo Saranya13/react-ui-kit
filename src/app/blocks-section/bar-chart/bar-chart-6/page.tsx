@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { DropDownButtonComponent } from "@syncfusion/ej2-react-splitbuttons";
-import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
+import { DateRangePickerComponent } from '@syncfusion/ej2-react-calendars';
 import { Inject, ChartComponent, SeriesCollectionDirective, SeriesDirective, ColumnSeries, Legend, Category } from "@syncfusion/ej2-react-charts";
 
 export default function BarChart6() {
@@ -13,6 +13,7 @@ export default function BarChart6() {
     const [labelRotation, setLabelRotation] = useState(0);
     const chartRef = useRef<ChartComponent | null>(null);
     const ticketDropdownRef = useRef<DropDownButtonComponent | null>(null);
+    const dateRangePickerRef = useRef<DateRangePickerComponent | null>(null);
 
     const chartData: object[] = [
         { date: "Dec 1", xAxis: 27, yAxis: 15 },
@@ -53,11 +54,12 @@ export default function BarChart6() {
         if (ticketDropdownRef.current?.element?.classList.contains("e-active")) {
             ticketDropdownRef.current.toggle();
         }
+        dateRangePickerRef.current?.refresh();
     };
 
     /* SB Code - Start */
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'bar-chart-6' && blockData.theme) {
@@ -101,7 +103,7 @@ export default function BarChart6() {
                                     <h1 className="text-base font-medium text-gray-900 dark:text-white">Ticket Activity Overview</h1>
                                     <div className="flex flex-col sm:flex-row gap-4 items-start">
                                         <div className="w-64">
-                                            <DatePickerComponent cssClass="shadow-none border-none" placeholder="01/12/2024 - 07/12/2024"></DatePickerComponent>
+                                            <DateRangePickerComponent ref={dateRangePickerRef} cssClass="shadow-none border-none" placeholder="01/12/2024 - 07/12/2024"></DateRangePickerComponent>
                                         </div>
                                         <DropDownButtonComponent ref={ticketDropdownRef} className="e-outline" content="All Tickets" items={[{ text: 'All tickets' }, { text: 'Draft' }, { text: 'Processed' }]} type="button"></DropDownButtonComponent>
                                     </div>
@@ -128,7 +130,7 @@ export default function BarChart6() {
                                     <h1 className="fs-6 fw-medium text-body mb-0">Ticket Activity Overview</h1>
                                     <div className="d-flex flex-column flex-sm-row gap-3 align-items-start">
                                         <div style={{width: '244px'}}>
-                                            <DatePickerComponent cssClass="shadow-none border-none" placeholder="01/12/2024 - 07/12/2024"></DatePickerComponent>
+                                            <DateRangePickerComponent ref={dateRangePickerRef} cssClass="shadow-none border-none" placeholder="01/12/2024 - 07/12/2024"></DateRangePickerComponent>
                                         </div>
                                         <DropDownButtonComponent ref={ticketDropdownRef} className="e-outline" content="All Tickets" items={[{ text: 'All tickets' }, { text: 'Draft' }, { text: 'Processed' }]} type="button"></DropDownButtonComponent>
                                     </div>

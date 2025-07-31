@@ -57,7 +57,7 @@ export default function Modals10() {
     };
 
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'modals-10' && blockData.theme) {
@@ -121,7 +121,7 @@ export default function Modals10() {
                                             <div className="flex justify-between p-4 border-b dark:border-gray-600">
                                                 <div className="flex gap-3">
                                                     {isMobile && (
-                                                        <ButtonComponent cssClass="e-icons e-menu" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-icons e-menu e-flat" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                                                     )}
                                                     <h3 className="text-base font-semibold">My Account</h3>
                                                 </div>
@@ -202,7 +202,7 @@ export default function Modals10() {
                                             <div className="d-flex justify-content-between p-3 border-bottom">
                                                 <div className="d-flex gap-3">
                                                     {isMobile && (
-                                                        <ButtonComponent cssClass="e-icons e-menu" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
+                                                        <ButtonComponent cssClass="e-flat e-icons e-menu" type="button" onClick={() => sidebar.current?.show()}></ButtonComponent>
                                                     )}
                                                     <h3 className="fs-6 fw-bold mb-0 text-body">My Account</h3>
                                                 </div>

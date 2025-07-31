@@ -74,7 +74,7 @@ export default function Sidebar6() {
     
     /* SB Code - Start */ 
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'sidebar-6' && blockData.theme) {
@@ -116,10 +116,10 @@ export default function Sidebar6() {
                                                 <img src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                                 <div className="ml-3">
                                                     <div className="text-base font-medium leading-normal text-gray-900 dark:text-white">John Wick</div>
-                                                    <p className="mb-0 text-gray-900 dark:text-white">johnwick&#64;123.com</p>
+                                                    <a className="text-gray-900 dark:text-white" href="mailto:johnwick@company.com">johnwick&#64;company.com</a>
                                                 </div>
                                             </div>
-                                            <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat e-large" type="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat e-large px-1" type="button"></ButtonComponent>
                                         </div>
                                         <div>
                                             <ListViewComponent className="!border-0" dataSource={navigationMenu} template={(data: any) => (
@@ -175,7 +175,7 @@ export default function Sidebar6() {
                                                 <img src="/react/essential-ui-kit/blocks/assets/images/common/brand-logos/svg/vector.svg" width={32} height={32} alt="company logo" />
                                                 <div className="ms-2">
                                                     <div className="fs-6 fw-medium text-body">John Wick</div>
-                                                    <p className="mb-0 text-body-secondary">johnwick&#64;123.com</p>
+                                                    <a className="text-body-secondary text-decoration-none" href="mailto:johnwick@company.com">johnwick&#64;company.com</a>
                                                 </div>
                                             </div>
                                             <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat" type="button"></ButtonComponent>

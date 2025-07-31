@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
+import styles from "./page.module.css";
 
 export default function Card15() {
     /* SB Code - Start */
     const [theme, setTheme] = useState('tailwind');
     
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'cards-15' && blockData.theme) {
@@ -36,7 +37,7 @@ export default function Card15() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
-                        <div className="px-4 sm:px-6 py-20" style={{ minHeight: "36rem" }}>
+                        <div id={styles["card-icon"]} className="px-4 sm:px-6 py-20" style={{ minHeight: "36rem" }}>
                             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
                                 <div className="e-card e-bigger rounded-lg justify-start">
                                     <div className="e-card-header !pb-3">
@@ -78,7 +79,7 @@ export default function Card15() {
             case 'bootstrap5':
                 return (
                     <section className="bg-dark-subtle">
-                        <div className="px-3 px-sm-4 py-5" style={{ minHeight: "36rem" }}>
+                        <div id={styles["card-icon"]} className="px-3 px-sm-4 py-5" style={{ minHeight: "36rem" }}>
                             <div className="row g-xl-5 g-4">
                                 <div className="col-sm-6 col-lg-4">
                                     <div className="e-card shadow e-bigger p-2 h-100 justify-content-start">

@@ -48,7 +48,7 @@ export default function Sidebar13() {
     
     /* SB Code - Start */ 
     const handleMessageEvent = (event: MessageEvent) => {
-        if (event.origin === window.location.origin) {
+        if (event.origin === window.location.origin && /^{"(name":"[^"]+","theme":"[^"]+"|mode":"[^"]+")}$/.test(event.data)) {
             try {
                 const blockData = JSON.parse(event.data);
                 if (blockData.name === 'sidebar-13' && blockData.theme) {
@@ -101,12 +101,12 @@ export default function Sidebar13() {
                                                 <span className="e-avatar e-avatar-circle e-avatar-small">
                                                     <img src="/react/essential-ui-kit/blocks/assets/images/common/avatar/avatar-2.jpg" width={32} height={32} alt="profile picture" />
                                                 </span>
-                                                <div className="ml-3">
+                                                <div className="ml-2">
                                                     <div className="text-base font-medium leading-normal text-gray-900 dark:text-white">John Wick</div>
-                                                    <p className="mb-0 text-gray-900 dark:text-white">johnwick&#64;123.com</p>
+                                                    <a className="text-gray-900 dark:text-white" href="mailto:johnwick@company.com">johnwick&#64;company.com</a>
                                                 </div>
                                             </div>
-                                            <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat e-large" type="button"></ButtonComponent>
+                                            <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat e-large px-1" type="button"></ButtonComponent>
                                         </div>
                                         <div className="mt-4">
                                             <div className="flex justify-between">
@@ -181,7 +181,7 @@ export default function Sidebar13() {
                                                 </span>
                                                 <div className="ms-3">
                                                     <div className="text-body fs-6 fw-medium">John Wick</div>
-                                                    <p className="mb-0 text-body-secondary">johnwick&#64;123.com</p>
+                                                    <a className="text-body-secondary text-decoration-none" href="mailto:johnwick@company.com">johnwick&#64;company.com</a>
                                                 </div>
                                             </div>
                                             <ButtonComponent cssClass="e-icons e-chevron-down-double e-flat" type="button"></ButtonComponent>
