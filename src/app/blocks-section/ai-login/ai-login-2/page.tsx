@@ -50,10 +50,10 @@ export default function AILogin2() {
                                 <p className="text-base text-center font-normal text-gray-900 dark:text-white">Please enter your login Id and password</p>
                                 <form action="#" className="mt-4 mb-6" onSubmit={(event) => event.preventDefault()}>
                                     <div className="mb-4">
-                                        <TextBoxComponent ref={userName} cssClass="e-normal text-base text-gray-500 !border-0 shadow-sm bg-gray-50 dark:bg-gray-700" placeholder="Username or email" created={() => userName.current?.addIcon("prepend", "e-icons e-user e-small")} floatLabelType="Never" type="email"></TextBoxComponent>
+                                        <TextBoxComponent ref={userName} cssClass="e-normal text-base text-gray-500 !border-0 shadow-sm !bg-gray-50 dark:!bg-gray-700" placeholder="Username or email" created={() => userName.current?.addIcon("prepend", "e-icons e-user e-small")} floatLabelType="Never" type="email"></TextBoxComponent>
                                     </div>
                                     <div className="mb-3 relative">
-                                        <TextBoxComponent ref={password} cssClass="e-normal text-base text-gray-500 !border-0 shadow-sm bg-gray-50 dark:bg-gray-700" placeholder="Password" created={() => password.current?.addIcon("prepend", "e-icons e-lock e-small")} floatLabelType="Never" type="password"></TextBoxComponent>
+                                        <TextBoxComponent ref={password} cssClass="e-normal text-base text-gray-500 !border-0 shadow-sm !bg-gray-50 dark:!bg-gray-700" placeholder="Password" created={() => password.current?.addIcon("prepend", "e-icons e-lock e-small")} floatLabelType="Never" type="password"></TextBoxComponent>
                                     </div>
                                     <div className="flex items-center justify-end mb-6">
                                         <a href="#" className="font-normal text-xs text-primary-600 dark:text-primary-400">Forgot password?</a>
@@ -71,7 +71,7 @@ export default function AILogin2() {
                                 <div>
                                     <span className="flex items-center justify-center gap-1 font-normal text-xs mt-4">
                                         <p className="text-center text-gray-900 dark:text-white">Not a member yet?</p>
-                                        <a href="#" className="text-primary-600 dark:text-primary-400">Register</a>
+                                        <a href="#" className="text-primary-600 dark:text-primary-400 z-10">Register</a>
                                     </span>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ export default function AILogin2() {
                                 <div>
                                     <span className="d-flex align-items-center justify-content-center gap-1 fw-normal small mt-3">
                                         <p className="text-center text-body mb-0">Not a member yet?</p>
-                                        <a href="#" className="text-primary text-decoration-none">Register</a>
+                                        <a href="#" className="text-primary text-decoration-none z-1">Register</a>
                                     </span>
                                 </div>
                             </div>

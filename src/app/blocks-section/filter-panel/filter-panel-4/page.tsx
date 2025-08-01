@@ -183,7 +183,7 @@ export default function FilterPanel4() {
                                             </TabItemsDirective>
                                         </TabComponent>
                                     </div>
-                                    <div className="w-10 px-2 border-bottom border-subtle d-flex justify-content-center align-items-center">
+                                    <div className="w-10 px-3 border-bottom border-subtle d-flex justify-content-center align-items-center">
                                         <a href="#" className="e-icons e-chevron-right-double small text-decoration-none text-secondary"></a>
                                     </div>
                                 </div>
@@ -195,7 +195,7 @@ export default function FilterPanel4() {
                                                     <div className="fs-6 fw-medium text-body">Requester Details</div>
                                                 )} 
                                                 content={() => (
-                                                    <div className="d-flex align-items-center gap-2">
+                                                    <div className="d-flex align-items-center gap-2 p-1">
                                                         <span className="e-avatar e-avatar-medium e-avatar-circle bg-primary text-white">MG</span>
                                                         <div>
                                                             <h2 className="fs-6 mb-1 fw-medium text-body">Michael Green</h2>
@@ -214,7 +214,7 @@ export default function FilterPanel4() {
                                                 )} 
                                                 content={() => (
                                                     <div className="row g-3 w-100 m-0 pb-1">
-                                                        <div className="col-6 px-1">
+                                                        <div className="col-6 px-1 mt-1">
                                                             <label className="mb-1 fs-6 fw-medium text-body">Status</label>
                                                             <DropDownListComponent dataSource={status} placeholder="Open"></DropDownListComponent>
                                                         </div>

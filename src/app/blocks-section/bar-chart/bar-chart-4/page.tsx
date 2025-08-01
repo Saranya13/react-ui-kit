@@ -125,7 +125,7 @@ export default function BarChart4() {
                                     <div className="flex items-center justify-between text-xs">
                                         <div className="flex items-center gap-2">
                                             <p className="text-green-700 dark:text-green-500 flex items-center">
-                                                <span className="e-icons e-arrow-up mr-1"></span>2.1%
+                                                <span className="e-icons e-arrow-up mr-1 text-sm"></span>2.1%
                                             </p>
                                             <p className="text-gray-500 dark:text-gray-400">vs last week</p>
                                         </div>

@@ -146,7 +146,7 @@ export default function Sidebar13() {
                                     </div>
                                 </div>
                                 <div id="toast" className="absolute bottom-0 right-0"></div>
-                                <ToastComponent ref={toast} target="#toast" title="<div className='pr-2'>Adaptive Tiles Meeting</div>" position={{ X: 'Right', Y: 'Bottom' }} cssClass="e-toast-info" width={224} content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast.current?.show()}></ToastComponent>
+                                <ToastComponent ref={toast} target="#toast" title="<div class='pr-2'>Adaptive Tiles Meeting</div>" position={{ X: 'Right', Y: 'Bottom' }} cssClass="e-toast-info" width={224} content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast.current?.show()}></ToastComponent>
                             </SidebarComponent>
                         </div>
                         {/* SB Code - Start */}

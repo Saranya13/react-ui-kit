@@ -111,8 +111,8 @@ export default function AreaChart3() {
         switch (theme) {
             case 'tailwind':
                 return (
-                    <section className="bg-white dark:bg-gray-950 w-full">
-                        <div key={"areachart-3-tw"} className="h-screen flex justify-center p-4 sm:p-6">
+                    <section className="bg-white dark:bg-gray-950">
+                        <div key={"areachart-3-tw"} className="h-screen flex justify-center p-4 sm:p-6 w-full">
                             <div className="w-full max-w-2xl">
                                 <div className="flex flex-col gap-2 mb-4 w-full">
                                     <div className="flex justify-between gap-4">
@@ -149,8 +149,8 @@ export default function AreaChart3() {
                 );
             case 'bootstrap5':
                 return (
-                    <section className="bg-body w-100">
-                        <div key={"areachart-3-bs"} className="vh-100 d-flex justify-content-center p-4 p-sm-5">
+                    <section className="bg-body">
+                        <div key={"areachart-3-bs"} className="vh-100 d-flex justify-content-center p-4 p-sm-5 w-100">
                             <div className="w-100" style={{ maxWidth: '680px' }}>
                                 <div className="d-flex flex-column gap-2 mb-4">
                                     <div className="d-flex justify-content-between gap-3">

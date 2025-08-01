@@ -98,7 +98,7 @@ export default function AreaChart1() {
                                     <DropDownButtonComponent ref={rangeDropdownRef} className="e-outline inline-block sm:hidden" content="Year" items={[{ text: 'Day' }, { text: 'Week' }, { text: 'Month' }, { text: 'Year' }, { text: 'Custom' }]}></DropDownButtonComponent>
                                     <div className="flex flex-wrap sm:justify-between items-center mt-3">
                                         <span className="text-xl font-semibold text-gray-900 dark:text-white">$53.9K</span>
-                                        <span className="text-xs justify-end e-icons e-arrow-up text-green-700 ml-2"></span>
+                                        <span className="text-sm justify-end e-icons e-arrow-up text-green-700 ml-2"></span>
                                         <span className="text-xs text-green-700">2.2% of Last Month</span>
                                     </div>
                                     <div className="e-btn-group hidden sm:block">

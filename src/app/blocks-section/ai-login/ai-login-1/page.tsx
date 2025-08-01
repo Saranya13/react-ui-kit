@@ -72,14 +72,14 @@ export default function AILogin1() {
                                                         </ButtonComponent>
                                                     </div>
                                                     <div className="relative flex justify-center items-center mt-6">
-                                                        <span className="bg-gray-50 dark:bg-gray-800 px-2.5 z-10 absolute text-sm text-gray-700 dark:text-gray-300">Or</span>
+                                                        <span className="bg-white dark:bg-gray-800 px-2.5 z-10 absolute text-sm text-gray-700 dark:text-gray-300">Or</span>
                                                         <hr className="w-full absolute border-gray-200 dark:border-gray-600" />
                                                     </div>
                                                     <div className="mt-6 mb-4">
-                                                        <TextBoxComponent ref={userName} cssClass="e-normal !border-0 shadow-sm bg-gray-50 dark:bg-gray-700" type="email" placeholder="Username or email" created={() => userName.current?.addIcon("prepend", "e-icons e-user e-small")} floatLabelType="Never"></TextBoxComponent>
+                                                        <TextBoxComponent ref={userName} cssClass="e-normal !border-0 shadow-sm !bg-gray-50 dark:!bg-gray-700" type="email" placeholder="Username or email" created={() => userName.current?.addIcon("prepend", "e-icons e-user e-small")} floatLabelType="Never"></TextBoxComponent>
                                                     </div>
                                                     <div className="mb-6 relative">
-                                                        <TextBoxComponent ref={password} cssClass="e-normal !border-0 shadow-sm bg-gray-50 dark:bg-gray-700" type="password" placeholder="Password" created={() => password.current?.addIcon("prepend", "e-icons e-lock e-small")} floatLabelType="Never"></TextBoxComponent>
+                                                        <TextBoxComponent ref={password} cssClass="e-normal !border-0 shadow-sm !bg-gray-50 dark:!bg-gray-700" type="password" placeholder="Password" created={() => password.current?.addIcon("prepend", "e-icons e-lock e-small")} floatLabelType="Never"></TextBoxComponent>
                                                     </div>
                                                     <div className="mb-4">
                                                         <ButtonComponent cssClass="e-normal w-full e-primary" content="Sign in with Fusion AI" type="submit"></ButtonComponent>

@@ -116,7 +116,7 @@ export default function Sidebar2() {
                                         </AccordionItemsDirective>
                                     </AccordionComponent>
                                     <div id="toast" className="!absolute bottom-0 left-0"></div>
-                                    <ToastComponent ref={toast} target="#toast" position={{ X: 'Left', Y: 'Bottom' }} cssClass="e-toast-info" width="224" title="<div className='pr-2'>Adaptive Tiles Meeting</div>" content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast.current?.show()}></ToastComponent>
+                                    <ToastComponent ref={toast} target="#toast" position={{ X: 'Left', Y: 'Bottom' }} cssClass="e-toast-info" width="224" title="<div class='pr-2'>Adaptive Tiles Meeting</div>" content={() => <div>There was a problem with your network connection</div>} showCloseButton={true} timeOut={0} newestOnTop={true} created={() => toast.current?.show()}></ToastComponent>
                                 </div>
                             </SidebarComponent>
                         </div>

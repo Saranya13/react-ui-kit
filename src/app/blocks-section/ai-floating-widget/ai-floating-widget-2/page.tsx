@@ -78,8 +78,8 @@ export default function AIFloatingWidget2() {
             case 'tailwind':
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
-                        <div ref={containerRef} id="target" className="w-full px-4" style={{ minHeight: '690px' }}>
-                            <div key={"floating-2-tw"}>
+                        <div key={"floating-2-tw"} ref={containerRef} id="target" className="w-full px-4" style={{ minHeight: '690px' }}>
+                            <div >
                                 <div className="flex items-center justify-center pt-4">
                                     <ButtonComponent className="block sm:hidden" cssClass="e-primary e-round e-bigger" iconCss="sf-icon-message-chat-circle !text-xl" type="button" onClick={toggleDialog}></ButtonComponent>
                                 </div>
@@ -124,8 +124,8 @@ export default function AIFloatingWidget2() {
             case 'bootstrap5':
                 return (
                     <section className="bg-body">
-                        <div ref={containerRef} id="target" className="w-100 px-3" style={{ minHeight: '690px' }}>
-                            <div key={"floating-2-bs"}>
+                        <div key={"floating-2-bs"} ref={containerRef} id="target" className="w-100 px-3" style={{ minHeight: '690px' }}>
+                            <div >
                                 <div className="d-flex align-items-center justify-content-center pt-3">
                                     <ButtonComponent className="d-block d-sm-none" cssClass="e-primary e-round e-bigger" iconCss="sf-icon-message-chat-circle fs-5 lh-base" type="button" onClick={toggleDialog}></ButtonComponent>
                                 </div>

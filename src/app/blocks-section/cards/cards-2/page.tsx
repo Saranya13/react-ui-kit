@@ -36,7 +36,7 @@ export default function Card2() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="h-screen sm:h-full">
-                            <div className="px-4 py-10 sm:px-6">
+                            <div className="px-4 py-10 sm:px-6" style={{ minHeight: '36rem' }}>
                                 <div className="grid gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:gap-10">
                                     <div className="e-card rounded-lg gap-2 pb-2 e-bigger justify-start">
                                         <div className="e-card-header">

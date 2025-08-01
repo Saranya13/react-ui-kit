@@ -37,7 +37,7 @@ export default function Card8() {
                 return (
                     <section className="bg-gray-50 dark:bg-gray-950">
                         <div className="h-screen sm:h-full">
-                            <div className="px-4 py-10 sm:px-6">
+                            <div className="px-4 py-10 sm:px-6" style={{ minHeight: '49.5rem' }}>
                                 <div className="grid gap-6 sm:gap-8 lg:grid-cols-2 xl:gap-10">
                                     <div className="e-card rounded-lg sm:flex-row e-bigger">
                                         <div className="relative sm:w-64 h-52 sm:h-auto shrink-0">
